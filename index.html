@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Dashboard</h1>
+      </div>
+      </div>
+      <div class="hidden md:block">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="w-56" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+      <div class="md:flex md:items-center md:justify-between">
+        <div>
+          <h2 class="font-bold md:text-xl">Welcome back, Akmal👋</h2>
+          <p class="text-[#A1A1AA]">Here's what's happening with your agency today.</p>
+        </div>
+        <div class="md:flex md:items-center md:justify-center md:gap-4">
+          <div class="dropdown dropdown-end mt-4 md:mt-0">
+             <div
+                tabindex="0"
+                role="button"
+                class="flex items-center justify-center md:justify-start gap-2 md:w-[250px] md:h-11  w-[358px] px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]"
+              >
+                <i class="ri-calendar-line text-lg"></i>
+                <span class="text-sm">Jul 16, 2025 - Jul 22, 2025</span>
+                <i class="ri-arrow-down-s-line "></i>
+              </div>
+        
+              <div
+                tabindex="0"
+                class="dropdown-content z-50 mt-2 w-80 rounded-xl bg-[#1A1B1E] shadow-xl border border-[#2A2A2E] p-4"
+              >
+                <input type="date" class="input input-bordered w-full mb-3 bg-[#131416] text-white" />
+            
+                <input type="date" class="input input-bordered w-full bg-[#131416] text-white" />
+              </div>
+            </div>  
+             <button class="btn btn-active btn-primary w-[358px] md:w-32 mt-4 md:mt-0">+ Create New</button>          
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="flex items-center md:justify-center md:gap-28 gap-2">
+
+        <div class="md:flex md:items-center md:justify-center md:gap-20"> 
+
+        <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
+            <i class="ri-group-fill text-violet-400 text-lg"></i>
+          </div>
+          <div>
+            <h2 class="text-[#A1A1AA] text-sm ">Total Clients</h2>
+            <h2 class="font-bold md:text-xl pb-2 pt-2">128</h2>
+            <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>12.5%</span> from last week</p>
+          </div>
+        </div>
+        <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
+            <i class="ri-folder-4-fill text-violet-400 text-lg"></i>
+          </div>
+          <div>
+            <h2 class="text-[#A1A1AA] text-sm ">Active Projects</h2>
+            <h2 class="font-bold md:text-xl pb-2 pt-2">24</h2>
+            <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>8.3%</span> from last week</p>
+          </div> 
+      </div>
+      </div>
+      <div class="md:flex md:items-center md:justify-center md:gap-20">
+      <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
+           <i class="ri-money-rupee-circle-fill text-violet-400 text-lg"></i>
+          </div>
+          <div>
+            <h2 class="text-[#A1A1AA] text-sm ">Total Revenue</h2>
+            <h2 class="font-bold md:text-xl pb-2 pt-2">₹4,85,000</h2>
+            <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>16.2%</span> from last week</p>
+          </div>
+    </div>
+    <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
+            <i class="ri-task-fill text-violet-400 text-lg"></i>
+          </div>
+          <div>
+            <h2 class="text-[#A1A1AA] text-sm ">Pending Tasks</h2>
+            <h2 class="font-bold md:text-xl pb-2 pt-2">18</h2>
+            <p class="text-sm"><span class="text-red-600"><i class="ri-arrow-down-long-line"></i>6.5%</span> from last week</p>
+          </div>
+    </div>    
+    
+    </div> 
+      </div> 
+      <!--chats-->
+      <div class="md:flex md:items-center md:gap-2">
+        <div class="md:w-[710px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+            <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
+               <h2 class="font-bold pl-2">Revenue Overview</h2>
+               <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
+                 <option disabled selected class="text-[#A1A1AA]" >Month</option>
+                 <option class="text-[#A1A1AA]">This Month</option>
+                 <option class="text-[#A1A1AA]">Last Month</option>
+              </select>
+           </div>
+           <div class="flex items-center justify-between mt-4 mb-4">
+             <div class="ml-4">
+               <p class="text-[#A1A1AA] md:text-sm text-[11px]">Total Revenue</p>
+               <h2 class="font-bold md:text-xl text-[13px]">₹4,85,00 <span class="text-[#22C55E] text-[10px] font-light"><i class="ri-arrow-up-long-line"></i>16.2%</span></h2>
+            </div>
+           <div class="flex items-center justify-center gap-4">
+            <div>
+              <p class="">
+                <i class="ri-checkbox-blank-circle-fill text-violet-400 text-[10px]">  <span class="text-[#A1A1AA] md:text-[15px] text-[11px]">This Month</span></i>
+              </p>
+              <p class="text-[8px]">- - <span class="text-[#A1A1AA] text-sm md:text-[15px] text-[11px]">This Month</span></p>
+            </div>
+            <div class="mr-4">
+              <p class="font-bold text-sm md:text-[15px] text-[13px]">₹4,85,000</p>
+              <p class="font-bold text-sm md:text-[15px] text-[13px]">₹4,17,000</p>
+            </div>
+          </div>
+        </div>
+        
+         <div>
+              <canvas id="revenueChart"></canvas>
+         </div>
+       </div> 
+         <div class="md:w-[570px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+              <div class="flex items-center justify-between pt-2">
+                 <div>
+                   <h2 class="font-bold md:pl-3">Projects Status</h2>
+                 </div>
+                 <div>
+                   <p class="text-violet-400 pr-3">View All</p>
+                 </div>
+              </div>
+              <div class="md:flex md:items-center md:justify-between md:mt-8">
+                <div class="h-60 ml-12 md:ml-8">
+                    <canvas id="projectStatus"></canvas>
+                </div>
+                <div class="flex items-center justify-center gap-10 md:mr-4">
+                   <div>
+                     <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#4ADE80]"></i> <span>Completed</span></p>
+                     <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#3B82F6]"></i> <span>In Progress</span></p>
+                     <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#F59E0B]"></i> <span>On Hold</span></p>
+                     <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#8B5CF6]"></i> <span>Not Started</span></p>
+                   </div>
+                   <div>
+                     <p class="pt-2 pb-2">8(33.3%)</p>
+                     <p class="pt-2 pb-2">10(41.7%)</p>
+                     <p class="pt-2 pb-2">3(15.5%)</p>
+                     <p class="pt-2 pb-2">3(15.5%)</p>
+                   </div>
+                 </div>  
+              </div>
+              <h2 class="md:mt-8 mt-4 text-center font-bold md:text-2xl md:ml-3">24 Total</h2>
+         </div>
+      </div>
+      <!-- bottom content -->
+       <div class="md:flex md:items-center md:justify-center md:gap-2">
+          <div class="md:w-[500px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+             <div class="flex items-center justify-between pt-2">
+                 <div>
+                   <h2 class="font-bold md:pl-3">Recent Projects</h2>
+                 </div>
+                 <div>
+                   <p class="text-violet-400 pr-3">View All</p>
+                 </div>
+              </div>
+              <ul>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="ml-2">
+                    <h2 class="md:text-sm text-[10px] font-bold">Hospital Management System</h2>
+                    <p class="md:text-[11px] text-[8px]">ABC Hospital</p>
+                  </div>
+                  <div>
+                    <progress class="progress progress-primary md:w-32 w-20" value="70" max="100"></progress>
+                  </div>
+                  <div>
+                    <button class="btn md:btn-sm btn-xs mr-2 bg-[#1E3B32] text-[#5fe485]">In Progress</button>
+                  </div>
+                </li>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="ml-2">
+                    <h2 class="md:text-sm text-[10px] font-bold">E-Commerce Website</h2>
+                    <p class="md:text-[11px] text-[8px]">xyz Retail</p>
+                  </div>
+                  <div>
+                    <progress class="progress progress-primary md:w-32 w-20" value="70" max="100"></progress>
+                  </div>
+                  <div>
+                    <button class="btn md:btn-sm btn-xs mr-2 bg-[#1E3B32] text-[#5fe485]">In Progress</button>
+                  </div>
+                </li>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="ml-2">
+                    <h2 class="md:text-sm text-[10px] font-bold">School Management System</h2>
+                    <p class="md:text-[11px] text-[8px]">Bright Future School</p>
+                  </div>
+                  <div>
+                    <progress class="progress progress-primary md:w-32 w-20" value="40" max="100"></progress>
+                  </div>
+                  <div>
+                    <button class="btn md:btn-sm btn-xs mr-2 bg-[#332922] text-[#D4A15B]">On Hold</button>
+                  </div>
+                </li>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="ml-2">
+                    <h2 class="md:text-sm text-[10px] font-bold">Branding $Logo Design</h2>
+                    <p class="md:text-[11px] text-[8px]">TechSoft Inc.</p>
+                  </div>
+                  <div>
+                    <progress class="progress progress-primary md:w-32 w-20" value="100" max="100"></progress>
+                  </div>
+                  <div>
+                    <button class="btn md:btn-sm btn-xs mr-2 bg-[#1E3B32] text-[#5fe485]">Completed</button>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <div class="md:w-[400px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+            <div class="flex items-center justify-between pt-2">
+                 <div>
+                   <h2 class="font-bold md:pl-3">Upcoming Tasks</h2>
+                 </div>
+                 <div>
+                   <p class="text-violet-400 pr-3">View All</p>
+                 </div>
+              </div>
+              <ul>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary ml-2" />
+                    <div>
+                     <h2 class="md:text-sm text-[10px] font-bold">Design landing page</h2>
+                     <p class="md:text-[11px] text-[8px]">E-Commerce Website</p>
+                    </div> 
+                  </div>
+                  <div>
+                     <p class="md:text-[11px] text-[8px] text-[#E35D5B] text-center">Today</p>
+                     <button class="btn md:btn-sm btn-xs mr-2 bg-[#372123] text-[#E35D5B]">High</button>
+                  </div>
+                </li>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary ml-2" />
+                    <div>
+                     <h2 class="md:text-sm text-[10px] font-bold">Develop user dashboard</h2>
+                     <p class="md:text-[11px] text-[8px]">Hospital Management System</p>
+                    </div> 
+                  </div>
+                  <div>
+                     <p class="md:text-[11px] text-[8px] text-[#D4A15B] text-center">Tomorrow</p>
+                     <button class="btn md:btn-sm btn-xs mr-2 bg-[#332922] text-[#D4A15B]">medium</button>
+                  </div>
+                </li>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary ml-2" />
+                    <div>
+                     <h2 class="md:text-sm text-[10px] font-bold">Client meeting with ABC Hospital</h2>
+                     <p class="md:text-[11px] text-[8px]">Hospital Management System</p>
+                    </div> 
+                  </div>
+                  <div>
+                     <p class="md:text-[11px] text-[8px] text-[#A1A1AA] text-center">18 Jul</p>
+                     <button class="btn md:btn-sm btn-xs mr-2 bg-[#1E3B32] text-[#5fe485]">Low</button>
+                  </div>
+                </li>
+                <li class="flex items-center justify-between bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                  <div class="flex items-center gap-2">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary ml-2" />
+                    <div>
+                     <h2 class="md:text-sm text-[10px] font-bold">Content writing for homepage</h2>
+                     <p class="md:text-[11px] text-[8px]">Branding & Logo Design</p>
+                    </div> 
+                  </div>
+                  <div>
+                     <p class="md:text-[11px] text-[8px] text-[#A1A1AA] text-center">20 Jul</p>
+                     <button class="btn md:btn-sm btn-xs mr-2 bg-[#1E3B32] text-[#5fe485]">Low</button>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <div class="md:w-[400px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+            <div class="flex items-center justify-between pt-2">
+                 <div>
+                   <h2 class="font-bold md:pl-3">Recent Activites</h2>
+                 </div>
+                 <div>
+                   <p class="text-violet-400 pr-3">View All</p>
+                 </div>
+              </div>
+              <ul>
+                <li class="flex items-center gap-4  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                    <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                        <h2 class="md:text-sm text-[10px] font-bold ">Ali Raza</h2>
+                        <p class="md:text-[11px] text-[8px] ">added new client TechSoft Inc.</p>
+                     </div>
+                </li>
+                <li class="flex items-center gap-4  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                    <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                        <h2 class="md:text-sm text-[10px] font-bold ">Sarah Khan</h2>
+                        <p class="md:text-[11px] text-[8px] ">completed project E-Commerce Website</p>
+                     </div>
+                </li>
+                <li class="flex items-center gap-4  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                    <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                        <h2 class="md:text-sm text-[10px] font-bold ">john</h2>
+                        <p class="md:text-[11px] text-[8px] ">created invoice #INV-2025-1024</p>
+                     </div>
+                </li>
+                <li class="flex items-center gap-4  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                    <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                        <h2 class="md:text-sm text-[10px] font-bold ">Zara Fatima</h2>
+                        <p class="md:text-[11px] text-[8px] ">updated task status</p>
+                     </div>
+                </li>
+              </ul>
+          </div>
+       </div>
+    </div>
+  </div> 
+  
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li>
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li>
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li>
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li>
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li>
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li>
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li>
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li>
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li>
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li>
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script>
+  const revenueChart = document.getElementById('revenueChart');
+
+  new Chart(revenueChart, {
+    type: 'line',
+    data: {
+      labels: ['1 jul', '5 jul', '10 jul', '15 jul', '20 jul', '25 jul', '31 jul'],
+      datasets: [{
+        label: 'This Month',
+        data: [45000, 32000, 70000, 68000, 50000, 78000, 72000],
+        borderColor: "#7C3AED",
+        backgroundColor: "rgba(124,58,237,0.2)",
+        fill: true,
+        tension: 0.4,
+        pointRadius: 0
+      },
+       {
+        label: "Last Month",
+        data: [38000, 35000, 42000, 46000, 55000, 62000, 68000],
+        borderColor: "#9CA3AF",
+        borderDash: [5, 5],
+        fill: false,
+        tension: 0.4,
+        pointRadius: 0
+      }
+    ]
+    },
+    options: {
+     responsive: true,
+     maintainAspectRatio: false,
+     plugins: {
+      legend: {
+        labels: {
+          color: "#fff"
+        }
+      }
+     },
+    scales: {
+      y: {
+        min: 0,
+        max: 100000,
+        ticks: {
+          color: "#fff",
+          callback: (value) => "₹" + value / 1000 + "K"
+        }
+      },
+      x: {
+        ticks: {
+          color: "#fff"
+        }
+      }
+    }
+  }
+  });
+
+  const projectStatus = document.getElementById('projectStatus');
+
+  new Chart(projectStatus, {
+    type: 'doughnut',
+    data: {
+     
+      datasets: [{
+        label: 'Projects',
+        data: [8, 10, 3, 3],
+        backgroundColor: [
+        "#4ADE80",
+        "#3B82F6",
+        "#F59E0B",
+        "#8B5CF6"
+         ], 
+        borderWidth: 0
+      }]
+    },
+    
+  });
+</script>
+</body>
+</html>
+
+
+

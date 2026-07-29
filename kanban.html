@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Kanban Board</h1>
+      </div>
+      </div>
+      <div class="hidden md:block">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="w-56" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full ">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between md:ml-2 p-4">
+           <div>
+              <h2 class="font-bold md:text-2xl">Kanban Board</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-[15px]">Visualize and manage your work in progress</p>
+            </div>
+            <div class="md:flex md:items-center md:justify-center md:gap-4">
+             <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-6 mt-2">   
+             <div class="flex items-center w-36 h-16 md:justify-start md:w-36 md:h-11  
+                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                  
+                  <h2 class="text-sm md:text-[16px]">
+                     <i class="ri-folder-4-fill"> All Projects</i>
+                  </h2>
+              </div>
+              <div class="flex items-center w-40 h-16 md:justify-start md:w-28 md:h-11  
+                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                
+                  <h2 class="text-sm md:text-[16px]">
+                     <i class="ri-filter-2-line"> Filters</i>
+                  </h2>
+              </div>
+              <div class="flex items-center w-44 h-16 md:justify-start md:w-44 md:h-11  
+                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                  
+                  <h2 class="text-sm md:text-[16px]">
+                     Group by: Status
+                  </h2>
+              </div>
+             </div> 
+             <button class="btn w-[369px] md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Task</button>          
+           </div>
+         </div> 
+          <hr class=" bg-[#131416] border-[#2A2A2E] border">
+        <div class="ml-2 mt-2 flex gap-3 md:hidden">
+          <button class="btn btn-sm" onclick="showSection('todo')">To Do</button>
+          <button class="btn btn-sm" onclick="showSection('progress')">In Progress</button>
+          <button class="btn btn-sm" onclick="showSection('review')">Review</button>
+          <button class="btn btn-sm" onclick="showSection('done')">Done</button>
+          <button class="btn btn-sm" onclick="showSection('block')">Blocked</button>
+        </div>
+        <div class="w-[385px] md:w-[99%] mt-4 mx-2 bg-[#131416] border-[#2A2A2E] border min-h-[500px] h-auto rounded-2xl">
+        <div class="md:flex md:gap-6">  
+           <div class="hidden md:block" id="todo">
+            <div class="md:min-h-36 md:h-auto md:w-[230px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:ml-3 md:mt-3">
+              <div class="bg-[#3B82F6] border-[#3B82F6] border h-[6px] md:w-[222px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 font-bold mt-2 md:text-[16px]">To Do</h2>
+               <button class="btn btn-sm ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
+               <div>
+                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Research and competitor analysis for landing page</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <p class="text-[#A1A1AA] mr-2">
+                         <i class="ri-calendar-2-line"> 18 Jul</i>
+                       </p>
+                     </div>
+                 </div>
+                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Creae wireframe for dashboard</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <p class="text-[#A1A1AA] mr-2">
+                         <i class="ri-calendar-2-line"> 18 Jul</i>
+                       </p>
+                     </div>
+                 </div>
+                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Research and competitor analysis for landing page</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <p class="text-[#A1A1AA] mr-2">
+                         <i class="ri-calendar-2-line"> 18 Jul</i>
+                       </p>
+                     </div>
+                 </div>
+               </div>
+               <div class="md:min-h-10 mb-2 md:h-auto h-10 md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border ml-2 mt-3 mb-1 rounded-4xl">
+                 <h2 class="ml-4 mt-2">+ Add Task</h2>
+               </div>
+            </div>
+           </div> 
+           <div class="hidden md:block" id="progress">
+            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:mt-3">
+              <div class="bg-[#EFB633] border-[#EFB633] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">In Progress</h2>
+               <button class="btn btn-sm md:ml-3 ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
+               <div>
+                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 md:ml-3 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Research and competitor analysis for landing page</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <p class="text-[#A1A1AA] mr-2">75%</p>
+                     </div>
+                     <div class="flex items-center gap-4">
+                       <progress class="progress progress-primary md:w-40  w-[260px] ml-4" value="75" max="100"></progress>
+                       <p class="text-[#A1A1AA]">
+                         <i class="ri-calendar-2-line"> 18 Jul</i>
+                       </p>
+                     </div>
+                 </div>
+                 
+               </div>
+               <div class="md:min-h-10 mb-2 md:h-auto h-10 md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border ml-2 md:ml-3 mt-3 mb-1 rounded-4xl">
+                 <h2 class="ml-4 mt-2">+ Add Task</h2>
+               </div>
+            </div>
+           </div> 
+            <div class="hidden md:block" id="review">
+            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:mt-3">
+              <div class="bg-[#8B5CF6] border-[#8B5CF6] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">Review</h2>
+               <button class="btn btn-sm md:ml-3 ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
+               <div>
+                 <div class="md:min-h-20 md:h-auto md:ml-3 md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Review landing page design</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <p class="text-[#A1A1AA] mr-2">
+                         Today
+                       </p>
+                     </div>
+                 </div>
+               </div>
+               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border ml-2 mt-3 mb-1 rounded-4xl">
+                 <h2 class="ml-4 mt-2">+ Add Task</h2>
+               </div>
+            </div>
+           </div>
+           <div class="hidden md:block" id="done">
+            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl  md:mt-3">
+              <div class="bg-[#34D399] border-[#34D399] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">Done</h2>
+               <button class="btn btn-sm ml-2 md:ml-3 mt-3 text-[#A1A1AA]">+ Add Task</button>
+               <div>
+                 <div class="md:min-h-20 md:ml-3 md:h-auto md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Project requirement gathering</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#34D3991A] text-[#34D399]">Management</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <p class="text-[#34D399] mr-2">
+                         <i class="ri-checkbox-circle-line"></i>
+                       </p>
+                     </div>
+                 </div>
+               </div>
+               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border ml-2 mt-3 mb-1 rounded-4xl">
+                 <h2 class="ml-4 mt-2">+ Add Task</h2>
+               </div>
+            </div>
+           </div>
+            <div class="hidden md:block" id="block">
+            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl  md:mt-3">
+              <div class="bg-[#EF4444] border-[#EF4444] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">Blocked</h2>
+               <button class="btn btn-sm ml-2 md:ml-3 mt-3 text-[#A1A1AA]">+ Add Task</button>
+               <div>
+                 <div class="md:min-h-20 md:ml-3 md:h-auto md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                    <h3 class="ml-4 w-44 mt-2">Awaiting client content</h3>
+                     <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2  bg-[#8B5CF61A] text-[#8B5CF6]">Content</h2>
+                     <div class="ml-3 mt-2 flex items-center justify-between">
+                       <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                       </div>
+                       <div class="mr-2">
+                          <h2 class="btn  btn-xs  ml-3 mt-2   bg-[#EF44441A] text-[#EF4444]">High</h2>
+                          <p class="text-[#A1A1AA] text-[12px]">
+                           <i class="ri-calendar-2-line"> 18 Jul</i>
+                          </p>
+                       </div>
+                     </div>
+                 </div>
+               </div>
+               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 md:w-[210px] w-[365px] bg-[#131416] border-[#2A2A2E] border ml-2 mt-3 mb-1 rounded-4xl">
+                 <h2 class="ml-4 mt-2">+ Add Task</h2>
+               </div>
+            </div>
+           </div>
+            
+        </div>  
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li>
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li>
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li>
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li>
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li>
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li>
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li>
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li>
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li>
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li>
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script>
+    const sections = ["todo", "progress", "review", "done", "block"];
+
+    function showSection(id) {
+      sections.forEach(section => {
+        document.getElementById(section).classList.add("hidden");
+      });
+    
+      document.getElementById(id).classList.remove("hidden");
+    }
+ </script>
+</body>
+</html>
