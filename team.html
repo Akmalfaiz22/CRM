@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Team</h1>
+      </div>
+      </div>
+      <div class="">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between md:ml-2">
+           <div>
+              <h2 class="font-bold md:text-2xl">Team</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg">Manage your team members and their access</p>
+            </div>
+            <div class="md:flex md:items-center md:justify-center md:gap-4">
+             <div class="flex items-center  flex-row md:gap-4 md:mt-0 gap-6 mt-2 ml-1 md:ml-0">   
+              <div class="flex items-center w-40 md:justify-start gap-2 md:w-40 md:h-11  
+                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                  
+                  <h2 class="">
+                    <i class="ri-user-star-fill"> Invite Member</i>
+                  </h2>
+              </div>   
+              <button class="btn w-40  md:btn-md btn-active btn-primary md:w-48 md:text-[14px] md:mt-0">+ Add Member</button>
+             </div>       
+           </div>
+         </div> 
+         <!-- header -->
+           <div class="flex items-center md:gap-20 gap-10 mt-4 ml-2">
+             <h2  class="font-bold text-sm md:text-[16px]">All Members</h2>
+             <h2  class="font-bold text-sm md:text-[16px]">Active</h2>
+             <h2  class="font-bold text-sm md:text-[16px]">Invited</h2>
+             <h2  class="font-bold text-sm md:text-[16px]">Inactive</h2>
+           </div>
+           <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
+         <!-- buttom content -->
+        <div class="md:flex items-center md:justify-center md:gap-2"> 
+          <!-- all user area -->
+           <div class="md:w-[830px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[120vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
+
+             <div class="md:flex md:items-center md:justify-start  py-2 md:ml-2 md:gap-2 pl-4 md:pl-2">
+                 <label class="input md:w-64 w-[290]">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <g
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2.5"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                      </g>
+                    </svg>
+                    <input type="search" required placeholder="Search" />
+                 </label>    
+                  <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-1 mt-2 mr-5">   
+                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-32 md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="text-[12px] md:text-[15px]">All Departments</h2>
+                  </div>
+                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-28 md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="text-[12px] md:text-[15px]">All Roles</h2>
+                  </div>
+                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-28 md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="text-[12px] md:text-[15px]">Status:All</h2>
+                  </div>
+                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-30 md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="">
+                         <i class="ri-filter-line text-[12px] md:text-[15px]"> Filters</i>
+                      </h2>
+                  </div>
+               </div>                                       
+             </div>
+             <hr class=" bg-[#131416] border-[#2A2A2E] border">
+             <div class="md:flex md:items-center  md:my-2 md:ml-3 hidden md:block">
+               <div class="ml-2">
+                 <h2 class="text-[#A1A1AA] md:w-[150px]">Member</h2>
+               </div>
+               <div>
+                 <h2 class="text-[#A1A1AA] md:w-[180px]">Department</h2>
+               </div>
+               <div class="flex items-center justify-center  mr-2">
+                 <h2 class="text-[#A1A1AA] md:w-[90px]">Projects</h2>
+                 <h2 class="text-[#A1A1AA] md:w-[140px]">Role</h2>
+                 <h2 class="text-[#A1A1AA] md:w-[80px]">Status</h2>
+                 <h2 class="text-[#A1A1AA] md:w-[100px]">Joined</h2>
+                 <h2 class="text-[#A1A1AA] md:w-[20px]">Actions</h2>
+               </div>
+             </div>
+             <ul class="md:min-h-[105vh]">
+               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
+                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
+                      <div class="md:w-[150px] md:flex md:block hidden">
+                         <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                          </div>
+                          <div class="md:mt-2 ml-1">
+                            <h2 class="text-sm font-medium text-white">Ali Raza</h2>
+                            <p class="text-[11px] text-gray-400">ali@efficientapp.com</p>
+                          </div>
+                       </div> 
+                     </div>
+                     <div class="md:block hidden md:w-[190px]">
+                      <p class="text-[#A1A1AA]"><i class="ri-shopping-bag-line text-violet-500"></i> Management</p>
+                     </div>
+                     <div class="md:w-[50px] md:block hidden">
+                         <h2>12</h2>
+                       </div>
+                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
+                       <p class="md:w-[140px]">
+                        <span class=" btn  btn-xs h-6 bg-[#172235] text-[#6FA7FF] px-2 py-1 rounded-md">Project Management</span>
+                       </p>
+                       <div class="md:w-[80px]">
+                        <h2 class="btn  btn-xs  mr-2 h-6  bg-[#EFB6331A] text-[#EFB633]">Invited</h2>
+                       </div>
+                       
+                       <p class="md:w-[110px]">12 Jan 2025</p>
+                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
+                        <i class="ri-more-2-fill"></i>
+                       </h2>
+                     </div>
+                     
+                      <!-- responsive -->
+                    <div class="md:hidden">  
+                       <div class="flex items-center justify-between">  
+                        <div class="flex ml-2 mt-2">   
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                        </div>
+                       </div>
+                       <div class="mt-1 ml-1">
+                            <h2 class="text-sm font-medium text-white">Ali Raza</h2>
+                            <p class="text-xs text-gray-400">ali@efficientapp.com</p>
+                          </div>
+                        </div>  
+                         <div>
+                            <button class=" btn  btn-xs h-6 bg-[#172235] text-[#6FA7FF] px-2 py-1 rounded-md">Project Management</button>
+                         </div>
+                         <div class="mr-2">
+                            <i class="ri-more-2-fill"></i>
+                         </div>
+                       </div>
+                       <div class="flex items-center justify-between mt-2 ml-2 mb-2">
+                          <div>
+                              <p class="text-[#A1A1AA] text-[12px]"><i class="ri-shopping-bag-line text-violet-500"></i> Management</p>
+                          </div>
+                          <div class="text-[#A1A1AA] text-[12px]">
+                              <h2>12</h2>
+                          </div>
+                          <div>
+                            <h2 class="btn  btn-xs  mr-2 h-6  bg-[#EFB6331A] text-[#EFB633]">Invited</h2>
+                          </div>
+                          <div>
+                             <p class="text-[12px] mr-2">12 Jan 2025</p>
+                          </div>
+                       </div>  
+                    </div>   
+                     
+               </li>
+                <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
+                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
+                      <div class="md:w-[150px] md:flex md:block hidden">
+                         <div class="avatar">
+                            <div class="w-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                          </div>
+                          <div class="md:mt-2 ml-1">
+                            <h2 class="text-sm font-medium text-white">Ayesha Noor</h2>
+                            <p class="text-[11px] text-gray-400 ">ayesha@efficientapp.com</p>
+                          </div>
+                       </div> 
+                     </div>
+                     <div class="md:block hidden md:w-[190px]">
+                      <p class="text-[#A1A1AA]"><i class="ri-shopping-bag-line text-violet-500"></i> Quality Assurance</p>
+                     </div>
+                     <div class="md:w-[50px] md:block hidden">
+                         <h2>2</h2>
+                       </div>
+                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
+                       <p class="md:w-[140px]">
+                        <span class=" btn  btn-xs h-6 bg-[#EF44441A] text-[#EF4444] px-2 py-1 rounded-md">Executive Assistant</span>
+                       </p>
+                       <div class="md:w-[80px]">
+                        <h2 class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Active</h2>
+                       </div>
+                       
+                       <p class="md:w-[110px]">30 Jan 2025</p>
+                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
+                        <i class="ri-more-2-fill"></i>
+                       </h2>
+                     </div>
+                     
+                      <!-- responsive -->
+                    <div class="md:hidden">  
+                       <div class="flex items-center justify-between">  
+                        <div class="flex ml-2 mt-2">   
+                      <div class="avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                        </div>
+                       </div>
+                       <div class="mt-1 ml-1">
+                            <h2 class="text-sm font-medium text-white">Ayesha Noor</h2>
+                            <p class="text-xs text-gray-400">ayesha@efficientapp.com</p>
+                          </div>
+                        </div>  
+                         <div>
+                            <button class=" btn  btn-xs h-6 bg-[#EF44441A] text-[#EF4444] px-2 py-1 rounded-md">Executive Assistant</button>
+                         </div>
+                         <div class="mr-2">
+                            <i class="ri-more-2-fill"></i>
+                         </div>
+                       </div>
+                       <div class="flex items-center justify-between mt-2 ml-2 mb-2">
+                          <div>
+                              <p class="text-[#A1A1AA] text-[12px]"><i class="ri-shopping-bag-line text-violet-500"></i> Quality Assurance</p>
+                          </div>
+                          <div class="text-[#A1A1AA] text-[12px]">
+                              <h2>2</h2>
+                          </div>
+                          <div>
+                            <h2 class="btn  btn-xs  mr-2 h-6   bg-[#34D3991A] text-[#34D399]">Active</h2>
+                          </div>
+                          <div>
+                             <p class="text-[12px] mr-2">30 Jan 2025</p>
+                          </div>
+                       </div>  
+                    </div>   
+                     
+               </li>
+             </ul>
+             <!-- Pagination -->
+              <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
+
+                <!-- Left -->
+                <p class="text-sm text-[#A1A1AA] mb-3 md:mb-0">
+                  Showing 1 to 10 of 24 members
+                </p>
+
+                <!-- Center -->
+                <div class="flex items-center gap-2">
+                  <button class="md:w-9 md:h-9 w-5 h-5 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </button>
+
+                  <button class="md:w-9 md:h-9 w-6 h-6 rounded-md bg-[#6D28D9] text-white">
+                    1
+                  </button>              
+
+                 <button class="md:w-9 md:h-9 w-6 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   2
+                </button>
+
+                 <button class="md:w-9 md:h-9 w-6 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   3
+                 </button>
+             
+                 <button class="md:w-9 md:h-9 w-5 h-5 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   <i class="ri-arrow-right-s-line"></i>
+                 </button>
+               </div>
+
+               <!-- Right -->
+               <select class="mt-3 md:mt-0 bg-[#131416] border border-[#2A2A2E] rounded-md px-3 py-2 text-sm text-white">
+                 <option>10 / page</option>
+                 <option>20 / page</option>
+                 <option>50 / page</option>
+               </select>
+
+             </div>             
+           </div>
+           <!--user message -->
+          <div class="md:w-[450px] w-[358px]  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 ">
+             <div class="md:w-[450px] w-[358px]  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="flex items-center justify-between">
+                    <i class="ri-group-line font-bold md:text-[20px] md:mt-2 mt-1 md:ml-3 ml-2"> Team Overview</i>
+                    <i class="ri-more-fill font-bold md:text-[20px] md:mt-2 mt-1 md:mr-3 mr-2"></i>
+                </div>
+                <hr class=" bg-[#131416] border-[#2A2A2E] border md:mt-4 mt-2">
+                <div class="mb-1 md:mb-0">
+                  <div class="flex gap-3 md:gap-0">
+                    <div class="md:w-[210px] flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-3 md:ml-2 mt-2 ml-2 rounded-2xl">
+                      <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-indigo-950 flex items-center justify-center ml-2 md:ml-4 md:mt-0">
+                         <i class="ri-group-line text-violet-400 text-lg"></i>
+                       </div>
+                       <div>
+                          <h2 class="md:text-[25px] text-[20px] font-bold">24</h2>
+                          <p class="text-[#F5F5F5] text-[13px]">Total Members</p>
+                       </div>
+                    </div>
+                    <div class="md:w-[210px]  flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
+                      <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-[#34D3991A]  flex items-center justify-center ml-2 md:ml-4 md:mt-0">
+                         <i class="ri-briefcase-5-fill text-[#34D399] text-lg"></i>
+                       </div>
+                       <div>
+                          <h2 class="md:text-[25px] text-[20px]  font-bold">20</h2>
+                          <p class="text-[#F5F5F5] text-[13px]">Active</p>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-3 md:gap-0">
+                    <div class="md:w-[210px] flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
+                      <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-[#EFB6331A]  flex items-center justify-center ml-2 md:ml-4 md:mt-0">
+                         <i class="ri-device-recover-fill text-[#EFB633] text-lg"></i>
+                       </div>
+                       <div>
+                          <h2 class="md:text-[25px] text-[20px] font-bold">2</h2>
+                          <p class="text-[#F5F5F5] text-[13px]">Invited</p>
+                       </div>
+                    </div>
+                    <div class="md:w-[210px]  flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
+                      <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-[#a899991a]  flex items-center justify-center ml-2 md:ml-4 md:mt-0">
+                         <i class="ri-briefcase-5-fill text-white text-lg"></i>
+                       </div>
+                       <div>
+                          <h2 class="md:text-[25px] text-[20px]  font-bold">2</h2>
+                          <p class="text-[#F5F5F5] text-[13px]">Inactive</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+             <div class="md:w-[450px] mt-2 w-[358px]  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Department Distribution</h2>
+                <div class="md:flex md:items-center md:gap-6 md:mt-4">
+                    <div>
+                       <div class="md:w-48 w-56 md:ml-2 ml-[69px] mb-4 md:mb-0">
+                         <canvas id="myChart"></canvas>
+                       </div>
+                    </div>
+                     <div class="flex items-center justify-center gap-10 md:mr-4">
+                     <div>
+                       <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#6D4AE3]"></i> <span>Development</span></p>
+                       <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#8B5CF6]"></i> <span>Design</span></p>
+                       <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#F97316]"></i> <span>Management</span></p>
+                       <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#5FA56F]"></i> <span>Content</span></p>
+                        <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#607D7F]"></i> <span>Finance</span></p>
+                         <p class="pt-2 pb-2"><i class="ri-checkbox-blank-circle-fill text-[#D9A441]"></i> <span>Others</span></p>
+                     </div>
+                     <div>
+                       <p class="pt-2 pb-2">8</p>
+                       <p class="pt-2 pb-2">4</p>
+                       <p class="pt-2 pb-2">4</p>
+                       <p class="pt-2 pb-2">3</p>
+                       <p class="pt-2 pb-2">2</p>
+                       <p class="pt-2 pb-2">3</p>
+                     </div>
+                  </div>  
+                </div>
+                <h2 class="md:mt-4 mt-4 text-center font-bold md:text-2xl md:ml-3">24 Total</h2>
+             </div>  
+             <div class="md:w-[450px] mt-2 w-[358px]  md:min-h-[370px] md:h-auto min-h-[60vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-bold md:text-[20px] md:ml-3 ml-2 mt-1 md:mt-2 text-[18px]">Recent Activity</h2>
+                    <p class="md:mr-3 mr-2 mt-1 text-violet-500">View all</p>
+                </div>
+                <ul>
+                    <li class="flex items-center justify-between  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                      <div class="flex items-center gap-4" >
+                        <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                        </div>
+                        <div>
+                        <h2 class="md:text-sm text-[15px] font-bold ">Zara Fatima</h2>
+                        <p class="md:text-[13px] text-[10px]">updated task status</p>
+                        <p class="md:text-[13px] text-[10px]">E-Commerce Website</p>
+                        </div>
+                       </div>
+                       <div>
+                          <p class="text-[#A1A1AA] md:text-[12px] md:mr-3 mr-2 text-[10px]">2h ago</p>
+                       </div>
+                    </li>
+                     <li class="flex items-center justify-between  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                      <div class="flex items-center gap-4" >
+                        <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                        </div>
+                        <div>
+                        <h2 class="md:text-sm text-[15px] font-bold ">Ali Raza</h2>
+                        <p class="md:text-[13px] text-[10px]">creted a new project</p>
+                        <p class="md:text-[13px] text-[10px]">Hospital Management System</p>
+                        </div>
+                       </div>
+                       <div>
+                          <p class="text-[#A1A1AA] md:text-[12px] md:mr-3 mr-2 text-[10px]">5h ago</p>
+                       </div>
+                    </li>
+                     <li class="flex items-center justify-between  bg-[#0F0F11] h-16 md:mx-2 rounded-md mt-2 md:mt-4 mr-2">
+                      <div class="flex items-center gap-4" >
+                        <div class="avatar">
+                       <div class="w-16 rounded-full h-10 ml-2">
+                         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                        </div>
+                        <div>
+                        <h2 class="md:text-sm text-[15px] font-bold ">Usman Tariq</h2>
+                        <p class="md:text-[13px] text-[10px]">completed a task</p>
+                        <p class="md:text-[13px] text-[10px]">Api Intergration</p>
+                        </div>
+                       </div>
+                       <div>
+                          <p class="text-[#A1A1AA] md:text-[12px] md:mr-3 mr-2 text-[10px]">1d ago</p>
+                       </div>
+                    </li>
+                </ul>
+             </div>  
+         </div>  
+        </div> 
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li>
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li>
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li>
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li>
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li>
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li>
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li>
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li>
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li>
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li>
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+     
+      datasets: [{
+        label: '',
+        data: [8, 4, 4, 3, 2, 3],
+        backgroundColor: [
+        "#6D4AE3",
+        "#8B5CF6",
+        "#F97316",
+        "#5FA56F",
+        "#607D7F",
+        "#D9A441"
+         ], 
+        borderWidth: 0
+      }]
+    },
+    
+  });
+</script>
+</body>
+</html>
