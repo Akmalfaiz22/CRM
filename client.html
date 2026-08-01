@@ -62,7 +62,7 @@
             
          <div class="md:flex md:items-center md:justify-between">
            <div>
-              <h2 class="font-bold md:text-2xl">Clients</h2>
+              <h2 class="font-bold md:text-2xl text-[20px]">Clients</h2>
               <p class="text-[#A1A1AA] text-sm md:text-lg">Manage and grow your client relationships</p>
             </div>
             <div class="md:flex md:items-center md:justify-center md:gap-4">
@@ -192,7 +192,7 @@
                  <h2 class="text-[#A1A1AA]">Actions</h2>
                </div>
              </div>
-             <ul>
+             <ul class="md:h-[470px]">
                <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
                     <div class="md:pl-2 md:w-[180px] md:block hidden">
                         <h2 class="md:text-sm  font-bold">ABC Hospital</h2>
@@ -326,9 +326,48 @@
                      </div>
                 </li>
              </ul>
+             <!-- Pagination -->
+              <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
+
+                <!-- Left -->
+                <p class="text-sm text-[#A1A1AA] mb-3 md:mb-0">
+                  Showing 1 to 10 of 24 Clients
+                </p>
+
+                <!-- Center -->
+                <div class="flex items-center gap-2">
+                  <button class="md:w-9 md:h-9 w-5 h-5 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </button>
+
+                  <button class="md:w-9 md:h-9 w-6 h-6 rounded-md bg-[#6D28D9] text-white">
+                    1
+                  </button>              
+
+                 <button class="md:w-9 md:h-9 w-6 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   2
+                </button>
+
+                 <button class="md:w-9 md:h-9 w-6 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   3
+                 </button>
+             
+                 <button class="md:w-9 md:h-9 w-5 h-5 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   <i class="ri-arrow-right-s-line"></i>
+                 </button>
+               </div>
+
+               <!-- Right -->
+               <select class="mt-3 md:mt-0 bg-[#131416] border border-[#2A2A2E] rounded-md px-3 py-2 text-sm text-white">
+                 <option>10 / page</option>
+                 <option>20 / page</option>
+                 <option>50 / page</option>
+               </select>
+
+             </div>
            </div>
            <!--user message -->
-           <div class="md:w-[450px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[90vh] md:h-auto min-h-[80vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
+           <div class="md:w-[450px] hidden md:block w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[90vh] md:h-auto min-h-[80vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
               <div class="ml-4 mt-2 ">
                 <h2 class="md:text-[20px]  font-bold ">XYZ Retail</h2>
                 <p class="md:text-[15px] ">E-commerce <span class="btn ml-4 btn-sm py-2 mr-2 h-4 bg-[#1E3B32] text-[#5fe485]">Active</span></p>
@@ -402,7 +441,6 @@
                </div>
                <button class="btn  mx-4 my-2 mt-12 md:mt-20 md:w-[415px] w-[320px]"><i class="ri-edit-2-line"> Edit Client</i></button>
         </div>   
-         
         </div> 
       </div>
   </div>
