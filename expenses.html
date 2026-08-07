@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Expenses</h1>
+      </div>
+      </div>
+      <div class="">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between md:ml-2">
+           <div>
+              <h2 class="font-bold md:text-2xl text-[18px]">Expenses</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg">Track and manage your business expenses in one place.</p>
+            </div>
+            <div class="md:flex md:items-center md:justify-center md:gap-4">
+             <button class="btn w-[355px]  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Expense</button>          
+           </div>
+         </div>          
+         <!-- buttom content -->
+          <div class="md:flex gap-2">
+            <!-- all user area -->
+            <div class="md:w-[900px]  w-[358px] md:min-h-[110vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2">
+              <!-- card -->
+              <div class="flex items-center md:justify-center md:gap-[20px] gap-2">
+                <div class="md:flex md:items-center md:justify-center md:gap-[20px]"> 
+
+                  <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
+                      <i class="ri-wallet-fill text-violet-400 text-[15PX]"></i>
+                    </div>
+                    <div>
+                      <h2 class="text-[#A1A1AA] text-sm ">Total Expenses</h2>
+                      <h2 class="font-bold md:text-[22px] pb-2 pt-2">₹62,000</h2>
+                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>8.2%</span> vs. last month</p>
+                    </div>
+                  </div>
+                  <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-full bg-[#3B82F61A] flex items-center justify-center mt-4 md:mt-0">
+                       <i class="ri-calendar-event-line text-[#3B82F6] text-lg"></i>
+                    </div>
+                    <div>
+                      <h2 class="text-[#A1A1AA] text-sm ">This Month</h2>
+                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹18,600</h2>
+                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>12.3%</span> vs. last month</p>
+                    </div> 
+                </div>
+                </div>
+                <div class="md:flex md:items-center md:justify-center md:gap-[20px]">
+                     <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-full bg-[#8B5CF61A] flex items-center justify-center mt-4 md:mt-0">
+                     <i class="ri-pie-chart-2-fill text-[#8B5CF6] text-lg"></i>
+                    </div>
+                    <div>
+                      <h2 class="text-[#A1A1AA] text-sm ">Avg.Expense</h2>
+                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹2,082</h2>
+                      <p class="text-sm"><span class="text-red-600"><i class="ri-arrow-down-long-line"></i>5.1%</span> vs. last month</p>
+                    </div>
+                   </div>
+                   <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
+                    <div class="w-8 h-8 rounded-full bg-[#8B5CF61A] flex items-center justify-center mt-4 md:mt-0">
+                      <i class="ri-shopping-cart-2-line text-[#8B5CF6] text-lg"></i>
+                    </div>
+                    <div>
+                      <h2 class="text-[#A1A1AA] text-sm ">Highest Category</h2>
+                      <h2 class="font-bold md:text-xl pb-2 pt-2">Software & Tools</h2>
+                      <p class="text-sm">₹12,450(20%)</p>
+                    </div>
+                   </div>    
+               </div> 
+              </div> 
+              
+              <!-- chart -->
+                <div class="md:w-[900px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[40vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
+                   <div class="flex items-center justify-between mx-2 my-2">
+                      <h2 class="font-bold text-sm md:text-[18px]">Expenses Trend</h2>
+                      <p class="text-sm md:text-[14px]"><i class="ri-checkbox-blank-circle-fill text-violet-500"></i> Monthly Spends</p>
+                   </div>
+                   <div class="">
+                      <canvas id="lineChart"></canvas>
+                   </div>
+                </div>
+
+            <div class="md:w-[900px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[585px] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
+             <div class="md:flex md:items-center md:justify-between  py-2 md:ml-2 md:gap-2 pl-4 md:pl-2">
+                <div>
+                   <h2 class="font-bold md:text-[18px] text-[18px] md:mb-0 mb-2">Recent Expenses</h2>
+                </div>
+                <label class="input md:w-64 w-[325px]">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <g
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2.5"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                      </g>
+                    </svg>
+                    <input type="search" required placeholder="Search expenses..." />
+                </label>    
+                <div class="mr-2">
+                     <div class="flex items-center mt-2 md:mt-0 w-[325px] h-12 md:justify-start gap-2 md:w-28 md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      <h2 class="md:pl-3 pl-32">
+                         <i class="ri-arrow-down-box-line text-[15px] md:text-[15px]"> Export</i>
+                      </h2>
+                     </div>
+                </div>                                    
+             </div>
+             <hr class=" bg-[#131416] border-[#2A2A2E] border">
+             <div class="overflow-x-auto md:h-[440px]">
+             <table class="table">
+               <!-- head -->
+               <thead>
+                 <tr>
+                   <th>Date</th>
+                   <th>Description</th>
+                   <th>Category</th>
+                   <th>Amount</th>
+                   <th>Payment Method</th>
+                   <th>notes</th>
+                   <th>Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <!-- row 1 -->
+                 <tr>
+                   <th>21 May,2025</th>
+                   <td>Vercel Pro Plan</td>
+                   <td><button class="px-3 py-1 text-sm rounded-lg bg-[#7C3AED33] text-[#C4A1FF]">
+                        Software & Tools
+                   </button></td>
+                   <td>₹4,500</td>
+                   <td><i class="ri-bank-card-fill"></i> Online</td>
+                   <td>Website hosting</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 2 -->
+                 <tr class="hover:bg-base-300">
+                   <th>20 May,2025</th>
+                   <td>Domain:tanzeil.me</td>
+                   <td>
+                     <button class="px-3 py-1 text-sm rounded-lg bg-[#2563EB33] text-[#93C5FD]">
+                       Domain & Hosting
+                     </button>
+                   </td>
+                   <td>₹1,200</td>
+                   <td><i class="ri-bank-card-fill"></i> Online</td>
+                   <td>Namecheap</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 3 -->
+                 <tr>
+                   <th>18 May,2025</th>
+                   <td>AWS Cloud Credits</td>
+                   <td>
+                      <button class="px-3 py-1 text-sm rounded-lg bg-[#7C3AED33] text-[#C4A1FF]">
+                        Cloud
+                      </button>
+                   </td>
+                   <td>₹2,450</td>
+                   <td><i class="ri-bank-card-fill"></i> Online</td>
+                   <td>For staging server</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+             
+             <!-- Pagination -->
+              <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
+
+                <!-- Left -->
+                <p class="text-sm text-[#A1A1AA] mb-3 md:mb-0">
+                  Showing 1 to 10 of 24 members
+                </p>
+
+                <!-- Center -->
+                <div class="flex items-center gap-2">
+                  <button class="md:w-9 md:h-9 w-5 h-5 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </button>
+
+                  <button class="md:w-9 md:h-9 w-6 h-6 rounded-md bg-[#6D28D9] text-white">
+                    1
+                  </button>              
+
+                 <button class="md:w-9 md:h-9 w-6 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   2
+                </button>
+
+                 <button class="md:w-9 md:h-9 w-6 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   3
+                 </button>
+             
+                 <button class="md:w-9 md:h-9 w-5 h-5 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                   <i class="ri-arrow-right-s-line"></i>
+                 </button>
+               </div>
+
+               <!-- Right -->
+               <select class="mt-3 md:mt-0 bg-[#131416] border border-[#2A2A2E] rounded-md px-3 py-2 text-sm text-white">
+                 <option>10 / page</option>
+                 <option>20 / page</option>
+                 <option>50 / page</option>
+               </select>
+
+             </div>             
+                </div>
+              </div>
+              <!--user message -->
+              <div class="md:w-[390px] w-[358px]  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 ">
+
+                <!-- Filter Expenses Card -->
+                <div class="md:w-[390px] w-[358px] md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl p-3 shadow-lg">
+
+                    <!-- Heading -->
+                    <h2 class="text-[18px] font-bold text-gray-200 mb-3">
+                        Filter Expenses
+                    </h2>
+
+                    <!-- Date Range -->
+                    <div class="mb-2">
+                        <label class="block text-[14px] text-gray-400 mb-1">
+                            Date Range
+                        </label>
+                
+                        <div class="relative">
+                            <i class="ri-calendar-line absolute left-2 top-1/2 -translate-y-1/2 text-gray-400 text-[15px]"></i>
+
+                            <select
+                                class="w-full h-[35px] bg-[#191A1A] border border-[#303234]
+                                       rounded-md pl-7 pr-6 text-[12px] text-gray-300
+                                       outline-none appearance-none cursor-pointer">
+                                <option>This Month</option>
+                                <option>Last Month</option>
+                                <option>This Year</option>
+                            </select>
+                
+                            <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 text-[11px] pointer-events-none"></i>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Category -->
+                    <div class="mb-2">
+                        <label class="block text-[14px] text-gray-400 mb-1">
+                            Category
+                        </label>
+                
+                        <div class="relative">
+                            <select
+                                class="w-full h-[35px] bg-[#191A1A] border border-[#303234]
+                                       rounded-md px-2 pr-6 text-[12px] text-gray-300
+                                       outline-none appearance-none cursor-pointer">
+                                <option>All Categories</option>
+                                <option>Food</option>
+                                <option>Shopping</option>
+                                <option>Travel</option>
+                            </select>
+                
+                            <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 text-[11px] pointer-events-none"></i>
+                        </div>
+                    </div>
+                
+
+                    <!-- Payment Method -->
+                    <div>
+                        <label class="block text-[14px] text-gray-400 mb-1">
+                            Payment Method
+                        </label>
+                
+                        <div class="relative">
+                            <select
+                                class="w-full h-[35px] bg-[#191A1A] border border-[#303234]
+                                       rounded-md px-2 pr-6 text-[12px] text-gray-300
+                                       outline-none appearance-none cursor-pointer">
+                                <option>All Methods</option>
+                                <option>Cash</option>
+                                <option>UPI</option>
+                                <option>Credit Card</option>
+                                <option>Debit Card</option>
+                            </select>
+                
+                            <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 text-[11px] pointer-events-none"></i>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="md:w-[390px] mt-2 w-[358px]  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="">
+                  <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Spending by Category</h2>
+                </div>
+                 <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
+                <div class="md:flex md:items-center md:gap-4 md:mt-4">
+                    <div>
+                       <div class="md:w-[200px] w-56 md:ml-2 ml-[69px] mb-4 md:mb-0">
+                         <canvas id="myChart"></canvas>
+                       </div>
+                    </div>
+                      
+                   <div class="ml-[90px] md:ml-0">
+                    <div class="pt-1 pb-2 flex">
+                      <p class="text-[15px] md:text-[12px] w-40 md:w-32"><i class="ri-checkbox-blank-circle-fill text-[#4BCC75]"></i> <span>Software & tools</span></p>
+                      <p class="text-[15px] md:text-[12px]">20%</p>
+                    </div>
+                     <div class="pt-1 pb-2 flex">
+                      <p class="text-[15px] md:text-[12px] w-40 md:w-32"><i class="ri-checkbox-blank-circle-fill text-[#FBA12A]"></i> <span>Marketing</span></p>
+                      <p class=" text-[15px] md:text-[12px]">18%</p>
+                    </div>
+                    <div class="pt-1 pb-2 flex">
+                      <p class="text-[15px] md:text-[12px] w-40 md:w-32"><i class="ri-checkbox-blank-circle-fill text-[#FB435D]"></i> <span>Travel & meals</span></p>
+                      <p class="text-[15px] md:text-[12px]">15%</p>
+                    </div>
+                    <div class="pt-1 pb-2 flex">
+                      <p class="text-[15px] md:text-[12px] w-40 md:w-32"><i class="ri-checkbox-blank-circle-fill text-[#3D4A95]"></i> <span>Hardware</span></p>
+                      <p class="text-[15px] md:text-[12px]">12%</p>
+                    </div>
+                    <div class="pt-1 pb-2 flex">
+                      <p class="text-[15px] md:text-[12px] w-40 md:w-32"><i class="ri-checkbox-blank-circle-fill text-[#2F1B6F]"></i> <span>Office Supplies</span></p>
+                      <p class="text-[15px] md:text-[12px]">10%</p>
+                    </div>
+                    <div class="pt-1 pb-2 flex">
+                      <p class="text-[15px] md:text-[12px] w-40 md:w-32"><i class="ri-checkbox-blank-circle-fill text-[#A855F7]"></i> <span>Others</span></p>
+                      <p class="text-[15px] md:text-[12px]">25%</p>
+                    </div>
+                   </div>
+                </div>
+                <h2 class="md:mt-4 mt-4 ml-5 text-center font-bold text-[20px] md:text-2xl md:ml-3">₹18,600 Total</h2>
+              
+                </div>  
+                <div class="md:w-[390px] mt-2 w-[358px]  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+              <div class="">
+                  <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Expense Summary</h2>
+                </div>
+                <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
+                 <div class="flex items-center gap-4">
+                    <div class="md:w-[200px] w-56 md:ml-2  mb-4 md:mb-0">
+                     <canvas id="wallet"></canvas>
+                    </div>
+                    <div >
+                      <h2 class="font-bold text-[20px] md:text-[25px]">₹62,450</h2>
+                      <p class="text-[#A1A1AA] text-sm md:text-lg">Total Expenses</p>
+                    </div>
+                    
+                 </div>
+                 <div class="mx-2 flex items-center justify-between mt-2">
+                      <p class="text-[15px] md:text-[18px]"><i class="ri-checkbox-blank-circle-fill text-[#4BCC75]"></i> <span>Budget Remaining</span></p>
+                      <p class="text-[15px] md:text-[18px]">₹37,550</p>
+                 </div>
+                 <div class="mx-2 flex items-center justify-between mb-2 mt-2">
+                      <p class="text-[15px] md:text-[18px]"><i class="ri-checkbox-blank-circle-fill text-[#60A5FA]"></i> <span>Monthly Budget</span></p>
+                      <p class="text-[15px] md:text-[18px]">₹1,00,000</p>
+                 </div>
+
+                </div>  
+                <div class="md:w-[390px] mt-2 w-[358px]  md:min-h-[260px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="flex items-center justify-between">
+                  <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Recent Vendors</h2>
+                  <p class="text-gray-500 md:mr-3 mr-2 text-violet-500">All View</p>
+                </div>
+                <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
+                <div class="flex items-center justify-between mx-2 mt-2">
+                  <div class="flex items-center gap-4">
+                     <div class="avatar">
+                       <div class="w-12 rounded-full">
+                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                      <h2 class="text-[15px] font-bold md:text-[17px]">Vercel</h2>
+                     </div>
+                  </div>
+                  <div>
+                     <h2 class="text-[15px] font-bold md:text-[17px]">₹4,500</h2>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mx-2 mt-2">
+                  <div class="flex items-center gap-4">
+                     <div class="avatar">
+                       <div class="w-12 rounded-full">
+                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                      <h2 class="text-[15px] font-bold md:text-[17px]">Amazon AWS</h2>
+                     </div>
+                  </div>
+                  <div>
+                     <h2 class="text-[15px] font-bold md:text-[17px]">₹2,550</h2>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between mx-2 mt-2">
+                  <div class="flex items-center gap-4">
+                     <div class="avatar">
+                       <div class="w-12 rounded-full">
+                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                      <h2 class="text-[15px] font-bold md:text-[17px]">Namecheap</h2>
+                     </div>
+                  </div>
+                  <div>
+                     <h2 class="text-[15px] font-bold md:text-[17px]">₹1,200</h2>
+                  </div>
+                </div>
+                 <div class="flex items-center justify-between mx-2 my-2">
+                  <div class="flex items-center gap-4">
+                     <div class="avatar">
+                       <div class="w-12 rounded-full">
+                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                       </div>
+                     </div>
+                     <div>
+                      <h2 class="text-[15px] font-bold md:text-[17px]">BigBasket</h2>
+                     </div>
+                  </div>
+                  <div>
+                     <h2 class="text-[15px] font-bold md:text-[17px]">₹1,450</h2>
+                  </div>
+                </div>
+                </div> 
+                </div>  
+         </div>
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li>
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li>
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li>
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li>
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li>
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li>
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li>
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li>
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li>
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li>
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+     
+      datasets: [{
+         labels: [
+           "Software & Tools",
+           "Marketing",
+           "Travel & Meals",
+           "Hardware",
+           "Office Supplies",
+           "Others"
+         ],
+        data: [20, 18, 15, 12, 10, 25],
+        backgroundColor: [
+        "#4BCC75",
+        "#FBA12A",
+        "#FB435D",
+        "#3D4A95",
+        "#2F1B6F",
+        "#A855F7",
+         ], 
+        borderWidth: 0
+      }]
+    },
+    
+  });
+
+  const lineChart = document.getElementById('lineChart');
+  const createColor = lineChart.getContext('2d');
+
+  const gradient = createColor.createLinearGradient(0, 0, 0, 300);
+
+  gradient.addColorStop(0, 'rgba(124, 58, 237, 0.35)');
+  gradient.addColorStop(1, 'rgba(124, 58, 237, 0)');
+
+  new Chart(lineChart, {
+    type: 'line',
+    data: {
+      labels: ['', 'Jan', '', 'Feb', '', 'Apr', '', 'May', ''],
+      datasets: [{
+        label: 'Monthly Spends',
+
+        data: [
+          15000,
+          21000,
+          22000,
+          18000,
+          25000,
+          33000,
+          25000,
+          30000
+        ],
+
+        borderColor: '#7C3AED',
+        backgroundColor: gradient,
+
+        borderWidth: 2,
+        fill: true,
+
+        // line ko smooth karta hai
+        tension: 0.3,
+
+        // purple dots
+        pointRadius: 3,
+        pointBackgroundColor: '#8B5CF6',
+        pointBorderWidth: 0
+     }]
+    },
+    options: {
+      scales: {
+        y: {
+            beginAtZero: true,
+            max: 50000,
+
+            ticks: {
+              stepSize: 10000,
+              color: '#737782',
+
+              callback: function(value) {
+                if (value === 0) return '₹0';
+
+                return '₹' + (value / 1000) + 'k';
+              }
+            }
+        }
+      }
+    }
+  });
+
+  const wallet = document.getElementById('wallet');
+  new Chart(wallet, {
+    type: 'doughnut',
+    data: {
+     
+      datasets: [{
+         labels: [
+            "Budget Remaining",
+            "Monthly Budget"
+         ],
+        data: [37550, 100000],
+        backgroundColor: [
+         "#4ADE80",
+         "#60A5FA" 
+         ], 
+        borderWidth: 0
+      }]
+    },
+    
+  });
+</script>
+</body>
+</html>
