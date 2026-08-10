@@ -65,93 +65,109 @@
               <h2 class="font-bold md:text-2xl text-[20px]">Tasks</h2>
               <p class="text-[#A1A1AA] text-sm md:text-lg">Organize, priority and get things done</p>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-4">
-             <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-6 mt-2">   
-              <div class="flex items-center w-40 md:justify-start gap-2 md:w-36 md:h-11  
-                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
-                  
-                  <h2 class="">
-                     <i class="ri-filter-2-line"> Filters</i>
-                  </h2>
+           <div class="md:flex md:gap-4">
+               <div class="grid grid-cols-2 gap-4 w-full md:w-72 mt-4 md:mt-0">
+              <div class="flex items-center justify-center h-[42px] px-4 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="text-sm whitespace-nowrap"><i class="ri-filter-line mr-1"></i> Filters</h2>
               </div>
-              <div class="flex items-center w-44 md:justify-start gap-2 md:w-44 md:h-11  
-                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
-                  
-                  <h2 class="">
-                     Group by: Status
-                  </h2>
+
+              <div class="flex items-center justify-center h-[42px] px-4 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="text-sm whitespace-nowrap">Group by: Status</h2>
               </div>
-             </div> 
-             <button class="btn w-[355px]  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Task</button>          
-           </div>
+               </div>
+
+               <button class="w-full md:h-10 h-12 mt-4 btn btn-active btn-primary text-sm rounded-lg md:w-48 md:mt-0">
+                + Add Task
+               </button>
+            </div>
          </div> 
          <!-- card -->
-            <div class="flex flex-col md:flex-row items-center md:justify-center md:gap-3 ">
-      
-            <div class="flex flex-row  md:items-center md:justify-center md:gap-3 gap-2"> 
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-4">
 
-              <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-[245px] w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-                  <i class="ri-checkbox-fill text-violet-400 text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">Total Tasks</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">124</h2>
-                  <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>14.3%</span> from last week</p>
-                </div>
-              </div>
-              <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:gap-4 md:w-[245px] w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-                  <i class="ri-todo-fill text-violet-400 text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">To Do</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">42</h2>
-                  <p class="text-sm">30.8% of total</p>
-                </div> 
+               <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
+                 <div class="w-10 h-10 shrink-0 rounded-full bg-[#27205B] flex items-center justify-center">
+                   <i class="ri-checkbox-fill text-[#9B7BFF] text-lg"></i>
+                 </div>
+
+                 <div>
+                   <h2 class="text-[#A1A1AA] text-sm">Total Tasks</h2>
+                   <h2 class="font-bold text-lg md:text-xl pt-2 pb-2">124</h2>
+                   <p class="text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       ↑ 14.3%
+                     </span>
+                     from last week
+                   </p>
+                 </div>
+
+               </div>
+
+               <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
+
+                 <div class="w-10 h-10 shrink-0 rounded-full bg-[#27205B] flex items-center justify-center">
+                   <i class="ri-clipboard-fill text-[#9B7BFF] text-lg"></i>
+                 </div>
+                 <div>
+                   <h2 class="text-[#A1A1AA] text-sm">To Do</h2>
+                   <h2 class="font-bold text-lg md:text-xl pt-2 pb-2">42</h2>
+                   <p class="text-sm whitespace-nowrap">
+                     30.8% of total
+                   </p>
+                 </div>
+
+               </div>
+
+               <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
+
+                 <div class="w-10 h-10 shrink-0 rounded-full bg-[#332922] flex items-center justify-center">
+                   <i class="ri-time-line text-[#D4A15B] text-lg"></i>
+                 </div>
+                 <div>
+                   <h2 class="text-[#A1A1AA] text-sm">In Progress</h2>
+                   <h2 class="font-bold text-lg md:text-xl pt-2 pb-2">62</h2>
+                   <p class="text-sm whitespace-nowrap">
+                     39.7% of total
+                   </p>
+                 </div>
+
+               </div>
+
+               <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
+             
+                 <div class="w-10 h-10 shrink-0 rounded-full bg-[#1E3B32] flex items-center justify-center">
+                   <i class="ri-checkbox-fill text-[#5FE485] text-lg"></i>
+                 </div>
+                 <div>
+                   <h2 class="text-[#A1A1AA] text-sm">Completed</h2>
+                   <h2 class="font-bold text-lg md:text-xl pt-2 pb-2">38</h2>
+                   <p class="text-sm whitespace-nowrap">
+                     28.8% of total
+                   </p>
+                 </div>
+
+               </div>
+
+               <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
+
+                 <div class="w-10 h-10 shrink-0 rounded-full bg-[#372123] flex items-center justify-center">
+                   <i class="ri-error-warning-fill text-[#E35D5B] text-lg"></i>
+                 </div>
+                 <div>
+                   <h2 class="text-[#A1A1AA] text-sm">Overdue</h2>
+                   <h2 class="font-bold text-lg md:text-xl pt-2 pb-2">12</h2>
+                   <p class="text-sm whitespace-nowrap">
+                     <span class="text-red-500">↓ 4.3%</span>
+                     from last week
+                   </p>
+                 </div>
+             
+               </div>
+
             </div>
-            </div>
-
-             <div class="flex md:items-center justify-center flex-col md:flex-row gap-2 md:gap-4 md:w-[245px] w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 md:mt-6 mt-2 rounded-2xl">
-                 <div class="w-10 h-10 rounded-full bg-[#332922] flex items-center justify-center mt-4 md:mt-0">
-                 <i class="ri-progress-5-line text-[#D4A15B] text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">In Progress</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">62</h2>
-                  <p class="text-sm">39.7% of total</p>
-                </div>
-              </div>
-
-            <div class="flex flex-row md:items-center md:justify-center md:gap-3 gap-2">
-            <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2  md:gap-4 md:w-[245px] w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 md:mt-6 mt-2 rounded-2xl">
-               <div class="w-10 h-10 rounded-full bg-[#1E3B32] flex items-center justify-center mt-4 md:mt-0">
-                   <i class="ri-task-fill text-[#5fe485] text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">Completed</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">38</h2>
-                  <p class="text-sm">28.8% of total</p>
-                </div>
-          </div>
-          <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:gap-4 md:w-[245px] w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 md:mt-6 mt-2  rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-[#372123] flex items-center justify-center mt-4 md:mt-0">
-                  <i class="ri-pause-circle-fill text-[#E35D5B] text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">Overdue</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">12</h2>
-                  <p class="text-sm"><span class="text-red-600"><i class="ri-arrow-down-long-line"></i>4.3%</span> from last week</p>
-                </div>
-          </div>    
-    
-          </div> 
-        </div> 
-         
          <!-- buttom content -->
         <div class="md:flex items-center md:justify-center md:gap-2"> 
           <!-- all user area -->
-           <div class="md:w-[830px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
+           <div class="md:w-[830px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
               <!-- header -->
                <ul class="flex md:gap-6 gap-2 md:ml-5 mt-2 ml-2 mb-2">
                 <li class="text-[#A1A1AA] text-[12px]  md:text-[18px]">All Tasks</li>
@@ -161,8 +177,8 @@
                 <li class="text-[#A1A1AA] text-[12px] md:text-[18px]">Following</li>
                </ul>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
-             <div class="md:flex md:items-center md:justify-start  py-2 md:ml-2 md:gap-2 pl-4 md:pl-2">
-                 <label class="input md:w-64 w-[290]">
+             <div class="md:flex md:items-center md:justify-start  py-2 md:ml-2 md:gap-2 pl-4 md:pl-1 pr-2 md:pr-0">
+                 <label class="input  w-full">
                     <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <g
                         stroke-linejoin="round"
@@ -177,23 +193,23 @@
                     </svg>
                     <input type="search" required placeholder="Search" />
                  </label>    
-                  <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-1 mt-2 mr-5">   
-                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-24 md:h-11  
+                  <div class="grid grid-cols-4 gap-4 w-full mt-4 md:mt-0">   
+                  <div class="flex items-center w-full h-16 md:justify-start gap-2 md:w-full md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
                       <h2 class="text-[12px] md:text-[15px]">All Projects</h2>
                   </div>
-                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-28 md:h-11  
+                  <div class="flex items-center w-full h-16 md:justify-start gap-2 md:w-full md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
                       <h2 class="text-[12px] md:text-[15px]">All Priorities</h2>
                   </div>
-                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-28 md:h-11  
+                  <div class="flex items-center w-full h-16 md:justify-start gap-2 md:w-full md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
                       <h2 class="text-[12px] md:text-[15px]">All  Assigness</h2>
                   </div>
-                  <div class="flex items-center w-28 h-16 md:justify-start gap-2 md:w-30 md:h-11  
+                  <div class="flex items-center w-full h-16 md:justify-start gap-2 md:w-full md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
                       <h2 class="">
@@ -472,7 +488,7 @@
              </div>
            </div>
            <!--user message -->
-          <div class="md:w-[450px] w-[358px] hidden md:block bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
+          <div class="md:w-[450px] w-full hidden md:block bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
               <div class="ml-2 mt-2 ">
                 <div class="flex gap-2">
                   <div class="w-8 h-8 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">

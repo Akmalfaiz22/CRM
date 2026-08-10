@@ -65,83 +65,104 @@
               <h2 class="font-bold md:text-2xl text-[20px]">Clients</h2>
               <p class="text-[#A1A1AA] text-sm md:text-lg">Manage and grow your client relationships</p>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-4">
-             <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-6 mt-2">   
-              <div class="flex items-center w-42 md:justify-start gap-2 md:w-40 md:h-11  
-                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
-                  
-                  <h2 class="">
-                     <i class="ri-arrow-up-box-line"> Import Clients</i>
-                  </h2>
+            <div class="w-full md:w-[500px] md:flex gap-4 mt-4 md:mt-0">
+
+ 
+            <div class="grid grid-cols-2 gap-4 w-full">
+              <div class="flex items-center justify-center h-[42px] px-4 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="text-sm whitespace-nowrap"><i class="ri-arrow-up-box-line mr-1"></i> Import Clients</h2>
               </div>
-              <div class="flex items-center w-40 md:justify-start gap-2 md:w-30 md:h-11  
-                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
-                  
-                  <h2 class="">
-                     <i class="ri-arrow-down-box-line"> Export</i>
-                  </h2>
+
+              <div class="flex items-center justify-center h-[42px] px-4 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="text-sm whitespace-nowrap"><i class="ri-arrow-down-box-line mr-1"></i> Export</h2>
               </div>
-             </div> 
-             <button class="btn w-[355px]  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add New Client</button>          
-           </div>
+            </div>
+
+            <button class="w-full md:h-10 h-12 mt-4 btn btn-active btn-primary text-sm rounded-lg md:w-48 md:mt-0">
+               + Add New Client
+            </button>
+          </div>
          </div> 
          <!-- card -->
-        <div class="flex items-center md:justify-center md:gap-28 gap-2">
-      
-            <div class="md:flex md:items-center md:justify-center md:gap-20"> 
+       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
 
-              <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-                  <i class="ri-group-fill text-violet-400 text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">Total Clients</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">128</h2>
-                  <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>12.5%</span> from last month</p>
-                </div>
-              </div>
-              <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-[#1E3B32] flex items-center justify-center mt-4 md:mt-0">
-                   <i class="ri-shopping-bag-4-line text-[#5fe485] text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">Active Clients</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">96</h2>
-                  <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>8.2%</span> from last month</p>
-                </div> 
+         <div class="border border-[#2A2A2E] rounded-2xl p-4 bg-[#18191B]">
+           <div class="md:flex md:items-center md:gap-3">
+             <div class="w-10 h-10 shrink-0 rounded-full bg-[#27205B] flex items-center justify-center">
+               <i class="ri-group-line text-xl text-[#9B7BFF]"></i>
+             </div>
+             <div>
+               <p class="text-[#A1A1AA] text-sm mt-3 md:mt-0">Total Clients</p>
+               <h2 class="text-white text-lg font-semibold mt-1">128</h2>
+             </div>
+           </div>
+
+           <p class="text-sm mt-3 whitespace-nowrap">
+             <span class="text-[#22C55E]">↑ 12.5%</span>
+             <span class="text-[#D4D4D8]">from last month</span>
+           </p>
+        </div>
+
+        <div class="border border-[#2A2A2E] rounded-2xl p-4 bg-[#18191B]">
+          <div class="md:flex md:items-center md:gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-[#382B1D] flex items-center justify-center">
+              <i class="ri-time-line text-xl text-[#C68A45]"></i>
             </div>
+            <div>
+              <p class="text-[#A1A1AA] text-sm mt-3 md:mt-0">On Hold</p>
+              <h2 class="text-white text-lg font-semibold mt-1">18</h2>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-20">
-            <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-[#332922] flex items-center justify-center mt-4 md:mt-0">
-                 <i class="ri-time-line text-[#D4A15B] text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">On Hold</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">18</h2>
-                  <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>2.4%</span> from last month</p>
-                </div>
           </div>
-          <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                <div class="w-10 h-10 rounded-full bg-[#372123] flex items-center justify-center mt-4 md:mt-0">
-                  <i class="ri-close-circle-line text-[#E35D5B] text-lg"></i>
-                </div>
-                <div>
-                  <h2 class="text-[#A1A1AA] text-sm ">Inactive Clients</h2>
-                  <h2 class="font-bold md:text-xl pb-2 pt-2">14</h2>
-                  <p class="text-sm"><span class="text-red-600"><i class="ri-arrow-down-long-line"></i>4.1%</span> from last month</p>
-                </div>
-          </div>    
+
+          <p class="text-sm mt-3 whitespace-nowrap">
+            <span class="text-[#22C55E]">↑ 2.4%</span>
+            <span class="text-[#D4D4D8]">from last month</span>
+          </p>
+        </div>
+
+        <div class="border border-[#2A2A2E] rounded-2xl p-4 bg-[#18191B]">
+          <div class="md:flex md:items-center md:gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-[#193B32] flex items-center justify-center">
+              <i class="ri-briefcase-line text-xl text-[#3DDC97]"></i>
+            </div>
+            <div>
+              <p class="text-[#A1A1AA] text-sm mt-3 md:mt-0">Active Clients</p>
+              <h2 class="text-white text-lg font-semibold mt-1">96</h2>
+            </div>
+          </div>
+
+          <p class="text-sm mt-3 whitespace-nowrap">
+            <span class="text-[#22C55E]">↑ 8.2%</span>
+            <span class="text-[#D4D4D8]">from last month</span>
+          </p>
+        </div>
+
+        <div class="border border-[#2A2A2E] rounded-2xl p-4 bg-[#18191B]">
     
-          </div> 
-        </div>  
+         <div class="md:flex md:items-center md:gap-3">
+           <div class="w-10 h-10 shrink-0 rounded-full bg-[#3B2023] flex items-center justify-center">
+              <i class="ri-close-circle-line text-xl text-[#EF5350]"></i>
+           </div>
+           <div>
+             <p class="text-[#A1A1AA] text-sm mt-3 md:mt-0">Inactive Clients</p>
+             <h2 class="text-white text-lg font-semibold mt-1">14</h2>
+           </div>
+         </div>
+
+         <p class="text-sm mt-3 whitespace-nowrap">
+           <span class="text-red-500">↓ 4.1%</span>
+           <span class="text-[#D4D4D8]">from last month</span>
+         </p>
+       </div>
+
+       </div>
          
          <!-- buttom content -->
         <div class="md:flex items-center md:justify-center md:gap-2">   
           <!-- message area -->
-           <div class="md:w-[830px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[90vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">  
-             <div class="md:flex md:items-center md:justify-start py-2 md:ml-2 md:gap-2 pl-4 md:pl-2">
-                 <label class="input">
+           <div class="md:w-[830px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[90vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">  
+             <div class="md:flex md:items-center md:justify-start py-2 md:ml-2 md:gap-2 pl-4 md:pl-2 pr-2 md:pr-0">
+                 <label class="input w-full">
                     <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <g
                         stroke-linejoin="round"
@@ -156,16 +177,16 @@
                     </svg>
                     <input type="search" required placeholder="Search" />
                  </label>    
-                  <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-1 mt-2 mr-5">   
-                  <div class="flex items-center w-28 md:justify-start gap-2 md:w-30 md:h-11  
+                  <div class="grid grid-cols-3  w-full mt-2">   
+                  <div class="flex items-center w-28 md:justify-start gap-2 md:w-30  md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
-                      <h2 class="text-[12px] md:text-[15px]">All Status</h2>
+                      <h2 class="text-[15px] md:text-[15px]">All Status</h2>
                   </div>
                   <div class="flex items-center w-28 md:justify-start gap-2 md:w-30 md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
-                      <h2 class="text-[12px] md:text-[15px]">All Tags</h2>
+                      <h2 class="text-[15px] md:text-[15px]">All Tags</h2>
                   </div>
                   <div class="flex items-center w-28 md:justify-start gap-2 md:w-30 md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
@@ -174,7 +195,7 @@
                          <i class="ri-filter-line text-[12px] md:text-[15px]"> More Filters</i>
                       </h2>
                   </div>
-               </div>                                       
+                  </div>                                       
              </div>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
              <div class="md:flex md:items-center md:gap-[90px] md:my-2 hidden md:block">
@@ -367,7 +388,7 @@
              </div>
            </div>
            <!--user message -->
-           <div class="md:w-[450px] hidden md:block w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[90vh] md:h-auto min-h-[80vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
+           <div class="md:w-[450px] hidden md:block w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[90vh] md:h-auto min-h-[80vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
               <div class="ml-4 mt-2 ">
                 <h2 class="md:text-[20px]  font-bold ">XYZ Retail</h2>
                 <p class="md:text-[15px] ">E-commerce <span class="btn ml-4 btn-sm py-2 mr-2 h-4 bg-[#1E3B32] text-[#5fe485]">Active</span></p>

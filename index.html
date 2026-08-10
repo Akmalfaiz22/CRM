@@ -61,15 +61,15 @@
        <!--top content -->
       <div class="md:flex md:items-center md:justify-between">
         <div>
-          <h2 class="font-bold md:text-xl">Welcome back, Akmal👋</h2>
-          <p class="text-[#A1A1AA]">Here's what's happening with your agency today.</p>
+          <h2 class="font-bold md:text-xl text-[20px]">Welcome back, Akmal👋</h2>
+          <p class="text-[#A1A1AA] ">Here's what's happening with your agency today.</p>
         </div>
         <div class="md:flex md:items-center md:justify-center md:gap-4">
-          <div class="dropdown dropdown-end mt-4 md:mt-0">
+          <div class="dropdown dropdown-end mt-4 md:mt-0 w-full">
              <div
                 tabindex="0"
                 role="button"
-                class="flex items-center justify-center md:justify-start gap-2 md:w-[250px] md:h-11  w-[358px] px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]"
+                class="flex items-center justify-center md:justify-start gap-2 md:w-[250px] md:h-11  w-full px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]"
               >
                 <i class="ri-calendar-line text-lg"></i>
                 <span class="text-sm">Jul 16, 2025 - Jul 22, 2025</span>
@@ -85,62 +85,88 @@
                 <input type="date" class="input input-bordered w-full bg-[#131416] text-white" />
               </div>
             </div>  
-             <button class="btn btn-active btn-primary w-[358px] md:w-32 mt-4 md:mt-0">+ Create New</button>          
+             <button class="btn btn-active btn-primary w-full md:w-32 mt-4 md:mt-0">+ Create New</button>          
         </div>
       </div>
       <!-- cards -->
-      <div class="flex items-center md:justify-center md:gap-28 gap-2">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
 
-        <div class="md:flex md:items-center md:justify-center md:gap-20"> 
+        <div class="border border-[#2A2A2E] rounded-2xl p-5 bg-[#18191B]">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-[#27205B] flex items-center justify-center">
+                <i class="ri-group-line text-xl text-[#9B7BFF]"></i>
+              </div>
 
-        <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-            <i class="ri-group-fill text-violet-400 text-lg"></i>
-          </div>
-          <div>
-            <h2 class="text-[#A1A1AA] text-sm ">Total Clients</h2>
-            <h2 class="font-bold md:text-xl pb-2 pt-2">128</h2>
-            <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>12.5%</span> from last week</p>
-          </div>
+              <div>
+                <p class="text-[#A1A1AA] text-sm">Total Clients</p>
+                <h2 class="text-white text-2xl font-semibold mt-1">128</h2>
+              </div>
+            </div>
+
+            <p class="text-sm mt-4">
+              <span class="text-[#22C55E]">↑ 12.5%</span>
+              <span class="text-[#D4D4D8]">from last week</span>
+            </p>
         </div>
-        <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-            <i class="ri-folder-4-fill text-violet-400 text-lg"></i>
+
+        <div class="border border-[#2A2A2E] rounded-2xl p-5 bg-[#18191B]">      
+           <div class="flex items-center gap-3">
+             <div class="w-12 h-12 rounded-full bg-[#27205B] flex items-center justify-center">
+               <i class="ri-money-rupee-circle-line text-xl text-[#9B7BFF]"></i>
+             </div>
+
+             <div>
+               <p class="text-[#A1A1AA] text-sm">Total Revenue</p>
+               <h2 class="text-white text-2xl font-semibold mt-1">₹4,85,000</h2>
+             </div>
+           </div>
+
+           <p class="text-sm mt-4">
+             <span class="text-[#22C55E]">↑ 16.2%</span>
+             <span class="text-[#D4D4D8]">from last week</span>
+           </p>
+        </div>
+
+        <div class="border border-[#2A2A2E] rounded-2xl p-5 bg-[#18191B]">       
+          <div class="flex items-center gap-3">      
+             <div class="w-12 h-12 rounded-full bg-[#27205B] flex items-center justify-center">
+               <i class="ri-folder-line text-xl text-[#9B7BFF]"></i>
+             </div>
+
+             <div>
+               <p class="text-[#A1A1AA] text-sm">Active Projects</p>
+               <h2 class="text-white text-2xl font-semibold mt-1">24</h2>
+             </div>
           </div>
-          <div>
-            <h2 class="text-[#A1A1AA] text-sm ">Active Projects</h2>
-            <h2 class="font-bold md:text-xl pb-2 pt-2">24</h2>
-            <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>8.3%</span> from last week</p>
-          </div> 
+      
+          <p class="text-sm mt-4">
+            <span class="text-[#22C55E]">↑ 8.3%</span>
+            <span class="text-[#D4D4D8]">from last week</span>
+          </p>
+        </div>
+      
+        <div class="border border-[#2A2A2E] rounded-2xl p-5 bg-[#18191B]">
+           <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-[#27205B] flex items-center justify-center">
+                 <i class="ri-checkbox-line text-xl text-[#9B7BFF]"></i>
+              </div>
+       
+              <div>
+                <p class="text-[#A1A1AA] text-sm">Pending Tasks</p>
+                <h2 class="text-white text-2xl font-semibold mt-1">18</h2>
+              </div>
+           </div>
+
+           <p class="text-sm mt-4">
+             <span class="text-red-500">↓ 6.5%</span>
+             <span class="text-[#D4D4D8]">from last week</span>
+           </p>        
+        </div>
+
       </div>
-      </div>
-      <div class="md:flex md:items-center md:justify-center md:gap-20">
-      <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-           <i class="ri-money-rupee-circle-fill text-violet-400 text-lg"></i>
-          </div>
-          <div>
-            <h2 class="text-[#A1A1AA] text-sm ">Total Revenue</h2>
-            <h2 class="font-bold md:text-xl pb-2 pt-2">₹4,85,000</h2>
-            <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>16.2%</span> from last week</p>
-          </div>
-    </div>
-    <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-64 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-          <div class="w-10 h-10 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-            <i class="ri-task-fill text-violet-400 text-lg"></i>
-          </div>
-          <div>
-            <h2 class="text-[#A1A1AA] text-sm ">Pending Tasks</h2>
-            <h2 class="font-bold md:text-xl pb-2 pt-2">18</h2>
-            <p class="text-sm"><span class="text-red-600"><i class="ri-arrow-down-long-line"></i>6.5%</span> from last week</p>
-          </div>
-    </div>    
-    
-    </div> 
-      </div> 
       <!--chats-->
       <div class="md:flex md:items-center md:gap-2">
-        <div class="md:w-[710px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+        <div class="md:w-[710px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
             <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
                <h2 class="font-bold pl-2">Revenue Overview</h2>
                <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
@@ -172,7 +198,7 @@
               <canvas id="revenueChart"></canvas>
          </div>
        </div> 
-         <div class="md:w-[570px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+         <div class="md:w-[570px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
               <div class="flex items-center justify-between pt-2">
                  <div>
                    <h2 class="font-bold md:pl-3">Projects Status</h2>
@@ -205,7 +231,7 @@
       </div>
       <!-- bottom content -->
        <div class="md:flex md:items-center md:justify-center md:gap-2">
-          <div class="md:w-[500px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="md:w-[500px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
              <div class="flex items-center justify-between pt-2">
                  <div>
                    <h2 class="font-bold md:pl-3">Recent Projects</h2>
@@ -265,7 +291,7 @@
                 </li>
               </ul>
           </div>
-          <div class="md:w-[400px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="md:w-[400px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
             <div class="flex items-center justify-between pt-2">
                  <div>
                    <h2 class="font-bold md:pl-3">Upcoming Tasks</h2>
@@ -329,7 +355,7 @@
                 </li>
               </ul>
           </div>
-          <div class="md:w-[400px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="md:w-[400px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
             <div class="flex items-center justify-between pt-2">
                  <div>
                    <h2 class="font-bold md:pl-3">Recent Activites</h2>
@@ -510,82 +536,7 @@
   </div> 
  </div>
  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- <script>
-  const revenueChart = document.getElementById('revenueChart');
-
-  new Chart(revenueChart, {
-    type: 'line',
-    data: {
-      labels: ['1 jul', '5 jul', '10 jul', '15 jul', '20 jul', '25 jul', '31 jul'],
-      datasets: [{
-        label: 'This Month',
-        data: [45000, 32000, 70000, 68000, 50000, 78000, 72000],
-        borderColor: "#7C3AED",
-        backgroundColor: "rgba(124,58,237,0.2)",
-        fill: true,
-        tension: 0.4,
-        pointRadius: 0
-      },
-       {
-        label: "Last Month",
-        data: [38000, 35000, 42000, 46000, 55000, 62000, 68000],
-        borderColor: "#9CA3AF",
-        borderDash: [5, 5],
-        fill: false,
-        tension: 0.4,
-        pointRadius: 0
-      }
-    ]
-    },
-    options: {
-     responsive: true,
-     maintainAspectRatio: false,
-     plugins: {
-      legend: {
-        labels: {
-          color: "#fff"
-        }
-      }
-     },
-    scales: {
-      y: {
-        min: 0,
-        max: 100000,
-        ticks: {
-          color: "#fff",
-          callback: (value) => "₹" + value / 1000 + "K"
-        }
-      },
-      x: {
-        ticks: {
-          color: "#fff"
-        }
-      }
-    }
-  }
-  });
-
-  const projectStatus = document.getElementById('projectStatus');
-
-  new Chart(projectStatus, {
-    type: 'doughnut',
-    data: {
-     
-      datasets: [{
-        label: 'Projects',
-        data: [8, 10, 3, 3],
-        backgroundColor: [
-        "#4ADE80",
-        "#3B82F6",
-        "#F59E0B",
-        "#8B5CF6"
-         ], 
-        borderWidth: 0
-      }]
-    },
-    
-  });
-</script>
+ <script src="index.js"></script>
 </body>
 </html>
 
