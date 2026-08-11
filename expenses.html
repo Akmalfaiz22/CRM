@@ -66,64 +66,79 @@
               <p class="text-[#A1A1AA] text-sm md:text-lg">Track and manage your business expenses in one place.</p>
             </div>
             <div class="md:flex md:items-center md:justify-center md:gap-4">
-             <button class="btn w-[355px]  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Expense</button>          
+             <button class="btn w-full  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Expense</button>          
            </div>
          </div>          
          <!-- buttom content -->
           <div class="md:flex gap-2">
             <!-- all user area -->
-            <div class="md:w-[900px]  w-[358px] md:min-h-[110vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2">
+            <div class="md:w-[900px]  w-full md:min-h-[110vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2">
               <!-- card -->
-              <div class="flex items-center md:justify-center md:gap-[20px] gap-2">
-                <div class="md:flex md:items-center md:justify-center md:gap-[20px]"> 
+              <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 mt-4">
 
-                  <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                    <div class="w-8 h-8 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
-                      <i class="ri-wallet-fill text-violet-400 text-[15PX]"></i>
+                 <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px] flex items-center gap-3">
+                    <div class="w-8 h-8 shrink-0 rounded-full bg-indigo-950 flex items-center justify-center">
+                      <i class="ri-wallet-fill text-violet-400 text-[15px]"></i>
                     </div>
-                    <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Total Expenses</h2>
-                      <h2 class="font-bold md:text-[22px] pb-2 pt-2">₹62,000</h2>
-                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>8.2%</span> vs. last month</p>
+                    <div class="min-w-0">
+                      <h2 class="text-[#A1A1AA] text-sm md:text-[14px]">Total Expenses</h2>
+                      <h2 class="font-bold text-lg md:text-[18px] py-1">₹62,000</h2>
+                      <p class="text-xs md:text-[12px]">
+                        <span class="text-[#22C55E]">
+                          <i class="ri-arrow-up-long-line"></i>8.2%
+                        </span>
+                        vs. last month
+                      </p>
                     </div>
-                  </div>
-                  <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                    <div class="w-8 h-8 rounded-full bg-[#3B82F61A] flex items-center justify-center mt-4 md:mt-0">
+                 </div>
+  
+                 <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px] flex items-center gap-3">
+                     <div class="w-8 h-8 shrink-0 rounded-full bg-[#3B82F61A] flex items-center justify-center">
                        <i class="ri-calendar-event-line text-[#3B82F6] text-lg"></i>
+                     </div>
+                     <div class="min-w-0">
+                       <h2 class="text-[#A1A1AA] text-sm md:text-[15px]">This Month</h2>
+                       <h2 class="font-bold text-lg md:text-[18px] py-1">₹18,600</h2>
+                       <p class="text-xs md:text-[12px]">
+                         <span class="text-[#22C55E]">
+                           <i class="ri-arrow-up-long-line"></i>12.3%
+                         </span>
+                         vs. last month
+                       </p>
+                     </div>
+                 </div>
+
+                 <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px] flex items-center gap-3">
+                    <div class="w-8 h-8 shrink-0 rounded-full bg-[#8B5CF61A] flex items-center justify-center">
+                      <i class="ri-pie-chart-2-fill text-[#8B5CF6] text-lg"></i>
                     </div>
-                    <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">This Month</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹18,600</h2>
-                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-long-line"></i>12.3%</span> vs. last month</p>
-                    </div> 
-                </div>
-                </div>
-                <div class="md:flex md:items-center md:justify-center md:gap-[20px]">
-                     <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                    <div class="w-8 h-8 rounded-full bg-[#8B5CF61A] flex items-center justify-center mt-4 md:mt-0">
-                     <i class="ri-pie-chart-2-fill text-[#8B5CF6] text-lg"></i>
+                    <div class="min-w-0">
+                      <h2 class="text-[#A1A1AA] text-sm md:text-[14px]">Avg. Expense</h2>
+                      <h2 class="font-bold text-lg md:text-[18px] py-1">₹2,082</h2>
+                      <p class="text-xs md:text-[12px]">
+                        <span class="text-red-600">
+                          <i class="ri-arrow-down-long-line"></i>5.1%
+                        </span>
+                        vs. last month
+                      </p>
                     </div>
-                    <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Avg.Expense</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹2,082</h2>
-                      <p class="text-sm"><span class="text-red-600"><i class="ri-arrow-down-long-line"></i>5.1%</span> vs. last month</p>
-                    </div>
-                   </div>
-                   <div class="flex md:items-center md:justify-center flex-col md:flex-row gap-2 md:w-52 w-44 bg-[#131416] border-[#2A2A2E] border md:h-28 h-40 pl-4 md:pl-0 mt-6 rounded-2xl">
-                    <div class="w-8 h-8 rounded-full bg-[#8B5CF61A] flex items-center justify-center mt-4 md:mt-0">
+                 </div>
+
+                 <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px] flex items-center gap-3">
+                    <div class="w-8 h-8 shrink-0 rounded-full bg-[#8B5CF61A] flex items-center justify-center">
                       <i class="ri-shopping-cart-2-line text-[#8B5CF6] text-lg"></i>
                     </div>
-                    <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Highest Category</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">Software & Tools</h2>
-                      <p class="text-sm">₹12,450(20%)</p>
+                    <div class="min-w-0">
+                      <h2 class="text-[#A1A1AA] text-sm md:text-[14px]">Highest Category</h2>
+                      <h2 class="font-bold text-lg md:text-[18px] py-1">Software & Tools</h2>
+                      <p class="text-xs md:text-[12px]">₹12,450 (20%)</p>
                     </div>
-                   </div>    
-               </div> 
+                 </div>
+
               </div> 
               
               <!-- chart -->
-                <div class="md:w-[900px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[40vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
+                <div class="md:w-[900px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[40vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
                    <div class="flex items-center justify-between mx-2 my-2">
                       <h2 class="font-bold text-sm md:text-[18px]">Expenses Trend</h2>
                       <p class="text-sm md:text-[14px]"><i class="ri-checkbox-blank-circle-fill text-violet-500"></i> Monthly Spends</p>
@@ -133,12 +148,12 @@
                    </div>
                 </div>
 
-            <div class="md:w-[900px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[585px] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
-             <div class="md:flex md:items-center md:justify-between  py-2 md:ml-2 md:gap-2 pl-4 md:pl-2">
+            <div class="md:w-[900px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[585px] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
+             <div class="md:flex md:items-center md:justify-between  py-2 md:ml-2 md:gap-2 pl-4 md:pl-2 pr-2 md:pr-0">
                 <div>
                    <h2 class="font-bold md:text-[18px] text-[18px] md:mb-0 mb-2">Recent Expenses</h2>
                 </div>
-                <label class="input md:w-64 w-[325px]">
+                <label class="input w-full">
                     <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <g
                         stroke-linejoin="round"
@@ -154,7 +169,7 @@
                     <input type="search" required placeholder="Search expenses..." />
                 </label>    
                 <div class="mr-2">
-                     <div class="flex items-center mt-2 md:mt-0 w-[325px] h-12 md:justify-start gap-2 md:w-28 md:h-11  
+                     <div class="flex items-center mt-2 md:mt-0 w-full h-12 md:justify-start gap-2 md:w-28 md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       <h2 class="md:pl-3 pl-32">
                          <i class="ri-arrow-down-box-line text-[15px] md:text-[15px]"> Export</i>
@@ -264,10 +279,10 @@
                 </div>
               </div>
               <!--user message -->
-              <div class="md:w-[390px] w-[358px]  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 ">
+              <div class="md:w-[390px] w-full md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 ">
 
                 <!-- Filter Expenses Card -->
-                <div class="md:w-[390px] w-[358px] md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl p-3 shadow-lg">
+                <div class="md:w-[390px] w-full md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl p-3 shadow-lg">
 
                     <!-- Heading -->
                     <h2 class="text-[18px] font-bold text-gray-200 mb-3">
@@ -343,7 +358,7 @@
                 
                 </div>
 
-                <div class="md:w-[390px] mt-2 w-[358px]  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="md:w-[390px] mt-2 w-full md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <div class="">
                   <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Spending by Category</h2>
                 </div>
@@ -385,7 +400,7 @@
                 <h2 class="md:mt-4 mt-4 ml-5 text-center font-bold text-[20px] md:text-2xl md:ml-3">₹18,600 Total</h2>
               
                 </div>  
-                <div class="md:w-[390px] mt-2 w-[358px]  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="md:w-[390px] mt-2 w-full md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
               <div class="">
                   <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Expense Summary</h2>
                 </div>
@@ -410,7 +425,7 @@
                  </div>
 
                 </div>  
-                <div class="md:w-[390px] mt-2 w-[358px]  md:min-h-[260px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                <div class="md:w-[390px] mt-2 w-full  md:min-h-[260px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <div class="flex items-center justify-between">
                   <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Recent Vendors</h2>
                   <p class="text-gray-500 md:mr-3 mr-2 text-violet-500">All View</p>
@@ -603,119 +618,6 @@
   </div> 
  </div>
  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- <script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-     
-      datasets: [{
-         labels: [
-           "Software & Tools",
-           "Marketing",
-           "Travel & Meals",
-           "Hardware",
-           "Office Supplies",
-           "Others"
-         ],
-        data: [20, 18, 15, 12, 10, 25],
-        backgroundColor: [
-        "#4BCC75",
-        "#FBA12A",
-        "#FB435D",
-        "#3D4A95",
-        "#2F1B6F",
-        "#A855F7",
-         ], 
-        borderWidth: 0
-      }]
-    },
-    
-  });
-
-  const lineChart = document.getElementById('lineChart');
-  const createColor = lineChart.getContext('2d');
-
-  const gradient = createColor.createLinearGradient(0, 0, 0, 300);
-
-  gradient.addColorStop(0, 'rgba(124, 58, 237, 0.35)');
-  gradient.addColorStop(1, 'rgba(124, 58, 237, 0)');
-
-  new Chart(lineChart, {
-    type: 'line',
-    data: {
-      labels: ['', 'Jan', '', 'Feb', '', 'Apr', '', 'May', ''],
-      datasets: [{
-        label: 'Monthly Spends',
-
-        data: [
-          15000,
-          21000,
-          22000,
-          18000,
-          25000,
-          33000,
-          25000,
-          30000
-        ],
-
-        borderColor: '#7C3AED',
-        backgroundColor: gradient,
-
-        borderWidth: 2,
-        fill: true,
-
-        // line ko smooth karta hai
-        tension: 0.3,
-
-        // purple dots
-        pointRadius: 3,
-        pointBackgroundColor: '#8B5CF6',
-        pointBorderWidth: 0
-     }]
-    },
-    options: {
-      scales: {
-        y: {
-            beginAtZero: true,
-            max: 50000,
-
-            ticks: {
-              stepSize: 10000,
-              color: '#737782',
-
-              callback: function(value) {
-                if (value === 0) return '₹0';
-
-                return '₹' + (value / 1000) + 'k';
-              }
-            }
-        }
-      }
-    }
-  });
-
-  const wallet = document.getElementById('wallet');
-  new Chart(wallet, {
-    type: 'doughnut',
-    data: {
-     
-      datasets: [{
-         labels: [
-            "Budget Remaining",
-            "Monthly Budget"
-         ],
-        data: [37550, 100000],
-        backgroundColor: [
-         "#4ADE80",
-         "#60A5FA" 
-         ], 
-        borderWidth: 0
-      }]
-    },
-    
-  });
-</script>
+ <script src="expenses.js"></script>
 </body>
 </html>

@@ -66,11 +66,11 @@
               <h2 class="font-bold md:text-2xl text-[18px]">Analytics</h2>
               <p class="text-[#A1A1AA] text-sm md:text-lg">Overview of your business performance</p>
             </div>
-            <div class="dropdown dropdown-end mt-4 md:mt-0">
+            <div class="dropdown dropdown-end mt-4 md:mt-0 w-full md:w-[250px]">
              <div
                 tabindex="0"
                 role="button"
-                class="flex items-center justify-center md:justify-start gap-2 md:w-[250px] md:h-11  w-[358px] px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]"
+                class="flex items-center justify-center md:justify-start gap-2 md:w-[250px] md:h-11  w-full px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]"
               >
                 <i class="ri-calendar-line text-lg"></i>
                 <span class="text-sm">Jul 16, 2025 - Jul 22, 2025</span>
@@ -103,92 +103,119 @@
            </div>   
            <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
           <!-- card -->
-            <div class="md:flex md:gap-10">
-                <div class="md:flex flex justify-center gap-2 md:gap-10"> 
-                  <div class="md:w-56 w-44 bg-[#131416] border-[#2A2A2E] border md:h-[134px] h-[185px]  md:pl-0 mt-6 pt-2 rounded-lg">
-                    <div class="flex md:items-center md:justify-center flex-col md:flex-row md:gap-4 gap-2 pl-4">
-                      <div class="w-8 h-8 rounded-full bg-[#8B5CF61A] flex items-center justify-center mt-4 md:mt-0">
-                       <i class="ri-money-rupee-circle-line text-[#8B5CF6] text-lg"></i>
-                      </div>
-                      <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Total Revenue</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹24,80,000</h2>
-                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-s-fill"></i>12.3%</span> vs.Apr 2025</p>
-                      </div> 
-                    </div> 
-                    <div class="md:w-full h-10 px-1 pb-2">
-                         <canvas id="revenue"></canvas>
-                    </div>
-                  </div>
-                   <div class="md:w-56 w-44 bg-[#131416] border-[#2A2A2E] border md:h-[134px] h-[185px]  md:pl-0 mt-6 pt-2 rounded-lg">
-                    <div class="flex md:items-center md:justify-center flex-col md:flex-row md:gap-4 gap-2 pl-4">
-                      <div class="w-8 h-8 rounded-full  bg-[#EF44441A] flex items-center justify-center mt-4 md:mt-0">
-                       <i class="ri-shopping-bag-line text-[#EF4444] text-lg"></i>
-                      </div>
-                      <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Total Expenses</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹4,85,600</h2>
-                      <p class="text-sm"><span class="text-[#EF4444]"><i class="ri-arrow-up-s-fill"></i>8.6%</span> vs.Apr 2025</p>
-                      </div> 
-                    </div> 
-                    <div class="md:w-full h-10 px-1 pb-2">
-                         <canvas id="expenses"></canvas>
-                    </div>
-                  </div>
-                </div>
-                <div class="md:flex flex gap-2 justify-center md:gap-10">
-                   <div class="md:w-56 w-44 bg-[#131416] border-[#2A2A2E] border md:h-[134px] h-[185px]  md:pl-0 mt-6 pt-2 rounded-lg">
-                    <div class="flex md:items-center md:justify-center flex-col md:flex-row md:gap-4 gap-2 pl-4">
-                      <div class="w-8 h-8 rounded-full bg-[#34D3991A] flex items-center justify-center mt-4 md:mt-0">
-                       <i class="ri-wallet-3-line text-[#34D399] text-lg"></i>
-                      </div>
-                      <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Net Profit</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">₹19,94,400</h2>
-                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-s-fill"></i>15.8%</span> vs.Apr 2025</p>
-                      </div> 
-                    </div> 
-                    <div class="md:w-full h-10 px-1 pb-2">
-                         <canvas id="profit"></canvas>
-                    </div>
-                  </div>
-                   <div class="md:w-56 w-44 bg-[#131416] border-[#2A2A2E] border md:h-[134px] h-[185px]  md:pl-0 mt-6 pt-2 rounded-lg">
-                    <div class="flex md:items-center md:justify-center flex-col md:flex-row md:gap-4 gap-2 pl-4">
-                      <div class="w-8 h-8 rounded-full bg-[#3B82F61A] flex items-center justify-center mt-4 md:mt-0">
-                       <i class="ri-group-line text-[#3B82F6] text-lg"></i>
-                      </div>
-                      <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Total Clients</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">128</h2>
-                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-s-fill"></i>9.4%</span> vs.Apr 2025</p>
-                      </div> 
-                    </div> 
-                    <div class="md:w-full h-10 px-1 pb-2">
-                         <canvas id="client"></canvas>
-                    </div>
-                  </div>    
-               </div> 
-               <div class="flex justify-center">
-                 <div class="md:w-56 w-44 bg-[#131416] border-[#2A2A2E] border md:h-[134px] h-[185px]  md:pl-0 md:ml-2 mt-6 pt-2 rounded-lg">
-                    <div class="flex md:items-center md:justify-center flex-col md:flex-row md:gap-4 gap-2 pl-4">
-                      <div class="w-8 h-8 rounded-full bg-[#EFB6331A] flex items-center justify-center mt-4 md:mt-0">
-                       <i class="ri-briefcase-4-line text-[#EFB633] text-lg"></i>
-                      </div>
-                      <div>
-                      <h2 class="text-[#A1A1AA] text-sm ">Active Projects</h2>
-                      <h2 class="font-bold md:text-xl pb-2 pt-2">32</h2>
-                      <p class="text-sm"><span class="text-[#22C55E]"><i class="ri-arrow-up-s-fill"></i>6.7%</span> vs.Apr 2025</p>
-                      </div> 
-                    </div> 
-                    <div class="md:w-full h-10 px-1 pb-2">
-                         <canvas id="Project"></canvas>
-                    </div>
+
+           <div class="w-full grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-5">
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#8B5CF61A] flex items-center justify-center">
+                   <i class="ri-money-rupee-circle-line text-[#8B5CF6] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Total Revenue</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">₹24,80,000</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>12.3%
+                     </span>
+                     vs. Apr 2025
+                   </p>
                  </div>
                </div>
-          </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="revenue"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#EF44441A] flex items-center justify-center">
+                   <i class="ri-shopping-bag-line text-[#EF4444] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Total Expenses</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">₹4,85,600</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#EF4444]">
+                       <i class="ri-arrow-up-s-fill"></i>8.6%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="expenses"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#34D3991A] flex items-center justify-center">
+                   <i class="ri-wallet-3-line text-[#34D399] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Net Profit</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">₹19,94,400</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>15.8%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="profit"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#3B82F61A] flex items-center justify-center">
+                   <i class="ri-group-line text-[#3B82F6] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Total Clients</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">128</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>9.4%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="client"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#EFB6331A] flex items-center justify-center">
+                   <i class="ri-briefcase-4-line text-[#EFB633] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Active Projects</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">32</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>6.7%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="Project"></canvas>
+               </div>
+             </div>
+
+           </div>
+
           <!-- chart-1 -->
           <div class="md:flex md:items-center md:gap-2">
-          <div class="md:w-[640px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+          <div class="md:w-[640px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
              <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
                <h2 class="font-bold pl-2">Revenue Overview</h2>
                <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
@@ -202,7 +229,7 @@
              <canvas id="revenueExpenseChart"></canvas>
            </div>
          </div> 
-         <div class="md:w-[640px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+         <div class="md:w-[640px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
            <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
                <h2 class="font-bold pl-2">Revenue Overview</h2>
                <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
@@ -218,7 +245,7 @@
           </div>
          <!-- chart-2 -->
           <div class="md:flex md:items-center md:gap-2">
-             <div class="md:w-[426px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+             <div class="md:w-[426px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
                  <h2 class="font-bold pl-2 text-[18px] mt-4">Revenue Overview</h2>
                 <div class="md:flex md:items-center md:gap-8 md:mt-12 ">
                     <div>
@@ -261,7 +288,7 @@
                 </div>
                 <h2 class="font-bold pl-2 text-[20px] mt-4 text-center md:mt-12">₹24,80,000 <span class="text-gray-500">Total Revenue</span></h2>
              </div>
-             <div class="md:w-[426px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto md:pl-0 mt-6 rounded-2xl">
+             <div class="md:w-[426px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto md:pl-0 mt-6 rounded-2xl">
                <div class="flex items-center justify-between pt-2 md:px-2 pr-3 md:pl-4 pl-2">
                    <h2 class="font-bold pl-2 text-[18px]">Top Performing Projects</h2>
                    <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
@@ -342,7 +369,7 @@
                   </table>
                 </div>
             </div>
-             <div class="md:w-[426px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+             <div class="md:w-[426px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
                  <h2 class="font-bold pl-2 text-[18px] mt-4">Tasks Overview</h2>
                 <div class="md:flex md:items-center md:gap-8 md:mt-12 ">
                     <div>
@@ -388,7 +415,7 @@
           </div>
           <!-- chart-3 -->
            <div class="md:flex md:items-center md:gap-2">
-              <div class="md:w-[426px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+              <div class="md:w-[426px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
                   <h2 class="font-bold pl-3 text-[18px] mt-2">Client Growth</h2>
                   <div class="flex">
                      <h2 class="font-bold pl-3 text-[20px] mt-2">128 </h2>
@@ -398,7 +425,7 @@
                     <canvas id="monthlyChart"></canvas>
                   </div>
               </div>
-              <div class="md:w-[426px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+              <div class="md:w-[426px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
                  <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
                     <h2 class="font-bold pl-2 text-[18px]">Invoiced vs Paid</h2>
                     <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
@@ -437,7 +464,7 @@
                 </div>
 
               </div>
-              <div class="md:w-[426px] w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+              <div class="md:w-[426px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
                   <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
                     <h2 class="font-bold pl-2 text-[18px]">Cash Flow</h2>
                     <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">

@@ -62,19 +62,20 @@
             
          <div class="md:flex md:items-center md:justify-between md:ml-2">
            <div>
-              <h2 class="font-bold md:text-2xl">Calendar</h2>
-              <p class="text-[#A1A1AA] text-sm md:text-lg">Manage your schedule,meetings and important dates</p>
+              <h2 class="font-bold md:text-2xl text-[20px]">Calendar</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg text-[15px]">Manage your schedule,meetings and important dates</p>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-4">
-             <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-6 mt-2">   
-              <div class="flex items-center w-40 md:justify-start gap-2 md:w-36 md:h-11  
-                         px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+            <div class="md:flex md:gap-4">
+            
+             <div class="grid grid-cols-2 items-center justify-center md:mt-0 gap-4 mt-2">   
+              <div class="flex items-center w-full md:justify-start gap-2 md:w-36 md:h-11  
+                         px-4 py-2 md:ml-8 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                   
                   <h2 class="">
                      <i class="ri-filter-2-line"> Filters</i>
                   </h2>
               </div>
-              <div class="flex items-center w-44 md:justify-start gap-2 md:w-44 md:h-11  
+              <div class="flex items-center w-full md:justify-start gap-2 md:w-44 md:h-11  
                          px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                   
                   <h2 class="">
@@ -82,12 +83,12 @@
                   </h2>
               </div>
              </div> 
-             <button class="btn w-[355px]  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Event</button>          
+             <button class="btn w-full md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Event</button>
            </div>
          </div>          
          <!-- buttom content -->
          <div class="md:flex md:gap-2"> 
-          <div class="md:w-[860px]  w-[358px]">
+          <div class="md:w-[860px]  w-full">
             <div class="hidden md:block">
               <div class="flex items-center justify-between mt-4">
                 <div class="flex gap-2">
@@ -114,7 +115,7 @@
               </div>
             </div>
             <div class="md:hidden mt-2 ">
-              <select class="select w-[355px]">
+              <select class="select w-full">
                 <option disabled selected>Pick a Months</option>
                 <option>January</option>
                 <option>February</option>
@@ -130,7 +131,7 @@
                 <option>December</option>
               </select>
             </div>
-            <div class="md:w-[860px]  w-[358px] bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-3 rounded-2xl">
+            <div class="md:w-[860px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-3 rounded-2xl">
                 <div class="grid grid-cols-7">
                  
                      <!-- Header -->
@@ -415,7 +416,7 @@
             </div>
           </div>
            
-          <div  class="md:w-[430px] w-[358px]  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-4">
+          <div  class="md:w-[430px] w-full md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-4">
 
             <calendar-date class="cally bg-[#131416] hidden md:block border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-[358px] md:min-h-[300px] md:h-auto min-h-[300px]">
                <svg aria-label="Previous" class="fill-current size-4" slot="previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg>
@@ -423,7 +424,7 @@
                <calendar-month></calendar-month>
              </calendar-date>
 
-             <div class="md:hidden bg-[#131416] border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-[358px] md:min-h-[348px] md:h-auto min-h-[300px] mt-3">
+             <div class="md:hidden bg-[#131416] border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-full md:min-h-[348px] md:h-auto min-h-[300px] mt-3">
                 <div class="flex items-center justify-between mx-2 mt-1">
                     <h2 class="font-bold"><span class="text-violet-500">Today - </span>21 May 2025</h2>
                     <p class="text-violet-500 text-[15px]">View All</p>
@@ -542,7 +543,7 @@
                 </ul>
              </div>
             
-             <div class="bg-[#131416] border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-[358px] md:min-h-[348px] md:h-auto min-h-[300px] mt-3">
+             <div class="bg-[#131416] border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-full md:min-h-[348px] md:h-auto min-h-[300px] mt-3">
                 <div class="flex items-center justify-between mx-2 mt-1">
                     <h2 class="font-bold">Upcoming Events</h2>
                     <p class="text-violet-500 text-[15px]">View All</p>
@@ -609,7 +610,7 @@
                 </ul>
              </div>
 
-             <div class="bg-[#131416] border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-[358px] md:min-h-[320px] md:h-auto min-h-[300px] mt-3">
+             <div class="bg-[#131416] border-[#2A2A2E] border shadow-lg rounded-box md:w-[430px] w-full md:min-h-[320px] md:h-auto min-h-[300px] mt-3">
                 <div class="flex items-center justify-between mx-2 mt-1">
                     <h2 class="font-bold">My Calendars</h2>
                     <p class="text-violet-500 text-[15px]">+ Add</p>
@@ -633,8 +634,8 @@
                     <p class="text-gray-500 text-[16px]">Holidays</p>
                   </div>
                 </div>
-                <div>
-                    <button class="btn md:w-[410px] w-[338px] mx-2  md:btn-md btn-active  md:w-52 md:text-[16px] mt-4 md:mt-0"><i class="ri-text-wrap"> Go to Agenda View</i></button>
+                <div class="pr-3 md:pr-0">
+                    <button class="btn md:w-[410px] w-full mx-2  md:btn-md btn-active  md:w-52 md:text-[16px] mt-4 md:mt-0"><i class="ri-text-wrap"> Go to Agenda View</i></button>
                 </div>  
              </div>
           </div>
