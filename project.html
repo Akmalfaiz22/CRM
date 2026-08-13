@@ -84,7 +84,7 @@
          </div> 
          <!-- card -->
           
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-4">
+          <div class="grid grid-cols-2 xl:grid-cols-5 md:grid-cols-3 gap-4 mt-4">
 
             <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
                 <div class="w-10 h-10 shrink-0 rounded-full bg-indigo-950 flex items-center justify-center">
@@ -178,9 +178,9 @@
           </div>
          
          <!-- buttom content -->
-        <div class="md:flex items-center md:justify-center md:gap-2">   
+        <div class="xl:flex items-center xl:justify-center xl:gap-2">   
           <!-- all user area -->
-           <div class="md:w-[830px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 pr-2 md:pr-0 rounded-2xl">  
+           <div class="xl:w-[830px] md:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[100vh] md:h-auto md:min-h-[40vh] min-h-36 h-auto  md:pl-0 mt-6 pr-2 md:pr-0 rounded-2xl">  
              <div class="md:flex md:items-center md:justify-start py-2 md:ml-2 md:gap-2 pl-4 md:pl-2">
                  <label class="input w-full">
                     <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -218,41 +218,42 @@
                </div>                                       
              </div>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
-             <div class="md:flex md:items-center  md:my-2 md:ml-3 hidden md:block">
-               <div class="ml-2">
-                 <h2 class="text-[#A1A1AA] md:w-[180px]">Project</h2>
-               </div>
-               <div>
-                 <h2 class="text-[#A1A1AA] md:w-[170px]">Client</h2>
-               </div>
-               <div class="flex items-center justify-center  mr-2">
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Priority</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Status</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[110px]">Deam</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[120px]">Priority</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[40px]">Actions</h2>
-               </div>
-             </div>
-             <ul class="md:h-[550px]">
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:w-[180px] md:block hidden">
-                        <h2 class="md:text-sm  font-bold">ABC Hospital</h2>
-                        <p class="md:text-[11px]">Healthcare</p>
-                     </div>
-                     <div class="md:block hidden md:w-[220px]">
-                        
-                       <progress class="progress progress-primary md:w-32 w-20" value="90" max="100"></progress>
-                  
-                     </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3B222D] text-[#E55A5A] px-2 py-1 rounded-md">High</span>
-                       </p>
-                       <div class="md:w-[100px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#1E3B32] text-[#5fe485]">In Progress</h2>
-                       </div>
-                       <div class="md:w-[110px]">
-                          <div class="avatar-group -space-x-6 w-20 h-10">
+             <div class="overflow-x-auto xl:h-[600px] md:h-[440px]">
+             <table class="table">
+               <!-- head -->
+               <thead>
+                 <tr>
+                   <th>Project</th>
+                   <th>Client</th>
+                   <th>Priority</th>
+                   <th>Status</th>
+                   <th>Deam</th>
+                   <th>Priority</th>
+                   <th>Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <!-- row 1 -->
+                 <tr>
+                   <th>
+                     <h2 class="md:text-sm  font-bold">ABC Hospital</h2>
+                     <p class="md:text-[11px]">Healthcare</p>
+                   </th>
+                   <td>
+                     <progress class="progress progress-primary w-32" value="90" max="100"></progress>
+                   </td>
+                   <td>
+                      <button class=" btn  btn-xs h-6 bg-[#3B222D] text-[#E55A5A] px-2 py-1 rounded-md">
+                        High
+                      </button>
+                    </td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 w-20 h-6 bg-[#1E3B32] text-[#5fe485]">
+                        In Progress
+                     </button>
+                   </td>
+                   <td>
+                     <div class="avatar-group -space-x-6 w-20 h-10">
                             <div class="avatar">
                               <div class="w-12">
                                 <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
@@ -274,33 +275,31 @@
                               </div>
                             </div>
                           </div>
-                       </div>
-                       <p class="md:w-[120px]">25 Jul,2025</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                     <div class="flex pt-2 pb-2  md:hidden items-center justify-between ">
-                      <div class="pl-2 block md:hidden">
-                        <h2 class="text-sm  font-bold ">ABC Hospital</h2>
-                        <p class="text-[12px] ">Healthcare</p>
-                      </div>
-                       <div class="md:w-[100px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#1E3B32] text-[#5fe485]">In Progress</h2>
-                       </div>
-                     </div> 
-                     <div class=" md:hidden w-[220px] ml-4">
-                       <progress class="progress progress-primary w-32" value="90" max="100"></progress>
-                     </div>
-                     <div class="flex md:hidden items-center justify-between px-2 mt-2 mb-1 ">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3B222D] text-[#E55A5A] px-2 py-1 rounded-md">High</span>
-                       </p>
-                       <p class="md:w-[120px] text-sm">25 Jul,2025</p>
-                       <div class="md:w-[100px]">
-                          <div class="avatar-group -space-x-6 w-20 h-8">
+                   </td>
+                   <td>25 Jul,2025</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 2 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                     <h2 class="md:text-sm  font-bold">E-commerce Website</h2>
+                     <p class="md:text-[11px]">TechSoft Inc.</p>
+                   </th>
+                   <td>
+                     <progress class="progress progress-primary md:w-32 w-20" value="50" max="100"></progress>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs h-6 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">
+                       Medium
+                     </button>
+                   </td>
+                   <td>
+                    <button class="btn  btn-xs  mr-2 h-6 bg-[#1E3B32] text-[#5fe485]">
+                       In Progress
+                    </button>
+                   </td>
+                  <td>
+                     <div class="avatar-group -space-x-6 w-20 h-10">
                             <div class="avatar">
                               <div class="w-12">
                                 <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
@@ -322,31 +321,31 @@
                               </div>
                             </div>
                           </div>
-                       </div>
-                       <h2 class="md:hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-               </li>
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-1 md:mt-2 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:w-[180px] md:block hidden">
-                        <h2 class="md:text-sm  font-bold">E-commerce Website</h2>
-                        <p class="md:text-[11px]">TechSoft Inc.</p>
-                     </div>
-                     <div class="md:block hidden md:w-[220px]">
-                        
-                       <progress class="progress progress-primary md:w-32 w-20" value="50" max="100"></progress>
-                  
-                     </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">Medium</span>
-                       </p>
-                       <div class="md:w-[100px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#1E3B32] text-[#5fe485]">In Progress</h2>
-                       </div>
-                       <div class="md:w-[110px]">
-                          <div class="avatar-group -space-x-6 w-20 h-10">
+                   </td>
+                   <td>10 Aug,2025</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 3 -->
+                 <tr>
+                   <th>
+                     <h2 class="md:text-sm  font-bold">School Management System</h2>
+                     <p class="md:text-[11px]">Brigt Future School</p>
+                   </th>
+                   <td>
+                    <progress class="progress progress-primary md:w-32 w-20" value="30" max="100"></progress>
+                   </td>
+                   <td>
+                      <button class=" btn  btn-xs h-6 bg-[#1B2F4A] text-[#5DA9FF] px-2 py-1 rounded-md">
+                        Low
+                      </button>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 h-6 bg-[#3A3222] text-[#D8A72A]">
+                        On Hold
+                     </button>
+                   </td>
+                   <td>
+                     <div class="avatar-group -space-x-6 w-20 h-10">
                             <div class="avatar">
                               <div class="w-12">
                                 <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
@@ -368,156 +367,13 @@
                               </div>
                             </div>
                           </div>
-                       </div>
-                       <p class="md:w-[120px]">10 Aug,2025</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                     <div class="flex pt-2 pb-2  md:hidden items-center justify-between ">
-                      <div class="pl-2 block md:hidden">
-                        <h2 class="text-sm  font-bold ">E-commerce Website</h2>
-                        <p class="text-[12px]">TechSoft Inc.</p>
-                      </div>
-                       <div class="md:w-[100px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#1E3B32] text-[#5fe485]">In Progress</h2>
-                       </div>
-                     </div> 
-                     <div class=" md:hidden w-[220px] ml-4">
-                       <progress class="progress progress-primary w-32" value="70" max="100"></progress>
-                     </div>
-                     <div class="flex md:hidden items-center justify-between px-2 mt-2 mb-1 ">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">Medium</span>
-                       </p>
-                       <p class="md:w-[120px] text-sm">10 Aug,2025</p>
-                       <div class="md:w-[100px]">
-                          <div class="avatar-group -space-x-6 w-20 h-8">
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/averagebulk@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar avatar-placeholder">
-                              <div class="bg-neutral text-neutral-content w-12">
-                                <span>+99</span>
-                              </div>
-                            </div>
-                          </div>
-                       </div>
-                       <h2 class="md:hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-               </li>
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-1 md:mt-2 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:w-[180px] md:block hidden">
-                        <h2 class="md:text-sm  font-bold">School Management System</h2>
-                        <p class="md:text-[11px]">Brigt Future School</p>
-                     </div>
-                     <div class="md:block hidden md:w-[220px]">
-                        
-                       <progress class="progress progress-primary md:w-32 w-20" value="30" max="100"></progress>
-                  
-                     </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#1B2F4A] text-[#5DA9FF] px-2 py-1 rounded-md">Low</span>
-                       </p>
-                       <div class="md:w-[100px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#3A3222] text-[#D8A72A]">On Hold</h2>
-                       </div>
-                       <div class="md:w-[110px]">
-                          <div class="avatar-group -space-x-6 w-20 h-10">
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/averagebulk@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar avatar-placeholder">
-                              <div class="bg-neutral text-neutral-content w-12">
-                                <span>+99</span>
-                              </div>
-                            </div>
-                          </div>
-                       </div>
-                       <p class="md:w-[120px]">30 Jul,2025</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                     <div class="flex pt-2 pb-2  md:hidden items-center justify-between ">
-                      <div class="pl-2 block md:hidden">
-                        <h2 class="text-sm  font-bold ">School Management System</h2>
-                        <p class="text-[12px]">Brigt Future School</p>
-                      </div>
-                       <div class="md:w-[100px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#3A3222] text-[#D8A72A]">On Hold</h2>
-                       </div>
-                     </div> 
-                     <div class=" md:hidden w-[220px] ml-4">
-                       <progress class="progress progress-primary w-32" value="30" max="100"></progress>
-                     </div>
-                     <div class="flex md:hidden items-center justify-between px-2 mt-2 mb-1 ">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#1B2F4A] text-[#5DA9FF] px-2 py-1 rounded-md">Low</span>
-                       </p>
-                       <p class="md:w-[120px] text-sm">30 Jul,2025</p>
-                       <div class="md:w-[100px]">
-                          <div class="avatar-group -space-x-6 w-20 h-8">
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar">
-                              <div class="w-12">
-                                <img src="https://img.daisyui.com/images/profile/demo/averagebulk@192.webp" />
-                              </div>
-                            </div>
-                            <div class="avatar avatar-placeholder">
-                              <div class="bg-neutral text-neutral-content w-12">
-                                <span>+99</span>
-                              </div>
-                            </div>
-                          </div>
-                       </div>
-                       <h2 class="md:hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-               </li>
-                
-             </ul>
+                   </td>
+                   <td>30 Jul,2025</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
              <!-- Pagination -->
               <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
 
@@ -559,101 +415,101 @@
              </div>
            </div>
            <!--user message -->
-          <div class="md:w-[450px] w-full hidden md:block bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
+          <div class="xl:w-[450px] md:w-full w-full hidden md:block bg-[#131416] border-[#2A2A2E] border xl:min-h-[100vh] md:min-h-[40vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
               <div class="ml-4 mt-2 ">
-                <h2 class="md:text-[20px]  font-bold ">Hospital Management System</h2>
-                <p class="md:text-[15px] ">ABC Hospital <span class="btn ml-4 btn-sm py-2 mr-2 h-4 bg-[#1E3B32] text-[#5fe485]">In Progress</span></p>
+                <h2 class="xl:text-[20px] md:text-[25px] font-bold ">Hospital Management System</h2>
+                <p class="xl:text-[15px] md:text-[18px]">ABC Hospital <span class="btn ml-4 md:btn-md btn-sm xl:btn-sm py-2 mr-2 h-4 bg-[#1E3B32] text-[#5fe485]">In Progress</span></p>
               </div>      
               <div class="flex items-center justify-between px-2 pt-3 pb-2">
-                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[16px]">OverView</h2>
-                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[16px]">Tasks</h2>
-                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[16px]">Files</h2>
-                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[16px]">Team</h2>
-                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[16px]">Timeline</h2>
-                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[16px]">Settings</h2>
+                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[20px] xl:text-[16px]">OverView</h2>
+                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[20px] xl:text-[16px]">Tasks</h2>
+                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[20px] xl:text-[16px]">Files</h2>
+                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[20px] xl:text-[16px]">Team</h2>
+                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[20px] xl:text-[16px]">Timeline</h2>
+                <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] md:text-[20px] xl:text-[16px]">Settings</h2>
               </div>
               <hr class=" bg-[#131416] border-[#2A2A2E] border">
               <!-- Contact Person -->
                <div class="md:ml-4 md:mt-4 ml-2 mt-2">
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                         <i class="ri-flask-line"> Project Manager</i>
                     </h2>
-                    <h2 class="">Ali Raza</h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">Ali Raza</h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                        <i class="ri-price-tag-2-line">Client</i>
                     </h2>
-                    <h2>ABC Hospital</h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">ABC Hospital</h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                         <i class="ri-calendar-event-line"> Start Date</i>
                     </h2>
-                    <h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">
                         <i class="ri-calendar-event-line"> 01 Jul,2025</i>
                     </h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                         <i class="ri-calendar-event-line"> Deadline</i>
                     </h2>
-                    <h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">
                         <i class="ri-calendar-event-line"> 25 Jul,2025</i>
                     </h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                         <i class="ri-bank-line"> Budget</i>
                     </h2>
-                    <h2>₹2,50,000</h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">₹2,50,000</h2>
                  </div>
                   <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                         <i class="ri-wallet-line"> Spent</i>
                     </h2>
-                    <h2>₹1,62,500 (65%)</h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">₹1,62,500 (65%)</h2>
                   </div>
                   <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                        <i class="ri-chat-voice-line"> Priority</i>
                     </h2>
-                    <h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">
                         <i class="ri-checkbox-blank-circle-fill text-[#E55A5A]"> High</i>
                     </h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-48">
+                    <h2 class="text-[#A1A1AA] w-48 xl:w-48 md:w-72 md:text-[24px] xl:text-[17px]">
                       <i class="ri-bar-chart-grouped-line"> Status</i>
                     </h2>
-                    <h2>
+                    <h2 class="md:text-[25px] xl:text-[17px]">
                         <i class="ri-checkbox-blank-circle-fill text-green-500"> In Progress</i>
                     </h2>
                  </div>
                </div>
                <hr class=" bg-[#131416] border-[#2A2A2E] border mt-4">
-                <div class="md:mt-4 md:ml-4 ml-2 mt-2">
-                     <h2 class="font-bold">Progress</h2>
-                     <div class="md:w-[400px] flex items-center justify-between md:mt-2 mr-2">
-                        <h2 class="font-bold md:text-xl ">65%</h2>
-                        <p class="text-sm text-[#A1A1AA]">65% completed</p>
+                <div class="md:mt-4 md:ml-4 ml-2 mt-2 md:pr-2 xl:pr-0">
+                     <h2 class="font-bold md:text-[25px] xl:text-[18px]">Progress</h2>
+                     <div class="xl:w-[400px] md:w-full flex items-center justify-between md:mt-2 mr-2">
+                        <h2 class="font-bold xl:text-xl md:text-[25px]">65%</h2>
+                        <p class="text-sm text-[#A1A1AA] xl:text-[14px] md:text-[20px]">65% completed</p>
                      </div>
                      <div class="">
-                        <progress class="progress progress-primary md:w-[400px]  w-[340px]" value="30" max="100"></progress>
+                        <progress class="progress progress-primary xl:w-[400px] md:w-full  w-[340px]" value="30" max="100"></progress>
                      </div>
                 </div>  
                 <hr class=" bg-[#131416] border-[#2A2A2E] border mt-4">
                 <div class="mx-2 mt-2 md:ml-4 md:mt-4 md:min-h-[168px] min-h-[138px] h-auto">
-                    <h2 class="font-bold ">Description</h2>
-                    <p class="text-[#A1A1AA] mt-2">
+                    <h2 class="font-bold md:text-[25px] xl:text-[18px]">Description</h2>
+                    <p class="text-[#A1A1AA] mt-2 xl:text-[14px] md:text-[20px]">
                         A completed hospital management system to handle patient
                         records, appointment, billing, staff management and reports.
                     </p>
                 </div>
-                <div class="md:flex">
-                    <button class="btn w-[342px] mx-2  md:btn-md btn-active btn-primary md:w-52 md:text-[16px] mt-4 md:mt-0">+ New Project</button>
-                   <button class="btn w-[342px] mx-2  md:btn-md btn-active  md:w-52 md:text-[16px] mt-4 md:mt-0"><i class="ri-edit-2-line"> Edit Client</i></button>
+                <div class="md:grid md:grid-cols-2 md:pr-3 xl:pr-0 md:gap-4 xl:gap-0 mb-2">
+                    <button class="btn w-[342px] md:w-full mx-2  md:btn-md btn-active xl:h-10 md:h-16 btn-primary xl:w-52 xl:text-[16px] md:text-[20px] mt-4 md:mt-0">+ New Project</button>
+                   <button class="btn w-[342px] md:w-full mx-2  md:btn-md btn-active xl:h-10 md:h-16  xl:w-52 xl:text-[16px] md:text-[20px] mt-4 md:mt-0"><i class="ri-edit-2-line"> Edit Client</i></button>
                 </div>
                
                

@@ -82,7 +82,7 @@
             </div>
          </div> 
          <!-- card -->
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-4">
+            <div class="grid grid-cols-2 xl:grid-cols-5 md:grid-cols-3 gap-4 mt-4">
 
                <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 w-full bg-[#131416] border border-[#2A2A2E] h-40 md:h-28 p-4 rounded-2xl">
                  <div class="w-10 h-10 shrink-0 rounded-full bg-[#27205B] flex items-center justify-center">
@@ -165,9 +165,9 @@
 
             </div>
          <!-- buttom content -->
-        <div class="md:flex items-center md:justify-center md:gap-2"> 
+        <div class="xl:flex items-center xl:justify-center xl:gap-2"> 
           <!-- all user area -->
-           <div class="md:w-[830px]  w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
+           <div class="xl:w-[830px] md:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[100vh] md:min-h-[40vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
               <!-- header -->
                <ul class="flex md:gap-6 gap-2 md:ml-5 mt-2 ml-2 mb-2">
                 <li class="text-[#A1A1AA] text-[12px]  md:text-[18px]">All Tasks</li>
@@ -219,24 +219,27 @@
                </div>                                       
              </div>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
-             <div class="md:flex md:items-center  md:my-2 md:ml-3 hidden md:block">
-               <div class="ml-2">
-                 <h2 class="text-[#A1A1AA] md:w-[180px]"><input type="checkbox" checked="checked" class="checkbox"/> Task</h2>
-               </div>
-               <div>
-                 <h2 class="text-[#A1A1AA] md:w-[170px]">Project</h2>
-               </div>
-               <div class="flex items-center justify-center  mr-2">
-                 <h2 class="text-[#A1A1AA] md:w-[110px]">Assignee</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Priority</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Status</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[120px]">Priority</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[20px]">Actions</h2>
-               </div>
-             </div>
-             <ul class="md:h-[500px]">
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
+             <div class="overflow-x-auto md:h-[560px]">
+             <table class="table">
+               <!-- head -->
+               <thead>
+                 <tr>
+                   <th>
+                    <h2 class="text-[#A1A1AA]"><input type="checkbox" checked="checked" class="checkbox"/> Task</h2>
+                   </th>
+                   <th class="text-[#A1A1AA]">Project</th>
+                   <th class="text-[#A1A1AA]">Assignee</th>
+                   <th class="text-[#A1A1AA]">Priority</th>
+                   <th class="text-[#A1A1AA]">Status</th>
+                   <th class="text-[#A1A1AA]">Priority</th>
+                   <th class="text-[#A1A1AA]">Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <!-- row 1 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                    <div class="flex md:gap-2 ">
                       <div>
                         <input type="checkbox" checked="checked" class="checkbox"/>
                       </div>
@@ -244,71 +247,37 @@
                         <h2 class="md:text-sm  font-bold">Design landing page</h2>
                       </div>  
                      </div>
-                     <div class="md:block hidden md:w-[220px]">
+                   </th>
+                   <td>
                       <p class="text-[#A1A1AA]">Hospital Management System</p>
-                     </div>
-                     <div class="md:w-[150px] md:block hidden">
+                   </td>
+                   <td>
+                      <div class="">
                          <div class="avatar">
-                            <div class="w-10 rounded-full">
+                            <div class="w-10 h-10 rounded-full">
                               <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
                             </div>
-                            <h2 class="mt-2 ml-1">Ali Raza</h2>
+                            <h2 class="mt-2 ml-2">Ali Raza</h2>
                           </div>
                        </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3B222D] text-[#E55A5A] px-2 py-1 rounded-md">High</span>
-                       </p>
-                       <div class="md:w-[90px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#172235] text-[#6FA7FF]">In Progress</h2>
-                       </div>
-                       
-                       <p class="md:w-[120px]">Today</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                     <div class="flex md:hidden pl-2 pt-2 mr-2">
-                      <div class="">
-                        <input type="checkbox" checked="checked" class="checkbox"/>
-                      </div>
-                      <div class="flex-1 ml-2">
-                        <div class="flex items-center justify-between w-full md:hidden">
-                               <div class="md:hidden">
-                                <h2 class="text-sm  font-bold ">Design landing page</h2>
-                                <p class="text-[12px]">Hospital Management System</p>
-                               </div>
-                               <div class="">
-                                  <i class="ri-more-2-fill"></i>
-                               </div>
-                        </div>
-                        <div class="flex items-center justify-between mt-1 mb-1">
-                           <div class="md:w-[150px]">
-                             <div class="avatar">
-                               <div class="w-10 rounded-full">
-                                 <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
-                               </div>
-                                 <h2 class="mt-2 ml-1 text-sm">Ali Raza</h2>
-                            </div>
-                        </div>
-                        <p class="md:w-[80px]">
-                          <span class=" btn  btn-xs h-8 bg-[#3B222D] text-[#E55A5A] px-2 py-1 rounded-md">High</span>
-                        </p>
-                        <div class="md:w-[90px]">
-                          <h2 class="btn  btn-xs  mr-2 h-8 bg-[#172235] text-[#6FA7FF]">In Progress</h2>
-                        </div>
-                       <p class="md:w-[120px] text-sm">Today</p>
-
-                        </div>
-                      </div>
-
-                     </div>  
-                     
-               </li>
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
+                    </td>
+                   <td>
+                     <button class=" btn  btn-xs h-6 bg-[#3B222D] text-[#E55A5A]  rounded-md">
+                        High
+                     </button>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs  h-6 bg-[#172235] text-[#6FA7FF]">
+                        In Progress
+                     </button>
+                   </td>
+                   <td>Today</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 2 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                    <div class="flex gap-2">
                       <div>
                         <input type="checkbox" checked="checked" class="checkbox"/>
                       </div>
@@ -316,68 +285,37 @@
                         <h2 class="md:text-sm  font-bold">Develop user dashboard</h2>
                       </div>  
                      </div>
-                     <div class="md:block hidden md:w-[220px]">
-                      <p class="text-[#A1A1AA]">Hospital Management System</p>
-                     </div>
-                     <div class="md:w-[150px] md:block hidden">
+                   </th>
+                   <td>
+                     <p class="text-[#A1A1AA]">Hospital Management System</p>
+                   </td>
+                   <td>
+                     <div class="">
                          <div class="avatar">
-                            <div class="w-10 rounded-full">
+                            <div class="w-10 h-10 rounded-full">
                               <img src="https://images.pexels.com/photos/34302859/pexels-photo-34302859.jpeg" />
                             </div>
-                            <h2 class="mt-2 ml-1">Hamza Ali</h2>
+                            <h2 class="mt-2 ml-2">Hamza Ali</h2>
                           </div>
                        </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">Medium</span>
-                       </p>
-                       <div class="md:w-[90px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6 bg-[#172235] text-[#6FA7FF]">In Progress</h2>
-                       </div>
-                       
-                       <p class="md:w-[120px]">Tomorrow</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                     <div class="flex md:hidden pl-2 pt-2 mr-2">
-                      <div class="">
-                        <input type="checkbox" checked="checked" class="checkbox"/>
-                      </div>
-                      <div class="flex-1 ml-2">
-                        <div class="flex items-center justify-between w-full md:hidden">
-                               <div class="md:hidden">
-                                <h2 class="text-sm  font-bold ">Develop user dashboard</h2>
-                                <p class="text-[12px]">Hospital Management System</p>
-                               </div>
-                               <div class="">
-                                  <i class="ri-more-2-fill"></i>
-                               </div>
-                        </div>
-                        <div class="flex items-center justify-between mt-1 mb-1">
-                           <div class="md:w-[150px]">
-                             <div class="avatar">
-                               <div class="w-10 h-10 rounded-full">
-                                 <img src="https://images.pexels.com/photos/34302859/pexels-photo-34302859.jpeg" />
-                               </div>
-                                 <h2 class="mt-2 ml-1 text-sm">Hamza Ali</h2>
-                            </div>
-                        </div>
-                        <p class="md:w-[50px]">
-                          <span class=" btn  btn-xs h-8 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">Medium</span>
-                        </p>
-                        <div class="md:w-[100px]">
-                          <h2 class="btn  btn-xs h-8 mr-2  bg-[#172235] text-[#6FA7FF]">In Progress</h2>
-                        </div>
-                        <p class="md:w-[90px] text-sm">Tomorrow</p>
-                        </div>
-                      </div>
-                     </div>  
-               </li>
-                <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
+                   </td>
+                   <td>
+                    <button class=" btn  btn-xs h-6 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">
+                     Medium
+                    </button>
+                   </td>
+                  <td>
+                     <button class="btn  btn-xs  mr-2 h-6 bg-[#172235] text-[#6FA7FF]">
+                        In Progress
+                     </button>
+                   </td>
+                   <td>Tomorrow</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 3 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                     <div class="flex gap-2">
                       <div>
                         <input type="checkbox" checked="checked" class="checkbox"/>
                       </div>
@@ -385,68 +323,34 @@
                         <h2 class="md:text-sm  font-bold">Fix mobile responsiveness</h2>
                       </div>  
                      </div>
-                     <div class="md:block hidden md:w-[220px]">
-                      <p class="text-[#A1A1AA]">E-Commerce Website</p>
-                     </div>
-                     <div class="md:w-[150px] md:block hidden">
+                   </th>
+                   <td>
+                    <p class="text-[#A1A1AA]">E-Commerce Website</p>
+                   </td>
+                   <td>
+                       <div class="">
                          <div class="avatar">
-                            <div class="w-10 rounded-full">
+                            <div class="w-10 h-10 rounded-full">
                               <img src="https://images.pexels.com/photos/5418559/pexels-photo-5418559.jpeg" />
                             </div>
-                            <h2 class="mt-2 ml-1">Sarah Khan</h2>
+                            <h2 class="mt-2 ml-2">Sarah Khan</h2>
                           </div>
                        </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[80px]">
-                        <span class=" btn  btn-xs h-6 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">Medium</span>
-                       </p>
-                       <div class="md:w-[90px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6">To Do</h2>
-                       </div>
-                       
-                       <p class="md:w-[120px]">18 Jul, 2025</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                     <div class="flex md:hidden pl-2 pt-2 mr-2">
-                      <div class="">
-                        <input type="checkbox" checked="checked" class="checkbox"/>
-                      </div>
-                      <div class="flex-1 ml-2">
-                        <div class="flex items-center justify-between w-full md:hidden">
-                               <div class="md:hidden">
-                                <h2 class="text-sm  font-bold ">Fix mobile responsiveness</h2>
-                                <p class="text-[12px]">E-Commerce Website</p>
-                               </div>
-                               <div class="">
-                                  <i class="ri-more-2-fill"></i>
-                               </div>
-                        </div>
-                        <div class="flex items-center justify-between mt-1 mb-1">
-                           <div class="md:w-[150px]">
-                             <div class="avatar">
-                               <div class="w-10 h-10 rounded-full">
-                                 <img src="https://images.pexels.com/photos/5418559/pexels-photo-5418559.jpeg" />
-                               </div>
-                                 <h2 class="mt-2 ml-1 text-sm">Sarah Khan</h2>
-                            </div>
-                        </div>
-                        <p class="md:w-[50px]">
-                          <span class=" btn  btn-xs h-8 bg-[#3A3222] text-[#D8A72A] px-2 py-1 rounded-md">Medium</span>
-                        </p>
-                        <div class="md:w-[100px]">
-                          <h2 class="btn  btn-xs h-8 mr-2">To Do</h2>
-                        </div>
-                        <p class="md:w-[90px] text-sm">18Jul, 2025</p>
-                        </div>
-                      </div>
-                     </div>  
-               </li>
-              
-             </ul>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 h-6 bg-[#3A3222] text-[#D8A72A]">
+                        Medium
+                     </button>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 h-6">To Do</button>
+                   </td>
+                   <td>18 Jul, 2025</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
              <!-- Pagination -->
               <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
 
@@ -488,98 +392,98 @@
              </div>
            </div>
            <!--user message -->
-          <div class="md:w-[450px] w-full hidden md:block bg-[#131416] border-[#2A2A2E] border md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
+          <div class="xl:w-[450px] md:w-full w-full hidden md:block bg-[#131416] border-[#2A2A2E] border xl:min-h-[100vh] md:min-h-[40vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl">
               <div class="ml-2 mt-2 ">
                 <div class="flex gap-2">
                   <div class="w-8 h-8 rounded-full bg-indigo-950 flex items-center justify-center mt-4 md:mt-0">
                     <i class="ri-todo-fill text-violet-400 text-[15px]"></i>
                   </div>
-                  <h2 class="md:text-[20px] font-bold ">Design landing page</h2>
+                  <h2 class="xl:text-[20px] md:text-[25px] font-bold ">Design landing page</h2>
                 </div>
-                <p class="md:text-[15px] mt-2 btn ml-2 btn-sm py-2 mr-2 h-6 bg-[#172235] text-[#6FA7FF]">In Progress</p>
+                <p class="xl:text-[15px] md:text-[18px] mt-2 btn ml-2 btn-sm xl:btn-sm md:btn-md py-2 mr-2 h-6 bg-[#172235] text-[#6FA7FF]">In Progress</p>
               </div>      
               
               <!-- Contact Person -->
                <div class="md:ml-4 md:mt-4 ml-2 mt-2">
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-36">
+                    <h2 class="text-[#A1A1AA] w-36 xl:w-36 md:w-48 xl:text-[18px] md:text-[25px]">
                         <i class="ri-building-2-line"> Project </i>
                     </h2>
-                    <h2 class="text-sm">Hospital Management System</h2>
+                    <h2 class="text-sm xl:text-[16px] md:text-[25px]">Hospital Management System</h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-36">
+                    <h2 class="text-[#A1A1AA] w-36 xl:w-36 md:w-48 xl:text-[18px] md:text-[25px]">
                        <i class="ri-shield-user-line"> Assignee</i>
                     </h2>
-                    <h2 class="text-sm">Ali Raza</h2>
+                    <h2 class="text-sm xl:text-[16px] md:text-[25px]">Ali Raza</h2>
                  </div>
                   <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-36">
+                    <h2 class="text-[#A1A1AA] w-36 xl:w-36 md:w-48 xl:text-[18px] md:text-[25px]">
                        <i class="ri-chat-voice-line"> Priority</i>
                     </h2>
-                    <h2 class="text-sm">
+                    <h2 class="text-sm xl:text-[16px] md:text-[25px]">
                         <i class="ri-checkbox-blank-circle-fill text-[#E55A5A]"> High</i>
                     </h2>
                  </div>
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-36">
+                    <h2 class="text-[#A1A1AA] w-36 xl:w-36 md:w-48 xl:text-[18px] md:text-[25px]">
                         <i class="ri-calendar-event-line"> Due Date</i>
                     </h2>
-                    <h2 class="text-[#E55A5A]">
+                    <h2 class="text-[#E55A5A] xl:text-[16px] md:text-[25px]">
                         <i class="ri-calendar-event-line text-[#E55A5A]"> 01 Jul,2025 (Today)</i>
                     </h2>
                  </div>            
                  <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-36">
+                    <h2 class="text-[#A1A1AA] w-36 xl:w-36 md:w-48 xl:text-[18px] md:text-[25px]">
                         <i class="ri-bank-line"> Created by</i>
                     </h2>
-                    <h2 class="text-sm">Jhon</h2>
+                    <h2 class="text-sm xl:text-[16px] md:text-[25px]">Jhon</h2>
                  </div>
                   <div class="flex md:mt-2">
-                    <h2 class="text-[#A1A1AA] w-36">
+                    <h2 class="text-[#A1A1AA] w-36 xl:w-36 md:w-48 xl:text-[18px] md:text-[25px]">
                        <i class="ri-building-3-line"> Created on</i>
                     </h2>
-                    <h2 class="text-sm">
+                    <h2 class="text-sm xl:text-[16px] md:text-[25px]">
                       <i class="ri-calendar-event-line"> 10 Jul,2025 at 10:30 AM</i>
                     </h2>
                   </div>
                </div>
                <hr class=" bg-[#131416] border-[#2A2A2E] border mt-4">
                 <div class="mx-2 mt-2 md:ml-4 md:mt-4 md:min-h-[40px] min-h-[40px] h-auto">
-                    <h2 class="font-bold ">Description</h2>
-                    <p class="text-[#A1A1AA] mt-2">
+                    <h2 class="font-bold xl:text-[18px] md:text-[25px]">Description</h2>
+                    <p class="text-[#A1A1AA] mt-2 xl:text-[16px] md:text-[25px]">
                         A completed hospital management system to handle patient
                         records, appointment, billing, staff management and reports.
                     </p>
                 </div>
                <hr class=" bg-[#131416] border-[#2A2A2E] border mt-4">
-               <div class="md:mt-4 md:ml-4 ml-2 mt-2">
-                     <div class="md:w-[400px] flex items-center justify-between md:mt-2 mr-2">
-                        <h2 class="font-bold md:text-xl ">Subtasks</h2>
-                        <p class="text-sm text-[#A1A1AA]">3/5 completed</p>
+               <div class="md:mt-4 md:ml-4 ml-2 mt-2 md:pr-4 xl:pr-0">
+                     <div class="xl:w-[400px] md:w-full flex items-center justify-between md:mt-2 mr-2">
+                        <h2 class="font-bold xl:text-xl md:text-[25px]">Subtasks</h2>
+                        <p class="text-sm xl:text-sm md:text-[18px] text-[#A1A1AA]">3/5 completed</p>
                      </div>
-                     <div class="">
-                        <progress class="progress progress-primary md:w-[400px]  w-[340px]" value="30" max="100"></progress>
+                     <div class="md:pr-3 xl:pr-0">
+                        <progress class="progress progress-primary xl:w-[400px] w-full w-[340px]" value="30" max="100"></progress>
                      </div>
                      <div class="flex gap-3">
-                       <input type="checkbox" checked="checked" class="checkbox"/>
-                       <p class="text-sm text-[#A1A1AA]">Create hero section</p>
+                       <input type="checkbox"  checked="checked" class="checkbox md:w-8 md:h-8 xl:w-6 xl:h-6"/>
+                       <p class="text-sm xl:text-sm md:text-[20px] text-[#A1A1AA]">Create hero section</p>
                      </div>
                      <div class="flex gap-3 mt-2">
-                       <input type="checkbox" checked="checked" class="checkbox"/>
-                       <p class="text-sm text-[#A1A1AA]">Design about section</p>
+                       <input type="checkbox" checked="checked" class="checkbox md:w-8 md:h-8 xl:w-6 xl:h-6"/>
+                       <p class="text-sm xl:text-sm md:text-[20px] text-[#A1A1AA]">Design about section</p>
                      </div>
                      <div class="flex gap-3 mt-2">
-                       <input type="checkbox" checked="checked" class="checkbox"/>
-                       <p class="text-sm text-[#A1A1AA]">Add services section</p>
+                       <input type="checkbox" checked="checked" class="checkbox md:w-8 md:h-8 xl:w-6 xl:h-6"/>
+                       <p class="text-sm xl:text-sm md:text-[20px] text-[#A1A1AA]">Add services section</p>
                      </div>
                      <div class="flex gap-3 mt-2">
-                       <input type="checkbox" checked="checked" class="checkbox"/>
-                       <p class="text-sm text-[#A1A1AA]">Create contact section</p>
+                       <input type="checkbox" checked="checked" class="checkbox md:w-8 md:h-8 xl:w-6 xl:h-6"/>
+                       <p class="text-sm xl:text-sm md:text-[20px] text-[#A1A1AA]">Create contact section</p>
                      </div>
                      <div class="flex gap-3 mt-2">
-                       <input type="checkbox" checked="checked" class="checkbox"/>
-                       <p class="text-sm text-[#A1A1AA]">Review with team</p>
+                       <input type="checkbox" checked="checked" class="checkbox md:w-8 md:h-8 xl:w-6 xl:h-6"/>
+                       <p class="text-sm xl:text-sm md:text-[20px] text-[#A1A1AA]">Review with team</p>
                      </div>
                      
                 </div>  
