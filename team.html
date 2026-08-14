@@ -88,9 +88,9 @@
            </div>
            <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
          <!-- buttom content -->
-        <div class="md:flex items-center md:justify-center md:gap-2"> 
+        <div class="xl:flex items-center xl:justify-center xl:gap-2"> 
           <!-- all user area -->
-           <div class="md:w-[830px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[120vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
+           <div class="xl:w-[830px] md:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[130vh] md:min-h-[40vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">
 
              <div class="md:flex md:items-center md:justify-start  py-2 md:ml-2 md:gap-2 pl-4 md:pl-2 pr-2 md:pr-0">
                  <label class="input md:w-[300px] w-full">
@@ -134,27 +134,27 @@
                    </div>                                       
              </div>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
-             <div class="md:flex md:items-center  md:my-2 md:ml-3 hidden md:block">
-               <div class="ml-2">
-                 <h2 class="text-[#A1A1AA] md:w-[150px]">Member</h2>
-               </div>
-               <div>
-                 <h2 class="text-[#A1A1AA] md:w-[180px]">Department</h2>
-               </div>
-               <div class="flex items-center justify-center  mr-2">
-                 <h2 class="text-[#A1A1AA] md:w-[90px]">Projects</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[140px]">Role</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Status</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[100px]">Joined</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[20px]">Actions</h2>
-               </div>
-             </div>
-             <ul class="md:min-h-[105vh]">
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
-                      <div class="md:w-[150px] md:flex md:block hidden">
+             <div class="overflow-x-auto md:h-[570px] xl:h-[830px] scrollbar-hide">
+             <table class="table">
+               <!-- head -->
+               <thead>
+                 <tr>
+                   <th class="text-[#A1A1AA]">Member</th>
+                   <th class="text-[#A1A1AA]">Department</th>
+                   <th class="text-[#A1A1AA]">Projects</th>
+                   <th class="text-[#A1A1AA]">Role</th>
+                   <th class="text-[#A1A1AA]">Status</th>
+                   <th class="text-[#A1A1AA]">Joined</th>
+                   <th class="text-[#A1A1AA]">Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <!-- row 1 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                    <div class="flex">
                          <div class="avatar">
-                            <div class="w-10 rounded-full">
+                            <div class="w-10 h-10 rounded-full">
                               <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
                             </div>
                           </div>
@@ -162,71 +162,31 @@
                             <h2 class="text-sm font-medium text-white">Ali Raza</h2>
                             <p class="text-[11px] text-gray-400">ali@efficientapp.com</p>
                           </div>
-                       </div> 
-                     </div>
-                     <div class="md:block hidden md:w-[190px]">
+                    </div>
+                   </th>
+                   <td>
                       <p class="text-[#A1A1AA]"><i class="ri-shopping-bag-line text-violet-500"></i> Management</p>
-                     </div>
-                     <div class="md:w-[50px] md:block hidden">
-                         <h2>12</h2>
-                       </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[140px]">
-                        <span class=" btn  btn-xs h-6 bg-[#172235] text-[#6FA7FF] px-2 py-1 rounded-md">Project Management</span>
-                       </p>
-                       <div class="md:w-[80px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6  bg-[#EFB6331A] text-[#EFB633]">Invited</h2>
-                       </div>
-                       
-                       <p class="md:w-[110px]">12 Jan 2025</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                    <div class="md:hidden">  
-                       <div class="flex items-center justify-between">  
-                        <div class="flex ml-2 mt-2">   
-                      <div class="avatar">
-                        <div class="w-10 rounded-full">
-                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
-                        </div>
-                       </div>
-                       <div class="mt-1 ml-1">
-                            <h2 class="text-sm font-medium text-white">Ali Raza</h2>
-                            <p class="text-xs text-gray-400">ali@efficientapp.com</p>
-                          </div>
-                        </div>  
-                         <div>
-                            <button class=" btn  btn-xs h-6 bg-[#172235] text-[#6FA7FF] px-2 py-1 rounded-md">Project Management</button>
-                         </div>
-                         <div class="mr-2">
-                            <i class="ri-more-2-fill"></i>
-                         </div>
-                       </div>
-                       <div class="flex items-center justify-between mt-2 ml-2 mb-2">
-                          <div>
-                              <p class="text-[#A1A1AA] text-[12px]"><i class="ri-shopping-bag-line text-violet-500"></i> Management</p>
-                          </div>
-                          <div class="text-[#A1A1AA] text-[12px]">
-                              <h2>12</h2>
-                          </div>
-                          <div>
-                            <h2 class="btn  btn-xs  mr-2 h-6  bg-[#EFB6331A] text-[#EFB633]">Invited</h2>
-                          </div>
-                          <div>
-                             <p class="text-[12px] mr-2">12 Jan 2025</p>
-                          </div>
-                       </div>  
-                    </div>   
-                     
-               </li>
-                <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                    <div class="md:pl-2 md:flex md:gap-1 md:w-[180px] md:block hidden">
-                      <div class="md:w-[150px] md:flex md:block hidden">
+                   </td>
+                   <td>12</td>
+                   <td>
+                     <button class="btn  btn-xs h-6 w-[125px] bg-[#172235] text-[#6FA7FF] px-2 py-1 rounded-md">
+                        Project Management
+                     </button>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 h-6  bg-[#EFB6331A] text-[#EFB633]">
+                        Invited
+                     </button>
+                   </td>
+                   <td>12 Jan 2025</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 2 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                    <div class="flex">
                          <div class="avatar">
-                            <div class="w-10 rounded-full">
+                            <div class="w-10 h-10 rounded-full">
                               <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
                             </div>
                           </div>
@@ -235,66 +195,27 @@
                             <p class="text-[11px] text-gray-400 ">ayesha@efficientapp.com</p>
                           </div>
                        </div> 
-                     </div>
-                     <div class="md:block hidden md:w-[190px]">
-                      <p class="text-[#A1A1AA]"><i class="ri-shopping-bag-line text-violet-500"></i> Quality Assurance</p>
-                     </div>
-                     <div class="md:w-[50px] md:block hidden">
-                         <h2>2</h2>
-                       </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                       <p class="md:w-[140px]">
-                        <span class=" btn  btn-xs h-6 bg-[#EF44441A] text-[#EF4444] px-2 py-1 rounded-md">Executive Assistant</span>
-                       </p>
-                       <div class="md:w-[80px]">
-                        <h2 class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Active</h2>
-                       </div>
-                       
-                       <p class="md:w-[110px]">30 Jan 2025</p>
-                       <h2 class="md:block hidden md:ml-4 md:w-[40px]">
-                        <i class="ri-more-2-fill"></i>
-                       </h2>
-                     </div>
-                     
-                      <!-- responsive -->
-                    <div class="md:hidden">  
-                       <div class="flex items-center justify-between">  
-                        <div class="flex ml-2 mt-2">   
-                      <div class="avatar">
-                        <div class="w-10 rounded-full">
-                          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
-                        </div>
-                       </div>
-                       <div class="mt-1 ml-1">
-                            <h2 class="text-sm font-medium text-white">Ayesha Noor</h2>
-                            <p class="text-xs text-gray-400">ayesha@efficientapp.com</p>
-                          </div>
-                        </div>  
-                         <div>
-                            <button class=" btn  btn-xs h-6 bg-[#EF44441A] text-[#EF4444] px-2 py-1 rounded-md">Executive Assistant</button>
-                         </div>
-                         <div class="mr-2">
-                            <i class="ri-more-2-fill"></i>
-                         </div>
-                       </div>
-                       <div class="flex items-center justify-between mt-2 ml-2 mb-2">
-                          <div>
-                              <p class="text-[#A1A1AA] text-[12px]"><i class="ri-shopping-bag-line text-violet-500"></i> Quality Assurance</p>
-                          </div>
-                          <div class="text-[#A1A1AA] text-[12px]">
-                              <h2>2</h2>
-                          </div>
-                          <div>
-                            <h2 class="btn  btn-xs  mr-2 h-6   bg-[#34D3991A] text-[#34D399]">Active</h2>
-                          </div>
-                          <div>
-                             <p class="text-[12px] mr-2">30 Jan 2025</p>
-                          </div>
-                       </div>  
-                    </div>   
-                     
-               </li>
-             </ul>
+                   </th>
+                   <td>
+                     <p class="text-[#A1A1AA]"><i class="ri-shopping-bag-line text-violet-500"></i> Quality Assurance</p>
+                   </td>
+                   <td>2</td>
+                   <td>
+                    <button class=" btn  btn-xs h-6 bg-[#EF44441A] text-[#EF4444] px-2 py-1 rounded-md">
+                        Executive Assistant
+                    </button>
+                   </td>
+                  <td>
+                     <button class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">
+                        Active
+                     </button>
+                   </td>
+                   <td>30 Jan 2025</td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
              <!-- Pagination -->
               <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
 
@@ -336,16 +257,16 @@
              </div>             
            </div>
            <!--user message -->
-          <div class="md:w-[450px] w-full  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 ">
-             <div class="md:w-[450px] w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+          <div class="xl:w-[450px] md:w-full w-full md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-6 ">
+             <div class="xl:w-[450px] md:w-full w-full md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <div class="flex items-center justify-between">
                     <i class="ri-group-line font-bold md:text-[20px] md:mt-2 mt-1 md:ml-3 ml-2"> Team Overview</i>
                     <i class="ri-more-fill font-bold md:text-[20px] md:mt-2 mt-1 md:mr-3 mr-2"></i>
                 </div>
                 <hr class=" bg-[#131416] border-[#2A2A2E] border md:mt-4 mt-2">
                 <div class="mb-1 md:mb-0">
-                  <div class="flex gap-3 justify-center md:justify-start mt-4 md:mt-0 md:gap-0">
-                    <div class="md:w-[210px] flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-3 md:ml-2 mt-2 ml-2 rounded-2xl">
+                  <div class="gap-3 grid grid-cols-2  mt-4 xl:mt-0 xl:gap-0 md:pr-3 xl:pr-0 md:pb-3 xl:pb-0">
+                    <div class="xl:w-[210px] md:w-full flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border  h-20 xl:mt-3  mt-2 ml-2 rounded-2xl">
                       <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-indigo-950 flex items-center justify-center ml-2 md:ml-4 md:mt-0">
                          <i class="ri-group-line text-violet-400 text-lg"></i>
                        </div>
@@ -354,7 +275,7 @@
                           <p class="text-[#F5F5F5] text-[13px]">Total Members</p>
                        </div>
                     </div>
-                    <div class="md:w-[210px]  flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
+                    <div class="xl:w-[210px] md:w-full flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20  mt-2 ml-2 rounded-2xl">
                       <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-[#34D3991A]  flex items-center justify-center ml-2 md:ml-4 md:mt-0">
                          <i class="ri-briefcase-5-fill text-[#34D399] text-lg"></i>
                        </div>
@@ -363,9 +284,7 @@
                           <p class="text-[#F5F5F5] text-[13px]">Active</p>
                        </div>
                     </div>
-                  </div>
-                  <div class="flex gap-3 justify-center md:justify-start md:gap-0">
-                    <div class="md:w-[210px] flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
+                    <div class="xl:w-[210px] md:w-full flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
                       <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-[#EFB6331A]  flex items-center justify-center ml-2 md:ml-4 md:mt-0">
                          <i class="ri-device-recover-fill text-[#EFB633] text-lg"></i>
                        </div>
@@ -374,7 +293,7 @@
                           <p class="text-[#F5F5F5] text-[13px]">Invited</p>
                        </div>
                     </div>
-                    <div class="md:w-[210px]  flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
+                    <div class="xl:w-[210px] md:w-full flex items-center  gap-3 w-40 bg-[#131416] border-[#2A2A2E] border md:h-20 h-20 md:mt-2 md:ml-2 mt-2 ml-2 rounded-2xl">
                       <div class="md:w-12 md:h-12 w-10 h-10  rounded-full bg-[#a899991a]  flex items-center justify-center ml-2 md:ml-4 md:mt-0">
                          <i class="ri-briefcase-5-fill text-white text-lg"></i>
                        </div>
@@ -386,9 +305,9 @@
                   </div>
                 </div>
             </div>  
-             <div class="md:w-[450px] mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+             <div class="xl:w-[450px] md:w-full mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Department Distribution</h2>
-                <div class="md:flex md:items-center md:gap-6 md:mt-4">
+                <div class="md:flex md:items-center md:justify-center xl:justify-start md:gap-6 md:mt-4">
                     <div>
                        <div class="md:w-48 w-56 md:ml-2 ml-[69px] mb-4 md:mb-0">
                          <canvas id="myChart"></canvas>
@@ -415,7 +334,7 @@
                 </div>
                 <h2 class="md:mt-4 mt-4 text-center font-bold md:text-2xl md:ml-3">24 Total</h2>
              </div>  
-             <div class="md:w-[450px] mt-2 w-full  md:min-h-[370px] md:h-auto min-h-[60vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+             <div class="xl:w-[450px] md:w-full mt-2 w-full  md:min-h-[370px] md:h-auto min-h-[60vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <div class="flex items-center justify-between">
                     <h2 class="font-bold md:text-[20px] md:ml-3 ml-2 mt-1 md:mt-2 text-[18px]">Recent Activity</h2>
                     <p class="md:mr-3 mr-2 mt-1 text-violet-500">View all</p>

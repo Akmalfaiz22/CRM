@@ -60,55 +60,54 @@
     <div class="min-h-screen w-full ">
        <!--top content -->
             
-         <div class="md:flex md:items-center md:justify-between md:ml-2 p-4">
+         <div class="xl:grid xl:grid-cols-2 xl:items-center xl:justify-between md:ml-2 p-4">
            <div>
               <h2 class="font-bold md:text-2xl text-[20px]">Kanban Board</h2>
               <p class="text-[#A1A1AA] text-sm md:text-[15px]">Visualize and manage your work in progress</p>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-4">
-             <div class="flex items-center justify-center flex-row md:gap-4 md:mt-0 gap-6 mt-2">   
-             <div class="flex items-center w-36 h-16 md:justify-start md:w-36 md:h-11  
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-2 xl:flex xl:justify-end md:items-center xl:gap-3 mt-4 xl:mt-0">
+                
+             <div class="flex items-center w-full h-16 md:justify-start xl:w-36 md:h-11  
                          px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                   
                   <h2 class="text-sm md:text-[16px]">
                      <i class="ri-folder-4-fill"> All Projects</i>
                   </h2>
               </div>
-              <div class="flex items-center w-40 h-16 md:justify-start md:w-28 md:h-11  
+              <div class="flex items-center w-full h-16 md:justify-start xl:w-28 md:h-11  
                          px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                 
                   <h2 class="text-sm md:text-[16px]">
                      <i class="ri-filter-2-line"> Filters</i>
                   </h2>
               </div>
-              <div class="flex items-center w-44 h-16 md:justify-start md:w-44 md:h-11  
+              <div class="flex items-center w-full h-16 md:justify-start xl:w-44 md:h-11  
                          px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                   
                   <h2 class="text-sm md:text-[16px]">
                      Group by: Status
                   </h2>
               </div>
-             </div> 
-             <button class="btn w-full md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Task</button>          
+             <button class="btn w-full col-span-3 md:col-span-1  md:btn-md btn-active btn-primary xl:w-48 md:text-[16px] mt-4 md:mt-0">+ Add Task</button>          
            </div>
          </div> 
           <hr class=" bg-[#131416] border-[#2A2A2E] border">
-        <div class="ml-2 mt-2 grid grid-cols-5 gap-3 md:hidden mr-2 md:mr-0">
+        <div class="ml-2 mt-2 grid grid-cols-5 gap-3 xl:hidden mr-2 md:mr-0">
           <button class="btn btn-sm" id="todoBtn">To Do</button>
           <button class="btn btn-sm" id="progressBtn">In Progress</button>
           <button class="btn btn-sm" id="reviewBtn">Review</button>
           <button class="btn btn-sm" id="doneBtn">Done</button>
           <button class="btn btn-sm" id="blockBtn">Blocked</button>
         </div>
-        <div class="w-[calc(100%_-_1rem)] md:w-[99%] mt-4 mx-2 bg-[#131416] border-[#2A2A2E] border min-h-[500px] h-auto rounded-2xl">
-        <div class="md:flex md:gap-6">  
-           <div class="hidden md:block" id="todo">
-            <div class="md:min-h-36 md:h-auto md:w-[230px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:ml-3 md:mt-3">
-              <div class="bg-[#3B82F6] border-[#3B82F6] border h-[6px] md:w-[222px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
-              <h2 class="ml-3 font-bold mt-2 md:text-[16px]">To Do</h2>
-               <button class="btn btn-sm ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
+        <div class="w-[calc(100%_-_1rem)] xl:w-[99%] mt-4 mx-2 bg-[#131416] border-[#2A2A2E] border min-h-[500px] h-auto rounded-2xl">
+        <div class="md:flex md:gap-6 md:min-h-[780px] md:h-auto">  
+           <div class="hidden xl:block  xl:w-[230px] md:w-full md:pr-5" id="todo">
+            <div class="md:min-h-36 md:h-auto xl:w-[230px] md:w-full bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:ml-3 md:mt-3">
+              <div class="bg-[#3B82F6] border-[#3B82F6] border h-[6px] xl:w-[222px]  md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 font-bold mt-2 xl:text-[16px] md:text-[20px]">To Do</h2>
+               <button class="btn btn-sm xl:btn-sm md:btn-md ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
                <div>
-                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
+                 <div class="md:min-h-20 md:h-auto xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Research and competitor analysis for landing page</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -123,7 +122,7 @@
                        </p>
                      </div>
                  </div>
-                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
+                 <div class="md:min-h-20 md:h-auto xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Creae wireframe for dashboard</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -138,7 +137,7 @@
                        </p>
                      </div>
                  </div>
-                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
+                 <div class="md:min-h-20 md:h-auto xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Research and competitor analysis for landing page</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -154,18 +153,18 @@
                      </div>
                  </div>
                </div>
-               <div class="md:min-h-10 mb-2 md:h-auto h-10 md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
+               <div class="md:min-h-10 mb-2 md:h-auto h-10 xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
                  <h2 class="ml-4 mt-2">+ Add Task</h2>
                </div>
             </div>
            </div> 
-           <div class="hidden md:block" id="progress">
-            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:mt-3">
-              <div class="bg-[#EFB633] border-[#EFB633] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
-              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">In Progress</h2>
-               <button class="btn btn-sm md:ml-3 ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
+           <div class="hidden xl:block xl:w-[230px] md:w-full " id="progress">
+            <div class="md:min-h-36 md:h-auto xl:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:mt-3">
+              <div class="bg-[#EFB633] border-[#EFB633] border h-[6px] xl:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 xl:text-[16px] md:text-[20px]">In Progress</h2>
+               <button class="btn btn-sm xl:btn-sm md:btn-md md:ml-3 ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
                <div>
-                 <div class="md:min-h-20 md:h-auto md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 md:ml-3 mt-3 mb-1">
+                 <div class="md:min-h-20 md:h-auto xl:w-[210px] w-[calc(100%_-_1rem)]  bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 xl:ml-3 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Research and competitor analysis for landing page</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -186,18 +185,18 @@
                  </div>
                  
                </div>
-               <div class="md:min-h-10 mb-2 md:h-auto h-10 md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 md:ml-3 mt-3 mb-1 rounded-4xl">
+               <div class="md:min-h-10 mb-2 md:h-auto h-10 xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 md:ml-3 mt-3 mb-1 rounded-4xl">
                  <h2 class="ml-4 mt-2">+ Add Task</h2>
                </div>
             </div>
            </div> 
-            <div class="hidden md:block" id="review">
-            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:mt-3">
-              <div class="bg-[#8B5CF6] border-[#8B5CF6] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
-              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">Review</h2>
-               <button class="btn btn-sm md:ml-3 ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
+            <div class="hidden xl:block xl:w-[230px] md:w-full" id="review">
+            <div class="md:min-h-36 md:h-auto xl:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl md:mt-3">
+              <div class="bg-[#8B5CF6] border-[#8B5CF6] border h-[6px] xl:w-[230px] md:mt-[2.5px] m:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 xl:text-[16px] md:text-[20px]">Review</h2>
+               <button class="btn btn-sm xl:btn-sm md:btn-md md:ml-3 ml-2 mt-3 text-[#A1A1AA]">+ Add Task</button>
                <div>
-                 <div class="md:min-h-20 md:h-auto md:ml-3 md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
+                 <div class="md:min-h-20 md:h-auto md:ml-3 xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Review landing page design</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#172235] text-[#6FA7FF]">Design</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -213,18 +212,18 @@
                      </div>
                  </div>
                </div>
-               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
+               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
                  <h2 class="ml-4 mt-2">+ Add Task</h2>
                </div>
             </div>
            </div>
-           <div class="hidden md:block" id="done">
-            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl  md:mt-3">
-              <div class="bg-[#34D399] border-[#34D399] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
-              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">Done</h2>
-               <button class="btn btn-sm ml-2 md:ml-3 mt-3 text-[#A1A1AA]">+ Add Task</button>
+           <div class="hidden xl:block xl:w-[230px] md:w-full" id="done">
+            <div class="md:min-h-36 md:h-auto xl:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl  md:mt-3">
+              <div class="bg-[#34D399] border-[#34D399] border h-[6px] xl:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 xl:text-[16px] md:text-[20px]">Done</h2>
+               <button class="btn btn-sm xl:btn-sm md:btn-md ml-2 md:ml-3 mt-3 text-[#A1A1AA]">+ Add Task</button>
                <div>
-                 <div class="md:min-h-20 md:ml-3 md:h-auto md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
+                 <div class="md:min-h-20 xl:ml-3 md:h-auto xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl ml-2 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Project requirement gathering</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2 bg-[#34D3991A] text-[#34D399]">Management</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -240,18 +239,18 @@
                      </div>
                  </div>
                </div>
-               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
+               <div class="md:min-h-10 xl:ml-3 mb-2 md:h-auto h-10 xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
                  <h2 class="ml-4 mt-2">+ Add Task</h2>
                </div>
             </div>
            </div>
-            <div class="hidden md:block" id="block">
-            <div class="md:min-h-36 md:h-auto md:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl  md:mt-3">
-              <div class="bg-[#EF4444] border-[#EF4444] border h-[6px] md:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
-              <h2 class="ml-3 md:ml-4 font-bold mt-2 md:text-[16px]">Blocked</h2>
-               <button class="btn btn-sm ml-2 md:ml-3 mt-3 text-[#A1A1AA]">+ Add Task</button>
+            <div class="hidden xl:block xl:w-[230px] md:w-full" id="block">
+            <div class="md:min-h-36 md:h-auto xl:w-[240px] bg-[#0F0F11] border-[#2A2A2E] border rounded-2xl  md:mt-3">
+              <div class="bg-[#EF4444] border-[#EF4444] border h-[6px] xl:w-[230px] md:mt-[2.5px] md:ml-1 rounded-xl"></div>
+              <h2 class="ml-3 md:ml-4 font-bold mt-2 xl:text-[16px] md:text-[20px]">Blocked</h2>
+               <button class="btn btn-sm xl:btn-sm md:btn-md ml-2 md:ml-3 mt-3 text-[#A1A1AA]">+ Add Task</button>
                <div>
-                 <div class="md:min-h-20 md:ml-3 md:h-auto md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
+                 <div class="md:min-h-20 xl:ml-3 md:h-auto xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border rounded-2xl mx-2 mt-3 mb-1">
                     <h3 class="ml-4 w-44 mt-2">Awaiting client content</h3>
                      <h2 class="btn  btn-xs md:btn-sm ml-3 mt-2  bg-[#8B5CF61A] text-[#8B5CF6]">Content</h2>
                      <div class="ml-3 mt-2 flex items-center justify-between">
@@ -270,7 +269,7 @@
                      </div>
                  </div>
                </div>
-               <div class="md:min-h-10 md:ml-3 mb-2 md:h-auto h-10 md:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
+               <div class="md:min-h-10 xl:ml-3 mb-2 md:h-auto h-10 xl:w-[210px] w-[calc(100%_-_1rem)] bg-[#131416] border-[#2A2A2E] border mx-2 mt-3 mb-1 rounded-4xl">
                  <h2 class="ml-4 mt-2">+ Add Task</h2>
                </div>
             </div>
