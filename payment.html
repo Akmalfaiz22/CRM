@@ -60,15 +60,15 @@
     <div class="min-h-screen w-full p-4">
        <!--top content -->
             
-         <div class="md:flex md:items-center md:justify-between md:ml-2">
+         <div class="xl:flex xl:items-center xl:justify-between xl:ml-2">
            <div>
               <h2 class="font-bold md:text-2xl text-[20px]">Payments</h2>
               <p class="text-[#A1A1AA] text-[16px] md:text-lg">Track payments,invoices and manage youcash flow</p>
             </div>
-            <div class="md:flex">
-             <div class="grid grid-cols-2 items-center justify-center md:mt-0 gap-4 mt-2 md:ml-4">   
+            <div class="md:flex md:justify-between xl:justify-start">
+             <div class="grid grid-cols-2 items-center justify-center xl:mt-0 gap-4 mt-2 xl:ml-4 ">   
               <div class="flex items-center w-full md:justify-start gap-2 md:w-44 md:h-11  
-                         px-4 py-2 md:ml-8 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                          px-4 py-2 xl:ml-8 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                   
                   <h2 class="">+ Create Invoice</h2>
               </div>
@@ -80,13 +80,13 @@
                   </h2>
               </div>
              </div>       
-             <button class="btn w-full  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-0">+ New Payment</button> 
+             <button class="btn w-full  md:btn-md btn-active btn-primary md:w-48 md:text-[16px] mt-4 md:mt-2 xl:mt-0">+ New Payment</button> 
             </div>  
          </div>          
          <!-- buttom content -->
-          <div class="md:flex gap-2">
+          <div class="xl:flex gap-2">
             <!-- all user area -->
-            <div class="md:w-[900px] w-full md:min-h-[110vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2">
+            <div class="xl:w-[900px] md:w-full w-full xl:min-h-[110vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2">
               <!-- card -->
               <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 mt-4">
 
@@ -156,8 +156,7 @@
 
                </div>
 
-
-                <div class="md:w-[900px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-[120vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
+                <div class="xl:w-[900px] md:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[120vh] md:min-h-[90px]: md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
               <div class="md:flex md:items-center md:gap-6 my-2 mx-3 ">
                 <div class="flex items-center gap-6">
                  <h2  class="font-bold text-sm md:text-[16px]">All Transactions</h2>
@@ -223,132 +222,75 @@
                                                      
              </div>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
-             <div class="md:flex md:items-center  md:my-2 md:ml-3 hidden md:block">
-               <div class="ml-2">
-                 <h2 class="text-[#A1A1AA] md:w-[230px]">Transaction</h2>
-               </div>
-               <div>
-                 <h2 class="text-[#A1A1AA] md:w-[140px]">Client</h2>
-               </div>
-               <div class="flex items-center justify-center  mr-2">
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Type</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[120px]">RoleInvoice/Ref</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[96px]">Date</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[80px]">Amount</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[70px]">Status</h2>
-                 <h2 class="text-[#A1A1AA] md:w-[0px]">Actions</h2>
-               </div>
-             </div>
-             <ul class="md:min-h-[100vh]">
-               <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                  <div class="md:pl-2 md:flex md:gap-1 md:block hidden">
-                     <div class="flex items-center gap-2">
+             <div class="overflow-x-auto xl:h-[100vh] md:h-[90vh] md:scrollbar-hide xl:scrollbar-default">
+             <table class="table">
+               <!-- head -->
+               <thead>
+                 <tr>
+                   <th class="text-[#A1A1AA]">Transaction</th>
+                   <th class="text-[#A1A1AA]">Client</th>
+                   <th class="text-[#A1A1AA]">Type</th>
+                   <th class="text-[#A1A1AA]">RoleInvoice/Ref</th>
+                   <th class="text-[#A1A1AA]">Date</th>
+                   <th class="text-[#A1A1AA] ">Amount</th>
+                    <th class="text-[#A1A1AA]">Status</th>
+                   <th class="text-[#A1A1AA]">Action</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <!-- row 1 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
+                      <div class="flex items-center gap-2">
                        <div class="w-8 h-8 rounded-md bg-[#2B1D50] flex items-center justify-center">
                          <i class="ri-file-text-fill text-[#8B5CF6] text-lg"></i>
                        </div>
                        <h2 class="md:w-[186px]">Invoice #INV-2025-043</h2>
                      </div>
-                      <div class="md:w-[136px]">
+                   </th>
+                   <td>
                        <h2 class="md:w-[136px]">ABC Hospital</h2>
                        <p class="text-[#A1A1AA] text-[14px]">Ali Raza</p>
-                     </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                        <div class="md:w-[78px]">
-                           <h2 class="btn  btn-xs  mr-2 h-6  bg-[#8B5CF61A] text-[#8B5CF6]">Invoice</h2>
-                        </div>
-                        <div>
-                          <h2 class="md:w-[116px]">INV-2025-043</h2>
-                        </div>
-                        <div>
-                          <h2 class="md:w-[100px]">21 May,2025</h2>
-                        </div>
-                        <div>
-                          <h2 class="md:w-[80px]">₹75,000</h2>
-                        </div>
-                        <div class="md:w-[76px]">
-                           <h2 class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Paid</h2>
-                        </div>
-                        <h2 class="md:block hidden md:ml-4 ">
-                          <i class="ri-more-2-fill"></i>
-                       </h2>
-                    </div>
-                  </div>
-                  <!-- responsibe -->
-                   <div class="md:hidden pt-3 pl-2 flex items-center justify-between">
-                     <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-md bg-[#2B1D50] flex items-center justify-center ">
-                          <i class="ri-file-text-fill text-[#8B5CF6] text-lg"></i>
-                         </div>
-                       <div>
-                         <h2 class="text-sm font-medium text-white">Invoice #INV-2025-043</h2>
-                         <p class="text-xs text-gray-400">ABC Hospital</p>
-                         <p class="text-xs text-gray-400">INV-2025-043 <i class="ri-checkbox-blank-circle-fill text-[8px]"></i> 21 May,2025</p>
-                       </div>
-                      </div>
+                   </td>
+                   <td>
+                      <button class="btn  btn-xs  mr-2 h-6  bg-[#8B5CF61A] text-[#8B5CF6]">Invoice</button>
+                    </td>
+                   <td>INV-2025-043</td>
+                   <td>21 May,2025</td>
+                   <td class="pl-8">₹75,000</td>
+                   <td>
+                    <button class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Paid</button>
+                   </td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+                 <!-- row 2 -->
+                 <tr class="hover:bg-base-300">
+                   <th>
                       <div class="flex items-center gap-2">
-                        <div>
-                           <h2 class="text-sm font-medium text-white">₹75,000</h2>
-                           <h2 class="btn  btn-xs  mt-1  bg-[#34D3991A] text-[#34D399]">Paid</h2>
-                        </div>
-                        <div><i class="ri-more-2-fill"></i></div>
-                      </div>
-                   </div>
-               </li>
-                <li class="md:flex md:items-center   bg-[#0F0F11] min-h-20 h-auto md:h-20 md:mx-2 rounded-md mt-2 md:mt-4 mr-2 hover:border-[#2A2A2E] hover:border ml-2">
-                  <div class="md:pl-2 md:flex md:gap-1 md:block hidden">
-                     <div class="flex items-center gap-2">
                        <div class="w-8 h-8 rounded-md bg-[#163C2D] flex items-center justify-center">
                          <i class="ri-file-text-fill text-[#4ADE80] text-lg"></i>
                        </div>
                        <h2 class="md:w-[186px]">Payment Received</h2>
                      </div>
-                      <div class="md:w-[136px]">
-                       <h2 class="md:w-[136px]">ABC Hospital</h2>
-                       <p class="text-[#A1A1AA] text-[14px]">Ali Raza</p>
-                     </div>
-                     <div class="md:flex md:items-center md:justify-center  md:block hidden">
-                        <div class="md:w-[78px]">
-                           <h2 class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Payment</h2>
-                        </div>
-                        <div>
-                          <h2 class="md:w-[116px]">PAY-2025-031</h2>
-                        </div>
-                        <div>
-                          <h2 class="md:w-[100px]">20 May,2025</h2>
-                        </div>
-                        <div>
-                          <h2 class="md:w-[80px]">-₹50,000</h2>
-                        </div>
-                        <div class="md:w-[76px]">
-                           <h2 class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Completed</h2>
-                        </div>
-                        <h2 class="md:block hidden md:ml-4 ">
-                          <i class="ri-more-2-fill"></i>
-                       </h2>
-                    </div>
-                  </div>
-                  <!-- responsibe -->
-                   <div class="md:hidden pt-3 pl-2 flex items-center justify-between">
-                     <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-md bg-[#163C2D] flex items-center justify-center ">
-                          <i class="ri-file-text-fill text-[#4ADE80] text-lg"></i>
-                         </div>
-                       <div>
-                         <h2 class="text-sm font-medium text-white">Payment Received</h2>
-                         <p class="text-xs text-gray-400">ABC Hospital</p>
-                         <p class="text-xs text-gray-400">PAY-2025-031 <i class="ri-checkbox-blank-circle-fill text-[8px]"></i> 20 May,2025</p>
-                       </div>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <div>
-                           <h2 class="text-sm font-medium text-white">-₹50,000</h2>
-                           <h2 class="btn  btn-xs  mt-1  bg-[#34D3991A] text-[#34D399]">Completed</h2>
-                        </div>
-                        <div><i class="ri-more-2-fill"></i></div>
-                      </div>
-                   </div>
-               </li>
-             </ul>
+                   </th>
+                   <td>
+                     <h2 class="md:w-[136px]">ABC Hospital</h2>
+                     <p class="text-[#A1A1AA] text-[14px]">Ali Raza</p>
+                   </td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Payment</button>
+                   </td>
+                   <td>PAY-2025-031</td>
+                   <td>20 May,2025</td>
+                   <td class="">-₹50,000</td>
+                   <td>
+                     <button class="btn  btn-xs  mr-2 h-6  bg-[#34D3991A] text-[#34D399]">Completed</button>
+                   </td>
+                   <td><i class="ri-more-2-fill"></i></td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
              <!-- Pagination -->
               <div class="flex flex-col md:flex-row items-center justify-between px-4 py-4 border-t border-[#2A2A2E] mt-4">
 
@@ -391,14 +333,14 @@
                 </div>
               </div>
               <!--user message -->
-              <div class="md:w-[390px] w-full  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-4 ">
-                <div class="md:w-[390px] mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+              <div class="xl:w-[390px] md:w-full w-full  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-4 ">
+                <div class="xl:w-[390px]  mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <div class="flex items-center justify-between">
                   <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Payment Summary</h2>
                   <p class="text-gray-500 md:mr-3 mr-2">This Month</p>
                 </div>
                  <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
-                <div class="md:flex md:items-center md:gap-4 md:mt-4">
+                <div class="md:flex md:items-center xl:justify-start md:justify-center md:gap-4 md:mt-4">
                     <div>
                        <div class="md:w-[200px] w-56 md:ml-2 ml-[69px] mb-4 md:mb-0">
                          <canvas id="myChart"></canvas>
@@ -438,7 +380,7 @@
                 <h2 class="md:mt-4 mt-4 ml-5 text-center font-bold text-[20px] md:text-2xl md:ml-3">₹24,80,000 Total</h2>
               
              </div>  
-             <div class="md:w-[390px] mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+             <div class="xl:w-[390px]  mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
               <div class="flex items-center justify-between">
                   <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Invoices Due</h2>
                   <p class="text-gray-500 md:mr-3 mr-2 text-violet-500">All View</p>
@@ -569,7 +511,7 @@
                  </div>
                </ul>
              </div>  
-             <div class="md:w-[390px] mt-2 w-full  md:min-h-[260px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+             <div class="xl:w-[390px] mt-2 w-full  md:min-h-[260px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
                 <div class="flex items-center justify-between">
                   <h2 class="font-bold md:text-[20px] text-[16px] ml-3 mt-1 md:ml-4 md:mt-2">Recent Activity</h2>
                   <p class="text-gray-500 md:mr-3 mr-2 text-violet-500">All View</p>
@@ -680,7 +622,7 @@
                   </div>
                 </ul>
              </div> 
-             <div class="md:w-[390px] mt-2 w-full  md:min-h-[165px] md:h-auto min-h-[160px] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl px-2 md:px-0">
+             <div class="xl:w-[390px] mt-2 w-full  md:min-h-[165px] md:h-auto min-h-[160px] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl px-2 md:px-0">
                 <h2 class="font-bold text-[20px] ml-3 mt-3">Quick Actions</h2>
                 <div class="flex items-center justify-center mt-4 gap-1">
                   <div class="w-[90px] h-[80px] bg-[#171923]  rounded-lg flex flex-col items-center justify-center
@@ -748,28 +690,28 @@
           <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
          </li>
 
-         <li>
+         <li id="indexSide">
            <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
          </li>
-        <li>
+        <li id="inboxSide">
            <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
          </li>
-         <li>
+         <li id="clientSide">
            <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
          </li>
-         <li>
+         <li id="projectSide">
            <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
          </li>
-         <li>
+         <li id="taskSide">
            <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
          </li>
-         <li>
+         <li id="kanbanSide">
            <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
          </li>
-         <li>
+         <li id="teamSide" >
            <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
          </li>
-         <li>
+         <li id="calenderSide">
            <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
          </li>
          <hr>
@@ -780,13 +722,13 @@
             FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
           </div>
           <ul class="hidden" id="workplace">
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
               <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
             </li>
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
               <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
             </li>
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
               <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
             </li>
           </ul>
@@ -798,13 +740,13 @@
             REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
           </div>
           <ul class="hidden" id="reports">
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="analyticsSide">
               <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
             </li>
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
               <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
             </li>
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
               <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
             </li>
           </ul>
@@ -816,27 +758,27 @@
             ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
           </div>
           <ul class="hidden" id="assets">
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
               <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
             </li>
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
               <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
             </li>
-            <li class="md:text-lg text-[#A1A1AA]">
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
               <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
             </li>
           </ul>
         </li>  
         <hr class="text-[#A1A1AA]">
         <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
-        <li>
+        <li id="messageSide">
            <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
          </li>
-         <li>
+         <li id="helpSide">
            <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
          </li>
         <hr class="text-[#A1A1AA]">
-        <li class="mt-1 mb-1">
+        <li class="mt-1 mb-1" id="settingSide">
            <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
         </li>
         <hr class="text-[#A1A1AA]">
