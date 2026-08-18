@@ -10,25 +10,7 @@ const taskChart = document.getElementById('taskChart');
 const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
 const invoiceChart = document.getElementById('invoiceChart');
 const cashChart = document.getElementById('cashChart').getContext('2d');
-const indexSide = document.getElementById('indexSide');
-const inboxSide = document.getElementById('inboxSide');
-const clientSide = document.getElementById('clientSide');
-const taskSide = document.getElementById('taskSide');
-const kanbanSide = document.getElementById('kanbanSide');
-const projectSide = document.getElementById('projectSide');
-const calenderSide = document.getElementById('calenderSide');
-const paymentSide = document.getElementById('paymentSide');
-const invoiceSide = document.getElementById('invoiceSide');
-const expensesSide = document.getElementById('expensesSide');
-const teamSide = document.getElementById('teamSide');
-const revenueSide = document.getElementById('revenueSide');
-const performanceSide = document.getElementById('performanceSide');
-const documentSide = document.getElementById('documentSide');
-const mediaSide = document.getElementById('mediaSide');
-const filesSide = document.getElementById('filesSide');
-const messageSide = document.getElementById('messageSide');
-const helpSide = document.getElementById('helpSide');
-const settingSide = document.getElementById('settingSide');
+
 
 const purpleGradient = revenue.createLinearGradient(0, 0, 0, 100);
 purpleGradient.addColorStop(0, 'rgba(139, 58, 255, 0.25)');
@@ -885,47 +867,3 @@ new Chart(cashChart, {
       }
     }
   });
-
-indexSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/index.html"
-})
-
-inboxSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/inbox.html"
-})
-
-clientSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/client.html"
-})
-
-taskSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/task.html"
-})
-
-kanbanSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/kanban.html"
-})
-
-projectSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/project.html"
-})
-
-calenderSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/calendar.html"
-})
-
-paymentSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/payment.html"
-})
-
-invoiceSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/invoice.html"
-})
-
-expensesSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/expenses.html"
-})
-
-teamSide.addEventListener("click", () => {
-  location.href = "http://localhost:3000/team.html"
-})
