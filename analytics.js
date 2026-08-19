@@ -45,341 +45,6 @@ growthGradient.addColorStop(0,'rgba(139, 58, 255, 0.30)');
 growthGradient.addColorStop(1,'rgba(139, 58, 255, 0)');
 
 
-new Chart(revenue, {
-  type: 'line',
-
-  data: {
-    labels: [
-      '', '', '', '', '', '',
-      '', '', '', '', '', '',
-      '', '', '', '', '', ''
-    ],
-
-    datasets: [{
-      data: [
-        18, 35, 25, 42, 38, 43,
-        31, 35, 28, 40, 25, 35,
-        38, 37, 48, 42, 55, 50
-      ],
-
-      borderColor: '#8B3DFF',
-      backgroundColor: purpleGradient,
-
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 0,
-
-      tension: 0.4,
-
-      fill: true
-    }]
-  },
-
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-
-    plugins: {
-      legend: {
-        display: false
-      },
-      tooltip: {
-        enabled: false
-      }
-    },
-
-    scales: {
-      x: {
-        display: false,
-        grid: {
-          display: false
-        }
-      },
-
-      y: {
-        display: false,
-        grid: {
-          display: false
-        }
-      }
-      },
-
-    elements: {
-      line: {
-        capBezierPoints: true
-      }
-    }
-  }
-});
-
-new Chart(expenses, {
-  type: 'line',
-
-  data: {
-    labels: [
-      '', '', '', '', '', '',
-      '', '', '', '', '', '',
-      '', '', '', '', '', ''
-    ],
-
-    datasets: [{
-      data: [
-        18, 35, 25, 42, 38, 43,
-        31, 35, 28, 40, 25, 35,
-        38, 37, 48, 42, 55, 50
-      ],
-
-      borderColor: '#EF4444',
-      backgroundColor: redGradient,
-
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 0,
-
-      tension: 0.4,
-
-      fill: true
-    }]
-  },
-
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-
-    plugins: {
-      legend: {
-        display: false
-      },
-      tooltip: {
-        enabled: false
-      }
-    },
-
-    scales: {
-      x: {
-        display: false,
-        grid: {
-          display: false
-        }
-      },
-
-      y: {
-        display: false,
-        grid: {
-          display: false
-        }
-      }
-    },
-
-    elements: {
-      line: {
-        capBezierPoints: true
-      }
-    }
-  }
-});
-
-new Chart(profit, {
-  type: 'line',
-
-  data: {
-    labels: [
-      '', '', '', '', '', '',
-      '', '', '', '', '', '',
-      '', '', '', '', '', ''
-    ],
-
-    datasets: [{
-      data: [
-        18, 35, 25, 42, 38, 43,
-        31, 35, 28, 40, 25, 35,
-        38, 37, 48, 42, 55, 50
-      ],
-
-      borderColor: '#22C55E',
-      backgroundColor: greenGradient,
-
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 0,
-
-      tension: 0.4,
-
-      fill: true
-    }]
-  },
-
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-
-    plugins: {
-      legend: {
-        display: false
-      },
-      tooltip: {
-        enabled: false
-      }
-    },
-
-    scales: {
-      x: {
-        display: false,
-        grid: {
-          display: false
-        }
-      },
-
-      y: {
-        display: false,
-        grid: {
-          display: false
-        }
-      }
-    },
-
-    elements: {
-      line: {
-        capBezierPoints: true
-      }
-    }
-    }
-});
-
-new Chart(client, {
-  type: 'line',
-
-  data: {
-    labels: [
-      '', '', '', '', '', '',
-      '', '', '', '', '', '',
-      '', '', '', '', '', ''
-    ],
-
-    datasets: [{
-      data: [
-        18, 35, 25, 42, 38, 43,
-        31, 35, 28, 40, 25, 35,
-        38, 37, 48, 42, 55, 50
-      ],
-
-      borderColor: '#3B82F6',
-      backgroundColor: blueGradient,
-
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 0,
-
-      tension: 0.4,
-
-      fill: true
-    }]
-  },
-
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-
-    plugins: {
-      legend: {
-        display: false
-      },
-      tooltip: {
-        enabled: false
-      }
-    },
-
-    scales: {
-      x: {
-        display: false,
-        grid: {
-          display: false
-        }
-      },
-
-      y: {
-        display: false,
-        grid: {
-          display: false
-        }
-      }
-    },
-
-    elements: {
-      line: {
-        capBezierPoints: true
-      }
-    }
-    }
-});
-
-new Chart(Project, {
-  type: 'line',
-
-  data: {
-    labels: [
-      '', '', '', '', '', '',
-      '', '', '', '', '', '',
-      '', '', '', '', '', ''
-    ],
-
-    datasets: [{
-      data: [
-        18, 35, 25, 42, 38, 43,
-        31, 35, 28, 40, 25, 35,
-        38, 37, 48, 42, 55, 50
-      ],
-
-      borderColor: '#F59E0B',
-      backgroundColor: orangeGradient,
-
-      borderWidth: 2,
-      pointRadius: 0,
-      pointHoverRadius: 0,
-
-      tension: 0.4,
-
-      fill: true
-    }]
-  },
-
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-
-    plugins: {
-      legend: {
-        display: false
-      },
-      tooltip: {
-        enabled: false
-      }
-    },
-
-    scales: {
-      x: {
-        display: false,
-        grid: {
-          display: false
-        }
-      },
-
-      y: {
-        display: false,
-        grid: {
-          display: false
-        }
-      }
-    },
-
-    elements: {
-      line: {
-        capBezierPoints: true
-      }
-    }
-    }
-});
-
 new Chart(chart, {
     type: 'bar',
 
@@ -867,3 +532,109 @@ new Chart(cashChart, {
       }
     }
   });
+
+function createMiniChart(name, color, data, bgc) {
+  
+  new Chart(name, {
+  type: 'line',
+
+  data: {
+    labels: [
+      '', '', '', '', '', '',
+      '', '', '', '', '', '',
+      '', '', '', '', '', ''
+    ],
+
+    datasets: [{
+      data: data,
+
+      borderColor: color,
+      backgroundColor: bgc,
+
+      borderWidth: 2,
+      pointRadius: 0,
+      pointHoverRadius: 0,
+
+      tension: 0.4,
+
+      fill: true
+    }]
+  },
+
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        enabled: false
+      }
+    },
+
+    scales: {
+      x: {
+        display: false,
+        grid: {
+          display: false
+        }
+      },
+
+      y: {
+        display: false,
+        grid: {
+          display: false
+        }
+      }
+      },
+
+    elements: {
+      line: {
+        capBezierPoints: true
+      }
+    }
+  }
+});
+}
+
+createMiniChart(
+  "revenue","#8B3DFF",
+  [ 18, 35, 25, 42, 38, 43,
+    31, 35, 28, 40, 25, 35,
+    38, 37, 48, 42, 55, 50
+  ],purpleGradient
+)
+
+createMiniChart(
+  "expenses","#EF4444",
+  [ 18, 35, 25, 42, 38, 43,
+    31, 35, 28, 40, 25, 35,
+    38, 37, 48, 42, 55, 50
+  ],redGradient 
+)
+
+createMiniChart(
+  "client","#22C55E",
+  [ 18, 35, 25, 42, 38, 43,
+    31, 35, 28, 40, 25, 35,
+    38, 37, 48, 42, 55, 50
+  ],greenGradient 
+)
+
+createMiniChart(
+  "profit","#3B82F6",
+  [ 18, 35, 25, 42, 38, 43,
+    31, 35, 28, 40, 25, 35,
+    38, 37, 48, 42, 55, 50
+  ],blueGradient 
+)
+
+createMiniChart(
+  "Project","#F59E0B",
+  [ 18, 35, 25, 42, 38, 43,
+    31, 35, 28, 40, 25, 35,
+    38, 37, 48, 42, 55, 50
+  ],orangeGradient 
+)

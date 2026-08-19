@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Performance</h1>
+      </div>
+      </div>
+      <div class="">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->         
+      <div class="xl:flex md:items-center md:justify-between">
+           <div>
+              <h2 class="font-bold md:text-2xl text-[22px]">Performance</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg">Track productivity, delivery and team performance across your agency.</p>
+            </div>
+            <div class="xl:flex gap-2 grid grid-cols-2 md:grid-cols-3 md:mt-4 xl:mt-0">
+              <div class="dropdown dropdown-end mt-4 md:mt-0 w-full col-span-2 md:col-span-1 md:mb-2 xl:mb-0">
+             <div
+                tabindex="0"
+                role="button"
+                class="flex items-center justify-center md:justify-start gap-2 md:w-[250px] md:h-11  w-full px-4 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]"
+              >
+                <i class="ri-calendar-line text-lg"></i>
+                <span class="text-sm">Jul 16, 2025 - Jul 22, 2025</span>
+                <i class="ri-arrow-down-s-line "></i>
+              </div>
+        
+              <div
+                tabindex="0"
+                class="dropdown-content z-50 mt-2 w-80 rounded-xl bg-[#1A1B1E] shadow-xl border border-[#2A2A2E] p-4"
+              >
+                <input type="date" class="input input-bordered w-full mb-3 bg-[#131416] text-white" />
+            
+                <input type="date" class="input input-bordered w-full bg-[#131416] text-white" />
+              </div>
+              </div>
+              <div class="flex items-center justify-center h-[45px] px-4 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="text-sm whitespace-nowrap"> <i class="ri-filter-2-line"></i>  Filters</h2>
+              </div>
+               <div class="flex items-center justify-center h-[45px] px-4 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="text-sm whitespace-nowrap"><i class="ri-arrow-down-box-line mr-1"></i> Export</h2>
+              </div>
+         </div> 
+
+      </div>
+
+      <!-- header -->
+      <div class="md:flex md:gap-16"> 
+              <div class="md:flex grid grid-cols-3 md:items-center md:gap-16 gap-5 mt-4 ml-2">
+                <h2  class="font-bold text-sm md:text-[16px] hover:text-violet-500">Overview</h2>
+                <h2  class="font-bold text-sm md:text-[16px]  hover:text-violet-500">Team Performance</h2>
+                <h2  class="font-bold text-sm md:text-[16px]  hover:text-violet-500">Project Performance</h2>
+                <h2  class="font-bold text-sm md:text-[16px]  hover:text-violet-500">Task Performance</h2>
+                <h2  class="font-bold text-sm md:text-[16px]  hover:text-violet-500">Client Performance</h2>
+               </div>
+      </div>   
+      <hr class=" bg-[#131416] border-[#2A2A2E] border mt-2">
+
+      <!-- card -->
+      <div class="w-full grid grid-cols-2 xl:grid-cols-6 md:grid-cols-3 gap-4 md:gap-5">
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#8B5CF61A] flex items-center justify-center">
+                   <i class="ri-checkbox-circle-line text-[#8B5CF6] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-[13px]">Projects Completed</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">24</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>20.0%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="projectCard"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#34D3991A] flex items-center justify-center">
+                   <i class="ri-task-line text-[#34D399] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Tasks Completed</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">248</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>18.6%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="taskCard"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 md:mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#3B82F61A] flex items-center justify-center">
+                   <i class="ri-time-line text-[#3B82F6] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">On-Time Delivery</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">92.4%</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>5.8%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="deliveryCard"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 xl:mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#603700] flex items-center justify-center">
+                   <i class="ri-line-chart-line text-[#F59E0B] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Productivity Score</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">87.6%</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>7.4%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="productivityCard"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 xl:mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#EFB6331A] flex items-center justify-center">
+                   <i class="ri-star-fill text-[#EFB633] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Client Satisfaction</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">4.7/5</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>0.3%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="clientCard"></canvas>
+               </div>
+             </div>
+
+             <div class="w-full min-w-0 bg-[#131416] border border-[#2A2A2E] rounded-lg p-3 md:p-4 xl:mt-4">
+               <div class="flex items-center gap-3">
+                 <div class="w-8 h-8 shrink-0 rounded-full bg-[#064B55] flex items-center justify-center">
+                   <i class="ri-wallet-3-line text-[#22D3EE] text-lg"></i>
+                 </div>
+                 <div class="min-w-0">
+                   <h2 class="text-[#A1A1AA] text-xs md:text-sm">Billable Utilization</h2>
+                   <h2 class="font-bold text-lg md:text-xl py-1">76.3%</h2>
+                   <p class="text-xs md:text-sm whitespace-nowrap">
+                     <span class="text-[#22C55E]">
+                       <i class="ri-arrow-up-s-fill"></i>6.7%
+                     </span>
+                     vs. Apr 2025
+                   </p>
+                 </div>
+               </div>
+               <div class="w-full h-10 mt-2">
+                 <canvas id="billableCard"></canvas>
+               </div>
+             </div>
+
+      </div>
+
+      <!-- chart -->
+    <div class="xl:flex xl:items-center xl:gap-2 md:grid md:grid-cols-2 md:gap-2">
+       <div class="xl:w-[600px] md:col-span-2 w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+            <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
+               <h2 class="font-bold pl-2">Performance Trend</h2>
+               <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
+                 <option disabled selected class="text-[#A1A1AA]" >Daily</option>
+                 <option class="text-[#A1A1AA]">Sanday</option>
+                 <option class="text-[#A1A1AA]">Monday</option>
+              </select>
+           </div>
+           <div class="w-full h-[300px] mt-4">
+             <canvas id="TrendChart"></canvas>
+           </div>
+       </div> 
+       <div class="xl:w-[400px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+        <div class="flex items-center justify-between pt-2">
+          <h2 class="font-bold md:pl-3">Performance by Category</h2>
+           <p class="text-violet-500 pr-2">View All</p>
+        </div>   
+          <div class="flex items-center gap-4 xl:justify-start md:justify-center">
+             <div class=" h-[210px] md:mt-4">
+                    <canvas id="categoryChart"></canvas>
+             </div>
+             <div>
+                <div class="pt-4">
+                  <h2><i class="ri-checkbox-blank-circle-fill text-[#7641EE] xl:text-[15px]"></i>  Development</h2>
+                  <h2 class="text-gray-500 xl:text-[15px]">40.3% (100)</h2>
+                </div>
+
+                <div class="pt-2">
+                  <h2><i class="ri-checkbox-blank-circle-fill text-[#317BF0] xl:text-[15px]"></i>  Design</h2>
+                  <h2 class="text-gray-500 xl:text-[15px]">22.6% (56)</h2>
+                </div>
+
+                <div class="pt-2">
+                  <h2><i class="ri-checkbox-blank-circle-fill text-[#32AD46] xl:text-[15px]"></i>  Marketing</h2>
+                  <h2 class="text-gray-500 xl:text-[15px]">16.1% (40)</h2>
+                </div>
+
+                <div class="pt-2">
+                  <h2><i class="ri-checkbox-blank-circle-fill text-[#F5901D] xl:text-[15px]"></i>  Content</h2>
+                  <h2 class="text-gray-500 xl:text-[15px]">12.1% (30)</h2>
+                </div>
+
+                <div class="pt-2">
+                  <h2><i class="ri-checkbox-blank-circle-fill text-[#7B818E] xl:text-[15px]"></i>  Others</h2>
+                  <h2 class="text-gray-500 xl:text-[15px]">8.9% (22)</h2>
+                </div>
+             </div>   
+          </div>
+          <h2 class="md:mt-8 mt-4 text-center font-bold md:text-2xl md:ml-3">248 Total Tasks</h2>
+       </div>
+       <div class="xl:w-[400px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+           <div class="flex items-center justify-between pt-2">
+             <h2 class="font-bold md:pl-3">On-Time Delivery Rate</h2>
+             <p class="text-violet-500 pr-2">View details</p>
+           </div>
+           
+           <div class="w-72 h-60 pl-16">
+             <canvas id="onTimeGauge" ></canvas>
+           </div>
+
+           <div class="w-full max-w-[320px] rounded-lg border border-[#1E2936] bg-[#131416] ml-5 px-4 py-3">
+
+              <!-- On Time -->
+              <div class="flex items-center justify-between py-1">
+                <div class="flex items-center gap-2">
+                  <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
+                  <span class="text-[12px] text-[#D1D5DB]">On Time</span>
+                </div>
+
+                <span class="text-[12px] text-[#D1D5DB]">
+                  229 <span class="text-[#9CA3AF]">(92.4%)</span>
+                </span>
+              </div>
+
+              <!-- Delayed -->
+              <div class="flex items-center justify-between py-1">
+                <div class="flex items-center gap-2">
+                  <span class="h-2 w-2 rounded-full bg-[#F59E0B]"></span>
+                  <span class="text-[12px] text-[#D1D5DB]">Delayed</span>
+                </div>
+
+                <span class="text-[12px] text-[#D1D5DB]">
+                  17 <span class="text-[#9CA3AF]">(6.9%)</span>
+                </span>
+              </div>
+
+              <!-- Overdue -->
+              <div class="flex items-center justify-between py-1">
+                <div class="flex items-center gap-2">
+                  <span class="h-2 w-2 rounded-full bg-[#EF4444]"></span>
+                  <span class="text-[12px] text-[#D1D5DB]">Overdue</span>
+                </div>
+
+                <span class="text-[12px] text-[#D1D5DB]">
+                  2 <span class="text-[#9CA3AF]">(0.7%)</span>
+                </span>
+              </div>
+
+            </div>
+
+       </div>
+
+    </div>  
+
+    <!-- chart table-->
+    <div class="xl:flex xl:items-center xl:gap-2">
+       <div class="xl:w-[450px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+           <h2 class="font-bold md:pl-3 mt-2">Team Performance</h2>
+           <div class="overflow-x-auto md:h-[380px] xl:h-[350px]">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Team Member</th>
+                    <th>Tasks Completed</th>
+                    <th>On-Time Delivery</th>
+                    <th>Productivity Score</th>
+                    <th>Billable Utilization</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr class="">
+                    <th class="">
+                         <div class="flex w-44">
+                         <div class="avatar">
+                            <div class="w-10 h-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                          </div>
+                          <div class="md:mt-2 ml-1">
+                            <h2 class="text-sm font-medium text-white">Faizan Ahmad</h2>
+                            <p class="text-[12px] text-gray-400 ">Full Stack Developer</p>
+                          </div>
+                       </div> 
+                    </th>
+                    <td>42</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="95" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>91.3%</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>82.2%</h2>
+                         <progress class="progress w-20 mt-1 text-blue-500" value="82" max="100"></progress>
+                       </div>
+                    </td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr>
+                    <th class="">
+                         <div class="flex w-44">
+                         <div class="avatar">
+                            <div class="w-10 h-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                          </div>
+                          <div class="md:mt-2 ml-1">
+                            <h2 class="text-sm font-medium text-white">Faizan Ahmad</h2>
+                            <p class="text-[12px] text-gray-400 ">Full Stack Developer</p>
+                          </div>
+                       </div> 
+                    </th>
+                    <td>42</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="95" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>91.3%</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>82.2%</h2>
+                         <progress class="progress w-20 mt-1 text-blue-500" value="82" max="100"></progress>
+                       </div>
+                    </td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr>
+                   <th class="">
+                         <div class="flex w-44">
+                         <div class="avatar">
+                            <div class="w-10 h-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                          </div>
+                          <div class="md:mt-2 ml-1">
+                            <h2 class="text-sm font-medium text-white">Faizan Ahmad</h2>
+                            <p class="text-[12px] text-gray-400 ">Full Stack Developer</p>
+                          </div>
+                       </div> 
+                    </th>
+                    <td>42</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="95" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>91.3%</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>82.2%</h2>
+                         <progress class="progress w-20 mt-1 text-blue-500" value="82" max="100"></progress>
+                       </div>
+                    </td>
+                  </tr>
+                  <!-- row-4 -->
+                   <tr>
+                   <th class="">
+                         <div class="flex w-44">
+                         <div class="avatar">
+                            <div class="w-10 h-10 rounded-full">
+                              <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                          </div>
+                          <div class="md:mt-2 ml-1">
+                            <h2 class="text-sm font-medium text-white">Faizan Ahmad</h2>
+                            <p class="text-[12px] text-gray-400 ">Full Stack Developer</p>
+                          </div>
+                       </div> 
+                    </th>
+                    <td>42</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="95" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>91.3%</td>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>82.2%</h2>
+                         <progress class="progress w-20 mt-1 text-blue-500" value="82" max="100"></progress>
+                       </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+       </div> 
+       <div class="xl:w-[450px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+            <h2 class="font-bold md:pl-3 mt-2">project Performance</h2>
+           <div class="overflow-x-auto  xl:h-[350px]">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Progress</th>
+                    <th>On-Time Delivery</th>
+                    <th>Client Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr class="">
+                    <th class="">
+                        <div class="flex items-center gap-2">
+                         <div class="w-8 h-8 rounded-md bg-[#EF4444] flex items-center justify-center">
+                           <i class="ri-archive-line text-[#FFFFFF] text-lg"></i>
+                         </div>
+                         <h2>Hospital Management System</h2>
+                      </div>
+                    </th>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="75" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>95.0%</td>
+                    <td>
+                        <div class="flex gap-1">
+                            <i class="ri-star-fill text-yellow-500 text-[16px]"></i>
+                            <i class="ri-star-fill text-yellow-500 text-[16px]"></i>
+                            <i class="ri-star-half-line text-yellow-500 text-[16px]"></i>
+                            <p class="text-[16px] mt-0.5">4.8</p>
+                        </div>
+                    </td>
+                  </tr>
+                  <!-- row 2 -->
+                   <tr class="">
+                    <th class="">
+                        <div class="flex items-center gap-2">
+                         <div class="w-8 h-8 rounded-md bg-[#EF4444] flex items-center justify-center">
+                           <i class="ri-archive-line text-[#FFFFFF] text-lg"></i>
+                         </div>
+                         <h2>Hospital Management System</h2>
+                      </div>
+                    </th>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="75" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>95.0%</td>
+                    <td>
+                        <div class="flex gap-1">
+                            <i class="ri-star-fill text-yellow-500 text-[16px]"></i>
+                            <i class="ri-star-fill text-yellow-500 text-[16px]"></i>
+                            <i class="ri-star-half-line text-yellow-500 text-[16px]"></i>
+                            <p class="text-[16px] mt-0.5">4.8</p>
+                        </div>
+                    </td>
+                  </tr>
+                  <!-- row 3 -->
+                  <tr class="">
+                    <th class="">
+                        <div class="flex items-center gap-2">
+                         <div class="w-8 h-8 rounded-md bg-[#EF4444] flex items-center justify-center">
+                           <i class="ri-archive-line text-[#FFFFFF] text-lg"></i>
+                         </div>
+                         <h2>Hospital Management System</h2>
+                      </div>
+                    </th>
+                    <td>
+                        <div class="flex gap-2">
+                         <h2>95.2%</h2>
+                         <progress class="progress w-20 mt-1 text-green-400" value="75" max="100"></progress>
+                       </div>
+                    </td>
+                    <td>95.0%</td>
+                    <td>
+                        <div class="flex gap-1">
+                            <i class="ri-star-fill text-yellow-500 text-[16px]"></i>
+                            <i class="ri-star-fill text-yellow-500 text-[16px]"></i>
+                            <i class="ri-star-half-line text-yellow-500 text-[16px]"></i>
+                            <p class="text-[16px] mt-0.5">4.8</p>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+       </div>
+       <div class="xl:w-[450px] w-full bg-[#131416] border-[#2A2A2E] border md:min-h-96 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6  rounded-2xl">
+           <div class="flex items-center justify-between pt-2 md:px-2 pr-3">
+               <h2 class="font-bold pl-2">Productivity Score Trend</h2>
+               <select class="select select-neutral w-32 h-8 text-[#A1A1AA]">
+                 <option disabled selected class="text-[#A1A1AA]" >Weekly</option>
+                 <option class="text-[#A1A1AA]">This Week</option>
+                 <option class="text-[#A1A1AA]">Last Week</option>
+              </select>
+           </div>
+           <div class="w-full h-72 bg-[#101418] mt-10">
+              <canvas id="weeklyChart"></canvas>
+           </div>
+       </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-full bg-[#131416] border-[#2A2A2E] border md:min-h-40 md:h-auto min-h-36 h-auto pl-4 md:pl-0 mt-6 rounded-2xl">
+       <h2 class="font-bold pl-3 mt-2">Performance Insights</h2>
+       <div class="xl:flex xl:items-center xl:justify-between grid md:grid-cols-2 grid-cols-1 w-full mt-4 xl:mt-0 ml-3 xl:ml-0">
+          
+          <div class="xl:ml-3 xl:mb-0 xl:mt-4 flex gap-3">
+            <div class="w-10 h-10 shrink-0 rounded-full bg-[#14532D] flex items-center justify-center">
+               <i class="ri-star-fill text-[#4ADE80] text-xl"></i>
+             </div>
+              <div class="w-52">
+                <p>Project completed increased by 20%</p>
+                <p class="text-gray-500">Great job you've completed 4 more projects than last month.</p>
+              </div>
+           </div>
+
+           <div class="flex gap-3 md:mt-0 mt-2">
+              <div class="w-10 h-10 shrink-0 rounded-full bg-[#0C4A6E] flex items-center justify-center">
+               <i class="ri-compass-3-line text-[#38BDF8] text-xl"></i>
+             </div>
+              <div class="w-52">
+                <p>On-time delivery improved</p>
+                <p class="text-gray-500">Your on-time delivery rate improved by 5.6% compared to last month.</p>
+              </div>
+           </div>
+           
+            <div class="flex gap-3 md:mt-0 mt-2">
+              <div class="w-10 h-10 shrink-0 rounded-full bg-[#4C1D95] flex items-center justify-center">
+               <i class="ri-star-line text-[#C084FC] text-xl"></i>
+             </div>
+              <div class="w-52">
+                <p>Client satisfaction is high</p>
+                <p class="text-gray-500">You maintained a great rating of 4.7/5 from your client.</p>
+              </div>
+           </div>
+
+            <div class="flex gap-3 md:mt-0 mt-2">
+              <div class="w-10 h-10 shrink-0 rounded-full bg-[#78350F] flex items-center justify-center">
+               <i class="ri-bank-card-line text-[#F59E0B] text-xl"></i>
+             </div>
+              <div class="w-52">
+                <p>2 tasks are overdue</p>
+                <p class="text-gray-500">Check overdue tasksto keep your performance on track.</p>
+              </div>
+           </div>
+
+           <div>
+            <button class="btn xl:mr-4 w-48 bg-[#4C1D95] mt-3 mb-3 xl:mt-0 xl:mb-0">View Detailed Report</button>
+           </div>
+
+         </div>
+    </footer>
+
+  </div>
+  </div>    
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li id="teamSide" >
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]" id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="performance.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>
