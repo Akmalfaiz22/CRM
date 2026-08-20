@@ -74,3 +74,7 @@ revenueSide.addEventListener("click", () => {
 performanceSide.addEventListener("click", () => {
     location.href = "http://localhost:3000/performance.html"
 })
+
+messageSide.addEventListener("click", () => {
+    location.href = "http://localhost:3000/message.html"
+})
