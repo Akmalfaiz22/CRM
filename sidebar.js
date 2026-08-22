@@ -18,6 +18,7 @@ const filesSide = document.getElementById('filesSide');
 const messageSide = document.getElementById('messageSide');
 const helpSide = document.getElementById('helpSide');
 const settingSide = document.getElementById('settingSide');
+const notificationNav = document.getElementById('notificationNav');
 
 indexSide.addEventListener("click", () => {
   location.href = "http://localhost:3000/index.html"
@@ -77,4 +78,8 @@ performanceSide.addEventListener("click", () => {
 
 messageSide.addEventListener("click", () => {
     location.href = "http://localhost:3000/message.html"
+})
+
+notificationNav.addEventListener("click", () => {
+    location.href = "http://localhost:3000/notification.html"
 })
