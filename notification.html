@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Notifications</h1>
+      </div>
+      </div>
+      <div class="">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between">
+           <div>
+              <h2 class="font-bold md:text-2xl text-[22px]">Notifications</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg">Stay updated with important activities and alerts.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:justify-start gap-3 ">
+          
+             <div class="flex items-center  justify-center md:justify-start gap-2 md:w-44 md:h-11 w-full  
+                         px-4 py-2 mt-3 md:mt-0 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="pl-2">Mark all as read</h2>
+              </div>
+                     <div class="flex items-center  justify-center md:justify-start gap-2 md:w-36 md:h-11 w-full  
+                         px-4 py-2  md:mt-0 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                <h2 class="pl-2">
+                    <i class="ri-filter-line text[18px]"> Filters</i>
+                </h2>
+              </div>  
+           </div>
+         </div> 
+       
+        <div class="xl:flex items-center xl:justify-center xl:gap-2">   
+         <!--user message -->
+          <div class="xl:w-[880px] w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[102vh] md:h-auto min-h-[50vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+             <div class="mt-2 overflow-x-auto scrollbar-hide xl:flex">
+                <div class="md:grid md:grid-cols-7 md:gap-2 md:mx-2 md:ml-2 md:mr-3 flex items-center  gap-3 mt-4 w-max">
+                 <button class="btn btn-outline btn-md border-[#2A2A2E] hover:bg-[#3B82F666]">All <span class="rounded-full hover:bg-[#3B82F666] bg-[#2f2f31] w-8"></span></button>
+                 <button class="btn btn-outline btn-md border-[#2A2A2E] hover:bg-[#3B82F666]">Unread <span class="rounded-full hover:bg-[#3B82F666] bg-[#2f2f31] w-8"></span></button>
+                 <button class="btn btn-outline btn-md border-[#2A2A2E] hover:bg-[#3B82F666]">Mentions <span class="rounded-full hover:bg-[#3B82F666] bg-[#2f2f31] w-8"></span></button>
+                  <button class="btn btn-outline btn-md border-[#2A2A2E] hover:bg-[#3B82F666]">System <span class="rounded-full hover:bg-[#3B82F666] bg-[#2f2f31] w-8"></span></button>
+                  <button class="btn btn-outline btn-md border-[#2A2A2E] hover:bg-[#3B82F666]">Activites <span class="rounded-full hover:bg-[#3B82F666] bg-[#2f2f31] w-8"></span></button>
+                  <button class="btn btn-outline btn-md border-[#2A2A2E] hover:bg-[#3B82F666]">Reminders <span class="rounded-full hover:bg-[#3B82F666] bg-[#2f2f31] w-8"></span></button>
+               </div> 
+                
+              </div>        
+            <ul class="">
+                <li class="md:ml-2 bg-[#0F0F11] h-auto min-h-20 md:h-[100px] xl:mx-2 rounded-md mt-2 md:mt-4 mr-2 md:mr-0 xl:mr-2 hover:border-[#2A2A2E] hover:border">
+                   <div class="py-4 flex items-center justify-between">  
+                      <div class="flex items-center gap-4 xl:pt-2  ">
+                         <div class="w-10 h-10 xl:ml-3 xl:mt-0 ml-2  md:ml-4  rounded-full bg-[#6B3FD6] flex items-center justify-center">
+                           <i class="ri-calendar-check-line text-[#FFFFFF] text-lg"></i>
+                         </div>
+                          <div>
+                            <h2 class="xl:text-sm md:text-[20px] text-[15px] font-bold ">Client Approval Received</h2>
+                            <p class="xl:text-[11px] md:text-[15px] text-[12px] w-44 md:w-full">TechSoft Inc.approved the design mockups for the project</p>
+                             <p class="xl:text-[11px] md:text-[15px] text-[12px] text-violet-500">Website redesign</p>
+                          </div>
+                      </div>  
+                      <div class="flex items-center gap-3 mr-3">
+                        <p class="text-gray-500 xl:text-[15px] md:text-[17px] text-[12px]">2m ago</p>
+                        <i class="ri-checkbox-blank-circle-fill xl:text-[15px] md:text-[17px] text-[12px] text-violet-500"></i>
+                        <i class="ri-more-2-fill xl:text-[15px] md:text-[17px] text-[12px]"></i>
+                      </div>  
+                   </div>  
+                </li>
+                <li class="md:ml-2 bg-[#0F0F11] h-auto min-h-20 md:h-[100px] xl:mx-2 rounded-md mt-2 md:mt-4 mr-2 md:mr-0 xl:mr-2 hover:border-[#2A2A2E] hover:border">
+                   <div class="py-4 flex items-center justify-between">  
+                      <div class="flex items-center gap-4 xl:pt-2  ">
+                         <div class="w-10 h-10 xl:ml-3 xl:mt-0 ml-2  md:ml-4  rounded-full bg-[#16A34A] flex items-center justify-center">
+                           <i class="ri-money-dollar-circle-line text-[#FFFFFF] text-lg"></i>
+                         </div>
+                          <div>
+                            <h2 class="xl:text-sm md:text-[20px] text-[15px] font-bold ">Payment Received</h2>
+                            <p class="xl:text-[11px] md:text-[15px] text-[12px] w-44 md:w-full">Peyment of ₹45,000 received from Bright Future School</p>
+                             <p class="xl:text-[11px] md:text-[15px] text-[12px] text-violet-500">Invoice #INV-2025-106</p>
+                          </div>
+                      </div>  
+                      <div class="flex items-center gap-3 mr-3">
+                        <p class="text-gray-500 xl:text-[15px] md:text-[17px] text-[12px]">2m ago</p>
+                        <i class="ri-checkbox-blank-circle-fill xl:text-[15px] md:text-[17px] text-[12px] text-violet-500"></i>
+                        <i class="ri-more-2-fill xl:text-[15px] md:text-[17px] text-[12px]"></i>
+                      </div>  
+                   </div>  
+                </li>
+            </ul>     
+          </div>
+           <!-- user detail -->
+            <div class="mt-4 bg-[#131416] border-[#2A2A2E] border rounded-2xl xl:min-h-[90vh] md:h-auto min-h-[50vh]  xl:w-[400px] md:w-full w-full mt-1">
+               <div class="w-full mt-4 flex items-center justify-center flex-col gap-3">
+                  
+                  <div class=" w-15 h-15 xl:w-15 md:w-20 md:h-20 xl:h-15 xl:ml-3 xl:mt-0 ml-2  md:ml-4  rounded-full bg-[#6B3FD6] flex items-center justify-center">
+                     <i class="ri-calendar-check-line text-[#FFFFFF] text-xl xl:text-xl md:text-2xl"></i>
+                  </div>
+                   <h2 class="xl:text-lg md:text-2xl text-[20px] font-bold">Client Approval Received</h2>
+                   <button class="bg-[#29204F] text-[#B9A8FF] px-4 py-1.5 rounded-md text-sm font-medium">Unread</button>
+                   <p class="xl:text-[15px] md:text-[23px] text-center xl:text-start text-[12px] w-44 md:w-full text-gray-400 ml-2">TechSoft Inc.approved the design mockups for the project</p>
+               </div>
+                <hr class="text-[#2A2A2E] my-2">
+                <div class="ml-2 xl:ml-2 md:ml-3">
+                    <h2 class="xl:text-[16px] md:text-2xl text-[20px] font-bold">Details</h2>
+                     <div class="md:ml-4 md:mt-4 ml-2 mt-2">
+                        <div class="flex md:mt-2">
+                           <h2 class="text-[#A1A1AA] w-40 xl:w-40 md:w-72 md:text-[24px] xl:text-[17px]">
+                               Client
+                           </h2>
+                           <h2 class="md:text-[25px] xl:text-[17px]"><i class="ri-layout-grid-2-fill"></i> TechSoft Inc.</h2>
+                        </div>
+                        <div class="flex md:mt-4 mt-3">
+                           <h2 class="text-[#A1A1AA] w-40 xl:w-40 md:w-72 md:text-[24px] xl:text-[17px]">
+                              Project
+                           </h2>
+                           <h2 class="md:text-[25px] xl:text-[17px] text-violet-500">Website Redesign</h2>
+                        </div>
+                        <div class="flex md:mt-4 mt-3">
+                         <h2 class="text-[#A1A1AA] w-40 xl:w-40 md:w-72 md:text-[24px] xl:text-[17px]">
+                             Approved by
+                         </h2>
+                         <h2 class="md:text-[25px] xl:text-[17px] flex gap-2 items-center">
+                             <div class="avatar">
+                                <div class="w-12 rounded-full h-12 ">
+                                  <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                                </div>
+                              </div>
+                              <div>
+                                 <h2>John Smith</h2>
+                                 <p class="text-gray-500 text-[14px]">CEO, TechSoft Inc.</p>
+                              </div>
+                         </h2>
+                        </div>
+                        <div class="flex md:mt-4 mt-3">
+                            <h2 class="text-[#A1A1AA] w-40 xl:w-40 md:w-72 md:text-[24px] xl:text-[17px]">
+                                Date & Time
+                            </h2>
+                            <h2 class="md:text-[25px] xl:text-[17px]">
+                                <i class="ri-calendar-event-line"> May 30,2025 at 10:30 AM</i>
+                            </h2>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-lg p-5 w-[350px] xl:w-[350px] md:w-[740px] ml-6 mt-4">
+                  <div class="flex gap-3">
+                    <span class="text-[#8B4DFF] text-3xl leading-none font-bold">“</span>
+                    <p class="text-[#D1D5DB] text-[15px] leading-6">
+                      The design looks great and aligns perfectly with our brand.
+                      Please proceed with the next phase.
+                    </p>
+                  </div>
+                  <p class="text-[#9B51E0] text-sm font-medium mt-4 ml-9">- John Smith</p>
+                </div>
+
+                <div class="ml-2 xl:ml-2 md:ml-3 mt-3">
+
+                  <h2 class="xl:text-[16px] md:text-2xl mb-2 text-[20px] font-bold"> Actions</h2>
+                   
+                  <div class="grid grid-cols-2 gap-2 pb-7 pr-3 ml-3">
+                   
+                    <button class=" flex items-center justify-center gap-2 w-full xl:w-[180px] h-11 bg-[#5B21D4] hover:bg-[#6D28D9]
+                             text-[#E9DFFF] text-sm rounded-md">
+                      <i class="ri-folder-line text-lg"> View Project</i>
+                    </button>
+                    
+                    <button
+                      class="mr-3 flex items-center justify-center gap-2 xl:w-[180px] h-full h-11 bg-transparent border border-[#263646]
+                             text-[#D1D5DB] text-sm rounded-md">
+                      <i class="ri-user-line text-lg"> Go to Client</i>
+                    </button>
+                  </div>
+
+                  <hr class="text-[#2A2A2E] mb-2">
+
+                  <div class="grid grid-cols-2 pt-2 mb-2">
+
+                    <button class="text-[#D1D5DB] text-sm">
+                      <i class="ri-check-line text-lg"> Mark as read</i>
+                    </button>
+
+                    <button class="text-[#EF4444] text-sm">
+                      <i class="ri-delete-bin-line text-lg">  Delete</i>
+                    </button>
+                  </div>
+                </div>
+
+            </div>
+
+
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li id="teamSide" >
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]" id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="notification.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>
