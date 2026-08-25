@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Help & Support</h1>
+      </div>
+      </div>
+      <div class="">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between md:ml-2">
+           <div>
+              <h2 class="font-bold md:text-2xl text-[20px]">Help & Support</h2>
+              <p class="text-[#A1A1AA] text-[16px] md:text-lg">We're here to help you succeed.</p>
+            </div>
+             <button class="btn w-full  md:btn-md btn-active  md:w-48 md:text-[16px] mt-4 md:mt-2 xl:mt-0"><i class="ri-ticket-2-line"></i> My Tickets</button> 
+         </div>          
+         <!-- buttom content -->
+          <div class="xl:flex gap-2">
+            <!-- all user area -->
+            <div class="xl:w-[900px] md:w-full w-full xl:min-h-[80vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6">
+              
+              <div class=" bg-[#131416] border border-[#2A2A2E] rounded-2xl h-auto w-full px-4 py-2 min-h-[160px] mb-2">
+                <div class="">
+                   <div class="mt-2 ml-1">
+                      <h2 class="font-bold md:text-2xl text-[18px]">How can we help you?</h2>
+                      <p class="text-[#A1A1AA] text-[14px] md:text-lg">Search our knowledge base or choose a topic to get started.</p>
+                      <label class="input mt-4 md:w-[500px]  w-[300px]">
+                         <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <g
+                             stroke-linejoin="round"
+                             stroke-linecap="round"
+                             stroke-width="2.5"
+                             fill="none"
+                             stroke="currentColor"
+                           >
+                             <circle cx="11" cy="11" r="8"></circle>
+                             <path d="m21 21-4.3-4.3"></path>
+                           </g>
+                         </svg>
+                         <input type="search" required placeholder="Search for help articles, topics..."/>
+                       </label>
+                   </div>
+                   
+                </div>
+              </div>
+
+              <!-- card -->
+              <div class=" bg-[#131416] border border-[#2A2A2E] rounded-2xl h-auto w-full px-4 py-2">
+                <h2 class="font-bold md:text-2xl text-[16px]">Browse by Category</h2> 
+                <div class="w-full grid grid-cols-2 xl:grid-cols-5 md:grid-cols-3 gap-4 md:gap-2 mt-4">
+
+                 <div class="w-full bg-[#0F0F11] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px]">
+                  <i class="ri-space-ship-line text-2xl text-violet-500"></i>
+                  <h2 class="text-white text-[17px] font-semibold mt-1">Getting Started</h2>
+                  <p class="text-[#A1A1AA] text-sm">Learn the basics and set up your account</p>
+                  <p class="text-[#A1A1AA] text-sm mt-3 text-violet-600">12 articles <i class="ri-arrow-right-line"></i></p>
+                 </div>
+
+                 <div class="w-full bg-[#0F0F11] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px]">
+                  <i class="ri-folder-2-line text-2xl text-blue-500"></i>
+                  <h2 class="text-white text-[17px] font-semibold mt-1">Projects</h2>
+                  <p class="text-[#A1A1AA] text-sm">Manage projects and track progress</p>
+                  <p class="text-[#A1A1AA] text-sm mt-3 text-blue-500">18 articles <i class="ri-arrow-right-line"></i></p>
+                 </div>
+
+                 <div class="w-full bg-[#0F0F11] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px]">
+                  <i class="ri-task-line text-2xl text-green-400"></i>
+                  <h2 class="text-white text-[17px] font-semibold mt-1">Tasks & Kanban</h2>
+                  <p class="text-[#A1A1AA] text-sm">Oranize tasks and improve productivity</p>
+                  <p class="text-[#A1A1AA] text-sm mt-3 text-green-400">15 articles <i class="ri-arrow-right-line"></i></p>
+                 </div>
+
+                 <div class="w-full bg-[#0F0F11] border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px]">
+                  <i class="ri-file-text-line text-2xl text-orange-400"></i>
+                  <h2 class="text-white text-[17px] font-semibold mt-1">Invoices & Payments</h2>
+                  <p class="text-[#A1A1AA] text-sm">Billing, payments and financial guides</p>
+                  <p class="text-[#A1A1AA] text-sm mt-3 text-orange-400">12 articles <i class="ri-arrow-right-line"></i></p>
+                 </div>
+
+                 <div class="w-full bg-[#0F0F11] col-span-2 xl:col-span-1 border border-[#2A2A2E] rounded-2xl p-4 md:p-5 min-h-[140px]">
+                  <i class="ri-settings-3-line text-2xl text-cyan-300"></i>
+                  <h2 class="text-white text-[17px] font-semibold mt-1">Account & Settings</h2>
+                  <p class="text-[#A1A1AA] text-sm">Manage your account and perferences</p>
+                  <p class="text-[#A1A1AA] text-sm mt-3 text-cyan-300">10 articles <i class="ri-arrow-right-line"></i></p>
+                 </div>
+
+                </div>
+               </div>
+
+                <div class="xl:w-[900px] md:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[74vh] md:min-h-[90px]: md:h-auto min-h-36 h-auto  md:pl-0 mt-2 rounded-2xl">
+                   <div class="flex items-center justify-between mx-2 mt-2">
+                      <h2 class="font-bold md:text-2xl text-[16px]">Popular Articles</h2>
+                      <p class="md:text-lg text-[16px] text-violet-500">View all articles <i class="ri-arrow-right-line"></i></p>
+                   </div>      
+                   <ul class="mb-2">
+  
+                     <li class="flex items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-20 h-auto">
+                       
+                         <div class="flex md:gap-3 gap-1 pr-2 md:pr-0">
+                           <div class="w-10 h-10 rounded-md bg-[#2B1D50] flex items-center justify-center">
+                              <i class="ri-file-text-fill text-[#8B5CF6] text-lg"></i>
+                           </div>
+                           <div>
+                             <h2 class="font-bold md:text-[18px] text-[16px]">How to Created a New Project</h2>
+                             <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">Step-by-step guide to create and configure a new project.</p>
+                           </div>
+                         </div>
+                         <div class="flex md:gap-4 gap-1">
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">May 25,2025 </p>
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]"><i class="ri-eye-fill"></i> 2.4K</p>
+                         </div>
+                       
+                     </li>
+                     
+                     <li class="flex items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-20 h-auto">
+                       
+                         <div class="flex md:gap-3 gap-1 pr-2 md:pr-0">
+                           <div class="w-10 h-10 rounded-md bg-[#0B3A7A] flex items-center justify-center">
+                              <i class="ri-group-line text-[#1677FF] text-lg"></i>
+                           </div>
+                           <div>
+                             <h2 class="font-bold md:text-[18px] text-[16px]">Invite and Manage Team Members</h2>
+                             <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">Learn how to invite, remove and manage your team members.</p>
+                           </div>
+                         </div>
+                         <div class="flex md:gap-4 gap-1">
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">May 20,2025 </p>
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]"><i class="ri-eye-fill"></i> 1.8K</p>
+                         </div>
+                       
+                     </li>
+
+                     <li class="flex items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-20 h-auto">
+                       
+                         <div class="flex md:gap-3 gap-1 pr-2 md:pr-0">
+                           <div class="w-10 h-10 rounded-md bg-[#063B28] flex items-center justify-center">
+                              <i class="ri-checkbox-circle-line text-[#22C55E] text-lg"></i>
+                           </div>
+                           <div>
+                             <h2 class="font-bold md:text-[18px] text-[16px]">How to Track Payments</h2>
+                             <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">Understand payment statu8s, due dates and reminders.</p>
+                           </div>
+                         </div>
+                         <div class="flex md:gap-4 gap-1">
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">May 18,2025 </p>
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]"><i class="ri-eye-fill"></i> 1.6K</p>
+                         </div>
+                       
+                     </li>
+
+                     <li class="flex items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-20 h-auto">
+                       
+                         <div class="flex md:gap-3 gap-1 pr-2 md:pr-0">
+                           <div class="w-10 h-10 rounded-md bg-[#4A2D00] flex items-center justify-center">
+                              <i class="ri-briefcase-line text-[#F59E0B] text-lg"></i>
+                           </div>
+                           <div>
+                             <h2 class="font-bold md:text-[18px] text-[16px]">Create and Send Invoices</h2>
+                             <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">Create professional invoices and send to your clients.</p>
+                           </div>
+                         </div>
+                         <div class="flex md:gap-4 gap-1">
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">May 15,2025 </p>
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]"><i class="ri-eye-fill"></i> 2.1K</p>
+                         </div>
+                       
+                     </li>
+
+                     <li class="flex items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-20 h-auto">
+                       
+                         <div class="flex md:gap-3 gap-1 pr-2 md:pr-0">
+                           <div class="w-10 h-10 rounded-md bg-[#0B3A7A] flex items-center justify-center">
+                              <i class="ri-settings-3-line text-[#1683FF] text-lg"></i>
+                           </div>
+                           <div>
+                             <h2 class="font-bold md:text-[18px] text-[16px]">Create and Send Invoices</h2>
+                             <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">Create professional invoices and send to your clients.</p>
+                           </div>
+                         </div>
+                         <div class="flex md:gap-4 gap-1">
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">May 15,2025 </p>
+                           <p class="text-[#A1A1AA] text-[12px] md:text-[14px]"><i class="ri-eye-fill"></i> 2.1K</p>
+                         </div>
+                       
+                     </li>
+
+                   </ul>        
+                </div>
+
+              </div>
+              <!--user message -->
+              <div class="xl:w-[390px] md:w-full w-full  md:min-h-[100vh] md:h-auto min-h-[100vh] h-auto pl-0 md:pl-0 mt-4 ">
+                <div class="xl:w-[390px] px-3 pt-2 mt-2 w-full  md:min-h-[160px] md:h-auto min-h-[160px] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                    <h2 class="font-bold md:text-xl text-[16px]">Submit a Support Ticket</h2>
+                    <p class="text-[#A1A1AA] text-[14px] md:text-[15px] mt-3">
+                      Can't find what you're looking for?
+                    </p>
+                    <p class="text-[#A1A1AA] text-[14px] md:text-[15px]">
+                      Submit a ticket and we'll get back to you.
+                    </p>
+                    <button class="btn btn-active btn-primary w-full  mt-4">+ Create New Ticket</button>
+                </div>  
+                <div class="xl:w-[390px]  mt-2 w-full  md:min-h-[250px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                  <div class="flex items-center justify-between mx-3 mt-2">
+                    <h2 class="font-bold xl:text-[18px] md:text-[20px] text-[16px]">Your Recent Tickets</h2>
+                    <p class="xl:text-[18px] md:text-[20px] text-[16px] text-violet-500">View all</p>
+                  </div>
+                   <ul class="mb-2">
+
+                     <li class="flex py-2 items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-[60px] h-auto">
+                       <div>
+                        <h2>#TKT-1254</h2>
+                        <h2>Invoice not sending to client</h2>
+                        <h2 class="text-gray-500">Updated 2h ago</h2>
+                       </div>
+                       <div>
+                        <div>
+                           <button class="px-2 py-0.5 text-[11px] font-medium rounded-md bg-[#063B28] text-[#22C55E]">
+                             Open
+                           </button>
+                           <i class="ri-arrow-drop-right-line text-[20px]"></i>
+                         </div>
+                       </div>
+                     </li>
+
+                     <li class="flex py-2 items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-[60px] h-auto">
+                       <div>
+                        <h2>#TKT-1241</h2>
+                        <h2>Payment gateway integration issue</h2>
+                        <h2 class="text-gray-500">Updated 1d ago</h2>
+                       </div>
+                       <div>
+                        <div>
+                           <button class="px-2 py-0.5 text-[11px] font-medium rounded-md bg-[#0B2855] text-[#60A5FA]">
+                              In Progress
+                           </button>
+                           <i class="ri-arrow-drop-right-line text-[20px]"></i>
+                         </div>
+                       </div>
+                     </li>
+
+                     <li class="flex py-2 items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-[60px] h-auto">
+                       <div>
+                        <h2>#TKT-1220</h2>
+                        <h2>Unable to upload project files</h2>
+                        <h2 class="text-gray-500">Closed 3d ago</h2>
+                       </div>
+                       <div>
+                        <div>
+                           <button class="px-2 py-0.5 text-[11px] font-medium rounded-md bg-[#2A2D32] text-[#D1D5DB]">
+                             Closed
+                           </button>
+                           <i class="ri-arrow-drop-right-line text-[20px]"></i>
+                         </div>
+                       </div>
+                     </li>
+
+                   </ul>
+                </div>  
+                <div class="xl:w-[390px] mt-2 w-full  md:min-h-[260px] md:h-auto min-h-[30vh] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl">
+                   <div class="ml-3 mt-2">
+                      <h2 class="font-bold xl:text-[18px] md:text-[20px] text-[16px]">Need Immediate Help?</h2>
+                      <p class="text-[#A1A1AA] text-[12px] md:text-[14px] mt-1">
+                        Our support team is here for you.
+                      </p>
+                   </div>
+                   <ul class="mb-2">
+
+                     <li class="flex py-2 items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-[60px] h-auto">
+                       <div class="flex gap-2">
+                           <div class="w-10 h-10 rounded-full bg-[#2B1D50] flex items-center justify-center">
+                              <i class="ri-chat-3-line text-[#8B5CF6] text-lg"></i>
+                           </div>
+                           <div>
+                              <h2 class="font-bold xl:text-[16px] md:text-[20px] text-[14px]">Live Chat</h2>
+                              <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">
+                                Chat with our support team.
+                              </p>
+                           </div>
+                       </div>
+                       <div>
+                         <h2 class="text-green-500 text-[12px]"><i class="ri-circle-fill text-[8px]"></i> Online</h2>
+                       </div>
+                     </li>
+
+                     <li class="flex py-2 items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-[60px] h-auto">
+                       <div class="flex gap-2">
+                           <div class="w-10 h-10 rounded-full bg-[#3A243D] flex items-center justify-center">
+                              <i class="ri-mail-line text-[#D8A4D8] text-lg"></i>
+                           </div>
+                           <div>
+                              <h2 class="font-bold xl:text-[16px] md:text-[20px] text-[14px]">Email Support</h2>
+                              <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">
+                                support@efficientapp.com
+                              </p>
+                              <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">
+                                We usually reply within 24 hours
+                              </p>
+                           </div>
+                       </div>
+                       <div class="hidden">
+                         <h2 class="text-green-500 text-[12px]"><i class="ri-circle-fill text-[8px]"></i> Online</h2>
+                       </div>
+                     </li>
+
+                     <li class="flex py-2 items-center justify-between px-2 mt-3 mx-2 border border-[#2A2A2E] rounded-2xl min-h-[60px] h-auto">
+                       <div class="flex gap-2">
+                           <div class="w-10 h-10 rounded-full bg-[#0B2866] flex items-center justify-center">
+                              <i class="ri-phone-line text-[#3B82F6] text-lg"></i>
+                           </div>
+                           <div>
+                              <h2 class="font-bold xl:text-[16px] md:text-[20px] text-[14px]">Call Us</h2>
+                              <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">
+                                +91 9820000922
+                              </p>
+                              <p class="text-[#A1A1AA] text-[12px] md:text-[14px]">
+                                Mon - fri, 10:00 AM - 6:00PM IST
+                              </p>
+                           </div>
+                       </div>
+                       <div class="hidden">
+                         <h2 class="text-green-500 text-[12px]"><i class="ri-circle-fill text-[8px]"></i> Online</h2>
+                       </div>
+                     </li>
+
+                   </ul>
+                </div> 
+                <div class="xl:w-[390px] mt-2 w-full  md:min-h-[140px] md:h-auto min-h-[130px] h-auto bg-[#131416] border-[#2A2A2E] border rounded-2xl px-2 md:px-0">
+                  <div class="ml-3 mt-2">
+                    <h2 class="font-bold xl:text-[18px] md:text-[20px] text-[16px]">System Status</h2>
+                    <p class="text-[#A1A1AA] text-[12px] md:text-[16px] mt-3 text-green-500">
+                      <i class="ri-circle-fill "> All System Operational</i>
+                    </p>
+                    <p class="text-[#A1A1AA] text-[12px] md:text-[16px] mt-1">
+                      Last updated: May 30, 2025 10: 30 AM
+                    </p>
+                    <p class="text-violet-500 text-[12px] md:text-[16px] mt-1">
+                      View status page <i class="ri-arrow-right-long-line"></i>
+                    </p>
+                  </div>  
+                </div>
+             </div>  
+         </div>
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li id="teamSide" >
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]" id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="help.js"></script>
+ <script src="sidebar.js"></script>
+</body>
+</html>
