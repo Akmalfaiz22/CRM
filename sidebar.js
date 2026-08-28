@@ -83,3 +83,11 @@ messageSide.addEventListener("click", () => {
 notificationNav.addEventListener("click", () => {
     location.href = "http://localhost:3000/notification.html"
 })
+
+helpSide.addEventListener("click", () => {
+    location.href = "http://localhost:3000/help.html"
+})
+
+settingSide.addEventListener("click", () => {
+    location.href = "http://localhost:3000/setting.html"
+})

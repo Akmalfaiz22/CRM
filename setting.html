@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
+        <!-- Sidebar toggle icon -->
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
+      </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+      </div>
+      </div>
+      <div class="">
+        <label class="input">
+           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between">
+           <div>
+              <h2 class="font-bold md:text-2xl text-[22px]">Settings</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+            </div>
+         </div> 
+         <!-- find button -->
+       
+        <div class="md:flex items-center xl:justify-center xl:gap-2">   
+         <!--user message -->
+
+          <div class="xl:w-[350px] w-full md:w-[360px] bg-[#131416] border-[#2A2A2E] border xl:min-h-[123vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- message area -->
+
+           <div class="xl:w-[530px] hidden xl:block w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[123vh] md:h-auto md:mx-3 xl:mx-0 min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3">
+                 <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                   Profile & Account
+                 </h2>
+
+                 <p class="text-[#8E96A3] text-[11px] mt-1">
+                   Update your personal information and account details.
+                 </p>
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
+                
+                 <div class="flex items-center justify-between mb-5">
+                   <h3 class="text-[#E5E7EB] text-[15px] font-medium">
+                     Profile Information
+                   </h3>
+                   <button class="flex items-center gap-1.5 border border-[#263445] rounded-md px-2.5 py-1.5 text-[10px] text-[#D1D5DB] hover:bg-[#182333] transition">
+                     <i class="ri-pencil-line text-[16px]"></i>
+                     Edit Profile
+                   </button>
+                 </div>
+
+                 <div class="grid grid-cols-[130px_1fr] items-center py-2">
+                   <span class="text-[#9CA3AF] text-[14px]">
+                     Full Name
+                   </span>
+                   <span class="text-[#D1D5DB] text-[14px]">
+                     Faiz
+                   </span>
+                 </div>
+
+                 <div class="grid grid-cols-[130px_1fr] items-center py-2">
+                   <span class="text-[#9CA3AF] text-[14px]">
+                     Email Address
+                   </span>
+                   <span class="text-[#D1D5DB] text-[14px] break-all">
+                     faiz.ahmed@efficientapp.com
+                   </span>
+                 </div>
+
+                 <div class="grid grid-cols-[130px_1fr] items-center py-2">
+                   <span class="text-[#9CA3AF] text-[14px]">
+                     Phone Number
+                   </span>
+                   <span class="text-[#D1D5DB] text-[14px]">
+                     +91 9828004020
+                   </span>
+                 </div>
+
+                 <div class="grid grid-cols-[130px_1fr] items-center py-2">
+                   <span class="text-[#9CA3AF] text-[14px]">
+                     Job Title
+                   </span>
+                   <span class="text-[#D1D5DB] text-[14px]">
+                     Agency Owner
+                   </span>
+                 </div>
+
+                 <div class="grid grid-cols-[130px_1fr] items-center py-2">
+                   <span class="text-[#9CA3AF] text-[14px]">
+                     Timezone
+                   </span>
+                   <span class="text-[#D1D5DB] text-[14px]">
+                     (GMT +05:30) Asia/Kolkata
+                   </span>
+                 </div>
+
+                 <div class="flex items-center justify-between mt-4 pt-3 border-t border-[#202B38]">
+                   <div class="flex items-center gap-3">
+             
+                     <div class="w-10 h-10 rounded-full bg-[#D1D5DB] flex items-center justify-center overflow-hidden">
+                       <i class="ri-user-fill text-[#374151] text-[25px]"></i>
+                     </div>
+                     <div>
+                       <h4 class="text-[#E5E7EB] md:text-[14px] text-[12px] font-medium">
+                         Profile Photo
+                       </h4>
+                       <p class="text-[#8E96A3] md:text-[12px] text-[11px] mt-0.5">
+                         JPG, PNG or GIF. Max size of 2MB.
+                       </p>
+                     </div>
+                   </div>
+                   <button class="bg-[#29205F] hover:bg-[#34277A] text-[#DCD6FF] md:text-[12px] text-[11px] px-3 py-2 rounded-md transition">
+                     Change Photo
+                   </button>
+                 </div>
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-5">
+                 <h3 class="text-[#E5E7EB] text-[15px] font-medium mb-5">
+                   Change Password
+                 </h3>
+
+                 <div class="grid grid-cols-[165px_1fr] items-center gap-2 mb-4">
+                   <label class="text-[#A1A7B2] text-[12px]">
+                     Current Password
+                   </label>
+             
+                   <div class="relative">
+                     <input
+                       type="password"
+                       value=""
+                       class="w-full h-9 bg-[#131416] border-[#2A2A2E] border  rounded-md px-3 text-[11px] text-[#D1D5DB] outline-none focus:border-[#5B3BC4]"/>
+                   </div>
+                 </div>
+
+                 <div class="grid grid-cols-[165px_1fr] items-center gap-2 mb-4">
+                   <label class="text-[#A1A7B2] text-[12px]">
+                     New Password
+                   </label>
+             
+                   <input
+                     type="password"
+                     value=""
+                     class="w-full h-9 bg-[#131416] border-[#2A2A2E] border rounded-md px-3 text-[11px] text-[#D1D5DB] outline-none focus:border-[#5B3BC4]"/>
+                 </div>
+
+                 <div class="grid grid-cols-[165px_1fr] items-center gap-2 mb-5">
+                   <label class="text-[#A1A7B2] text-[12px]">
+                     Confirm New Password
+                   </label>
+
+                   <input
+                     type="password"
+                     value=""
+                     class="w-full h-9 bg-[#131416] border-[#2A2A2E] border rounded-md px-3 text-[11px] text-[#D1D5DB] outline-none focus:border-[#5B3BC4]"/>
+                 </div>
+
+                   <button class="bg-[#5B2BC5] hover:bg-[#6D35E5] text-white text-[12px] font-medium px-5 py-2.5 rounded-md transition">
+                     Update Password
+                   </button>
+                 </div>
+           </div>
+
+           <!-- user detail -->
+            <div class="mt-4 ml-3 xl:ml-0 grid xl:grid-cols-1 md:grid-cols-1 gap-2 ">
+
+               <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1">
+                <div class="px-5 py-4">
+
+                     
+                     <h2 class="text-[#E5E7EB] text-[16px] font-medium mb-5">
+                       Account Overview
+                     </h2>
+
+                     <div class="flex items-center justify-between py-3 border-b border-[#1D2936]">
+                       <span class="text-[#A7AFBD] text-[13px]">
+                         Plan
+                       </span>
+                       <span class="bg-[#21174B] text-[#9B7CFF] text-[12px] font-medium px-3 py-1.5 rounded-md">
+                         Professional
+                       </span>
+                     </div>
+
+                     <div class="flex items-center justify-between py-3 border-b border-[#1D2936]">
+                       <span class="text-[#A7AFBD] text-[13px]">
+                         Member Since
+                       </span>
+                       <span class="text-[#D1D5DB] text-[13px]">
+                         Jan 15, 2024
+                       </span>
+                     </div>
+
+                     
+                     <div class="flex items-center justify-between py-3 border-b border-[#1D2936]">
+                       <span class="text-[#A7AFBD] text-[13px]">
+                         Account Status
+                       </span>
+                       <span class="flex items-center gap-2 text-[#D1D5DB] text-[13px]">
+                         <span class="w-2.5 h-2.5 bg-[#63D85A] rounded-full"></span>
+                         Active
+                       </span>
+                     </div>
+
+                     <div class="flex items-center justify-between py-3 border-b border-[#1D2936]">
+                       <span class="text-[#A7AFBD] text-[13px]">
+                         Team Members
+                       </span>
+                       <span class="text-[#D1D5DB] text-[13px]">
+                         12
+                       </span>
+                     </div>
+
+                     <div class="flex items-center justify-between py-3 border-b border-[#1D2936]">
+                       <span class="text-[#A7AFBD] text-[13px]">
+                         Projects
+                       </span>
+                       <span class="text-[#D1D5DB] text-[13px]">
+                         28
+                       </span>
+                     </div>
+
+                     <div class="pt-3">
+                 
+                       <div class="flex items-center justify-between mb-3">
+                         <span class="text-[#A7AFBD] text-[13px]">
+                           Storage Used
+                         </span>
+                         <span class="text-[#D1D5DB] text-[13px]">
+                           6.4 GB / 50 GB
+                         </span>
+                       </div>
+                 
+                       <div class="flex items-center gap-3">
+
+                         <div class="flex-1 h-3 bg-[#1C2938] rounded-full overflow-hidden">
+                           <div class="h-full w-[12.8%] bg-[#6535D5] rounded-full"></div>
+                         </div>
+                         <span class="text-[#D1D5DB] text-[13px]">
+                           12.8%
+                         </span>
+                 
+                       </div>
+                     </div>
+
+                   </div>
+                 </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1">
+                  <div class="px-5 py-5">
+
+                    <h2 class="text-[#E5E7EB] text-[16px] font-medium mb-5">
+                      Quick Actions
+                    </h2>
+
+                    <div class="flex items-center gap-4 py-4 border-b border-[#1D2936]">
+                    
+                      <div class="w-9 flex justify-center">
+                        <i
+                          class="ri-download-line text-[25px] text-[#A7AFBD]"></i>
+                      </div>
+
+                      <div>
+                        <h3 class="text-[#E5E7EB] text-[13px] font-medium">
+                          Download My Data
+                        </h3>
+                        <p class="text-[#8E96A3] text-[12px] mt-1">
+                          Get a copy of your data
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 py-4 border-b border-[#1D2936]">
+                     
+                      <div class="w-9 flex justify-center">
+                        <i
+                          class="ri-pause-circle-line text-[25px] text-[#A7AFBD]"></i>
+                      </div>
+
+                      <div>
+                        <h3 class="text-[#E5E7EB] text-[13px] font-medium">
+                          Deactivate Account
+                        </h3>
+                        <p class="text-[#8E96A3] text-[12px] mt-1">
+                          Temporarily deactivate your account
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 py-4">
+                  
+                      <div class="w-9 flex justify-center">
+                        <i
+                          class="ri-delete-bin-line text-[25px] text-[#EF4444]"></i>
+                      </div>
+
+                      <div>
+                        <h3 class="text-[#E5E7EB] text-[13px] font-medium">
+                          Delete Account
+                        </h3>
+                        <p class="text-[#8E96A3] text-[12px] mt-1">
+                          Permanently delete your account
+                        </p>
+                      </div>
+                    </div>
+
+                </div>
+                </div>
+               
+                <div class="bg-[#131416] md:col-span-1 xl:col-span-1 border-[#2A2A2E] border rounded-2xl md:min-h-[20vh] md:h-auto xl:w-[400px] w-full mt-1">
+                   <div class="px-5 py-5">
+
+                  <div class="flex items-start gap-4">
+
+                    <div class="w-9 h-9 shrink-0 rounded-full bg-[#245B35] flex items-center justify-center">
+                      <i class="ri-shield-check-fill text-[20px] text-[#67E36A]"></i>
+                    </div>
+
+                    <div class="flex-1">
+
+                      <h2 class="text-[#E5E7EB] text-[15px] font-medium">
+                        Two-Factor Authentication
+                      </h2>
+
+                      <p class="text-[#9CA3AF] text-[12px] leading-5 mt-3 max-w-[310px]">
+                        Add an extra layer of security to your account
+                        by enabling two-factor authentication.
+                      </p>
+              
+                      <div class="flex items-center gap-1 mt-3">
+                        <span class="text-[#D1D5DB] text-[12px]">
+                          Status:
+                        </span>
+                        <span class="text-[#62D96B] text-[12px]">
+                          Enabled
+                        </span>
+                      </div>
+              
+                    </div>
+                  </div>
+
+                  <button class="w-full h-10 mt-5 border border-[#263445] rounded-md flex items-center justify-center relative
+                           text-[#D1D5DB] text-[12px] hover:bg-[#182333] transition">
+                    <span>
+                      Manage 2FA
+                    </span>
+                    <i class="ri-arrow-right-s-line absolute right-3 text-[18px] text-[#9CA3AF]"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+         </li>
+         <li id="teamSide" >
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]" id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+        </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="pt-1">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="setting.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>
