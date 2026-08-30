@@ -91,3 +91,7 @@ helpSide.addEventListener("click", () => {
 settingSide.addEventListener("click", () => {
     location.href = "http://localhost:3000/setting.html"
 })
+
+documentSide.addEventListener("click", () => {
+    location.href = "http://localhost:3000/document.html"
+})
