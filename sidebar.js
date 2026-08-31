@@ -95,3 +95,7 @@ settingSide.addEventListener("click", () => {
 documentSide.addEventListener("click", () => {
     location.href = "http://localhost:3000/document.html"
 })
+
+mediaSide.addEventListener("click", () => {
+    location.href = "http://localhost:3000/media.html"
+})
