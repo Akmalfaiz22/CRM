@@ -99,3 +99,7 @@ documentSide.addEventListener("click", () => {
 mediaSide.addEventListener("click", () => {
     location.href = "http://localhost:3000/media.html"
 })
+
+filesSide.addEventListener("click", () => {
+    location.href = "http://localhost:3000/file.html"
+})
