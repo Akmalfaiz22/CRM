@@ -19,7 +19,8 @@ const pages = {
     messageSide: "message.html",
     helpSide: "help.html",
     settingSide: "setting.html",
-    notificationNav: "notification.html"
+    notificationNav: "notification.html",
+    calendarNav: "calendar.html"
 };
 
 Object.entries(pages).forEach(([id, page]) => {
