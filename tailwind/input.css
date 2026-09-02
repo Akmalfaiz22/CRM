@@ -8,3 +8,8 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.input input::placeholder {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
