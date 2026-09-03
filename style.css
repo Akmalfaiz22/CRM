@@ -3902,6 +3902,12 @@
   .text-\[\#b6c3c4\] {
     color: #b6c3c4;
   }
+  .text-\[fff\] {
+    color: fff;
+  }
+  .text-\[ffff\] {
+    color: ffff;
+  }
   .text-\[white\] {
     color: white;
   }
@@ -3976,17 +3982,11 @@
   .underline {
     text-decoration-line: underline;
   }
-  .opacity-1 {
-    opacity: 1%;
-  }
   .opacity-50 {
     opacity: 50%;
   }
   .opacity-100 {
     opacity: 100%;
-  }
-  .opacity-1000 {
-    opacity: 1000%;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -4833,6 +4833,21 @@
       grid-template-columns: repeat(7, minmax(0, 1fr));
     }
   }
+  .md\:grid-cols-\[450\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 450;
+    }
+  }
+  .md\:grid-cols-\[450px\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 450px;
+    }
+  }
+  .md\:grid-cols-\[450px_\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 450px ;
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -5631,9 +5646,64 @@
       grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
+  .xl\:grid-cols-\[450px_830px\] {
+    @media (width >= 80rem) {
+      grid-template-columns: 450px 830px;
+    }
+  }
+  .xl\:grid-cols-\[450px_\] {
+    @media (width >= 80rem) {
+      grid-template-columns: 450px ;
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,) minmax(0,1.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,0\.5fr\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,0.5fr) minmax(0,1.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,0\.6fr\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,0.6fr) minmax(0,1.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,0\.7fr\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,0.7fr) minmax(0,1.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,0fr\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,0fr) minmax(0,1.4fr);
+    }
+  }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,1fr\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1fr\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1fr) minmax(0,1.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1fr\)_minmax\(0\,1fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,4\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,4) minmax(0,1.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,450px\)_minmax\(0\,1\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,450px) minmax(0,1.4fr);
     }
   }
   .xl\:items-center {
