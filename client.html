@@ -17,30 +17,30 @@
     <!-- Navbar -->
     <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
      <div class="flex items-center justify-start">
-      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost">
-        <!-- Sidebar toggle icon -->
-        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor" class="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg>
-      </label>
+      <!-- Sidebar toggle icon -->
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
       <div class="md:pl-2 pl-1">
         <h1 class="md:text-xl text-lg pl-1 font-bold">Client</h1>
       </div>
       </div>
       <div class="">
-        <label class="input">
-           <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
            <g
                 stroke-linejoin="round"
                 stroke-linecap="round"
                 stroke-width="2.5"
                 fill="none"
-                stroke="currentColor"
+                stroke="white"
               >
                 <circle cx="11" cy="11" r="8"></circle>
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" class="md:w-56 w-28" required placeholder="Search" />
-          </label>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+        </label>
       </div>
       <div class="flex items-center justify-center">
         <h2 class="pr-4">
@@ -97,7 +97,7 @@
              </div>
            </div>
 
-           <p class="text-sm mt-3 whitespace-nowrap">
+           <p class="md:text-sm text-xs mt-3 whitespace-nowrap">
              <span class="text-[#22C55E]">↑ 12.5%</span>
              <span class="text-[#D4D4D8]">from last month</span>
            </p>
@@ -114,7 +114,7 @@
             </div>
           </div>
 
-          <p class="text-sm mt-3 whitespace-nowrap">
+          <p class="md:text-sm text-xs mt-3 whitespace-nowrap">
             <span class="text-[#22C55E]">↑ 2.4%</span>
             <span class="text-[#D4D4D8]">from last month</span>
           </p>
@@ -131,7 +131,7 @@
             </div>
           </div>
 
-          <p class="text-sm mt-3 whitespace-nowrap">
+          <p class="md:text-sm text-xs mt-3 whitespace-nowrap">
             <span class="text-[#22C55E]">↑ 8.2%</span>
             <span class="text-[#D4D4D8]">from last month</span>
           </p>
@@ -149,7 +149,7 @@
            </div>
          </div>
 
-         <p class="text-sm mt-3 whitespace-nowrap">
+         <p class="md:text-sm text-xs mt-3 whitespace-nowrap">
            <span class="text-red-500">↓ 4.1%</span>
            <span class="text-[#D4D4D8]">from last month</span>
          </p>
@@ -158,35 +158,35 @@
        </div>
          
          <!-- buttom content -->
-        <div class="xl:flex items-center md:justify-center md:gap-2">   
+        <div class="xl:grid items-center xl:grid-cols-[minmax(0,1.4fr)_minmax(0,450px)] md:gap-2">   
           <!-- message area -->
-           <div class="xl:w-[830px] md:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[90vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">  
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[93vh] md:h-auto min-h-36 h-auto  md:pl-0 mt-6 rounded-2xl">  
              <div class="md:flex md:items-center md:justify-start py-2 md:ml-2 md:gap-2 pl-4 md:pl-2 pr-2 md:pr-0">
-                 <label class="input w-full">
-                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                 <label class="input w-full bg-[#131416] border-[#2A2A2E] border ">
+                    <svg class="h-[1em] opacity-50 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <g
                         stroke-linejoin="round"
                         stroke-linecap="round"
                         stroke-width="2.5"
                         fill="none"
-                        stroke="currentColor"
+                        stroke="white"
                       >
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="m21 21-4.3-4.3"></path>
                       </g>
                     </svg>
-                    <input type="search" required placeholder="Search" />
+                    <input type="search" required placeholder="Search" class="text-white" />
                  </label>    
-                  <div class="grid grid-cols-3  w-full mt-2">   
-                  <div class="flex items-center w-28 md:justify-start gap-2 md:w-30  md:h-11  
+                  <div class="grid grid-cols-3 gap-1 w-full mt-2">   
+                  <div class="flex items-center w-24 md:justify-start gap-2 md:w-30  md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
-                      <h2 class="text-[15px] md:text-[15px]">All Status</h2>
+                      <h2 class="text-[12px] md:text-[15px]">All Status</h2>
                   </div>
-                  <div class="flex items-center w-28 md:justify-start gap-2 md:w-30 md:h-11  
+                  <div class="flex items-center w-24 md:justify-start gap-2 md:w-30 md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
                       
-                      <h2 class="text-[15px] md:text-[15px]">All Tags</h2>
+                      <h2 class="text-[12px] md:text-[15px]">All Tags</h2>
                   </div>
                   <div class="flex items-center w-28 md:justify-start gap-2 md:w-30 md:h-11  
                              px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
@@ -199,7 +199,7 @@
              </div>
              <hr class=" bg-[#131416] border-[#2A2A2E] border">
              <!-- Table -->
-               <div class="w-full overflow-x-auto max-w-full scrollbar-hide xl:h-[520px]">
+               <div class="w-full overflow-x-auto max-w-full scrollbar-hide xl:h-[540px]">
 
                   <table class="w-full min-w-[860px]  border-separate border-spacing-y-2">
                 
@@ -346,10 +346,10 @@
              </div>
            </div>
            <!--user message -->
-           <div class="xl:w-[450px] md:w-full  w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[90vh] md:h-auto md:min-h-[760px] min-h-[80vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl md:pr-6 xl:pr-0">
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[90vh] md:h-auto md:min-h-[760px] min-h-[80vh] h-auto pl-0 md:pl-0 mt-6 rounded-2xl md:pr-6 xl:pr-0">
               <div class="ml-4 mt-2 ">
                 <h2 class="xl:text-[20px] md:text-[25px]  font-bold ">XYZ Retail</h2>
-                <p class="xl:text-[15px] md:text-[18px]">E-commerce <span class="btn ml-4 btn-sm py-2 mr-2 h-4 bg-[#1E3B32] text-[#5fe485]">Active</span></p>
+                <p class="xl:text-[15px] md:text-[18px]">E-commerce <span class="btn ml-4 btn-sm border-none shadow-none py-2 mr-2 h-4 bg-[#1E3B32] text-[#5fe485]">Active</span></p>
               </div>      
               <div class="flex items-center justify-between px-2 pt-3 pb-2">
                 <h2 class="text-[#A1A1AA] hover:text-violet-600 text-[11px] xl:text-[16px] md:text-[20px]">OverView</h2>
@@ -391,11 +391,11 @@
                      </div>
                      <div class="py-2">
                        <h2 class="text-[#A1A1AA] w-56 xl:text-[16px] md:text-[23px]">Company Address :</h2>
-                       <p class="xl:text-[16px] md:text-[23px]">123, Healthcare Avenue, Mumbai Maharashtra 400001, India</p>
+                       <p class="xl:text-[16px] md:text-[23px] xl:w-[400px] w-64">123, Healthcare Avenue, Mumbai Maharashtra 400001, India</p>
                      </div>
                      <div>
                         <h2 class="text-[#A1A1AA] w-56 xl:text-[16px] md:text-[23px]">About Client :</h2>
-                        <P class="xl:text-[16px] md:text-[23px]">ABC Hospital is a multi-specialty healthcare facility providing medical services.</P>
+                        <P class="xl:text-[16px] md:text-[23px] xl:w-[400px] w-64">ABC Hospital is a multi-specialty healthcare facility providing medical services.</P>
                      </div>
                </div>
                <div class="flex gap-28 ml-4 mt-4">
@@ -418,115 +418,116 @@
                   <h2 class="xl:text-[16px] md:text-[23px]">12 Jan 2025</h2>
                 </div>
                </div>
-               <button class="btn xl:h-10  md:h-16 mx-4 my-2 mt-12 md:mt-20 xl:w-[415px] md:w-full w-[320px] md"><i class="ri-edit-2-line xl:text-[16px] md:text-[23px]"> Edit Client</i></button>
+               <button class="btn xl:h-10 btn-active btn-primary md:h-16 mx-4 my-2 mt-12 md:mt-20 xl:w-[415px] md:w-full w-[320px] md"><i class="ri-edit-2-line xl:text-[16px] md:text-[23px]"> Edit Client</i></button>
         </div>   
         </div> 
       </div>
   </div>
       
   <!-- sidebar -->
-  <div class="drawer-side is-drawer-close:overflow-visible " id="sidebar">
+  <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
     <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:w-auto is-drawer-open:w-auto">
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
       <!-- Sidebar content here -->
       <ul class="menu w-full grow">
         <!-- List item -->
-          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg">Efficient App</span></i></h2>
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
          </li>
 
          <li id="indexSide">
-           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">Dashboard</span></i>
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
          </li>
         <li id="inboxSide">
-           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA]">inbox</span></i>
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
          </li>
          <li id="clientSide">
-           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Clients</span></i>
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
          </li>
          <li id="projectSide">
-           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA]">Projects</span></i>
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
          </li>
          <li id="taskSide">
-           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Task</span></i>
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
          </li>
          <li id="kanbanSide">
-           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Kanban board</span></i>
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
          </li>
-         <li id="teamSide" >
-           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Team</span></i>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
          </li>
          <li id="calenderSide">
-           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Calendar</span></i>
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
          </li>
          <hr>
          
          <!-- finance -->
         <li>
-          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('workplace').classList.toggle('hidden')">
-            FINANCE <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
           </div>
           <ul class="hidden" id="workplace">
             <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
-              <i class="ri-wallet-line"><span class="md:text-lg">Payments</span></i>
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
             </li>
             <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
-              <i class="ri-receipt-line"><span class="md:text-lg">Invoices</span></i>
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
             </li>
             <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
-              <i class="ri-wallet-line"><span class="md:text-lg">Expenses</span></i>
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
             </li>
           </ul>
         </li>  
 
         <!-- reports -->
          <li>
-          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('reports').classList.toggle('hidden')">
-            REPORTS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
           </div>
           <ul class="hidden" id="reports">
-            <li class="md:text-lg text-[#A1A1AA]" id="analyticsSide">
-              <i class="ri-bar-chart-fill"><span class="md:text-lg">Analytics</span></i>
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
             </li>
             <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
-              <i class="ri-line-chart-fill"><span class="md:text-lg">Revenue</span></i>
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
             </li>
             <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
-              <i class="ri-pie-chart-line"><span class="md:text-lg">Performance</span></i>
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
             </li>
           </ul>
         </li>  
 
         <!-- assets -->
          <li>
-          <div class="md:text-lg text-[#A1A1AA]" onclick="document.getElementById('assets').classList.toggle('hidden')">
-            ASSETS <i class="ri-arrow-drop-down-line md:text-xl text-[#A1A1AA]"></i>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
           </div>
           <ul class="hidden" id="assets">
             <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
-              <i class="ri-file-text-line"><span class="md:text-lg">Documents</span></i>
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
             </li>
             <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
-              <i class="ri-image-line"><span class="md:text-lg">Media</span></i>
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
             </li>
             <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
-              <i class="ri-folder-open-line"><span class="md:text-lg">Files</span></i>
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
             </li>
           </ul>
         </li>  
         <hr class="text-[#A1A1AA]">
-        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px]">COMMUNICATION</li>
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
         <li id="messageSide">
-           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Messages</span></i>
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
          </li>
          <li id="helpSide">
-           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Help & Support</span></i>
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
          </li>
         <hr class="text-[#A1A1AA]">
         <li class="mt-1 mb-1" id="settingSide">
-           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA]">Settings</span></i>
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
         </li>
-        <hr class="text-[#A1A1AA]">
-        <li class="pt-1">
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
           <div class="flex justify-center items-center gap-2">
              <div class="avatar avatar-online">              
                  <div class="w-15 rounded-full">
