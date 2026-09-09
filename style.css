@@ -5177,6 +5177,11 @@
       color: 14p;
     }
   }
+  .md\:text-\[15\] {
+    @media (width >= 48rem) {
+      color: 15;
+    }
+  }
   .md\:btn-md {
     @media (width >= 48rem) {
       @layer daisyui.l1.l2 {
@@ -5797,6 +5802,11 @@
       grid-template-columns: minmax(0,1.4fr) minmax(0,);
     }
   }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,0px\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,0px);
+    }
+  }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,1\.4\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,1.4);
@@ -5835,6 +5845,16 @@
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,450px\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,450px);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,500px\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,500px);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,600px\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,600px);
     }
   }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,640px\)\] {
