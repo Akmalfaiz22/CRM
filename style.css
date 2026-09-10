@@ -4000,6 +4000,10 @@
   .opacity-500 {
     opacity: 500%;
   }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -5706,6 +5710,11 @@
       grid-template-columns: minmax(0,1.4fr) minmax(0) minmax(400px);
     }
   }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,);
+    }
+  }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,\)_minmax\(0\,400px\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,) minmax(0,400px);
@@ -5749,6 +5758,11 @@
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,390px\)_minmax\(0\,390px\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,390px) minmax(0,390px);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,400px\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,400px);
     }
   }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,400px\)_minmax\(0\,400px\)\] {
