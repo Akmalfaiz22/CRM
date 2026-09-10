@@ -5251,6 +5251,11 @@
       margin-right: calc(var(--spacing) * 4);
     }
   }
+  .xl\:mr-7 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 7);
+    }
+  }
   .xl\:mb-0 {
     @media (width >= 80rem) {
       margin-bottom: 0;
@@ -5616,6 +5621,11 @@
       width: 900px;
     }
   }
+  .xl\:w-auto {
+    @media (width >= 80rem) {
+      width: auto;
+    }
+  }
   .xl\:w-full {
     @media (width >= 80rem) {
       width: 100%;
@@ -5624,6 +5634,36 @@
   .xl\:min-w-0 {
     @media (width >= 80rem) {
       min-width: 0;
+    }
+  }
+  .xl\:min-w-\[400\] {
+    @media (width >= 80rem) {
+      min-width: 400;
+    }
+  }
+  .xl\:min-w-\[400px\] {
+    @media (width >= 80rem) {
+      min-width: 400px;
+    }
+  }
+  .xl\:min-w-\[500px\] {
+    @media (width >= 80rem) {
+      min-width: 500px;
+    }
+  }
+  .xl\:min-w-\[520px\] {
+    @media (width >= 80rem) {
+      min-width: 520px;
+    }
+  }
+  .xl\:min-w-\[550px\] {
+    @media (width >= 80rem) {
+      min-width: 550px;
+    }
+  }
+  .xl\:min-w-full {
+    @media (width >= 80rem) {
+      min-width: 100%;
     }
   }
   .xl\:flex-1 {
@@ -5681,6 +5721,11 @@
       grid-template-columns: minmax(0,1.4fr) minmax(0,1.4fr) minmax(0,1.4fr);
     }
   }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,1\.4fr\)_minmax\(0\,390px\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,1.4fr) minmax(0,390px);
+    }
+  }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,1\.4fr\)_minmax\(0\,400px\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,1.4fr) minmax(0,400px);
@@ -5699,6 +5744,11 @@
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,390px\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,390px);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,390px\)_minmax\(0\,390px\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,390px) minmax(0,390px);
     }
   }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,400px\)_minmax\(0\,400px\)\] {
