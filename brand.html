@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+     <!-- Sidebar toggle icon -->
+         <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+      </div>
+      </div>
+      <div class="">
+       <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="white"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer" id="calendarNav"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+         <div class="md:flex md:items-center md:justify-between">
+           <div>
+              <h2 class="font-bold md:text-2xl text-[22px]">Settings</h2>
+              <p class="text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+            </div>
+         </div> 
+         <!-- find button -->
+       
+        <div class="xl:flex items-center xl:grid items-center xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
+         <!--user message -->
+
+          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[254vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- informaion area -->
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[123vh] md:h-auto md:mx-3 xl:mx-0 min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3 flex items-center justify-between">
+                 <div>
+                   <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                   Organization
+                   </h2>
+
+                   <p class="text-[#8E96A3] text-[11px] mt-1">
+                    Manage your oranization details, brand, team and billing in one place.
+                   </p>
+                 </div>
+                 <button class="btn btn-sm bg-[#1A1B1C] border shadow-none border-[#2E2E32]"><i class="ri-external-link-line"></i> View Public Profile</button>
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingInformation">
+                      <i class="ri-file-text-line">   Information</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline">
+                      <i class="ri-settings-4-line">   Branding & Appearance</i>
+                    </h3>
+
+                     <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingTeam">
+                      <i class="ri-group-line">   Team</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingBilling">
+                      <i class="ri-wallet-line">   Billing & Subscripition</i>
+                    </h3>
+                 </div>
+               </div>
+
+              <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
+                   
+                  <div class="mb-4">
+                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                             Brand Identity
+                           </h2>
+
+                           <p class="text-[#8E96A3] text-[11px] mt-1">
+                             Set up your logo, name and visual identity.
+                           </p>
+                  </div>
+                         
+                  <div class="md:flex items-center md:gap-6 grid grid-cols-3 mb-3">
+                  
+                    <div>
+                        <h2 class="block text-xs text-gray-300 mb-2">
+                            Company Logo
+                        </h2>
+                        <div class="border bg-[#0b0b0c] border-[#2A2A2E] rounded-2xl w-20 h-14 flex items-center justify-center">
+                            <i class="ri-drag-move-fill text-pink-300 text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                      <button class="text-xs p-2 text-gray-300 border bg-[#131416] border-[#2A2A2E] rounded-md">
+                         Change Logo
+                      </button>
+
+                      <br>
+
+                      <button class="text-xs text-red-400">
+                        Remove
+                       </button>
+
+                       <p class="text-[9px] text-gray-500">
+                           Recommended: 512 × 512px<br>
+                           (PNG, JPG or SVG)
+                       </p>
+                    </div>
+                  </div>  
+
+                  <div class="grid grid-cols-2 gap-2 mb-1">
+                    <div>
+                        <label class="block text-xs text-gray-300 mb-2">
+                             Company Name <span class="text-red-400">*</span>
+                         </label>
+
+                         <input
+                             type="text"
+                             value="Efficient App"
+                             class="w-full h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E] text-sm text-gray-200 outline-none">
+                    </div>
+
+                     <div>
+                        <label class="block text-xs text-gray-300 mb-2">
+                            Tagline
+                         </label>
+
+                         <input
+                             type="text"
+                             value="Smart CRM for Modern Agencies"
+                             class="w-full h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E] text-sm text-gray-200 outline-none">
+                    </div>
+
+                  </div>
+                 
+              </div>
+
+              <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
+                 <div class="mb-4">
+                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                             Brand Colors
+                           </h2>
+
+                           <p class="text-[#8E96A3] text-[11px] mt-1">
+                             Customize your brand color palette used across the platform.
+                           </p>
+                  </div>
+
+                 <div class="grid md:grid-cols-2 grid-cols-1 gap-2 mb-3">
+                     <div>
+                         <label class="block text-sm text-gray-300 mb-2">
+                Primary Color
+                         </label>
+
+                         <div class="flex items-center gap-2">
+
+                             <div class="w-14 h-10 rounded-lg bg-[#7C3AED] border border-[#2E2E32] shrink-0">
+                              </div>
+
+                             <div class="flex items-center justify-between w-full h-10 px-3 rounded-lg
+                                         bg-[#1A1B1C]
+                                         border border-[#2E2E32]">
+
+                                 <span class="text-sm text-gray-300">
+                                     #7C3AED
+                                 </span>
+
+                                 <input
+                                     type="color"
+                                     value="#7C3AED"
+                                     class="w-5 h-5 bg-transparent border-0 cursor-pointer">
+                             </div>
+
+                         </div>
+
+                         <p class="text-xs text-gray-500 mt-1">
+                             Main brand color, buttons, links
+                         </p>
+                     </div>
+
+                     <div>
+                         <label class="block text-sm text-gray-300 mb-2">
+                             Secondary Color
+                         </label>
+
+                         <div class="flex items-center gap-2">
+
+                             <div class="w-14 h-10 rounded-lg bg-[#3882F6] border border-[#2E2E32] shrink-0">
+                             </div>
+
+                             <div class="flex items-center justify-between w-full h-10 px-3 rounded-lg
+                                         bg-[#1A1B1C]
+                                         border border-[#2E2E32]">
+             
+                                 <span class="text-sm text-gray-300">
+                                     #3882F6
+                                 </span>
+
+                                 <input
+                                     type="color"
+                                     value="#3882F6"
+                                     class="w-5 h-5 bg-transparent border-0 cursor-pointer">
+                             </div>
+
+                         </div>
+
+                         <p class="text-xs text-gray-500 mt-1">
+                             Secondary elements, highlights
+                         </p>
+                     </div>
+
+                     <div>
+                          <label class="block text-sm text-gray-300 mb-2">
+                              Accent Color
+                          </label>
+
+                          <div class="flex items-center gap-2">
+              
+                              <div class="w-14 h-10 rounded-lg bg-[#EC4899] border border-[#2E2E32] shrink-0">
+                              </div>
+
+                              <div class="flex items-center justify-between w-full h-10 px-3 rounded-lg
+                                          bg-[#1A1B1C]
+                                          border border-[#2E2E32]">
+              
+                                  <span class="text-sm text-gray-300">
+                                      #EC4899
+                                  </span>
+
+                                  <input
+                                      type="color"
+                                      value="#EC4899"
+                                      class="w-5 h-5 bg-transparent border-0 cursor-pointer">
+                              </div>
+
+                          </div>
+
+                          <p class="text-xs text-gray-500 mt-1">
+                              Accents, charts, important items
+                          </p>
+                     </div>
+
+                     <div>
+                         <label class="block text-sm text-gray-300 mb-2">
+                             Success Color
+                         </label>
+
+                         <div class="flex items-center gap-2">
+
+                             <div class="w-14 h-10 rounded-lg bg-[#10B981] border border-[#2E2E32] shrink-0">
+                             </div>
+
+                             <div class="flex items-center justify-between w-full h-10 px-3 rounded-lg
+                                         bg-[#1A1B1C]
+                                         border border-[#2E2E32]">
+
+                                 <span class="text-sm text-gray-300">
+                                     #10B981
+                                 </span>
+
+                                 <input
+                                     type="color"
+                                     value="#10B981"
+                                     class="w-5 h-5 bg-transparent border-0 cursor-pointer">
+                             </div>
+
+                         </div>
+
+                         <p class="text-xs text-gray-500 mt-1">
+                             Success states, positive actions
+                         </p>
+                     </div>
+
+                     <div>
+                          <label class="block text-sm text-gray-300 mb-2">
+                              Warning Color
+                          </label>
+
+                          <div class="flex items-center gap-2">
+
+                              <div class="w-14 h-10 rounded-lg bg-[#F59E0B] border border-[#2E2E32] shrink-0">
+                              </div>
+
+                              <div class="flex items-center justify-between w-full h-10 px-3 rounded-lg
+                                          bg-[#1A1B1C]
+                                          border border-[#2E2E32]">
+
+                                  <span class="text-sm text-gray-300">
+                                      #F59E0B
+                                  </span>
+
+                                  <input
+                                      type="color"
+                                      value="#F59E0B"
+                                      class="w-5 h-5 bg-transparent border-0 cursor-pointer">
+                              </div>
+
+                          </div>
+
+                          <p class="text-xs text-gray-500 mt-1">
+                              Warnings, attention elements
+                          </p>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Danger Color
+                        </label>
+
+                        <div class="flex items-center gap-2">
+
+                            <div class="w-14 h-10 rounded-lg bg-[#EF4444] border border-[#2E2E32] shrink-0">
+                            </div>
+
+                            <div class="flex items-center justify-between w-full h-10 px-3 rounded-lg
+                                        bg-[#1A1B1C]
+                                        border border-[#2E2E32]">
+
+                                <span class="text-sm text-gray-300">
+                                    #EF4444
+                                </span>
+
+                                <input
+                                    type="color"
+                                    value="#EF4444"
+                                    class="w-5 h-5 bg-transparent border-0 cursor-pointer">
+                            </div>
+
+                        </div>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                            Errors, delete actions
+                        </p>
+                    </div>
+
+                 </div>
+
+              </div>
+
+              <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
+                 <div class="mb-4">
+                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                             App Appearance
+                           </h2>
+
+                           <p class="text-[#8E96A3] text-[11px] mt-1">
+                             Customize how your app looks and feels for your organization.
+                           </p>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="block text-sm text-gray-300 mb-2">
+                      Theme Mode
+                    </label>
+
+                    <div class="grid grid-cols-2 gap-2">
+
+                         <button
+                             type="button"
+                             class="h-16 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                    flex items-center gap-3 px-4 text-left">
+
+                             <i class="ri-moon-line text-gray-300 text-2xl"></i>
+
+                             <div>
+                                 <p class="text-sm text-gray-200">
+                                     Dark
+                                 </p>
+
+                                 <p class="text-xs text-gray-500 mt-1">
+                                     Modern dark theme
+                                 </p>
+                             </div>
+                         </button>
+
+                         <button
+                                type="button"
+                                class="h-16 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                       flex items-center gap-3 px-4 text-left">
+            
+                                <i class="ri-sun-line text-gray-300 text-2xl"></i>
+
+                                <div>
+                                    <p class="text-sm text-gray-200">
+                                        Light
+                                    </p>
+
+                                    <p class="text-xs text-gray-500 mt-1">
+                                        Clean and minimal
+                                    </p>
+                                </div>
+
+                         </button>
+
+
+                    </div>
+
+                  </div>
+
+                   <div class="mb-3">
+                      <label class="block text-sm text-gray-300 mb-2">
+                        Sidebar Style
+                      </label>
+
+                      <div class="grid grid-cols-2 gap-2">
+
+                         <button
+                              type="button"
+                              class="h-16 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                     flex items-center gap-3 px-4 text-left">
+
+                              <i class="ri-layout-left-line text-gray-300 text-2xl"></i>
+
+                              <div>
+                                  <p class="text-sm text-gray-200">
+                                      Default
+                                  </p>
+
+                                  <p class="text-xs text-gray-500 mt-1">
+                                      Show icons only
+                                  </p>
+                              </div>
+
+                         </button>
+
+                          <button
+                               type="button"
+                               class="h-16 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                      flex items-center gap-3 px-4 text-left">
+           
+                               <i class="ri-sidebar-unfold-line text-gray-300 text-2xl"></i>
+
+                               <div>
+                                   <p class="text-sm text-gray-200">
+                                       Expanded
+                                   </p>
+
+                                   <p class="text-xs text-gray-500 mt-1">
+                                       Show full menu
+                                   </p>
+                               </div>
+
+                          </button>
+
+                      </div>
+
+                   </div>
+
+                   <div class="mb-3 grid grid-cols-1">
+                      
+                      <div class="mb-3">
+                         <label class="block text-sm text-gray-300 mb-2">
+                              Border Radius
+                          </label>
+
+                          <select
+                              class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                     text-sm text-gray-300 outline-none">
+
+                              <option>Small</option>
+                              <option selected>Medium</option>
+                              <option>Large</option>
+                              <option>None</option>
+
+                          </select>
+                      </div>
+
+                      <div class="mb-3">
+                          <label class="block text-sm text-gray-300 mb-2">
+                             Font Family
+                          </label>
+
+                          <select
+                              class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                     text-sm text-gray-300 outline-none">
+
+                             <option selected>Inter (Default)</option>
+                              <option>Roboto</option>
+                             <option>Poppins</option>
+                             <option>Arial</option>
+              
+                          </select>
+                      </div>
+
+                      <div>
+                        <label class="block text-sm text-gray-300 mb-2">
+                             Font Size
+                         </label>
+
+                         <select
+                             class="w-full h-10 px-3 rounded-lg
+                                    bg-[#1A1B1C] border border-[#2E2E32]
+                                    text-sm text-gray-300 outline-none">
+             
+                             <option>Small</option>
+                             <option selected>Medium</option>
+                             <option>Large</option>
+
+                         </select>
+                      </div>
+
+                   </div>
+
+              </div>
+
+              <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
+                <div class="mb-4">
+                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                             Brand Banner (Optional)
+                           </h2>
+
+                           <p class="text-[#8E96A3] text-[11px] mt-1">
+                             Upload a banner image for your organization.
+                           </p>
+                  </div>
+
+                 <div class="mb-3">
+                      <div class="w-full h-12 md:h-14 rounded-lg overflow-hidden
+                                  bg-[#1A1B1C]
+                                  border border-[#2E2E32]">
+
+                          <div class="w-full h-full bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-700">
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div>
+                     <div class="grid grid-cols-2 gap-2">
+
+                       <button
+                            type="button"
+                            class="h-10 px-4 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                   text-sm text-gray-300 hover:bg-[#202123] flex items-center gap-2">
+
+                            <i class="ri-image-line text-lg"></i>
+
+                            Change Banner
+                       </button>
+
+                       <button
+                            type="button"
+                            class="h-10 px-4 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                   text-sm text-red-400 hover:bg-[#211619] flex items-center gap-2">
+
+                            <i class="ri-delete-bin-line text-lg"></i>
+
+                            Remove
+                       </button>
+
+                     </div>
+
+                     <p class="text-xs text-gray-500 mt-2">
+                        Recommended: 1920 × 660px (JPG or PNG)
+                     </p>
+                  </div>
+
+              </div>
+
+              <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-5">
+                  <div class="mb-4">
+                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                             Favicon & App Icons
+                           </h2>
+
+                           <p class="text-[#8E96A3] text-[11px] mt-1">
+                             Upload favicon and app icons for browser tabs and mobile devices.
+                           </p>
+                  </div>
+
+                  <div class="flex items-center gap-6 mb-3">
+
+                    <div>
+                        <p class="text-sm text-gray-300 mb-2">
+                            Favicon
+                        </p>
+
+                        <div class="w-16 h-16 border bg-[#0b0b0c] border-[#2A2A2E] rounded-2xl overflow-hidden flex items-center justify-center">
+
+                            <div class="flex items-center justify-center">
+        
+                                <i class="ri-drag-move-fill text-pink-300 text-3xl"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <div class="pt-6">
+                        <button
+                             type="button"
+                             class="h-10 px-4 rounded-lg bg-[#1A1B1C] border border-[#2E2E32] text-sm text-gray-300
+                                    hover:bg-[#202123] flex items-center gap-2">
+
+                             <i class="ri-upload-2-line text-lg"></i>
+                             Change Favicon
+         
+                         </button>
+
+                         <p class="text-xs text-gray-500 mt-2">
+                             Recommended: 256 × 256px (PNG or ICO)
+                         </p>
+
+                    </div>
+
+                  </div>
+
+                  <div class="flex items-center gap-5">
+                    <div>
+                      <p class="text-sm text-gray-300 mb-2">
+                          App Icon (PWA)
+                      </p>
+
+                      <div class="w-16 h-16 border bg-[#0b0b0c] border-[#2A2A2E] rounded-2xl overflow-hidden flex items-center justify-center">
+
+                          <div class="flex items-center justify-center">
+          
+                              <i class="ri-drag-move-fill text-pink-300 text-3xl"></i>
+
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="pt-6">
+                        <button
+                            type="button"
+                            class="h-10 px-4 rounded-lg bg-[#1A1B1C] border border-[#2E2E32] text-sm text-gray-300
+                                   hover:bg-[#202123] flex items-center gap-2">
+
+                            <i class="ri-image-line text-lg"></i>
+                            Change Icon
+
+                       </button>
+
+                        <p class="text-xs text-gray-500 mt-2">
+                            Recommended: 512 × 512px (PNG)
+                        </p>
+
+                    </div>
+
+                  </div>
+
+              </div>
+
+           </div>
+
+           <!-- detail -->
+            <div class="mt-4 md:ml-3 xl:ml-0 xl:min-h-[255vh] md:h-auto">
+
+                <div class="mb-2 bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1">
+                    <div class="m-3">
+                        <div class="flex items-center justify-between">
+                           <h3 class="text-[#E5E7EB]  text-[16px] font-semibold">
+                               Live Preview
+                           </h3>
+
+                            <button class="text-[12px] text-purple-400 flex items-center gap-1">
+                                Open in new tab
+                                <i class="ri-external-link-line"></i>
+                            </button>
+                        </div>
+
+                        <p class="text-xs text-gray-500 mt-1">
+                            See how your brand looks across the platform.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-3 mb-3 mx-3 bg-[#1A1B1C] border border-[#2E2E32] rounded-lg overflow-hidden">
+
+                        <button class="h-8 text-[10px] text-white border-r border-[#2E2E32]">
+                            Web App
+                        </button>
+
+                        <button class="h-8 text-[10px] text-white border-r border-[#2E2E32]">
+                            Mobile App
+                        </button>
+
+                        <button class="h-8 text-[10px] text-white">
+                            Login Page
+                        </button>
+
+                    </div>
+
+                    <div class="mb-3 mx-3 bg-[#1A1B1C] border border-[#2E2E32] rounded-lg overflow-hidden">
+                      <img src="./image/WhatsApp Image 2026-09-15 at 3.56.44 PM.jpeg" alt="">
+                    </div>
+   
+                </div>
+            
+                <div class="mb-2 bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1">
+                   <div class="m-3">
+                      <h3 class="text-[#E5E7EB]  text-[16px] font-semibold">
+                          Brand Guidelines (Optional)
+                      </h3>
+                       <p class="text-xs text-gray-500 mt-1">
+                          Upload your brand guidelines, logo usage, color palette and more.
+                        </p>
+                   </div>
+
+                   <div class="rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                               flex flex-col items-center justify-center text-center px-3 mx-3 py-4 mb-2">
+
+                        <i class="ri-file-text-line text-gray-300 text-2xl mb-2"></i>
+
+                        <p class="text-xs text-gray-200">
+                            Upload Brand Guidelines
+                        </p>
+
+                        <p class="text-[9px] text-gray-500 mt-1">
+                            PDF, DOC, or ZIP (Max 10MB)
+                        </p>
+
+                    </div>
+
+                    <div class="mt-3 flex items-center justify-between bg-[#1A1B1C] border border-[#2E2E32] rounded-lg px-3 py-2 mx-3 mb-2">
+
+                        <div class="flex items-center gap-2 min-w-0">
+
+                            <div class="w-8 h-8 shrink-0 rounded-md bg-red-500 flex items-center justify-center">
+                
+                                <i class="ri-file-pdf-2-fill text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="min-w-0">
+                                <p class="text-[10px] text-gray-200 truncate">
+                                    Brand Guidelines.pdf
+                                </p>
+
+                                <p class="text-[8px] text-gray-500 mt-1">
+                                    2.4 MB • Uploaded May 20, 2025
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-center gap-2 shrink-0">
+                
+                            <button
+                                type="button"
+                                class="text-gray-300 hover:text-white">
+                
+                                <i class="ri-download-line text-base"></i>
+
+                            </button>
+
+                            <button
+                                type="button"
+                                class="text-gray-300 hover:text-white">
+
+                                <i class="ri-more-2-fill text-base"></i>
+                
+                            </button>
+                
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-2 bg-[#131416] md:col-span-1 xl:col-span-1 border-[#2A2A2E] border rounded-2xl xl:min-h-[20vh] md:h-auto xl:w-[400px] w-full mt-1 p-3">
+
+                     <div class="flex items-start gap-3">
+
+                         <div class="w-7 h-7 shrink-0 flex items-center justify-center">
+                           💡
+                         </div>
+
+                         <div class="flex-1">
+
+                            <h2 class="text-[#E5E7EB] text-[16px] font-medium mb-2">
+                              Keep Your Brand Consistent
+                             </h2>
+              
+                             <p class="text-xs xl:text-sm text-gray-500 leading-4 mt-1">
+                                 A strong brand identity helps build trust with your clients
+                                 and team members. Make sure to use high-quality assets and
+                                 maintain consistency acrossall platforms.
+                             </p>
+
+                             
+
+                         </div>
+
+                     </div>
+
+                 </div>
+
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+   <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
+         </li>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
+        </li>
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="brand.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>

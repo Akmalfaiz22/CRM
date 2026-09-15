@@ -1,9 +1,9 @@
-const settingSidebar = {
-    Organization: "organization.html",
+const organizationBtn = {
+    settingBranding: "brand.html",
     
 };
 
-Object.entries(settingSidebar).forEach(([id, page]) => {
+Object.entries(organizationBtn).forEach(([id, page]) => {
     const element = document.getElementById(id);
 
     if (element) {

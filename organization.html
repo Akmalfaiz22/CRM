@@ -71,7 +71,7 @@
         <div class="xl:flex items-center xl:grid items-center xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
          <!--user message -->
 
-          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[163vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[178vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
   
              <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer">
                <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
@@ -219,19 +219,51 @@
                <div class="px-4 pt-5 pb-3 flex items-center justify-between">
                  <div>
                    <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
-                   Organization Information
+                   Organization
                    </h2>
 
                    <p class="text-[#8E96A3] text-[11px] mt-1">
-                   Update your company details and public information.
+                    Manage your oranization details, brand, team and billing in one place.
                    </p>
                  </div>
-                 <button class="btn btn-sm btn-primary">Save Changes</button>
+                 <button class="btn btn-sm bg-[#1A1B1C] border shadow-none border-[#2E2E32]"><i class="ri-external-link-line"></i> View Public Profile</button>
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingInformation">
+                      <i class="ri-file-text-line">   Information</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingBranding">
+                      <i class="ri-settings-4-line">   Branding & Appearance</i>
+                    </h3>
+
+                     <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingTeam">
+                      <i class="ri-group-line">   Team</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingBilling">
+                      <i class="ri-wallet-line">   Billing & Subscripition</i>
+                    </h3>
+                 </div>
                </div>
 
               <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
-                
+                   <div class="mb-4 flex items-center justify-between">
+                         <div>
+                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                           Organization Information
+                           </h2>
+
+                           <p class="text-[#8E96A3] text-[11px] mt-1">
+                           Update your company details and public information.
+                           </p>
+                         </div>
+                         <button class="btn btn-sm btn-primary">Save Changes</button>
+                     </div>
                   <div class="md:flex items-center md:gap-6 grid grid-cols-3 mb-3">
+                  
                     <div>
                         <h2 class="block text-xs text-gray-300 mb-2">
                             Company Logo
@@ -700,7 +732,41 @@
                       </div>
                     </div>
 
-                     <div class="flex items-center gap-4 py-3">
+                    <div class="flex items-center gap-4 py-4 border-b border-[#1D2936]">
+                     
+                      <div class="w-9 flex justify-center">
+                        <i
+                          class="ri-user-received-line text-[25px] text-[#A7AFBD]"></i>
+                      </div>
+
+                      <div>
+                        <h3 class="text-[#E5E7EB] text-[13px] font-medium">
+                          Manage Roles & Permissions
+                        </h3>
+                        <p class="text-[#8E96A3] text-[12px] mt-1">
+                          Set access levels and Permissions
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 py-4 border-b border-[#1D2936]">
+                     
+                      <div class="w-9 flex justify-center">
+                        <i
+                          class="ri-file-text-line text-[25px] text-[#A7AFBD]"></i>
+                      </div>
+
+                      <div>
+                        <h3 class="text-[#E5E7EB] text-[13px] font-medium">
+                          View Billing & Invoices
+                        </h3>
+                        <p class="text-[#8E96A3] text-[12px] mt-1">
+                          Manage your subsription and payments                   
+                        </p>
+                      </div>
+                    </div>
+
+                     <div class="flex items-center gap-4 md:py-3 xl:pt-3">
                   
                       <div class="w-9 flex justify-center">
                         <i
@@ -756,7 +822,7 @@
 
                 </div>
                
-                <div class="bg-[#131416] md:col-span-1 xl:col-span-1 border-[#2A2A2E] border rounded-2xl xl:min-h-[33vh] md:h-auto xl:w-[400px] w-full mt-1 p-3">
+                <div class="bg-[#131416] md:col-span-1 xl:col-span-1 border-[#2A2A2E] border rounded-2xl xl:min-h-[29vh] md:h-auto xl:w-[400px] w-full mt-1 p-3">
 
                      <div class="flex items-start gap-3">
 
@@ -780,7 +846,7 @@
 
                              <button
                                  type="button"
-                                 class="mt-3 xl:w-full xl:mt-24 px-3 py-1.5 rounded-md border border-[#2E2E32] bg-[#171819]
+                                 class="mt-3 xl:w-full xl:mt-16 px-3 py-1.5 rounded-md border border-[#2E2E32] bg-[#171819]
                                         text-[10px] xl:text-[16px] text-gray-300 hover:bg-[#202123] flex items-center justify-between gap-1">
                  
                                  Contact Support
@@ -920,7 +986,7 @@
     </div>
   </div> 
  </div>
- <script src="setting.js"></script>
+ <script src="organization.js"></script>
  <script src="sidebar.js"></script>
  </body>
 </html>
