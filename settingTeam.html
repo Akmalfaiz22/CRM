@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="drawer lg:drawer-open min-h-screen w-full">
-  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
   <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
     <!-- Navbar -->
     <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
@@ -21,10 +21,10 @@
          <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
            <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
          </label>
-         <div class="md:pl-2 pl-1">
-           <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
-            <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
-         </div>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+         <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+      </div>
       </div>
       <div class="">
        <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
@@ -60,7 +60,7 @@
     <!-- Page content here -->
     <div class="min-h-screen w-full p-4">
        <!--top content -->
-      
+            
         <div class="xl:grid xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
          <!--user message -->
 
@@ -207,7 +207,7 @@
            </div>
 
           <!-- informaion area -->
-           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[178vh] md:h-auto  min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[178vh] md:h-auto min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
                <!-- Main Heading -->
                <div class="px-4 pt-5 pb-3 flex items-center justify-between">
                  <div>
@@ -232,349 +232,406 @@
                       <i class="ri-settings-4-line">   Branding & Appearance</i>
                     </h3>
 
-                     <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingTeam">
+                     <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingTeam">
                       <i class="ri-group-line">   Team</i>
                     </h3>
 
-                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingBilling">
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingBilling">
                       <i class="ri-wallet-line">   Billing & Subscripition</i>
                     </h3>
                  </div>
                </div>
 
-              <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
-                   <div class="mb-4 flex items-center justify-between">
-                         <div>
-                           <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
-                           Organization Information
-                           </h2>
-
-                           <p class="text-[#8E96A3] text-[11px] mt-1">
-                           Update your company details and public information.
-                           </p>
-                         </div>
-                         <button class="btn btn-sm btn-primary">Save Changes</button>
-                     </div>
-                  <div class="md:flex items-center md:gap-6 grid grid-cols-3 mb-3">
-                  
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                   
+                 <div class="pb-3 flex items-center justify-between gap-2">
                     <div>
-                        <h2 class="block text-xs text-gray-300 mb-2">
-                            Company Logo
+                        <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                          Team Members
                         </h2>
-                        <div class="border bg-[#0b0b0c] border-[#2A2A2E] rounded-2xl w-20 h-14 flex items-center justify-center">
-                            <i class="ri-drag-move-fill text-pink-300 text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="col-span-2">
-                      <button class="text-xs p-2 text-gray-300 border bg-[#131416] border-[#2A2A2E] rounded-md">
-                         Change Logo
-                      </button>
 
-                      <br>
+                        <p class="text-[#8E96A3] text-[11px] mt-1">
+                           Manage your team members, roles and permissions.
+                        </p>
+                     </div>
+                     <button class="btn btn-sm btn-primary">Invite Member</button>
+                     <div class="border bg-[#131416] border-[#2A2A2E] p-1 rounded-lg">
+                      <i class="ri-more-fill"></i>
+                     </div>
+                 </div>
 
-                      <button class="text-xs text-red-400">
-                        Remove
-                       </button>
+                  <div class="grid grid-cols-3 gap-2">
+                      <label class="col-span-3 input w-full bg-[#131416] border-[#2A2A2E] border ">
+                    <svg class="h-[1em] opacity-50 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <g
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke-width="2.5"
+                        fill="none"
+                        stroke="white"
+                      >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                      </g>
+                    </svg>
+                    <input type="search" required placeholder="Search" class="text-white" />
+                      </label>    
+                     
+                       <div class="flex items-center w-full md:justify-start gap-2   md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="text-xs md:text-[15px] xl:text-[12px]">All Roles</h2>
+                       </div>
+                       <div class="flex items-center w-full md:justify-start gap-2  md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="text-xs md:text-[15px] xl:text-[12px]">All Departments</h2>
+                       </div>
+                       <div class="flex items-center w-full md:justify-start gap-2 md:h-11  
+                             px-2 py-2 rounded-lg border border-[#2A2A2E] bg-[#131416] text-white cursor-pointer hover:bg-[#1B1C1F]">
+                      
+                      <h2 class="text-xs md:text-[15px] xl:text-[12px]">
+                        All Status
+                      </h2>
+                       </div>                                           
+                  </div>
 
-                       <p class="text-[9px] text-gray-500">
-                           Recommended: 512 × 512px<br>
-                           (PNG, JPG or SVG)
+                  <div class="overflow-x-auto xl:h-[40vh] md:h-[40vh] md:scrollbar-hide xl:scrollbar-default">
+                     <table class="table">
+                       <!-- head -->
+                       <thead>
+                         <tr>
+                           <th class="text-[#A1A1AA]">Name</th>
+                           <th class="text-[#A1A1AA]">Role</th>
+                           <th class="text-[#A1A1AA]">Department</th>
+                           <th class="text-[#A1A1AA]">Email</th>
+                           <th class="text-[#A1A1AA]">Status</th>
+                           <th class="text-[#A1A1AA] ">Joined</th>
+                           <th class="text-[#A1A1AA]">Action</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <!-- row 1 -->
+                         <tr class="hover:bg-base-300">
+                           <th>
+                              <div class="avatar">
+                               <div class="w-10 h-10 rounded-full">
+                                 <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                               </div>
+                               <h2 class="mt-2 ml-2">Ali Raza</h2>
+                               </div>
+                           </th>
+                           <td>
+                              <button class="bg-[#21174B] text-[#9B7CFF] btn-xs p-1.5 text-xs rounded-md shadow-none border-none">
+                                Owner
+                              </button>
+                           </td>
+                           <td>
+                              <button class="btn  btn-xs  mr-2 h-6  bg-[#464647] text-white shadow-none border-none">Management</button>
+                            </td>
+                           <td>example@efficientapp.com</td>
+                           <td>
+                             <div class="flex items-center gap-2 text-white text-[13px]">
+                                <span class="w-2.5 h-2.5 bg-[#63D85A] rounded-full"></span>
+                                Active
+                             </div>
+                           </td>
+                           <td class="pl-8">Jan 15,2024</td>
+                           
+                           <td><i class="ri-more-2-fill"></i></td>
+                         </tr>
+                         <!-- row 2 -->
+                         <tr class="hover:bg-base-300">
+                           <th class="">
+                              <div class="avatar w-32">
+                               <div class="w-10 h-10 rounded-full">
+                                 <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                               </div>
+                               <h2 class="mt-2 ml-2">Ali Raza</h2>
+                               </div>
+                           </th>
+                           <td>
+                              <button class="bg-[#21174B] text-[#9B7CFF] btn-xs p-1.5 text-xs rounded-md shadow-none border-none">
+                                Owner
+                              </button>
+                           </td>
+                           <td>
+                              <button class="btn  btn-xs  mr-2 h-6  bg-[#464647] text-white shadow-none border-none">Management</button>
+                            </td>
+                           <td>example@efficientapp.com</td>
+                           <td>
+                             <div class="flex items-center gap-2 text-white text-[13px]">
+                                <span class="w-2.5 h-2.5 bg-[#63D85A] rounded-full"></span>
+                                Active
+                             </div>
+                           </td>
+                           <td class="pl-8">Jan 15,2024</td>
+                           
+                           <td><i class="ri-more-2-fill"></i></td>
+                         </tr>
+                       </tbody>
+                     </table>
+                   </div>
+
+                   <div class="flex flex-col md:flex-row items-center justify-between pt-3 border-t border-[#2A2A2E] mt-4">
+
+                       <!-- Left -->
+                       <p class="text-xs text-[#A1A1AA] mb-3 md:mb-0">
+                         Showing 1 to 7 of 7 members
                        </p>
-                    </div>
-                  </div>  
 
-                  <div class="grid grid-cols-2 gap-2 mb-3">
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-2">
-                             Company Name <span class="text-red-400">*</span>
+                       <!-- Center -->
+                       <div class="flex items-center gap-2">
+                         <button class="md:w-5 md:h-6 w-5 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                           <i class="ri-arrow-left-s-line"></i>
+                         </button>
+
+                         <button class="md:w-5 md:h-6 w-5 h-6 rounded-md bg-[#6D28D9] text-white">
+                           1
+                         </button>              
+
+                 
+             
+                        <button class="md:w-5 md:h-6 w-4 h-6 rounded-md border border-[#2A2A2E] bg-[#131416] hover:bg-[#1B1C1F]">
+                          <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                      </div>
+
+                      <!-- Right -->
+                      <select class="mt-3 md:mt-0 bg-[#131416] border border-[#2A2A2E] rounded-md px-1 py-1 text-sm text-white">
+                        <option>10 / page</option>
+                        <option>20 / page</option>
+                        <option>50 / page</option>
+                      </select>
+
+                    </div>
+
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                   <div class="mb-3">
+                        <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                          Invite Team Member
+                        </h2>
+
+                        <p class="text-[#8E96A3] text-[11px] mt-1">
+                           Send an invitation to join your organization.
+                        </p>
+                   </div>
+
+                   <div class="grid grid-cols-2 gap-2 mb-3">
+                     <div>
+                         <label class="block text-sm text-gray-300 mb-2">
+                             Full Name <span class="text-red-400">*</span>
                          </label>
 
                          <input
                              type="text"
-                             value="Efficient App"
-                             class="w-full h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E] text-sm text-gray-200 outline-none">
-                    </div>
+                             placeholder="Enter full name"
+                             class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C]  border border-[#2E2E32] text-sm text-gray-300 
+                                    placeholder:text-gray-500 outline-none focus:border-[#4B4B52]">
+                     </div>
 
                      <div>
-                        <label class="block text-xs text-gray-300 mb-2">
-                            Industry <span class="text-red-400">*</span>
+                          <label class="block text-sm text-gray-300 mb-2">
+                              Email Address <span class="text-red-400">*</span>
+                          </label>
+
+                          <input
+                              type="email"
+                              placeholder="name@company.com"
+                              class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32] text-sm text-gray-300
+                                     placeholder:text-gray-500 outline-none focus:border-[#4B4B52]">
+                     </div>
+
+                     <div>
+                        <label class="block text-sm text-gray-300 mb-2">
+                            Role <span class="text-red-400">*</span>
                         </label>
 
                         <select
-                            class="w-full h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E] text-sm text-gray-200 outline-none">
-                            <option>Software / Agency</option>
-                            <option>Software</option>
-                            <option>Agency</option>
+                            class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
+                                  text-sm text-gray-300 outline-none">
+            
+                            <option value="">Select role</option>
+                            <option>Admin</option>
+                            <option>Manager</option>
+                            <option>Member</option>
+            
                         </select>
                      </div>
 
-                     <div class="col-span-2">
-                          <label class="block text-xs text-gray-300 mb-2">
-                              Company Email <span class="text-red-400">*</span>
-                          </label>
-
-                          <div class="flex items-center h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E]">
-                              <span class="text-gray-400 mr-2">✉</span>
-
-                              <input
-                                  type="email"
-                                  value="hello@efficientapp.com"
-                                  class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                          </div>
-                      </div>
-                  </div>
-
-                 <div class="grid grid-cols-2 gap-2 mb-3">
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-2">
-                            Website
-                        </label>
-
-                        <div class="flex items-center h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E]">
-                            <span class="text-gray-400 mr-2"><i class="ri-link text-[#8ED8FF]"></i></span>
-
-                            <input
-                                type="text"
-                                value="www.efficientapp.com"
-                                class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-2">
-                            Company Size
-                        </label>
-            
-                        <select
-                            class="w-full h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E] text-sm text-gray-200 outline-none">
-                            <option>11 - 50 employees</option>
-                            <option>1 - 10 employees</option>
-                            <option>51 - 200 employees</option>
-                            <option>201 - 500 employees</option>
-                        </select>
-                    </div>
-
-                    <div>
-                     <label class="block text-xs text-gray-300 mb-2">
-                         Phone Number
-                     </label>
-
-                     <div class="flex items-center h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E]">
-                            <span class="text-gray-400 mr-2"><i class="ri-phone-line"></i></span>
-             
-                           <input
-                               type="text"
-                               value="+91 98765 43210"
-                               class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                         </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs text-gray-300 mb-2">
-                            Founded On
-                        </label>
-
-                        <div class="flex items-center h-10 px-3 rounded-lg bg-[#131416] border border-[#2A2A2E]">
-                            <span class="text-gray-400 mr-2"><i class="ri-calendar-2-line"></i></span>
-
-                            <input
-                                type="text"
-                                value="Jan 15, 2024"
-                                class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                        </div>
-                    </div>
-
-                 </div>
-
-                 <div>
-                    <label class="block text-xs text-gray-300 mb-2">
-                      Company Description
-                    </label>
-
-                     <textarea
-                    rows="4"
-                    maxlength="500"
-                    class="w-full px-3 py-2 rounded-lg bg-[#131416] border border-[#2A2A2E] text-sm text-gray-200 outline-none resize-none">Efficient App is a modern CRM &amp; project management platform built for agencies and modern teams. We help businesses streamline operations, manage clients, and scale faster with powerful tools and automation.</textarea>
-                 </div>
-                 
-              </div>
-
-              <div class="md:mx-3 mr-3 mb-3 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-4">
-                 <h3 class="text-[#E5E7EB]  text-[15px] font-medium mb-5">
-                   Business Address
-                 </h3>
-
-                 <div class="grid grid-cols-2 gap-2 mb-3">
-                    <div class="">
-                         <label class="block text-xs text-gray-300 mb-2">
-                             Address Line 1
-                         </label>
-
-                         <div class="flex items-center h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]">
-
-                             <span class="text-gray-400 mr-2">
-                                <i class="ri-map-pin-line"></i>
-                             </span>
-
-                             <input
-                                 type="text"
-                                 value="123 Business Street"
-                                 class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                         </div>
-                    </div>
-
-                     <div class="">
-                       <label class="block text-xs text-gray-300 mb-2">
-                           Address Line 2 (Optional)
+                     <div>
+                       <label class="block text-sm text-gray-300 mb-2">
+                           Department
                        </label>
 
-                       <div class="flex items-center h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]">
+                       <select
+                           class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32] 
+                                  text-sm text-gray-300 outline-none">
            
-                           <span class="text-gray-400 mr-2">
-                               <i class="ri-square-fill"></i>
-                           </span>
-
-                           <input
-                               type="text"
-                               value="Suite 501"
-                               class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                       </div>
+                           <option value="">Select department</option>
+                           <option>Development</option>
+                           <option>Design</option>
+                           <option>Marketing</option>
+                           <option>Sales</option>
+           
+                       </select>
                      </div>
 
-                 </div>
+                   </div>
 
-                  <div class="grid grid-cols-2 gap-2 mb-3">
-                      <div>
-                           <label class="block text-xs text-gray-300 mb-2">
-                               City
-                           </label>
+                   <div>
+                     <label class="block text-sm text-gray-300 mb-2">
+                         Custom Message (Optional)
+                     </label>
 
-                           <input
-                               type="text"
-                               value="Kolkata"
-                               class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
-                                      text-sm text-gray-200 outline-none">
-                       </div>
+                     <textarea
+                         rows="3"
+                         placeholder="Add a personal message to the invitation..."
+                         class="w-full px-3 py-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32] text-sm text-gray-300
+                                placeholder:text-gray-300 outline-none resize-none focus:border-[#4B4B52]"></textarea>
+                   </div>
 
-                       <div>
-                          <label class="block text-xs text-gray-300 mb-2">
-                              PIN Code
-                          </label>
-
-                          <div class="flex items-center h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]">
-
-                              <span class="text-gray-400 mr-2">
-                                 <i class="ri-drag-move-2-line"></i>
-                              </span>
-
-                              <input
-                                  type="text"
-                                  value="700001"
-                                  class="w-full bg-transparent text-sm text-gray-200 outline-none">
-                          </div>
-                       </div>
-
-                       <div class="col-span-2">
-                           <label class="block text-xs text-gray-300 mb-2">
-                               State
-                           </label>
-
-                           <select
-                               class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
-                                      text-sm text-gray-200 outline-none">
-                               <option>West Bengal</option>
-                               <option>Maharashtra</option>
-                               <option>Delhi</option>
-                               <option>Karnataka</option>
-                               <option>Uttar Pradesh</option>
-                           </select>
-                       </div>
-
-                       <div class="col-span-2">
-                           <label class="block text-xs text-gray-300 mb-2">
-                               Country
-                           </label>
-
-                           <select
-                               class="w-full h-10 px-3 rounded-lg bg-[#1A1B1C] border border-[#2E2E32]
-                                      text-sm text-gray-200 outline-none">
-
-                               <option>🇮🇳 India</option>
-                               <option>🇺🇸 United States</option>
-                               <option>🇬🇧 United Kingdom</option>
-                           </select>
-                       </div>
-
-                  </div>
-
-              </div>
-
-               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-5">
-                 <div class="mb-5">
-                    <h3 class="text-[#E5E7EB] text-[15px] font-medium">
-                        Social Media Links
-                    </h3>
-                    <p class="text-xs text-gray-500 mt-1">
-                      Add your social media profiles to display on your public profile.
-                    </p>
-                 </div>
-
-                  <div class="grid grid-cols-2 gap-2">
-
-                    <div class="flex items-center gap-2">
-                         <div class="w-7 h-7 shrink-0 rounded-md bg-[#0A66C2] flex items-center justify-center">
-                             <i class="ri-linkedin-fill text-white text-sm"></i>
-                         </div>
-
-                         <input
-                             type="text"
-                             value="https://linkedin.com/company/efficientapp"
-                             class="w-full h-8 px-3 rounded-md bg-[#1A1B1C] border border-[#2E2E32]
-                                    text-xs text-gray-300 outline-none focus:border-[#4B4B52]">
-                     </div>
-
-                      <div class="flex items-center gap-2">
-
-                          <div class="w-7 h-7 shrink-0 rounded-md bg-[#E4405F] flex items-center justify-center">
-                              <i class="ri-instagram-fill text-white text-sm"></i>
-                          </div>
-
-                          <input
-                              type="text"
-                              value="https://instagram.com/efficientapp"
-                              class="w-full h-8 px-3 rounded-md bg-[#1A1B1C] border border-[#2E2E32]
-                                     text-xs text-gray-300 outline-none focus:border-[#4B4B52]">
-                      </div>
-
-                     <div class="flex items-center gap-2">
-
-                         <div class="w-7 h-7 shrink-0 rounded-md bg-black border border-[#2E2E32] flex items-center justify-center">
-                             <i class="ri-twitter-x-fill text-white text-sm"></i>
-                         </div>
-
-                         <input
-                             type="text"
-                             value="https://twitter.com/efficientapp"
-                             class="w-full h-8 px-3 rounded-md bg-[#1A1B1C] border border-[#2E2E32]
-                                    text-xs text-gray-300 outline-none focus:border-[#4B4B52]">
-                     </div>
-
-                      <div class="flex items-center gap-2">
-
-                          <div class="w-7 h-7 shrink-0 rounded-md bg-[#FF0000] flex items-center justify-center">
-                              <i class="ri-youtube-fill text-white text-sm"></i>
-                          </div>
-
-                          <input
-                              type="text"
-                              value="https://youtube.com/@efficientapp"
-                              class="w-full h-8 px-3 rounded-md bg-[#1A1B1C] border border-[#2E2E32]
-                                     text-xs text-gray-300 outline-none focus:border-[#4B4B52]">
-                      </div>
-
-                  </div>
+                   <div>
+                     <button
+                         type="button"
+                         class="mt-3 btn btn-primary h-10 px-5 rounded-lg text-sm text-white
+                                flex items-center justify-center gap-2">
                  
-                </div>
+                         <i class="ri-send-plane-line text-base"></i>
+
+                         Send Invitation
+
+                         <i class="ri-arrow-right-line text-base"></i>
+
+                     </button>
+                   </div>
+
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                <div class="mb-3 flex items-center justify-between">
+                   <div>
+                        <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                         Team Roles
+                        </h2>
+
+                        <p class="text-[#8E96A3] text-[11px] mt-1">
+                           Manage roles and their permissions.
+                        </p>
+                   </div>
+
+                    <button
+                        type="button"
+                        class="h-9 px-4 rounded-lg btn btn-primary text-sm text-white
+                               flex items-center gap-2">
+
+                        Manage Roles
+
+                    </button>
+                </div>  
+
+                <!-- Owner -->
+                   <div class="flex items-center gap-3 py-4 border-b border-[#2E2E32]">
+
+                       <div class="w-12 h-12 shrink-0 flex items-center justify-center">
+                           <i class="ri-vip-crown-fill text-yellow-400 text-3xl"></i>
+                       </div>
+
+                       <div class="flex-1 min-w-0">
+                           <p class="text-sm text-gray-200">
+                               Owner
+                           </p>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Full access to all features and settings
+                           </p>
+                       </div>
+
+                       <span class="text-xs text-gray-300 shrink-0">
+                           1 member
+                       </span>
+
+                   </div>
+
+
+                   <!-- Admin -->
+                   <div class="flex items-center gap-3 py-4 border-b border-[#2E2E32]">
+               
+                       <div class="w-12 h-12 shrink-0 rounded-lg
+                                   bg-blue-600/20
+                                   flex items-center justify-center">
+
+                           <i class="ri-shield-check-line text-blue-400 text-2xl"></i>
+               
+                       </div>
+
+                       <div class="flex-1 min-w-0">
+                           <p class="text-sm text-gray-200">
+                               Admin
+                           </p>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Manage team members and organization settings
+                           </p>
+                       </div>
+
+                       <span class="text-xs text-gray-300 shrink-0">
+                           1 member
+                       </span>
+               
+                   </div>
+
+
+                   <!-- Member -->
+                   <div class="flex items-center gap-3 py-4 border-b border-[#2E2E32]">
+
+                       <div class="w-12 h-12 shrink-0 flex items-center justify-center">
+                           <i class="ri-user-line text-gray-300 text-3xl"></i>
+                       </div>
+
+                       <div class="flex-1 min-w-0">
+                           <p class="text-sm text-gray-200">
+                               Member
+                           </p>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Access to assigned projects and resources
+                           </p>
+                       </div>
+
+                       <span class="text-xs text-gray-300 shrink-0">
+                           4 members
+                       </span>
+
+                   </div>
+
+
+                   <!-- Viewer -->
+                   <div class="flex items-center gap-3 py-4">
+
+                       <div class="w-12 h-12 shrink-0 flex items-center justify-center">
+                           <i class="ri-eye-line text-gray-300 text-3xl"></i>
+                       </div>
+
+                       <div class="flex-1 min-w-0">
+                           <p class="text-sm text-gray-200">
+                               Viewer
+                           </p>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Read-only access to projects and data
+                           </p>
+                       </div>
+
+                       <span class="text-xs text-gray-300 shrink-0">
+                           0 members
+                       </span>
+
+                   </div>
+
+               </div>
 
            </div>
 
@@ -675,23 +732,6 @@
                     </h2>
 
                     <div class="flex items-center gap-4 py-4 border-b border-[#1D2936]">
-                    
-                      <div class="w-9 flex justify-center">
-                        <i
-                          class="ri-user-3-line text-[25px] text-[#A7AFBD]"></i>
-                      </div>
-
-                      <div>
-                        <h3 class="text-[#E5E7EB] text-[13px] font-medium">
-                          View Public Profile
-                        </h3>
-                        <p class="text-[#8E96A3] text-[12px] mt-1">
-                          See how your organization appears
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="flex items-center gap-4 py-4 border-b border-[#1D2936]">
                      
                       <div class="w-9 flex justify-center">
                         <i
@@ -751,10 +791,10 @@
 
                       <div>
                         <h3 class="text-[#E5E7EB] text-[13px] font-medium">
-                          View Billing & Invoices
+                          Export Team Data
                         </h3>
                         <p class="text-[#8E96A3] text-[12px] mt-1">
-                          Manage your subsription and payments                   
+                         Download team information                  
                         </p>
                       </div>
                     </div>
@@ -763,89 +803,42 @@
                   
                       <div class="w-9 flex justify-center">
                         <i
-                          class="ri-shape-line text-[25px] text-[#A7AFBD]"></i>
+                          class="ri-history-line text-[25px] text-[#A7AFBD]"></i>
                       </div>
 
                       <div>
                         <h3 class="text-[#E5E7EB] text-[13px] font-medium">
-                          Branding & Appearance
+                          View Activity Logs
                         </h3>
                         <p class="text-[#8E96A3] text-[12px] mt-1">
-                          Customize your brand setings
+                          Track team activities and changes
                         </p>
                       </div>
                     </div>
 
                 </div>
                 </div>
-
-                <div class="border border-[#3A2025] bg-[#1D1518] md:col-span-1 xl:col-span-1 rounded-2xl xl:min-h-[20vh] md:h-auto xl:w-[400px] w-full mt-1 p-3">
-
-                    <h3 class="text-sm font-semibold text-red-400 px-2 mb-4">
-                        Danger Zone
-                    </h3>
-
-                    <div class=" rounded-lg px-3 py-3 border border-[#3A2025]">
-
-                        <div class="flex items-start justify-between gap-3">
-                
-                            <div class="flex items-start gap-3">
-                
-                                <div class="w-7 h-7 flex items-center justify-center shrink-0">
-                                    <i class="ri-delete-bin-line text-red-400 text-lg"></i>
-                                </div>
-
-                                <div>
-                                    <p class="text-xs font-medium text-red-400">
-                                        Delete Organization
-                                    </p>
-
-                                    <p class="text-[10px] text-gray-400 leading-4 mt-1">
-                                        Permanently delete your organization
-                                        <br>
-                                        and all associated data.
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
                
-                <div class="bg-[#131416] md:col-span-1 xl:col-span-1 border-[#2A2A2E] border rounded-2xl xl:min-h-[29vh] md:h-auto xl:w-[400px] w-full mt-1 p-3">
+                <div class="bg-[#21174B] md:col-span-1 xl:col-span-1 border-none rounded-2xl xl:min-h-[29vh] md:h-auto xl:w-[400px] w-full mt-1 p-3">
 
                      <div class="flex items-start gap-3">
 
                          <div class="w-7 h-7 shrink-0 flex items-center justify-center">
-                             <i class="ri-question-mark text-blue-400 text-lg"></i>
+                             <i class="ri-group-line text-violet-500 text-2xl"></i>
                          </div>
 
                          <div class="flex-1">
 
-                            <h2 class="text-[#E5E7EB] text-[16px] font-medium mb-5">
-                              Need Help?
+                            <h2 class="text-[#E5E7EB] text-[16px] xl:text-lg font-medium mb-5">
+                              Build a Stronger Team 
                              </h2>
               
-                             <p class="text-xs xl:text-sm text-gray-500 leading-4 mt-1">
-                                 Have questions about organization
-                                 <br>
-                                 settings? Check our documentation or
-                                 <br>
-                                 contact support.
+                             <p class="text-sm xl:text-[16px] text-gray-500 leading-4 mt-1">
+                                Colaborate, manage permissions, and keep
+                                 
+                                your team aligned for greater productivity.
+                                 
                              </p>
-
-                             <button
-                                 type="button"
-                                 class="mt-3 xl:w-full xl:mt-16 px-3 py-1.5 rounded-md border border-[#2E2E32] bg-[#171819]
-                                        text-[10px] xl:text-[16px] text-gray-300 hover:bg-[#202123] flex items-center justify-between gap-1">
-                 
-                                 Contact Support
-
-                                 <i class="ri-arrow-right-line text-xs"></i>
-                             </button>
 
                          </div>
 
@@ -979,7 +972,8 @@
     </div>
   </div> 
  </div>
- <script src="organization.js"></script>
+ 
+ <script src="settingTeam.js"></script>
  <script src="sidebar.js"></script>
  </body>
 </html>

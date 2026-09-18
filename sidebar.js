@@ -1,3 +1,4 @@
+const drawer = document.getElementById("my-drawer-4");
 const pages = {
     indexSide: "index.html",
     inboxSide: "inbox.html",
@@ -32,3 +33,7 @@ Object.entries(pages).forEach(([id, page]) => {
         });
     }
 });
+
+if (window.innerWidth >= 1024) {
+  drawer.checked = true;
+}

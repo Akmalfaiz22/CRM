@@ -1,5 +1,6 @@
 const organizationBtn = {
     settingBranding: "brand.html",
+    settingTeam: "settingTeam.html"
     
 };
 
