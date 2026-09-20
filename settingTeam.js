@@ -1,6 +1,7 @@
 const brandBtn = {
     settingInformation: "organization.html",
     settingBranding: "brand.html",
+    settingBilling: "billing.html"
 };
 
 Object.entries(brandBtn).forEach(([id, page]) => {

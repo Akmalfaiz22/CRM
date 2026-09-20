@@ -1,7 +1,7 @@
 const brandBtn = {
     settingInformation: "organization.html",
-    settingTeam: "settingTeam.html",
-    settingBilling: "billing.html"
+    settingBranding: "brand.html",
+    settingTeam: "settingTeam.html"
 };
 
 Object.entries(brandBtn).forEach(([id, page]) => {
