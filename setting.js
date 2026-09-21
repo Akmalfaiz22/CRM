@@ -1,5 +1,6 @@
 const settingSidebar = {
     Organization: "organization.html",
+    Members: "members.html"
     
 };
 
