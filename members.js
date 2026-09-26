@@ -1,8 +1,11 @@
 const team = document.getElementById('myTeam');
 const settingSidebar = {
     Organization: "organization.html",
-    Profile: "setting.html"
-    
+    Profile: "setting.html",
+    settingRoles: "memberRole.html",
+    settingDepartments: "memberDepartment.html",
+    settingActivity: "memberActivity.html"
+
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {
