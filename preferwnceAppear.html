@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+     <!-- Sidebar toggle icon -->
+         <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+         <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+      </div>
+      </div>
+      <div class="">
+       <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="white"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer" id="calendarNav"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+        <div class="xl:grid xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
+         <!--user message -->
+
+          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer" id="Profile">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer" id="Organization">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Members">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Preferences">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- informaion area -->
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3">
+                 <div>
+                   <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                     Preferences
+                   </h2>
+
+                   <p class="text-[#8E96A3] text-[11px] mt-1">
+                     Customize your experience, language, regional setting and default behaviors.
+                   </p>
+                 </div>
+                 
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingTeamMembers">
+                      <i class="ri-settings-3-line">  General</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingRoles">
+                      <i class="ri-sun-line">   Appearance</i>
+                    </h3>
+
+                     <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingDepartments">
+                      <i class="ri-global-line">   Localization</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingActivity">
+                      <i class="ri-apps-line">   Workspace</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingActivity">
+                      <i class="ri-mail-line">   Email & Communiciation</i>
+                    </h3>
+                 </div>
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                   <div class="mb-5">
+
+                       <h2 class="text-lg font-semibold text-gray-200">
+                           Theme Mode
+                       </h2>
+
+                       <p class="text-sm text-gray-500 mt-1">
+                           Choose how the application looks and feels.
+                       </p>
+
+                   </div>
+
+                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                       <label class="cursor-pointer">
+
+                           <input
+                               type="radio"
+                               name="themeMode"
+                               value="light"
+                               class="peer sr-only">
+
+                           <div
+                               class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-3 min-h-[160px]
+                                      transition-all peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] hover:border-[#4B4B52]">
+               
+                               <div class="flex items-center gap-3 mb-3">
+               
+                                   <div class="w-8 h-8 flex items-center justify-center shrink-0">
+                                       <i class="ri-sun-line text-gray-300 text-2xl"></i>
+                                   </div>
+
+                                   <div
+                                       class="h-16 flex-1 rounded-md bg-gray-100
+                                              border border-gray-200 overflow-hidden">
+
+                                       <div class="flex h-full">
+
+                                           <div class="w-1/3 bg-gray-200 p-2">
+                                               <div class="w-full h-2 bg-gray-400 rounded mb-2"></div>
+                                               <div class="w-3/4 h-2 bg-gray-300 rounded"></div>
+                                           </div>
+
+                                           <div class="flex-1 p-2 bg-white">
+               
+                                               <div class="w-1/2 h-2 bg-gray-300 rounded mb-2"></div>
+
+                                               <div class="w-full h-5 bg-[#7C3AED] rounded"></div>
+
+                                           </div>
+
+                                       </div>
+
+                                   </div>
+
+                               </div>
+
+
+                               <h3 class="text-sm font-medium text-gray-200">
+                                   Light
+                               </h3>
+
+                               <p class="text-xs text-gray-500 mt-1">
+                                   Clean and minimal interface
+                               </p>
+
+                           </div>
+               
+                       </label>
+
+                       <label class="cursor-pointer">
+
+                           <input
+                               type="radio"
+                               name="themeMode"
+                               value="dark"
+                               checked
+                               class="peer sr-only">
+
+                           <div
+                               class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-3 min-h-[160px]
+                                      transition-all peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] hover:border-[#4B4B52]">
+               
+                               <span
+                                   class="absolute top-3 right-3 w-5 h-5 rounded-full bg-[#7C3AED]
+                                          text-white flex items-center justify-center">
+
+                                   <i class="ri-check-line text-xs"></i>
+
+                               </span>
+
+                               <div class="flex items-center gap-3 mb-3">
+
+                                   <div class="w-8 h-8 flex items-center justify-center shrink-0">
+                                       <i class="ri-moon-line text-gray-300 text-2xl"></i>
+                                   </div>
+
+                                   <div
+                                       class="h-16 flex-1 rounded-md bg-[#131416]
+                                              border border-[#2E2E32] overflow-hidden">
+               
+                                       <div class="flex h-full">
+               
+                                           <div class="w-1/3 bg-[#191A1C] p-2">
+               
+                                               <div class="w-full h-2 bg-[#34363A] rounded mb-2"></div>
+               
+                                               <div class="w-3/4 h-2 bg-[#2A2C30] rounded"></div>
+               
+                                           </div>
+               
+                                           <div class="flex-1 p-2 bg-[#202124]">
+               
+                                               <div class="w-1/2 h-2 bg-[#3A3C40] rounded mb-2"></div>
+
+                                               <div class="w-full h-5 bg-[#7C3AED] rounded"></div>
+               
+                                           </div>
+
+                                       </div>
+               
+                                   </div>
+               
+                               </div>
+
+
+                               <h3 class="text-sm font-medium text-gray-200">
+                                   Dark
+                               </h3>
+
+                               <p class="text-xs text-gray-400 mt-1">
+                                   Modern dark theme for<br>
+                                   better focus
+                               </p>
+
+                           </div>
+
+                       </label>
+
+                       <label class="cursor-pointer">
+               
+                           <input
+                               type="radio"
+                               name="themeMode"
+                               value="system"
+                               class="peer sr-only">
+
+                           <div
+                               class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-3 min-h-[160px]
+                                      transition-all peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] hover:border-[#4B4B52]">
+               
+                               <div class="flex items-center gap-3 mb-3">
+
+                                   <div class="w-8 h-8 flex items-center justify-center shrink-0">
+                                       <i class="ri-computer-line text-gray-300 text-2xl"></i>
+                                   </div>
+
+                                   <div
+                                       class="h-16 flex-1 rounded-md border border-[#2E2E32]
+                                              overflow-hidden bg-[#202124]">
+
+                                       <div class="flex h-full">
+
+                                           <div class="w-1/2 bg-gray-100 p-2">
+
+                                               <div class="w-full h-2 bg-gray-300 rounded mb-2"></div>
+
+                                               <div class="w-3/4 h-2 bg-gray-200 rounded"></div>
+
+                                           </div>
+
+                                           <div class="w-1/2 bg-[#17181A] p-2">
+
+                                               <div class="w-full h-2 bg-[#34363A] rounded mb-2"></div>
+               
+                                               <div class="w-full h-5 bg-[#7C3AED] rounded"></div>
+               
+                                           </div>
+
+                                       </div>
+               
+                                   </div>
+
+                               </div>
+
+
+                               <h3 class="text-sm font-medium text-gray-200">
+                                   System
+                               </h3>
+
+                               <p class="text-xs text-gray-500 mt-1">
+                                   Follow your device settings
+                                   automatically
+                               </p>
+
+                           </div>
+
+                       </label>
+
+                   </div>
+
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                   <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] xl:grid-cols-1  gap-4">
+
+                       <div>
+
+                              <h2 class="text-base font-semibold text-gray-200">
+                                Brand Color Scheme
+                           </h2>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                                Choose a primary color that matches your brand.
+                           </p>
+
+                           <div class="flex items-start gap-4 mt-4 flex-wrap">
+
+                               <label class="cursor-pointer text-center">
+
+                                   <input
+                                       type="radio"
+                                       name="brandColor"
+                                       value="purple"
+                                          checked
+                                          class="peer sr-only">
+               
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-[#7C3AED] border-2 border-transparent
+                                              peer-checked:border-white peer-checked:ring-2 peer-checked:ring-[#7C3AED]
+                                              peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                              flex items-center justify-center">
+
+                                       <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                       </i>
+
+                                   </div>
+
+                                   <span class="block text-xs text-gray-300 mt-2">
+                                       Purple
+                                   </span>
+
+                               </label>
+
+                               <label class="cursor-pointer text-center">
+               
+                                   <input
+                                       type="radio"
+                                       name="brandColor"
+                                       value="blue"
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-[#2563EB] border-2 border-transparent peer-checked:border-white
+                                              peer-checked:ring-2 peer-checked:ring-[#2563EB] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                              flex items-center justify-center">
+
+                                       <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                       </i>
+
+                                   </div>
+
+                                   <span class="block text-xs text-gray-300 mt-2">
+                                       Blue
+                                   </span>
+
+                               </label>
+
+                               <label class="cursor-pointer text-center">
+
+                                   <input
+                                       type="radio"
+                                       name="brandColor"
+                                       value="indigo"
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-[#4F46E5] border-2 border-transparent peer-checked:border-white
+                                              peer-checked:ring-2 peer-checked:ring-[#4F46E5] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                              flex items-center justify-center">
+
+                                       <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                       </i>
+               
+                                   </div>
+               
+                                   <span class="block text-xs text-gray-300 mt-2">
+                                       Indigo
+                                   </span>
+
+                               </label>
+
+                               <label class="cursor-pointer text-center">
+
+                                   <input
+                                          type="radio"
+                                       name="brandColor"
+                                       value="green"
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-[#22C55E] border-2 border-transparent peer-checked:border-white
+                                              peer-checked:ring-2 peer-checked:ring-[#22C55E] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                              flex items-center justify-center">
+
+                                       <i class="ri-check-line text-white text-lg
+                                                    opacity-0 peer-checked:opacity-100">
+                                          </i>
+
+                                      </div>
+
+                                   <span class="block text-xs text-gray-300 mt-2">
+                                       Green
+                                      </span>
+               
+                               </label>
+               
+                               <label class="cursor-pointer text-center">
+
+                                   <input
+                                                         type="radio"
+                                       name="brandColor"
+                                       value="teal"
+                                       class="peer sr-only">
+               
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-[#14B8A6] border-2 border-transparent peer-checked:border-white peer-checked:ring-2
+                                              peer-checked:ring-[#14B8A6] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                                 flex items-center justify-center">
+               
+                                          <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                          </i>
+
+                                      </div>
+               
+                                   <span class="block text-xs text-gray-300 mt-2">
+                                       Teal
+                                   </span>
+
+                               </label>
+               
+                                  <label class="cursor-pointer text-center">
+               
+                                      <input
+                                       type="radio"
+                                       name="brandColor"
+                                          value="orange"
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-[#F97316] border-2 border-transparent peer-checked:border-white peer-checked:ring-2
+                                              peer-checked:ring-[#F97316] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                              flex items-center justify-center">
+               
+                                       <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                       </i>
+
+                                   </div>
+               
+                                      <span class="block text-xs text-gray-300 mt-2">
+                                       Orange
+                                   </span>
+               
+                               </label>
+
+                               <label class="cursor-pointer text-center">
+               
+                                   <input
+                                       type="radio"
+                                        name="brandColor"
+                                       value="red"
+                                          class="peer sr-only">
+
+                                      <div
+                                          class="w-11 h-11 rounded-full bg-[#EF4444] border-2 border-transparent peer-checked:border-white peer-checked:ring-2
+                                                 peer-checked:ring-[#EF4444] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                              flex items-center justify-center">
+
+                                       <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                       </i>
+
+                                   </div>
+
+                                      <span class="block text-xs text-gray-300 mt-2">
+                                          Red
+                                      </span>
+
+                                 </label>
+               
+                                <label class="cursor-pointer text-center">
+               
+                                    <input
+                                       type="radio"
+                                        name="brandColor"
+                                        value="pink"
+                                        class="peer sr-only">
+
+                                    <div
+                                        class="w-11 h-11 rounded-full bg-[#EC4899] border-2 border-transparent peer-checked:border-white peer-checked:ring-2
+                                               peer-checked:ring-[#EC4899] peer-checked:ring-offset-2 peer-checked:ring-offset-[#131416]
+                                               flex items-center justify-center">
+
+                                        <i class="ri-check-line text-white text-lg
+                                                  opacity-0 peer-checked:opacity-100">
+                                        </i>
+               
+                                    </div>
+
+                                    <span class="block text-xs text-gray-300 mt-2">
+                                        Pink
+                                    </span>
+               
+                                </label>
+               
+                                <label class="cursor-pointer text-center">
+
+                                    <input
+                                        type="radio"
+                                        name="brandColor"
+                                       value="custom"
+                                        class="peer sr-only">
+               
+                                   <div
+                                       class="w-11 h-11 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 border-2 border-transparent
+                                              peer-checked:border-white peer-checked:ring-2 peer-checked:ring-purple-500 peer-checked:ring-offset-2
+                                              peer-checked:ring-offset-[#131416] flex items-center justify-center">
+               
+                                       <i class="ri-check-line text-white text-lg
+                                                 opacity-0 peer-checked:opacity-100">
+                                       </i>
+               
+                                      </div>
+               
+                                   <span class="block text-xs text-gray-300 mt-2">
+                                       Custom
+                                   </span>
+               
+                               </label>
+               
+                           </div>
+               
+                       </div>
+
+                       <div class="md:border-l xl:border-none md:border-[#2A2A2E] md:pl-4 xl:pl-0">
+
+                           <h2 class="text-base font-semibold text-gray-200">
+                               Accent Style
+                           </h2>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Choose how accent colors appear.
+                           </p>
+
+                              <div class="grid grid-cols-2 gap-2 mt-4">
+
+                               <label class="cursor-pointer">
+
+                                   <input
+                                        type="radio"
+                                       name="accentStyle"
+                                       value="solid"
+                                       checked
+                                          class="peer sr-only">
+
+                                   <div
+                                       class="h-12 rounded-lg border border-[#2E2E32] peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] 
+                                              flex items-center justify-center gap-2 text-sm text-gray-300">
+               
+                                       <i class="ri-drop-line"></i>
+               
+                                          Solid
+
+                                      </div>
+
+                               </label>
+               
+                               <label class="cursor-pointer">
+
+                                   <input
+                                       type="radio"
+                                       name="accentStyle"
+                                       value="gradient"
+                                       class="peer sr-only">
+               
+                                      <div
+                                       class="h-12 rounded-lg border border-[#2E2E32] peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50]
+                                              flex items-center justify-center gap-2 text-sm text-gray-300">
+
+                                          <i class="ri-contrast-2-line"></i>
+               
+                                       Gradient
+               
+                                      </div>
+
+                               </label>
+
+                           </div>
+
+                       </div>
+
+                   </div>
+
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                   <div class="grid grid-cols-1 lg:grid-cols-[3fr_1fr] xl:grid-cols-1 gap-6">
+
+                       <div>
+               
+                           <h2 class="text-lg font-semibold text-gray-200">
+                               Sidebar Appearance
+                           </h2>
+
+                           <p class="text-sm text-gray-500 mt-1">
+                               Customize the style and behavior of the sidebar.
+                           </p>
+
+                           <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-2 gap-3 mt-4">
+               
+                               <label class="cursor-pointer">
+               
+                                   <input
+                                       type="radio"
+                                       name="sidebarStyle"
+                                       value="expanded"
+                                       checked
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-2 transition-all
+                                              peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] hover:border-[#4B4B52]">
+               
+                                       <div class="h-20 rounded-lg bg-[#101B25]
+                                                   border border-[#202D38]
+                                                   flex overflow-hidden">
+
+                                           <div class="w-10 bg-[#191A3A]
+                                                       border-r border-[#2E2E32]
+                                                       p-2">
+               
+                                               <div class="w-5 h-5 rounded
+                                                           bg-[#6D28D9] mb-3"></div>
+
+                                               <div class="space-y-2">
+
+                                                   <div class="flex gap-1">
+                                                       <span class="w-1 h-1 rounded-full bg-gray-400"></span>
+                                                       <span class="w-5 h-1 bg-gray-500 rounded"></span>
+                                                   </div>
+
+                                                   <div class="flex gap-1">
+                                                       <span class="w-1 h-1 rounded-full bg-gray-400"></span>
+                                                       <span class="w-5 h-1 bg-gray-500 rounded"></span>
+                                                   </div>
+               
+                                                   <div class="flex gap-1">
+                                                       <span class="w-1 h-1 rounded-full bg-gray-400"></span>
+                                                       <span class="w-5 h-1 bg-gray-500 rounded"></span>
+                                                   </div>
+
+                                               </div>
+
+                                           </div>
+
+                                           <div class="flex-1 p-2">
+               
+                                               <div class="w-12 h-1 bg-gray-600 rounded mb-2"></div>
+               
+                                               <div class="w-full h-1 bg-gray-700 rounded mb-2"></div>
+               
+                                               <div class="w-10 h-1 bg-[#6D28D9] rounded"></div>
+               
+                                           </div>
+               
+                                       </div>
+
+
+                                       <h3 class="text-sm font-medium text-gray-200 mt-3">
+                                           Expanded
+                                       </h3>
+               
+                                       <p class="text-xs text-gray-500 mt-1">
+                                           Show full menu text
+                                       </p>
+               
+                                   </div>
+
+                               </label>
+               
+                               <label class="cursor-pointer">
+               
+                                   <input
+                                       type="radio"
+                                       name="sidebarStyle"
+                                       value="collapsed"
+                                       class="peer sr-only">
+               
+                                   <div
+                                       class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-2 transition-all
+                                              peer-checked:border-[#7C3AED]
+                                              peer-checked:bg-[#241A50]
+                                              hover:border-[#4B4B52]">
+
+                                       <div class="h-20 rounded-lg bg-[#101B25]
+                                                   border border-[#202D38]
+                                                   flex overflow-hidden">
+               
+                                           <div class="w-7 bg-[#151F2B]
+                                                       border-r border-[#2E2E32]
+                                                       flex flex-col items-center
+                                                       gap-2 py-2">
+
+                                               <span class="w-3 h-3 rounded bg-gray-500"></span>
+                                               <span class="w-3 h-3 rounded bg-gray-500"></span>
+                                               <span class="w-3 h-3 rounded bg-gray-500"></span>
+                                               <span class="w-3 h-3 rounded bg-gray-500"></span>
+               
+                                           </div>
+               
+                                           <div class="flex-1 p-2">
+
+                                               <div class="w-10 h-1 bg-gray-600 rounded mb-2"></div>
+                                               <div class="w-full h-1 bg-gray-700 rounded mb-2"></div>
+                                               <div class="w-8 h-1 bg-gray-600 rounded"></div>
+               
+                                           </div>
+               
+                                       </div>
+
+
+                                       <h3 class="text-sm font-medium text-gray-200 mt-3">
+                                           Collapsed
+                                       </h3>
+
+                                       <p class="text-xs text-gray-500 mt-1">
+                                           Show icons only
+                                       </p>
+               
+                                   </div>
+
+                               </label>
+
+                               <label class="cursor-pointer">
+
+                                   <input
+                                       type="radio"
+                                       name="sidebarStyle"
+                                       value="compact"
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-2 transition-all
+                                              peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] hover:border-[#4B4B52]">
+
+                                       <div class="h-20 rounded-lg bg-[#101B25]
+                                                   border border-[#202D38]
+                                                   flex overflow-hidden">
+               
+                                           <div class="w-7 bg-[#151F2B]
+                                                       border-r border-[#2E2E32]
+                                                       p-2">
+               
+                                               <div class="w-3 h-3 rounded bg-gray-500 mb-3"></div>
+               
+                                               <div class="space-y-1.5">
+               
+                                                   <div class="flex gap-1">
+                                                       <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                                                       <span class="w-4 h-1 bg-gray-600 rounded"></span>
+                                                   </div>
+
+                                                   <div class="flex gap-1">
+                                                       <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                                                       <span class="w-4 h-1 bg-gray-600 rounded"></span>
+                                                   </div>
+
+                                                   <div class="flex gap-1">
+                                                       <span class="w-1 h-1 rounded-full bg-gray-500"></span>
+                                                       <span class="w-4 h-1 bg-gray-600 rounded"></span>
+                                                   </div>
+
+                                               </div>
+               
+                                           </div>
+               
+                                           <div class="flex-1 p-2">
+
+                                               <div class="w-10 h-1 bg-gray-600 rounded mb-2"></div>
+               
+                                               <div class="w-full h-1 bg-gray-700 rounded"></div>
+               
+                                           </div>
+               
+                                       </div>
+
+               
+                                       <h3 class="text-sm font-medium text-gray-200 mt-3">
+                                           Compact
+                                       </h3>
+
+                                       <p class="text-xs text-gray-500 mt-1">
+                                           Reduce spacing
+                                       </p>
+
+                                   </div>
+
+                               </label>
+               
+                               <label class="cursor-pointer">
+
+                                   <input
+                                       type="radio"
+                                       name="sidebarStyle"
+                                       value="floating"
+                                       class="peer sr-only">
+               
+                                   <div
+                                       class="relative rounded-xl border border-[#2A2A2E] bg-[#131416] p-2 transition-all
+                                              peer-checked:border-[#7C3AED] peer-checked:bg-[#241A50] hover:border-[#4B4B52]">
+
+                                       <div class="h-20 rounded-lg bg-[#101B25]
+                                                   border border-[#202D38]
+                                                   flex overflow-hidden">
+               
+                                           <div class="w-8 m-2 rounded-md
+                                                       bg-[#191A3A]
+                                                       border border-[#2E2E32]
+                                                       p-1.5">
+               
+                                               <div class="w-3 h-3 rounded
+                                                           bg-[#6D28D9] mb-2"></div>
+
+                                               <div class="space-y-1.5">
+
+                                                   <div class="w-4 h-1 bg-gray-500 rounded"></div>
+                                                   <div class="w-4 h-1 bg-gray-500 rounded"></div>
+                                                   <div class="w-4 h-1 bg-gray-500 rounded"></div>
+
+                                               </div>
+
+                                           </div>
+               
+                                           <div class="flex-1 p-2">
+
+                                               <div class="w-10 h-1 bg-gray-600 rounded mb-2"></div>
+                                               <div class="w-full h-1 bg-gray-700 rounded"></div>
+
+                                           </div>
+               
+                                       </div>
+
+               
+                                       <h3 class="text-sm font-medium text-gray-200 mt-3">
+                                           Floating
+                                       </h3>
+
+                                       <p class="text-xs text-gray-500 mt-1">
+                                           Overlay sidebar
+                                       </p>
+
+                                   </div>
+               
+                               </label>
+
+                           </div>
+
+                       </div>
+
+                       <div class="md:border-l xl:border-none md:border-[#2A2A2E] md:pl-5 xl:pl-0">
+               
+                           <h2 class="text-base font-semibold text-gray-200">
+                               Sidebar Position
+                           </h2>
+
+                           <p class="text-sm text-gray-500 mt-1">
+                               Choose the sidebar position.
+                           </p>
+
+                           <div class="grid grid-cols-2 gap-2 mt-4">
+
+                               <label class="cursor-pointer">
+               
+                                   <input
+                                       type="radio"
+                                       name="sidebarPosition"
+                                       value="left"
+                                       checked
+                                       class="peer sr-only">
+
+                                   <div
+                                       class="h-12 rounded-lg border border-[#2E2E32] bg-[#131416] peer-checked:border-[#7C3AED]
+                                              peer-checked:bg-[#241A50] flex items-center justify-center gap-2
+                                              text-sm text-gray-300">
+
+                                       <i class="ri-layout-left-line text-lg"></i>
+               
+                                       Left
+               
+                                   </div>
+
+                               </label>
+
+                               <label class="cursor-pointer">
+               
+                                   <input
+                                       type="radio"
+                                       name="sidebarPosition"
+                                       value="right"
+                                       class="peer sr-only">
+               
+                                   <div
+                                       class="h-12 rounded-lg border border-[#2E2E32] bg-[#131416] peer-checked:border-[#7C3AED]
+                                              peer-checked:bg-[#241A50] flex items-center justify-center gap-2
+                                              text-sm text-gray-300">
+               
+                                       <i class="ri-layout-right-line text-lg"></i>
+               
+                                       Right
+               
+                                   </div>
+               
+                               </label>
+               
+                           </div>
+
+                       </div>
+
+                   </div>
+
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-5">
+
+                       <div>
+
+                           <h2 class="text-base font-semibold text-gray-200">
+                               Typography
+                           </h2>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Choose the font family and size for the app.
+                           </p>
+
+
+                           <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-4 mt-4">
+
+                               <div>
+
+                                   <label class="block text-sm text-gray-300 mb-2">
+                                       Font Family
+                                   </label>
+
+                                   <div class="relative">
+               
+                                       <select
+                                           class="w-full h-10 appearance-none px-3 pr-9 rounded-lg bg-[#131416]
+                                                  border border-[#2A2A2E] text-sm text-gray-300 outline-none
+                                                  focus:border-[#7C3AED]">
+
+                                           <option>Inter (Default)</option>
+                                           <option>Roboto</option>
+                                           <option>Poppins</option>
+                                           <option>Open Sans</option>
+
+                                       </select>
+
+                                       <i
+                                           class="ri-arrow-down-s-line absolute right-3 top-1/2 -translate-y-1/2
+                                                  text-gray-400 pointer-events-none">
+                                       </i>
+
+                                   </div>
+
+                               </div>
+
+                               <div>
+
+                                   <label class="block text-sm text-gray-300 mb-2">
+                                       Font Size
+                                   </label>
+
+                                   <div
+                                       class="flex h-10 rounded-lg border border-[#2A2A2E]
+                                              overflow-hidden">
+
+                                       <label class="flex-1 cursor-pointer">
+
+                                           <input
+                                               type="radio"
+                                               name="fontSize"
+                                               value="small"
+                                               class="peer sr-only">
+
+                                           <span
+                                               class="h-full flex items-center justify-center text-xs text-gray-300 peer-checked:bg-[#6D28D9]
+                                                      peer-checked:text-white hover:bg-[#1A1B1C]">
+
+                                               Small
+
+                                           </span>
+               
+                                       </label>
+
+                                       <label class="flex-1 cursor-pointer">
+               
+                                           <input
+                                               type="radio"
+                                               name="fontSize"
+                                               value="medium"
+                                               checked
+                                               class="peer sr-only">
+
+                                           <span
+                                               class="h-full flex items-center justify-center text-xs text-gray-300
+                                                      peer-checked:bg-[#6D28D9] peer-checked:text-white hover:bg-[#1A1B1C]">
+
+                                               Medium
+
+                                           </span>
+
+                                       </label>
+
+                                       <label class="flex-1 cursor-pointer">
+
+                                           <input
+                                               type="radio"
+                                               name="fontSize"
+                                               value="large"
+                                               class="peer sr-only">
+
+                                           <span
+                                               class="h-full flex items-center justify-center text-xs text-gray-300
+                                                      peer-checked:bg-[#6D28D9] peer-checked:text-white hover:bg-[#1A1B1C]">
+               
+                                               Large
+               
+                                           </span>
+               
+                                       </label>
+
+                                   </div>
+               
+                               </div>
+               
+                           </div>
+
+                       </div>
+
+                       <div class="md:border-l xl:border-none xl:pl-0 md:border-[#2A2A2E] md:pl-5">
+
+                           <h2 class="text-base font-semibold text-gray-200">
+                               Interface Density
+                           </h2>
+
+                           <p class="text-xs text-gray-500 mt-1">
+                               Adjust the spacing between elements.
+                           </p>
+
+                           <div class="grid grid-cols-3 rounded-lg border border-[#2A2A2E]
+                                      overflow-hidden mt-4">
+               
+                               <label class="cursor-pointer">
+
+                                   <input
+                                       type="radio"
+                                       name="density"
+                                       value="comfortable"
+                                       checked
+                                       class="peer sr-only">
+
+                                   <span
+                                       class="h-12 px-2 flex items-center justify-center text-xs text-gray-300 border-r border-[#2A2A2E]
+                                              peer-checked:bg-[#241A50] peer-checked:text-white peer-checked:ring-1
+                                              peer-checked:ring-[#7C3AED] hover:bg-[#1A1B1C]">
+               
+                                       Comfortable
+               
+                                   </span>
+               
+                               </label>
+               
+                               <label class="cursor-pointer">
+
+                                   <input
+                                       type="radio"
+                                       name="density"
+                                       value="compact"
+                                       class="peer sr-only">
+
+                                   <span
+                                       class="h-12 px-2 flex items-center justify-center text-xs text-gray-300 border-r border-[#2A2A2E]
+                                              peer-checked:bg-[#241A50] peer-checked:text-white peer-checked:ring-1
+                                              peer-checked:ring-[#7C3AED] hover:bg-[#1A1B1C]">
+
+                                       Compact
+
+                                   </span>
+               
+                               </label>
+               
+                               <label class="cursor-pointer">
+               
+                                   <input
+                                       type="radio"
+                                       name="density"
+                                       value="spacious"
+                                       class="peer sr-only">
+               
+                                   <span
+                                       class="h-12 px-2 flex items-center justify-center text-xs text-gray-300
+                                              peer-checked:bg-[#241A50] peer-checked:text-white peer-checked:ring-1
+                                              peer-checked:ring-[#7C3AED] hover:bg-[#1A1B1C]">
+               
+                                       Spacious
+
+                                   </span>
+               
+                               </label>
+               
+                           </div>
+
+                       </div>
+
+                   </div>
+
+               </div>
+
+           </div>
+
+           <!-- detail -->
+            <div class="mt-4 xl:min-h-[140vh] grid xl:grid-cols-1 md:grid-cols-1 gap-2 ">
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 ">
+                    <div class="m-3">
+                        <div class="">
+                           <h3 class="text-[#E5E7EB] md:text-lg xl:text-[16px]  text-[16px] font-semibold">
+                             Live Preview
+                           </h3>
+
+                        </div>
+
+                        <p class="text-xs md:text-[16px] xl:text-xs text-gray-500 mt-1">
+                            See how your appearance settings look in the app.
+                        </p>
+                    </div>
+
+                    <div class="mb-3 mt-auto mx-3 bg-[#1A1B1C] border border-[#2E2E32] rounded-lg overflow-hidden">
+                      <img src="./image/WhatsApp Image 2026-09-15 at 3.56.44 PM.jpeg" alt="">
+                    </div>
+   
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4 flex flex-col">
+
+                   <div class="mb-4">
+
+                       <h2 class="text-base font-semibold text-gray-200">
+                           Custom CSS (Advanced)
+                       </h2>
+
+                       <p class="text-xs text-gray-500 mt-1">
+                           Add custom CSS to further personalize the appearance.
+                       </p>
+
+                   </div>
+
+                   <div
+                       class="relative rounded-lg border border-[#2A2A2E]
+                              bg-[#0D1822] overflow-hidden">
+
+                       <div class="flex min-h-[145px]">
+
+                           <div
+                               class="w-10 shrink-0 border-r border-[#202B35] bg-[#101A24] py-3
+                                      text-center text-[11px] leading-5 text-gray-500 select-none">
+
+                               <div>1</div>
+                               <div>2</div>
+                               <div>3</div>
+                               <div>4</div>
+                               <div>5</div>
+                               <div>6</div>
+
+                           </div>
+
+                           <textarea
+                               rows="6"
+                               spellcheck="false"
+                               class="w-full min-h-[145px] resize-none bg-transparent px-3 py-3 text-xs leading-5 text-gray-300 
+                                       font-mono outline-none placeholder:text-gray-600"
+                               placeholder="
+               :root {
+                   --primary-color: #7C3AED;
+                   --radius: 0.75rem;
+               }">/* Custom CSS */
+               :root {
+                   --primary-color: #7C3AED;
+                   --radius: 0.75rem;
+               }</textarea>
+
+                       </div>
+
+                   </div>
+
+
+                   <!-- Buttons -->
+                   <div class="flex items-center gap-2 mt-3 md:mt-auto">
+
+                       <!-- Save CSS -->
+                       <button
+                           type="button"
+                           class="flex-1 h-9 rounded-lg bg-[#6D28D9] hover:bg-[#7C3AED] text-xs text-white
+                                  flex items-center justify-center gap-2 transition-colors">
+
+                           <i class="ri-code-s-slash-line text-sm"></i>
+
+                           Save CSS
+
+                       </button>
+
+                       <button
+                           type="button"
+                           class="w-28 h-9 rounded-lg border border-[#2A2A2E] bg-[#131416] hover:bg-[#1A1B1C] text-xs text-gray-300
+                                  flex items-center justify-center gap-2 transition-colors">
+
+                           <i class="ri-restart-line text-sm"></i>
+               
+                           Reset
+
+                       </button>
+               
+                   </div>
+
+               </div>
+
+                <div class="bg-[#21174B] border-none rounded-2xl
+                            md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="flex items-start gap-3">
+
+                        <div class="w-10 h-10 shrink-0 flex items-center justify-center">
+                            <i class="ri-lightbulb-line text-[#7C3AED] text-3xl"></i>
+                        </div>
+
+                        <div class="flex-1">
+                
+                            <h3 class="text-[16px] font-medium text-gray-200">
+                               Make It Yours Own
+                            </h3>
+
+                            <p class="text-xs text-gray-500 leading-4 mt-1">
+                             Customize the appearance to match your brand
+                             and create a more personalized experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                        <div class="mb-4">
+
+                            <h2 class="text-base font-semibold text-gray-200">
+                                Background & Visual Effects
+                            </h2>
+
+                            <p class="text-xs text-gray-500 mt-1">
+                                Customize the background style and visual enhancements.
+                            </p>
+
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-5">
+
+                            <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-2 gap-2">
+                    
+                                <label class="cursor-pointer">
+                    
+                                    <input
+                                        type="radio"
+                                        name="backgroundStyle"
+                                        value="default"
+                                        checked
+                                        class="peer sr-only">
+
+                                    <div
+                                        class="h-12 rounded-lg border border-[#2A2A2E] bg-[#131416] peer-checked:border-[#7C3AED]
+                                               peer-checked:bg-[#241A50] hover:bg-[#1A1B1C] flex items-center gap-2 px-2">
+                    
+                                        <i class="ri-image-line
+                                                  text-gray-300 text-base">
+                                        </i>
+                    
+                                        <div class="min-w-0">
+                    
+                                            <p class="text-xs text-gray-200">
+                                                Default
+                                            </p>
+
+                                            <p class="text-[10px] text-gray-500 truncate">
+                                                Solid dark background
+                                            </p>
+                    
+                                        </div>
+                    
+                                    </div>
+
+                                </label>
+                    
+                                <label class="cursor-pointer">
+                    
+                                    <input
+                                        type="radio"
+                                        name="backgroundStyle"
+                                        value="gradient"
+                                        class="peer sr-only">
+
+                                    <div
+                                        class="h-12 rounded-lg border border-[#2A2A2E] bg-[#131416] peer-checked:border-[#7C3AED]
+                                               peer-checked:bg-[#241A50] hover:bg-[#1A1B1C] flex items-center gap-2 px-2">
+
+                                        <i class="ri-gradienter-line
+                                                  text-gray-300 text-base">
+                                        </i>
+
+                                        <div class="min-w-0">
+                    
+                                            <p class="text-xs text-gray-200">
+                                                Gradient
+                                            </p>
+                    
+                                            <p class="text-[10px] text-gray-500 truncate">
+                                                Subtle gradient background
+                                            </p>
+
+                                        </div>
+                    
+                                    </div>
+
+                                </label>
+                    
+                                <label class="cursor-pointer">
+                    
+                                    <input
+                                        type="radio"
+                                        name="backgroundStyle"
+                                        value="pattern"
+                                        class="peer sr-only">
+                    
+                                    <div
+                                        class="h-12 rounded-lg border border-[#2A2A2E] bg-[#131416] peer-checked:border-[#7C3AED]
+                                               peer-checked:bg-[#241A50] hover:bg-[#1A1B1C] flex items-center gap-2 px-2">
+                    
+                                        <i class="ri-grid-line
+                                                  text-gray-300 text-base">
+                                        </i>
+                    
+                                        <div class="min-w-0">
+
+                                            <p class="text-xs text-gray-200">
+                                                Pattern
+                                            </p>
+                    
+                                            <p class="text-[10px] text-gray-500 truncate">
+                                                Texture background
+                                            </p>
+
+                                        </div>
+                    
+                                    </div>
+
+                                </label>
+                    
+                                <label class="cursor-pointer">
+                    
+                                    <input
+                                        type="radio"
+                                        name="backgroundStyle"
+                                        value="blur"
+                                        class="peer sr-only">
+                    
+                                    <div
+                                        class="h-12 rounded-lg border border-[#2A2A2E] bg-[#131416] peer-checked:border-[#7C3AED]
+                                               peer-checked:bg-[#241A50] hover:bg-[#1A1B1C] flex items-center gap-2 px-2">
+                    
+                                        <i class="ri-blur-off-line
+                                                  text-gray-300 text-base">
+                                        </i>
+                    
+                                        <div class="min-w-0">
+
+                                            <p class="text-xs text-gray-200">
+                                                Blur
+                                            </p>
+
+                                            <p class="text-[10px] text-gray-500 truncate">
+                                                Glassmorphism effect
+                                            </p>
+                    
+                                        </div>
+                    
+                                    </div>
+
+                                </label>
+
+                            </div>
+                    
+                            <div class="flex flex-col gap-4 xl:min-w-[210px]">
+                    
+                                <label class="flex items-center gap-3 cursor-pointer">
+
+                                    <input
+                                        type="checkbox"
+                                        checked
+                                        class="peer sr-only">
+                    
+                                    <span
+                                        class="relative w-11 h-6 shrink-0 rounded-full bg-[#334155] peer-checked:bg-[#6D28D9] transition-colors 
+                                               after:content-[''] after:absolute after:top-1 after:left-1 after:w-4 after:h-4 after:rounded-full
+                                              after:bg-white after:transition-transform peer-checked:after:translate-x-5">
+                                    </span>
+                    
+                                    <span>
+
+                                        <span class="block text-xs text-gray-200">
+                                            Enable glass effects
+                                        </span>
+
+                                        <span class="block text-[10px] text-gray-500 mt-1">
+                                            Adds blur effects to cards and navbar
+                                        </span>
+
+                                    </span>
+                    
+                                </label>
+                    
+                                <label class="flex items-center gap-3 cursor-pointer">
+
+                                    <input
+                                        type="checkbox"
+                                        checked
+                                        class="peer sr-only">
+                    
+                                    <span
+                                        class="relative w-11 h-6 shrink-0 rounded-full bg-[#334155] peer-checked:bg-[#6D28D9] transition-colors 
+                                               after:content-[''] after:absolute after:top-1 after:left-1 after:w-4 after:h-4 after:rounded-full
+                                              after:bg-white after:transition-transform peer-checked:after:translate-x-5">
+                                    </span>
+
+                                    <span>
+                    
+                                        <span class="block text-xs text-gray-200">
+                                            Show subtle animations
+                                        </span>
+
+                                        <span class="block text-[10px] text-gray-500 mt-1">
+                                            Smooth transitions and micro interactions
+                                        </span>
+
+                                    </span>
+                    
+                                </label>
+                    
+                            </div>
+
+                        </div>
+
+                </div>
+                
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+   <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
+         </li>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
+        </li>
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="preferenceAppear.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>
