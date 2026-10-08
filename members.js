@@ -4,7 +4,8 @@ const settingSidebar = {
     Profile: "setting.html",
     settingRoles: "memberRole.html",
     settingDepartments: "memberDepartment.html",
-    settingActivity: "memberActivity.html"
+    settingActivity: "memberActivity.html",
+    Preferences: "settingPreference.html"
 
 };
 

@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+     <!-- Sidebar toggle icon -->
+         <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+         <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+      </div>
+      </div>
+      <div class="">
+       <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="white"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer" id="calendarNav"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+        <div class="xl:grid xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
+         <!--user message -->
+
+          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer" id="Profile">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer" id="Organization">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Members">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Preferences">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- informaion area -->
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3">
+                 <div>
+                   <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                     Notifications
+                   </h2>
+
+                   <p class="text-[#8E96A3] text-[11px] mt-1">
+                     Manage how and when you receive notifications across the application.
+                   </p>
+                 </div>
+                 
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <button class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationEmail">
+                      <i class="ri-mail-line"> Email</i>
+                    </button>
+
+                    <button class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationInapp">
+                      <i class="ri-computer-line"> In-App</i>
+                    </button>
+
+                     <button class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationSms">
+                      <i class="ri-message-3-line"> SMS</i>
+                     </button>
+
+                    <button class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationPush">
+                      <i class="ri-notification-3-line"> Push</i>
+                    </button>
+
+                 </div>
+               </div>
+
+               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:mb-2 xl:mb-0 md:gap-2 xl:gap-0">
+
+               <div class="md:mx-0 md:ml-3 xl:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-start justify-between gap-4">
+
+                        <div class="flex items-start gap-3">
+
+                            <div class="w-12 h-12 shrink-0 rounded-lg
+                                       bg-violet-600
+                                        flex items-center justify-center">
+
+                                <i class="ri-mail-line text-white text-2xl"></i>
+                
+                            </div>
+                
+                            <div>
+
+                               <h2 class="text-sm font-semibold text-gray-200">
+                                  Email Notifications
+                               </h2>
+
+                                <p class="text-xs text-gray-500 mt-1 leading-4">
+                                    Receive important updates and stay
+                                    <br class="md:hidden">
+                                    in the loop.
+                               </p>
+
+                            </div>
+
+                        </div>
+                
+                       <label class="cursor-pointer shrink-0">
+                
+                          <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+
+                       </label>
+
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4 mt-6">
+
+                       <label
+                           for="emailFrequency"
+                           class="text-xs font-medium text-gray-300">
+
+                           Email Frequency
+
+                      </label>
+
+
+                      <div class="relative w-[210px]">
+
+                          <select
+                              id="emailFrequency"
+                              class="w-full h-10 appearance-none px-3 pr-9
+                                    rounded-lg bg-[#131416] border
+                                   border-[#2A2A2E] text-xs text-gray-300
+                                     outline-none focus:border-[#6D28D9]">
+
+                             <option value="instantly">
+                                  Instantly
+                              </option>
+
+                              <option value="daily">
+                                  Daily
+                              </option>
+
+                             <option value="weekly">
+                                 Weekly
+                              </option>
+
+                                <option value="never">
+                                 Never
+                                </option>
+
+                         </select>
+
+                         <i
+                             class="ri-arrow-down-s-line absolute right-3 top-1/2
+                                    -translate-y-1/2 text-gray-400 pointer-events-none">
+                         </i>
+
+                     </div>
+
+                    </div>
+
+                </div>
+
+                <div class="md:mx-0 md:mr-3 xl:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-center gap-3 mb-5">
+
+                        <div class="w-12 h-12 shrink-0 rounded-lg
+                                    bg-violet-600
+                                    flex items-center justify-center">
+
+                            <i class="ri-settings-3-line text-white text-2xl"></i>
+                
+                        </div>
+
+                        <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Global Settings
+                            </h2>
+
+                            <p class="text-xs text-gray-500 mt-1">
+                                Control your notification experience.
+                            </p>
+                        </div>
+                
+                    </div>
+
+                    <div class="flex items-center gap-3 mb-4">
+
+                        <div class="w-9 h-9 shrink-0 flex items-center justify-center">
+                            <i class="ri-mail-check-line text-gray-200 text-xl"></i>
+                        </div>
+
+                        <div class="flex-1">
+                            <p class="text-xs font-medium text-gray-200">
+                                Enable All Email Notifications
+                            </p>
+
+                            <p class="text-[10px] text-gray-500 mt-1">
+                                Turn on or off all email notifications
+                            </p>
+                        </div>
+
+                        <label class="cursor-pointer shrink-0">
+                            <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                        </label>
+
+                    </div>
+
+                    <div class="flex items-center gap-3 mb-4">
+
+                        <div class="w-9 h-9 shrink-0 flex items-center justify-center">
+                            <i class="ri-moon-line text-gray-200 text-xl"></i>
+                        </div>
+
+                        <div class="flex-1">
+                            <p class="text-xs font-medium text-gray-200">
+                                Quiet Hours
+                            </p>
+
+                            <p class="text-[10px] text-gray-500 mt-1">
+                                Pause non-critical emails during specific hours
+                            </p>
+                        </div>
+
+                        <label class="cursor-pointer shrink-0">
+                           <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                        </label>
+
+                    </div>
+
+                    <div
+                        class="flex items-center gap-3 p-3
+                               rounded-lg border
+                             border-[#2A2A2E] bg-[#151719]">
+                
+                        <div class="w-9 h-9 shrink-0 flex items-center justify-center">
+                            <i class="ri-moon-line text-gray-200 text-xl"></i>
+                        </div>
+
+                        <div class="flex-1">
+
+                            <p class="text-xs font-medium text-gray-200">
+                                10:00 PM - 8:00 AM
+                            </p>
+
+                            <p class="text-[10px] text-gray-500 mt-1">
+                                Mon, Tue, Wed, Thu, Fri
+                            </p>
+                
+                        </div>
+
+                        <i class="ri-arrow-right-s-line text-gray-400 text-lg"></i>
+
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-start justify-between gap-4 mb-4">
+
+                        <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Notification Categories
+                            </h2>
+
+                            <p class="text-xs text-gray-500 mt-1">
+                                Choose which email notifications you want to receive.
+                            </p>
+                        </div>
+                        <div class="relative w-28 shrink-0">
+                
+                            <select
+                                class="appearance-none w-full h-9 px-2 pr-7
+                                       rounded-md bg-[#131416] border 
+                                       border-[#2A2A2E] text-[10px]
+                                        text-gray-300 outline-none
+                                       focus:border-[#6D28D9]">
+                
+                                <option>All Modules</option>
+                                <option>Clients</option>
+                                <option>Projects</option>
+                                <option>Tasks</option>
+
+                            </select>
+
+                            <i class="ri-arrow-down-s-line
+                                      absolute right-2 top-1/2
+                                      -translate-y-1/2
+                                      text-gray-400
+                                      pointer-events-none">
+                            </i>
+                
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1">
+                
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#2563EB]
+                                        flex items-center justify-center">
+
+                                <i class="ri-group-line text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                
+                                <p class="text-xs font-medium text-gray-200">
+                                    Clients
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    Updates about clients, new signups, and activity
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button
+                                class="w-24 h-8 shrink-0 rounded-md
+                                       border border-[#2A2A2E]
+                                       text-[10px] text-gray-300
+                                       hover:bg-[#1A1B1C]">
+
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#16A34A]
+                                        flex items-center justify-center">
+
+                                <i class="ri-folder-line text-white text-lg"></i>
+
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    Projects
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    Project updates, status changes, and deadlines
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                               <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+
+                            </label>
+                
+                            <button
+                                class="w-24 h-8 shrink-0 rounded-md
+                                       border border-[#2A2A2E]
+                                       text-[10px] text-gray-300
+                                       hover:bg-[#1A1B1C]">
+
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+
+                            </button>
+                
+                        </div>
+                
+                        <div class="flex items-center gap-3 py-1.5">
+                
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#7C3AED]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-checkbox-line text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    Tasks
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    Task assignments, due dates, and reminders
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#F97316]
+                                        flex items-center justify-center">
+
+                                <i class="ri-team-line text-white text-lg"></i>
+
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                
+                                <p class="text-xs font-medium text-gray-200">
+                                    Team
+                                </p>
+                
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    Team activity, mentions, and role changes
+                                </p>
+
+                            </div>
+                
+                            <label class="cursor-pointer shrink-0">
+                               <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+                
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#EF4444]
+                                        flex items-center justify-center">
+
+                                <i class="ri-file-list-3-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    Invoices &amp; Payments
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    Payment received, overdue, and invoice updates
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#475569]
+                                        flex items-center justify-center">
+
+                                <i class="ri-settings-3-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    System
+                                </p>
+                
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    System updates, maintenance, and security alerts
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#EC4899]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-megaphone-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                
+                                <p class="text-xs font-medium text-gray-200">
+                                    Marketing
+                                </p>
+                
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                    Campaign updates, leads, and form submissions
+                                </p>
+
+                            </div>
+                
+                            <label class="cursor-pointer shrink-0">
+                               <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:mb-2 xl:mb-0 md:gap-2 xl:gap-0">
+
+                <div class="md:mx-0 md:ml-3 xl:mx-3 mr-3 mb-2 md:mb-0 xl:mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-center gap-3 mb-3">
+
+                        <div class="w-10 h-10 shrink-0 rounded-md
+                                    bg-violet-600
+                                    flex items-center justify-center">
+                
+                            <i class="ri-file-text-line text-white text-xl"></i>
+                
+                        </div>
+                
+                        <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Email Templates
+                            </h2>
+
+                            <p class="text-[10px] text-gray-500 mt-0.5">
+                                Customize your default email templates.
+                            </p>
+                        </div>
+                
+                    </div>
+
+                    <button
+                        type="button"
+                        class="w-full flex items-center gap-3 h-9 px-2
+                               rounded-md hover:bg-[#1A1B1C] transition">
+
+                        <i class="ri-task-line text-gray-300 text-sm"></i>
+                
+                        <span class="flex-1 text-left text-[10px] text-gray-300">
+                            Task Assignment
+                        </span>
+
+                        <span class="text-[10px] text-gray-300">
+                            Customize
+                        </span>
+
+                        <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="w-full flex items-center gap-3 h-9 px-2
+                               rounded-md hover:bg-[#1A1B1C] transition">
+
+                        <i class="ri-checkbox-line text-gray-300 text-sm"></i>
+
+                        <span class="flex-1 text-left text-[10px] text-gray-300">
+                            Project Update
+                        </span>
+
+                        <span class="text-[10px] text-gray-300">
+                            Customize
+                        </span>
+
+                        <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="w-full flex items-center gap-3 h-9 px-2
+                               rounded-md hover:bg-[#1A1B1C] transition">
+
+                        <i class="ri-file-list-3-line text-gray-300 text-sm"></i>
+
+                        <span class="flex-1 text-left text-[10px] text-gray-300">
+                            Invoice Payment
+                        </span>
+
+                        <span class="text-[10px] text-gray-300">
+                            Customize
+                        </span>
+                
+                        <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+                
+                    </button>
+
+                </div>
+
+                <div class="md:mx-0 md:mr-3 xl:mx-3 mr-3 mr-3 mb-2 md:mb-0 xl:mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                 <div class="flex items-center gap-3">
+
+                     <div
+                         class="w-10 h-10 shrink-0 rounded-md
+                                bg-[#5B21B6]
+                                flex items-center justify-center">
+
+                         <i class="ri-send-plane-line text-white text-xl"></i>
+
+                     </div>
+
+                        <div>
+
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Test Email Notifications
+                            </h2>
+
+                            <p class="text-[10px] text-gray-500 mt-0.5">
+                                Send a test email to verify your settings.
+                            </p>
+
+                        </div>
+
+                 </div>
+
+                 <div class="flex items-center justify-between gap-3 mt-4">
+
+                     <label
+                         for="testEmail"
+                         class="text-[10px] font-medium text-gray-300">
+
+                         Send test to
+                
+                     </label>
+                
+                     <div class="relative w-[155px]">
+
+                         <select
+                             id="testEmail"
+                             class="appearance-none w-full h-8 px-2.5 pr-7 rounded-md
+                                     bg-[#1A1B1C] border border-[#2A2A2E] text-[10px]
+                                   text-gray-300 outline-none focus:border-[#6D28D9]">
+
+                                <option>
+                                    tanzeel@burhanlabs.in
+                                </option>
+
+                                <option>
+                                 hello@burhanlabs.in
+                             </option>
+
+                            </select>
+
+                            <i
+                                class="ri-arrow-down-s-line absolute right-2 top-1/2
+                                       -translate-y-1/2 text-gray-400 pointer-events-none">
+                            </i>
+
+                        </div>
+                
+                    </div>
+                
+                 <button
+                     type="button"
+                        class="w-full h-9 mt-3 rounded-md bg-[#6D28D9] hover:bg-[#7C3AED]
+                            text-xs font-medium text-white flex items-center justify-center
+                            gap-2 transition">
+                
+                     <i class="ri-send-plane-line text-sm"></i>
+
+                        Send Test Email
+
+                    </button>
+
+                </div>
+
+                </div>
+
+           </div>
+
+           <!-- detail -->
+            <div class="mt-4 xl:min-h-[140vh] ">
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                     <div class="mb-4">
+
+                         <h2 class="text-sm font-semibold text-gray-200">
+                             Email Preview
+                         </h2>
+
+                         <p class="text-xs text-gray-500 mt-1">
+                             See how your email notifications will look.
+                         </p>
+                 
+                     </div>
+
+                     <div class="flex-1 rounded-lg border bg-[#0f1011] border-[#2A2A2E] overflow-hidden">
+
+                         <div class="h-16 px-4 flex items-center justify-between border-b border-[#2A2A2E]">
+                 
+                             <div class="flex items-center gap-3">
+                 
+                                <div class="border bg-[#0b0b0c] border-[#2A2A2E] w-9 h-9 rounded-md flex items-center justify-center">
+                                             <i class="ri-drag-move-fill text-pink-300 text-xl"></i>
+                                         </div>
+
+                                 <div>
+                                     <p class="text-sm font-semibold text-white">
+                                         Efficient App
+                                     </p>
+
+                                     <p class="text-[10px] text-gray-400">
+                                         Agency CRM
+                                     </p>
+                                 </div>
+                 
+                             </div>
+
+                             <i class="ri-menu-line text-gray-300 text-lg"></i>
+
+                         </div>
+
+                         <div class="p-3">
+
+                             <div class="bg-[#F8F7FF] rounded-lg p-4 text-[#202028]">
+
+                                 <h3 class="text-sm font-semibold">
+                                     Hi Tanzeel,
+                                 </h3>
+
+                                 <p class="text-xs font-medium mt-3">
+                                     A new task has been assigned to you
+                                 </p>
+
+                                 <p class="text-[10px] leading-4 text-[#555560] mt-2">
+                                     Ayesha Khan assigned you to design the landing page
+                                     for Health Connect.
+                                 </p>
+
+                                 <button
+                                     type="button"
+                                     class="w-full h-8 mt-3 rounded-md bg-[#5B21F4]
+                                            hover:bg-[#6D28D9] text-[10px] font-medium
+                                            text-white flex items-center justify-center gap-2">
+
+                                     View Task
+
+                                     <i class="ri-arrow-right-line text-xs"></i>
+                 
+                                 </button>
+
+                                 <div class="h-px bg-[#DCDCE3] my-3"></div>
+                 
+                                 <p class="text-[10px] font-semibold text-[#44444C] mb-2">
+                                     Task Details
+                                 </p>
+
+                                 <div class="flex items-start gap-2 mb-2">
+
+                                     <i class="ri-chat-3-line text-sm text-[#555560]"></i>
+
+                                     <div>
+                                         <p class="text-[9px] text-[#777780]">
+                                             Project
+                                         </p>
+
+                                         <p class="text-[10px] font-medium">
+                                             Health Connect
+                                         </p>
+                                     </div>
+                 
+                                 </div>
+                 
+                                 <div class="flex items-start gap-2 mb-2">
+
+                                     <i class="ri-calendar-line text-sm text-[#555560]"></i>
+
+                                     <div>
+                                         <p class="text-[9px] text-[#777780]">
+                                             Due Date
+                                         </p>
+
+                                         <p class="text-[10px] font-medium">
+                                             Jun 30, 2025
+                                         </p>
+                                     </div>
+                 
+                                 </div>
+
+                                 <div class="flex items-start gap-2">
+                 
+                                     <i class="ri-arrow-up-double-line text-sm text-red-500"></i>
+
+                                     <div>
+                                         <p class="text-[9px] text-[#777780]">
+                                             Priority
+                                         </p>
+
+                                         <p class="text-[10px] font-medium text-red-500">
+                                             High
+                                         </p>
+                                     </div>
+                 
+                                 </div>
+                 
+                                 <div class="mt-4 text-[10px] text-[#555560] leading-4">
+                 
+                                     Thanks,<br>
+                                     The Efficient App Team
+
+                                 </div>
+                 
+                             </div>
+                 
+                         </div>
+
+                     </div>
+
+                 </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 shrink-0 rounded-md
+                                    bg-violet-600
+                                    flex items-center justify-center">
+
+                            <i class="ri-calendar-line text-white text-xl"></i>
+
+                        </div>
+
+                        <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Delivery &amp; Frequency
+                            </h2>
+                
+                            <p class="text-[10px] text-gray-500 mt-0.5">
+                                Control how often you receive emails.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3 mt-5">
+                
+                        <label
+                            for="emailFrequency"
+                            class="text-[10px] font-medium text-gray-300">
+                
+                            Email Frequency
+                
+                        </label>
+
+                        <div class="relative w-[165px]">
+
+                            <select
+                                id="emailFrequency"
+                                class="appearance-none w-full h-9 px-3 pr-8 rounded-md
+                                       bg-[#131416] border border-[#2A2A2E] text-[10px]
+                                        text-gray-300 outline-none focus:border-[#6D28D9]">
+
+                                <option>Instantly</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Never</option>
+
+                            </select>
+
+                            <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2
+                                      text-gray-400 pointer-events-none">
+                            </i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-3 mt-4">
+
+                        <div class="w-7 h-7 shrink-0 flex items-center justify-center">
+
+                            <i class="ri-calendar-check-line
+                                      text-gray-300 text-lg">
+                            </i>
+
+                        </div>
+
+                        <div class="flex-1">
+
+                            <p class="text-xs font-medium text-gray-200">
+                                Send daily summary
+                            </p>
+
+                            <p class="text-[10px] text-gray-500 mt-0.5">
+                                Get a daily digest of important activity
+                            </p>
+                
+                        </div>
+                
+                        <label class="cursor-pointer shrink-0">
+
+                            <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+
+                        </label>
+                
+                    </div>
+
+                    <div class="flex items-center gap-3 mt-4">
+
+                        <div class="w-7 h-7 shrink-0 flex items-center justify-center">
+
+                            <i class="ri-checkbox-line
+                                      text-gray-300 text-lg">
+                            </i>
+                
+                        </div>
+                
+                        <div class="flex-1">
+
+                            <p class="text-xs font-medium text-gray-200">
+                                Group similar notifications
+                            </p>
+
+                            <p class="text-[10px] text-gray-500 mt-0.5">
+                                Combine similar emails to reduce noise
+                            </p>
+
+                        </div>
+                
+                        <label class="cursor-pointer shrink-0">
+                
+                            <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-[#21174B] border-none rounded-2xl
+                            md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full p-4 flex flex-col mt-3">
+
+                    <div class="flex items-start gap-3">
+
+                        <div class="w-10 h-10 shrink-0 flex items-center justify-center">
+                            <i class="ri-lightbulb-line text-[#7C3AED] text-3xl"></i>
+                        </div>
+
+                        <div class="flex-1">
+                
+                            <h3 class="text-sm font-medium text-gray-200">
+                               Pro Tip 
+                            </h3>
+
+                            <p class="text-xs text-gray-500 leading-4 mt-1">
+                              Stay updated without the noise. Customize your 
+                              notification settings to focus on what matters
+                              most.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="w-full h-9 md:mt-auto rounded-lg mt-3 bg-[#281d53] border border-[#58585b]
+                               hover:bg-[#281768] text-xs text-gray-300 flex items-center justify-center gap-2">
+                
+                        Learn More
+
+                        <i class="ri-arrow-right-line text-sm"></i>
+
+                    </button>
+
+                </div>
+               
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+   <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
+         </li>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
+        </li>
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="settingNotification.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>

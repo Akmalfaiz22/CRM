@@ -8,7 +8,6 @@ const settingSidebar = {
     preferenceWorkspace: "preferenceWorkspace.html",
     preferenceEmail: "preferenceEmail.html",
 
-
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {

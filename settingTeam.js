@@ -3,7 +3,8 @@ const brandBtn = {
     settingBranding: "brand.html",
     settingBilling: "billing.html",
     Members: "members.html",
-    Profile: "setting.html"
+    Profile: "setting.html",
+    Preferences: "settingPreference.html"
 
 };
 

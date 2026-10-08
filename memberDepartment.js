@@ -3,7 +3,8 @@ const settingSidebar = {
     Profile: "setting.html",
     settingRoles: "memberRole.html",
     settingTeamMembers: "members.html",
-    settingActivity: "memberActivity.html"
+    settingActivity: "memberActivity.html",
+    Preferences: "settingPreference.html"
 
 };
 
