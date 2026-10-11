@@ -7,7 +7,7 @@ const settingSidebar = {
     preferenceLocalization: "preferenceLocalization.html",
     preferenceWorkspace: "preferenceWorkspace.html",
     preferenceEmail: "preferenceEmail.html",
-
+    Notifications: "settingNotification.html"
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {

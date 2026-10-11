@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+     <!-- Sidebar toggle icon -->
+         <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+         <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+      </div>
+      </div>
+      <div class="">
+       <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="white"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer" id="calendarNav"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+        <div class="xl:grid xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
+         <!--user message -->
+
+           <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer" id="Profile">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer" id="Organization">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Members">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Preferences">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Notifications">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Security">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Integrations">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Billing">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Privacy">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="System">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- informaion area -->
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3">
+                 <div>
+                   <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                     Notifications
+                   </h2>
+
+                   <p class="text-[#8E96A3] text-[11px] mt-1">
+                     Manage how and when you receive notifications across the application.
+                   </p>
+                 </div>
+                 
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <button class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationEmail">
+                      <i class="ri-mail-line"> Email</i>
+                    </button>
+
+                    <button class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationInapp">
+                      <i class="ri-computer-line"> In-App</i>
+                    </button>
+
+                     <button class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationSms">
+                      <i class="ri-message-3-line"> SMS</i>
+                     </button>
+
+                    <button class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="notificationPush">
+                      <i class="ri-notification-3-line"> Push</i>
+                    </button>
+
+                 </div>
+               </div>
+
+               <div class="md:mx-0 md:ml-3 xl:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-center gap-3">
+
+                        <div
+                            class="w-10 h-10 shrink-0 rounded-md
+                                   bg-violet-600
+                                   flex items-center justify-center">
+                
+                            <i class="ri-computer-line text-white text-xl"></i>
+                
+                        </div>
+
+                        <div class="flex-1">
+
+                            <h2 class="text-xs font-semibold text-gray-200">
+                                SMS Notifications
+                            </h2>
+
+                            <p class="text-[10px] text-gray-500 mt-1">
+                                Receive important updates and alerts via SMS.
+                            </p>
+
+                        </div>
+                
+                        <label class="cursor-pointer shrink-0">
+                
+                            <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="md:mx-0 md:ml-3 xl:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-4">
+
+                        <div class="border border-[#202F38] rounded-lg p-3">
+
+                            <h2 class="text-xs font-semibold text-gray-200">
+                                SMS Provider
+                            </h2>
+
+                            <p class="text-[10px] text-gray-500 mt-1">
+                                Choose your SMS service provider.
+                            </p>
+
+                            <div class="relative mt-3">
+
+                                <div class="absolute left-3 top-1/2 -translate-y-1/2
+                                            w-5 h-5 rounded-full bg-[#E11D48]
+                                            flex items-center justify-center">
+
+                                    <i class="ri-message-3-fill text-white text-xs"></i>
+
+                                </div>
+
+                                <select
+                                    id="smsProvider"
+                                    class="appearance-none w-full h-9 pl-10 pr-8
+                                           rounded-md bg-[#131416] border 
+                                           border-[#202F38] text-[11px]
+                                           text-gray-300 outline-none
+                                           focus:border-[#6D28D9]">
+
+                                    <option value="twilio">Twilio</option>
+                                    <option value="vonage">Vonage</option>
+                                    <option value="custom">Custom Provider</option>
+
+                                </select>
+
+                                <i class="ri-arrow-down-s-line
+                                          absolute right-2 top-1/2 -translate-y-1/2
+                                          text-gray-400 pointer-events-none">
+                                </i>
+
+                            </div>
+                
+                        </div>
+                
+                        <div class="border border-[#202F38] rounded-lg p-3">
+
+                            <h2 class="text-xs font-semibold text-gray-200">
+                                Sender Details
+                            </h2>
+                
+                            <p class="text-[10px] text-gray-500 mt-1">
+                                This name will appear to recipients.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-2 mt-3">
+                
+                                <div class="min-w-0">
+
+                                    <label
+                                        for="senderName"
+                                        class="block text-[10px] text-gray-300 mb-1">
+                
+                                        Sender Name
+                
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="senderName"
+                                        value="Efficient App"
+                                        placeholder="Enter sender name"
+                                        class="w-full h-8 px-2
+                                               rounded-md
+                                               bg-[#131416]
+                                               border border-[#202F38]
+                                               text-[10px] text-gray-200
+                                               outline-none
+                                               focus:border-[#6D28D9]">
+
+                                </div>
+
+                                <div class="min-w-0">
+
+                                    <label
+                                        for="senderNumber"
+                                        class="block text-[10px] text-gray-300 mb-1">
+                
+                                        Sender Number
+                
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="senderNumber"
+                                        value="+1 (555) 123-4567"
+                                        placeholder="+1 555 123 4567"
+                                        class="w-full h-8 px-2
+                                               rounded-md
+                                               bg-[#131416]
+                                               border border-[#202F38]
+                                               text-[10px] text-gray-200
+                                               outline-none
+                                               focus:border-[#6D28D9]">
+
+                                </div>
+                
+                            </div>
+                
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-start justify-between gap-4 mb-4">
+
+                        <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Notification Categories
+                            </h2>
+
+                            <p class="text-xs text-gray-500 mt-1">
+                                Choose which email notifications you want to receive.
+                            </p>
+                        </div>
+                        <div class="relative w-28 shrink-0">
+                
+                            <select
+                                class="appearance-none w-full h-9 px-2 pr-7
+                                       rounded-md bg-[#131416] border 
+                                       border-[#2A2A2E] text-[10px]
+                                        text-gray-300 outline-none
+                                       focus:border-[#6D28D9]">
+                
+                                <option>All Modules</option>
+                                <option>Clients</option>
+                                <option>Projects</option>
+                                <option>Tasks</option>
+
+                            </select>
+
+                            <i class="ri-arrow-down-s-line
+                                      absolute right-2 top-1/2
+                                      -translate-y-1/2
+                                      text-gray-400
+                                      pointer-events-none">
+                            </i>
+                
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1">
+                
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#2563EB]
+                                        flex items-center justify-center">
+
+                                <i class="ri-group-line text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                
+                                <p class="text-xs font-medium text-gray-200">
+                                    Clients
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                  New client signups and important client updates
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button
+                                class="w-24 h-8 shrink-0 rounded-md
+                                       border border-[#2A2A2E]
+                                       text-[10px] text-gray-300
+                                       hover:bg-[#1A1B1C]">
+
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#16A34A]
+                                        flex items-center justify-center">
+
+                                <i class="ri-folder-line text-white text-lg"></i>
+
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    Projects
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                   Project status changes and deadline reminders
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                               <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+
+                            </label>
+                
+                            <button
+                                class="w-24 h-8 shrink-0 rounded-md
+                                       border border-[#2A2A2E]
+                                       text-[10px] text-gray-300
+                                       hover:bg-[#1A1B1C]">
+
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+
+                            </button>
+                
+                        </div>
+                
+                        <div class="flex items-center gap-3 py-1.5">
+                
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#7C3AED]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-checkbox-line text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    Tasks
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                   Task assignments and high priority tasks
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#F97316]
+                                        flex items-center justify-center">
+
+                                <i class="ri-team-line text-white text-lg"></i>
+
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                
+                                <p class="text-xs font-medium text-gray-200">
+                                    Team
+                                </p>
+                
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                   Important mentions and team activity
+                                </p>
+
+                            </div>
+                
+                            <label class="cursor-pointer shrink-0">
+                               <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+                
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#EF4444]
+                                        flex items-center justify-center">
+
+                                <i class="ri-file-list-3-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    Invoices &amp; Payments
+                                </p>
+
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                   Payment received, failed payment and overdue alerts
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#475569]
+                                        flex items-center justify-center">
+
+                                <i class="ri-settings-3-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-xs font-medium text-gray-200">
+                                    System
+                                </p>
+                
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                  Critical system updates and security alerts
+                                </p>
+
+                            </div>
+
+                            <label class="cursor-pointer shrink-0">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md
+                                        bg-[#EC4899]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-megaphone-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                
+                                <p class="text-xs font-medium text-gray-200">
+                                    Marketing
+                                </p>
+                
+                                <p class="text-[10px] text-gray-500 mt-0.5">
+                                  Lead form submissions and campaign updates
+                                </p>
+
+                            </div>
+                
+                            <label class="cursor-pointer shrink-0">
+                               <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                
+                            </label>
+
+                            <button class="w-24 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-[10px] text-gray-300">
+                                Customize
+                                <i class="ri-arrow-right-s-line ml-1"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="md:mx-0 md:ml-3 xl:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-3">
+
+                        <div class="border border-[#202F38] rounded-lg p-3">
+                
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-9 h-9 shrink-0 rounded-md bg-[#2563EB] flex items-center justify-center">
+                                    <i class="ri-settings-3-line text-white text-xl"></i>
+                                </div>
+
+                                <div>
+                                    <h2 class="text-xs font-semibold text-gray-200">
+                                        SMS Delivery Settings
+                                    </h2>
+                                    <p class="text-[10px] text-gray-500 mt-1">
+                                        Configure when and how SMS notifications are sent.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="ri-shield-check-line text-gray-300 text-lg"></i>
+
+                                <div class="flex-1">
+                                    <p class="text-[10px] text-gray-200">Quiet Hours</p>
+                                    <p class="text-[9px] text-gray-500 mt-1">
+                                        Pause non-critical SMS during specific hours.
+                                    </p>
+                                </div>
+
+                                <label class="cursor-pointer">
+                                   <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                                </label>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3 mb-3">
+
+                                <div>
+                                    <label for="smsStart" class="block text-[10px] text-gray-300 mb-1.5">
+                                        Start Time
+                                    </label>
+                                    <div class="relative">
+                                        <select id="smsStart" class="appearance-none w-full h-8 px-2 pr-7 rounded-md bg-[#131416] border border-[#2A2A2E] text-[10px] text-gray-300 outline-none focus:border-[#6D28D9]">
+                                            <option>10:00 PM</option>
+                                            <option>9:00 PM</option>
+                                            <option>11:00 PM</option>
+                                            <option>12:00 AM</option>
+                                        </select>
+                                        <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="smsEnd" class="block text-[10px] text-gray-300 mb-1.5">
+                                        End Time
+                                    </label>
+                                    <div class="relative">
+                                        <select id="smsEnd" class="appearance-none w-full h-8 px-2 pr-7 rounded-md bg-[#131416] border border-[#2A2A2E] text-[10px] text-gray-300 outline-none focus:border-[#6D28D9]">
+                                            <option>7:00 AM</option>
+                                            <option>6:00 AM</option>
+                                            <option>8:00 AM</option>
+                                            <option>9:00 AM</option>
+                                        </select>
+                                        <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <label for="smsTimezone" class="block text-[10px] text-gray-300 mb-1.5">
+                                Timezone
+                            </label>
+
+                            <div class="relative">
+                                <select id="smsTimezone" class="appearance-none w-full h-8 px-2.5 pr-8 rounded-md bg-[#131416] border border-[#2A2A2E] text-[10px] text-gray-300 outline-none focus:border-[#6D28D9]">
+                                    <option>Asia/Kolkata (GMT +5:30)</option>
+                                    <option>UTC (GMT +0:00)</option>
+                                    <option>America/New_York</option>
+                                    <option>Europe/London</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="border border-[#202F38] rounded-lg p-3">
+
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-9 h-9 shrink-0 rounded-md bg-[#2563EB] flex items-center justify-center">
+                                    <i class="ri-settings-3-line text-white text-xl"></i>
+                                </div>
+                
+                                <div>
+                                    <h2 class="text-xs font-semibold text-gray-200">
+                                        Advanced Settings
+                                    </h2>
+                                    <p class="text-[10px] text-gray-500 mt-1">
+                                        Fine-tune your in-app notification experience.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="ri-hashtag text-gray-300 text-lg"></i>
+                
+                                <div class="flex-1">
+                                    <p class="text-[10px] text-gray-200">Maximum SMS Per Day</p>
+                                    <p class="text-[9px] text-gray-500 mt-1">
+                                        Limit number of SMS notifications per day.
+                                    </p>
+                                </div>
+
+                                <button type="button" class="h-7 min-w-[52px] px-2 rounded-md border border-[#202F38] bg-[#101A20] text-[10px] text-gray-300 flex items-center justify-between gap-2">
+                                    20
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </button>
+                            </div>
+                
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="ri-stack-line text-gray-300 text-lg"></i>
+                
+                                <div class="flex-1">
+                                    <p class="text-[10px] text-gray-200">Merge Similar Notifications</p>
+                                    <p class="text-[9px] text-gray-500 mt-1">
+                                        Combine similar alerts to avoid spam.
+                                    </p>
+                                </div>
+                
+                                <label class="cursor-pointer">
+                                   <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                                </label>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="ri-error-warning-line text-gray-300 text-lg"></i>
+
+                                <div class="flex-1">
+                                    <p class="text-[10px] text-gray-200">Send High Priority Only</p>
+                                    <p class="text-[9px] text-gray-500 mt-1">
+                                        Only send critical and high priority alerts.
+                                    </p>
+                                </div>
+                
+                                <label class="cursor-pointer">
+                                   <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                                </label>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="ri-mail-line text-gray-300 text-lg"></i>
+                
+                                <div class="flex-1">
+                                    <p class="text-[10px] text-gray-200">Fallback to Email</p>
+                                    <p class="text-[9px] text-gray-500 mt-1">
+                                        If SMS fails, also send an email notification.
+                                    </p>
+                                </div>
+
+                                <label class="cursor-pointer">
+                                   <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                                </label>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <i class="ri-time-line text-gray-300 text-lg"></i>
+
+                                <div class="flex-1">
+                                    <p class="text-[10px] text-gray-200">Log Delivery Status</p>
+                                    <p class="text-[9px] text-gray-500 mt-1">
+                                        Track delivery status for all SMS.
+                                    </p>
+                                </div>
+
+                                <label class="cursor-pointer">
+                                   <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+           </div>
+
+           <!-- detail -->
+            <div class="mt-4 xl:min-h-[140vh] ">
+
+               <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="mb-3">
+                        <h2 class="text-sm font-semibold text-gray-200">
+                            Live Preview
+                        </h2>
+
+                        <p class="text-[10px] text-gray-500 mt-1">
+                            See how your SMS notifications will look.
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center overflow-hidden pt-1">
+
+                        <div class="relative w-[290px] max-w-full h-[245px] shrink-0
+                                    rounded-t-[42px] rounded-b-none bg-black
+                                    border-[3px] border-[#55565B]
+                                    shadow-[0_0_0_2px_#090909] p-[7px]">
+
+                            <div class="absolute -left-[5px] top-20 w-[3px] h-8
+                                        rounded-l bg-[#55565B]"></div>
+                
+                            <div class="absolute -right-[5px] top-24 w-[3px] h-12
+                                        rounded-r bg-[#55565B]"></div>
+
+                            <div class="relative h-full overflow-hidden
+                                        rounded-t-[33px]
+                                        bg-[#F5F6FB] text-[#171923]">
+
+                                <div class="h-9 px-7 flex items-center
+                                            justify-between text-[12px] font-semibold">
+                
+                                    <span>9:41</span>
+                
+                                    <div class="flex items-center gap-1.5">
+                                        <i class="ri-signal-wifi-fill text-sm"></i>
+                                        <i class="ri-wifi-fill text-sm"></i>
+
+                                        <div class="w-4 h-[8px] rounded-[2px]
+                                                    border border-gray-700 relative">
+                
+                                            <div class="absolute inset-[1px]
+                                                        right-[3px] bg-gray-800 rounded-[1px]">
+                                            </div>
+
+                                            <div class="absolute -right-[3px] top-[2px]
+                                                        w-[2px] h-[3px] bg-gray-700">
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+
+                                <div class="relative flex flex-col items-center
+                                            justify-center h-[65px]
+                                            border-b border-[#E5E7EB]">
+
+                                    <i class="ri-arrow-left-s-line absolute left-3 top-2
+                                              text-2xl text-[#3478F6]"></i>
+                
+                                    <div class="w-9 h-9 rounded-full bg-[#DCE2ED]
+                                                flex items-center justify-center">
+                
+                                        <i class="ri-user-fill text-white text-2xl"></i>
+                
+                                    </div>
+                
+                                    <p class="text-[10px] font-medium mt-1">
+                                        Efficient App
+                                        <i class="ri-arrow-right-s-line text-gray-400"></i>
+                                    </p>
+                
+                                </div>
+
+                                <div class="px-3 pt-3">
+                
+                                    <p class="text-[9px] text-center text-gray-500 mb-2">
+                                        Today, 9:41 AM
+                                    </p>
+
+                                    <div class="flex justify-start">
+
+                                        <div class="max-w-[88%] bg-[#E0E4EE]
+                                                    rounded-[15px] rounded-bl-[5px]
+                                                    px-3 py-2.5
+                                                    text-[12px] leading-[18px]">
+
+                                            <p>Hi Tanzeel,</p>
+                
+                                            <p>
+                                                A new task has been assigned to you:
+                                                "Design landing page for Health Connect".
+                                            </p>
+                
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                            </div>
+                
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4 flex flex-col">
+
+                 <div class="flex items-center gap-3">
+
+                     <div class="w-10 h-10 shrink-0 rounded-md bg-[#5B21F4]
+                                 flex items-center justify-center">
+                         <i class="ri-send-plane-line text-white text-xl"></i>
+                     </div>
+
+                     <div>
+                         <h2 class="text-xs font-semibold text-gray-200">
+                              Test SMS Notification
+                         </h2>
+                
+                         <p class="text-[10px] text-gray-500 mt-1">
+                             Send a test SMS to verify your settings.
+                         </p>
+                     </div>
+                
+                 </div>
+
+                 <div class="mt-3 md:mt-auto">
+
+                      <label class="block text-[10px] text-gray-300 mb-1.5">
+                         Send test to
+                      </label>
+                
+                      <div class="grid grid-cols-[112px_minmax(0,1fr)] gap-2">
+
+                            <div class="relative">
+                
+                                <select
+                                    id="smsCountryCode"
+                                 class="appearance-none w-full h-8 px-2 pr-6
+                                           rounded-md bg-[#131416]
+                                           border border-[#2A2A2E]
+                                           text-[10px] text-gray-200
+                                           outline-none focus:border-[#6D28D9]">
+                
+                                    <option value="+91">🇮🇳 IN +91</option>
+                                    <option value="+1">🇺🇸 US +1</option>
+                                    <option value="+44">🇬🇧 UK +44</option>
+                                    <option value="+61">🇦🇺 AU +61</option>
+                
+                                </select>
+
+                                <i class="ri-arrow-down-s-line absolute right-1.5 top-1/2
+                                          -translate-y-1/2 text-gray-400
+                                          pointer-events-none text-sm"></i>
+                
+                            </div>
+                
+                            <input
+                                type="tel"
+                                id="smsPhoneNumber"
+                                value="98765 43210"
+                                placeholder="Enter phone number"
+                                class="min-w-0 w-full h-8 px-2.5
+                                       rounded-md bg-[#131416]
+                                       border border-[#2A2A2E]
+                                       text-[10px] text-gray-200
+                                       placeholder:text-gray-600
+                                       outline-none focus:border-[#6D28D9]">
+                
+                        </div>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="sendTestSmsBtn"
+                        class="w-full h-8 mt-2
+                               rounded-md bg-[#4F00E8]
+                               hover:bg-[#6D28D9]
+                               text-[10px] font-medium text-white
+                               flex items-center justify-center gap-2
+                               transition-colors md:mt-auto">
+                
+                        <i class="ri-send-plane-line text-sm"></i>
+
+                        Send Test SMS
+
+                    </button>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="flex items-start justify-between mb-4">
+
+                        <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Recent SMS Activity
+                            </h2>
+                
+                        </div>
+
+                        <button
+                            type="button"
+                            class="h-8 px-3 rounded-md
+                                   border border-[#2E3B46]
+                                   bg-[#131416]
+                                   hover:bg-[#1A1B1C]
+                                   text-[10px] text-gray-300
+                                   flex items-center gap-1.5">
+                
+                            View All
+
+                            <i class="ri-arrow-right-line text-sm"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="space-y-1">
+
+                        <div class="flex items-center gap-3 py-2
+                                    border-b border-[#202A30]">
+
+                            <div class="w-8 h-8 shrink-0 rounded-md
+                                        bg-[#6D28D9]
+                                        flex items-center justify-center">
+
+                                <i class="ri-checkbox-circle-line text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-[10px] font-semibold text-gray-200">
+                                    Task assigned
+                                </p>
+                
+                                <p class="text-[9px] text-gray-500 mt-0.5">
+                                    New task assigned to you
+                                </p>
+
+                            </div>
+                
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                10m ago
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-2
+                                    border-b border-[#202A30]">
+
+                            <div class="w-8 h-8 shrink-0 rounded-md
+                                        bg-[#059669]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-folder-line text-white text-lg"></i>
+
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-[10px] font-semibold text-gray-200">
+                                  Invoice paid
+                                </p>
+
+                                <p class="text-[9px] text-gray-500 mt-0.5">
+                                   Payment of ₹25,000 received
+                                </p>
+
+                            </div>
+
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                25m ago
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-3 py-2
+                                    border-b border-[#202A30]">
+                
+                            <div class="w-8 h-8 shrink-0 rounded-md
+                                        bg-[#2563EB]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-folder-open-line text-white text-lg"></i>
+                
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-[10px] font-semibold text-gray-200">
+                                    Project update
+                                </p>
+
+                                <p class="text-[9px] text-gray-500 mt-0.5">
+                                  Project moved to In Progress
+                                </p>
+                
+                            </div>
+
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                1h ago
+                            </span>
+                
+                        </div>
+
+                        <div class="flex items-center gap-3 py-2">
+                
+                            <div class="w-8 h-8 shrink-0 rounded-md
+                                        bg-[#F59E0B]
+                                        flex items-center justify-center">
+                
+                                <i class="ri-team-line text-white text-lg"></i>
+                
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+
+                                <p class="text-[10px] font-semibold text-gray-200">
+                                  New client
+                                </p>
+
+                                <p class="text-[9px] text-gray-500 mt-0.5">
+                                   New client signed up
+                                </p>
+                
+                            </div>
+                
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                3h ago
+                            </span>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="mb-4">
+
+                        <h2 class="text-sm font-semibold text-gray-200">
+                            Quick Actions
+                        </h2>
+                
+                        <p class="text-[10px] text-gray-500 mt-1">
+                            Common SMS notification actions.
+                        </p>
+
+                    </div>
+
+                    <div class="space-y-1">
+
+                        <button
+                            type="button"
+                            class="w-full h-9 px-3 flex items-center gap-3 rounded-md border
+                                 border-[#202F38] bg-[#131416] hover:bg-[#1A1B1C]
+                                   transition">
+
+                            <i class="ri-send-plane-line text-gray-300 text-base"></i>
+                
+                            <span class="flex-1 text-left text-[10px] text-gray-300">
+                                Send test SMS
+                            </span>
+
+                            <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="w-full h-9 px-3 flex items-center gap-3 rounded-md border
+                                 border-[#202F38] bg-[#131416] hover:bg-[#1A1B1C]
+                                   transition">
+
+                            <i class="ri-delete-bin-line text-gray-300 text-base"></i>
+
+                            <span class="flex-1 text-left text-[10px] text-gray-300">
+                                View delivery logs
+                            </span>
+                
+                            <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="w-full h-9 px-3 flex items-center gap-3 rounded-md border
+                                 border-[#202F38] bg-[#131416] hover:bg-[#1A1B1C]
+                                   transition">
+
+                            <i class="ri-money-dollar-circle-line text-gray-300 text-base"></i>
+                
+                            <span class="flex-1 text-left text-[10px] text-gray-300">
+                              Manage blocked numbers
+                            </span>
+
+                            <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="w-full h-9 px-3 flex items-center gap-3 rounded-md border
+                                 border-[#202F38] bg-[#131416] hover:bg-[#1A1B1C]
+                                   transition">
+
+                            <i class="ri-refresh-line text-gray-300 text-base"></i>
+
+                            <span class="flex-1 text-left text-[10px] text-gray-300">
+                                Reset to default
+                            </span>
+
+                            <i class="ri-arrow-right-s-line text-gray-400 text-sm"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+   <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
+         </li>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
+        </li>
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="notificationSMS.js"></script>
+ <script src="notificationNavbar.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>

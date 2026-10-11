@@ -127,7 +127,8 @@ const settingSidebar = {
     settingRoles: "memberRole.html",
     settingDepartments: "memberDepartment.html",
     settingTeamMembers: "members.html",
-    Preferences: "settingPreference.html"
+    Preferences: "settingPreference.html",
+     Notifications: "settingNotification.html"
 
 };
 

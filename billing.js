@@ -4,7 +4,8 @@ const brandBtn = {
     settingTeam: "settingTeam.html",
     Members: "members.html",
     Profile: "setting.html",
-    Preferences: "settingPreference.html"
+    Preferences: "settingPreference.html",
+     Notifications: "settingNotification.html"
 };
 
 Object.entries(brandBtn).forEach(([id, page]) => {
