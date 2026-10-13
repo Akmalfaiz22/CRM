@@ -2,8 +2,8 @@ const settingSidebar = {
     Organization: "organization.html",
     Members: "members.html",
     Preferences: "settingPreference.html",
-    Notifications: "settingNotification.html"
-    
+    Notifications: "settingNotification.html",
+    Security: "settingSecurity.html"
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {

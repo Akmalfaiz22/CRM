@@ -7,6 +7,7 @@ const settingSidebar = {
     notificationInapp: "notificationInapp.html",
     notificationSms: "notificationSMS.html",
     notificationPush: "notificationPush.html",
+    Security: "settingSecurity.html"
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {

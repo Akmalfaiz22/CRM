@@ -128,7 +128,8 @@ const settingSidebar = {
     settingDepartments: "memberDepartment.html",
     settingTeamMembers: "members.html",
     Preferences: "settingPreference.html",
-     Notifications: "settingNotification.html"
+     Notifications: "settingNotification.html",
+     Security: "settingSecurity.html"
 
 };
 
