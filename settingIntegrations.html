@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+     <!-- Sidebar toggle icon -->
+         <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+         <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+      </div>
+      </div>
+      <div class="">
+       <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="white"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer" id="calendarNav"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+        <div class="xl:grid xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
+         <!--user message -->
+
+          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer" id="Profile">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer" id="Organization">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Members">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Preferences">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Notifications">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Security">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Integrations">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Billing">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Privacy">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="System">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- informaion area -->
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3">
+                 
+                   <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                     Integrations
+                   </h2>
+
+                   <p class="text-[#8E96A3] text-[11px] mt-1">
+                     Connect with your favorite tools and services to streamline your workflow.
+                   </p>
+                
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingTeamMembers">
+                      <i class="ri-apps-line">   All Integrations</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingRoles">
+                      <i class="ri-shield-check-line">   Connected</i>
+                    </h3>
+
+                     <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingDepartments">
+                      <i class="ri-chat-voice-line">   Communication</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingActivity">
+                      <i class="ri-code-box-line">   Development</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingActivity">
+                      <i class="ri-team-line">   Marketing</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="settingActivity">
+                      <i class="ri-secure-payment-line">   Payments</i>
+                    </h3>
+                 </div>
+               </div>
+
+                <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                  <div class="md:flex md:items-center md:gap-2">
+                    <label class="input md:w-full bg-[#131416] border-[#2A2A2E] border">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                          >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                          </g>
+                        </svg>
+                        <input type="search" required placeholder="Search" />
+                    </label>
+                    <button class=" mt-2 md:mt-0 p-4 btn btn-xs md:btn-md bg-[#131416] border border-[#2A2A2E] md:w-32 w-full"> All Categories</button>
+                  </div>
+                </div>
+
+                <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="flex items-center justify-between gap-3 mb-4">
+                       <div>
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Featured Integrations
+                            </h2>
+                            <p class="text-xs text-gray-400 mt-1">
+                               Most popular integrations for agencies.
+                            </p>
+                        </div>
+               
+                        <button type="button"
+                            class="shrink-0 h-9 px-3 rounded-lg border border-[#2A2A2E]
+                                   text-xs text-gray-300 hover:bg-[#1A2630]
+                                   flex items-center gap-2">
+                            View All
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                   </div>
+
+                   <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-3">
+               
+                       <div class="flex flex-col border border-[#2A2A2E] rounded-xl p-3
+                                   bg-[#131416] min-w-0">
+
+                           <div class="h-12 flex items-center mb-1">
+                               <i class="ri-slack-fill text-4xl text-[#36C5F0]"></i>
+                            </div>
+               
+                           <h3 class="text-sm font-semibold text-gray-200">Slack</h3>
+
+                           <p class="text-xs text-gray-400 leading-[19px] mt-2 flex-1">
+                               Get notifications and collaborate with your team in Slack.
+                           </p>
+
+                           <div class="mt-3 mb-2">
+                                <span class="inline-flex rounded-md bg-emerald-900/50
+                                             text-emerald-400 px-2.5 py-1 text-xs">
+                                    Connected
+                                </span>
+                            </div>
+
+                           <div class="flex items-center gap-2">
+                               <button type="button"
+                                   class="flex-1 h-9 rounded-lg border border-[#2A2A2E]
+                                          text-xs text-gray-200 hover:bg-[#1A2630]
+                                           flex items-center justify-center gap-2">
+                                    Configure
+                                    <i class="ri-arrow-right-line"></i>
+                               </button>
+
+                                <button type="button" aria-label="Slack options"
+                                    class="w-9 h-9 shrink-0 rounded-lg border border-[#2A2A2E]
+                                           text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                               </button>
+                            </div>
+                        </div>
+
+                       <div class="flex flex-col border border-[#2A2A2E] rounded-xl p-3
+                                   bg-[#131416] min-w-0">
+               
+                            <div class="h-12 flex items-center mb-1">
+                                <i class="ri-drive-line text-4xl text-[#34A853]"></i>
+                            </div>
+
+                            <h3 class="text-sm font-semibold text-gray-200">Google Drive</h3>
+               
+                            <p class="text-xs text-gray-400 leading-[19px] mt-2 flex-1">
+                                Sync and access your files directly from your projects.
+                            </p>
+
+                            <div class="mt-3 mb-2">
+                                <span class="inline-flex rounded-md bg-slate-700/80
+                                            text-gray-200 px-2.5 py-1 text-xs">
+                                    Not Connected
+                                </span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <button type="button"
+                                    class="flex-1 h-9 rounded-lg bg-[#4F00E8]
+                                           hover:bg-[#6D28D9] text-xs text-white
+                                          flex items-center justify-center gap-2">
+                                   Connect
+                                   <i class="ri-arrow-right-line"></i>
+                                </button>
+
+                                <button type="button" aria-label="Google Drive options"
+                                    class="w-9 h-9 shrink-0 rounded-lg border border-[#2A2A2E]
+                                           text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                       </div>
+
+                        <div class="flex flex-col border border-[#2A2A2E] rounded-xl p-3
+                                    bg-[#131416] min-w-0">
+
+                            <div class="h-12 flex items-center mb-1">
+                               <i class="ri-mail-fill text-4xl text-[#EA4335]"></i>
+                            </div>
+
+                           <h3 class="text-sm font-semibold text-gray-200">Gmail</h3>
+               
+                            <p class="text-xs text-gray-400 leading-[19px] mt-2 flex-1">
+                                Send and receive emails directly from Efficient App.
+                            </p>
+               
+                            <div class="mt-3 mb-2">
+                                <span class="inline-flex rounded-md bg-emerald-900/50
+                                            text-emerald-400 px-2.5 py-1 text-xs">
+                                    Connected
+                                </span>
+                            </div>
+
+                           <div class="flex items-center gap-2">
+                               <button type="button"
+                                    class="flex-1 h-9 rounded-lg border border-[#2A2A2E]
+                                           text-xs text-gray-200 hover:bg-[#1A2630]
+                                           flex items-center justify-center gap-2">
+                                    Configure
+                                    <i class="ri-arrow-right-line"></i>
+                                </button>
+               
+                                <button type="button" aria-label="Gmail options"
+                                    class="w-9 h-9 shrink-0 rounded-lg border border-[#2A2A2E]
+                                           text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                       </div>
+
+                        <div class="flex flex-col border border-[#2A2A2E] rounded-xl p-3
+                                   bg-[#131416] min-w-0">
+               
+                           <div class="h-12 flex items-center mb-1">
+                               <i class="ri-flashlight-fill text-4xl text-[#FF4A00]"></i>
+                           </div>
+
+                           <h3 class="text-sm font-semibold text-gray-200">Zapier</h3>
+
+                           <p class="text-xs text-gray-400 leading-[19px] mt-2 flex-1">
+                               Automate workflows between 5000+ apps.
+                           </p>
+
+                           <div class="mt-3 mb-2">
+                                <span class="inline-flex rounded-md bg-slate-700/80
+                                            text-gray-200 px-2.5 py-1 text-xs">
+                                    Not Connected
+                               </span>
+                            </div>
+
+                           <div class="flex items-center gap-2">
+                               <button type="button"
+                                   class="flex-1 h-9 rounded-lg bg-[#4F00E8]
+                                          hover:bg-[#6D28D9] text-xs text-white
+                                          flex items-center justify-center gap-2">
+                                    Connect
+                                   <i class="ri-arrow-right-line"></i>
+                               </button>
+
+                                <button type="button" aria-label="Zapier options"
+                                    class="w-9 h-9 shrink-0 rounded-lg border border-[#2A2A2E]
+                                          text-gray-400 hover:bg-[#1A2630]">
+                                   <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                       </div>
+
+                   </div>
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                    <div class="mb-4">
+                        <h2 class="text-sm font-semibold text-gray-200">
+                            All Integrations
+                        </h2>
+                        <p class="text-xs text-gray-400 mt-1">
+                            Browse and connect with tools that fit your workflow.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#075E54] flex items-center justify-center">
+                                    <i class="ri-whatsapp-fill text-3xl text-[#25D366]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">WhatsApp</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Send notifications and updates via WhatsApp.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="WhatsApp options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#123A54] flex items-center justify-center">
+                                    <i class="ri-telegram-fill text-3xl text-[#29A9EB]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Telegram</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Get real-time notifications on Telegram.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Telegram options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#252B60] flex items-center justify-center">
+                                    <i class="ri-discord-fill text-3xl text-[#5865F2]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Discord</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Collaborate with your team on Discord.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Discord options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#242052] flex items-center justify-center">
+                                    <i class="ri-file-word-line text-3xl text-[#8174F7]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Microsoft Teams</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Send notifications and work with your team.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Microsoft Teams options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#263746] flex items-center justify-center">
+                                    <i class="ri-notion-fill text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Notion</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Sync tasks, notes and documentation.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Notion options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#263746] flex items-center justify-center">
+                                    <i class="ri-github-fill text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">GitHub</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Link repositories and track development activity.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-emerald-900/50 text-emerald-400 text-[10px] px-2 py-1">Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md border border-[#2A2A2E] hover:bg-[#1A2630] text-gray-200 text-xs flex items-center justify-center gap-2">
+                                    Configure <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="GitHub options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#263746] flex items-center justify-center">
+                                    <i class="ri-figma-fill text-3xl text-[#F24E1E]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Figma</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Import designs and collaborate on projects.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Figma options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#263746] flex items-center justify-center">
+                                    <i class="ri-calendar-fill text-3xl text-[#4285F4]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Google Calendar</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Sync your meetings and project deadlines.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-emerald-900/50 text-emerald-400 text-[10px] px-2 py-1">Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md border border-[#2A2A2E] hover:bg-[#1A2630] text-gray-200 text-xs flex items-center justify-center gap-2">
+                                    Configure <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Google Calendar options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#3730A3] flex items-center justify-center">
+                                    <i class="ri-skype-line text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Stripe</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Accept payments and manage subscriptions.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Stripe options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="h-10 flex items-center gap-2.5 mb-1">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-white flex items-center justify-center">
+                                    <i class="ri-bank-card-fill text-2xl text-[#3395FF]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Razorpay</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Accept payments in India.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Razorpay options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-[#153E8A] flex items-center justify-center">
+                                    <i class="ri-paypal-fill text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">PayPal</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Receive international payments.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="PayPal options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col min-w-0 border border-[#2A2A2E] bg-[#131416] rounded-xl p-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-10 h-10 shrink-0 rounded-lg bg-white flex items-center justify-center">
+                                    <i class="ri-database-2-fill text-3xl text-[#F59E0B]"></i>
+                                </div>
+                                <h3 class="text-xs font-semibold text-gray-200">Airtable</h3>
+                            </div>
+                            <p class="text-[10px] text-gray-400 leading-4 mt-2 flex-1">
+                                Manage your data and sync with projects.
+                            </p>
+                            <div class="mt-2 mb-2">
+                                <span class="inline-block rounded-md bg-slate-700/80 text-gray-200 text-[10px] px-2 py-1">Not Connected</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" class="flex-1 h-8 rounded-md bg-[#4F00E8] hover:bg-[#6D28D9] text-white text-xs flex items-center justify-center gap-2">
+                                    Connect <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <button type="button" aria-label="Airtable options" class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E] text-gray-400 hover:bg-[#1A2630]">
+                                    <i class="ri-more-2-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+           </div>
+
+           <!-- detail -->
+            <div class="mt-4 xl:min-h-[140vh]">
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="flex items-center justify-between gap-2 mb-4">
+
+                        <div class="min-w-0">
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Connected Integrations (5)
+                            </h2>
+
+                            <p class="text-xs text-gray-400 mt-1">
+                                Manage your active integrations.
+                            </p>
+                        </div>
+
+                        <button type="button"
+                            class="shrink-0 flex items-center gap-1 px-3 h-8
+                                   rounded-md border border-[#2A2A2E]
+                                   text-[10px] text-gray-300 hover:bg-[#1A2630]">
+                            View All
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="space-y-1">
+                
+                        <div class="flex items-center gap-2 py-1.5">
+                
+                            <div class="w-9 h-9 shrink-0 rounded-md bg-[#101A20]
+                                        flex items-center justify-center">
+                                <i class="ri-slack-fill text-2xl text-[#36C5F0]"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-[11px] font-medium text-gray-200">
+                                    Slack
+                                </h3>
+
+                                <div class="flex flex-wrap items-center gap-1 mt-1">
+                                    <span class="text-[9px] text-gray-400">
+                                        Workspace: Efficient App
+                                    </span>
+
+                                    <span class="flex items-center gap-1 text-[9px] text-emerald-400">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        Connected
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="shrink-0 h-8 px-3 rounded-md border border-[#2A2A2E]
+                                       text-[10px] text-gray-200 hover:bg-[#1A2630]">
+                                Configure
+                            </button>
+
+                            <button type="button" aria-label="Slack options"
+                                class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E]
+                                       text-gray-400 hover:bg-[#1A2630]">
+                                <i class="ri-more-2-fill"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-2 py-1.5">
+                
+                            <div class="w-9 h-9 shrink-0 rounded-md bg-white
+                                        flex items-center justify-center">
+                                <i class="ri-google-fill text-2xl text-[#EA4335]"></i>
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-[11px] font-medium text-gray-200">
+                                    Gmail
+                                </h3>
+
+                                <div class="flex flex-wrap items-center gap-1 mt-1">
+                                    <span class="text-[9px] text-gray-400 break-all">
+                                        tanzeel@efficientapp.com
+                                    </span>
+
+                                    <span class="flex items-center gap-1 text-[9px] text-emerald-400">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        Connected
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="shrink-0 h-8 px-3 rounded-md border border-[#2A2A2E]
+                                       text-[10px] text-gray-200 hover:bg-[#1A2630]">
+                                Configure
+                            </button>
+
+                            <button type="button" aria-label="Gmail options"
+                                class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E]
+                                       text-gray-400 hover:bg-[#1A2630]">
+                                <i class="ri-more-2-fill"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-2 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md bg-white
+                                        flex items-center justify-center">
+                                <i class="ri-calendar-fill text-2xl text-[#4285F4]"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-[11px] font-medium text-gray-200">
+                                    Google Calendar
+                                </h3>
+
+                                <div class="flex flex-wrap items-center gap-1 mt-1">
+                                    <span class="text-[9px] text-gray-400 break-all">
+                                        tanzeel@efficientapp.com
+                                    </span>
+                
+                                    <span class="flex items-center gap-1 text-[9px] text-emerald-400">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        Connected
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="shrink-0 h-8 px-3 rounded-md border border-[#2A2A2E]
+                                       text-[10px] text-gray-200 hover:bg-[#1A2630]">
+                                Configure
+                            </button>
+
+                            <button type="button" aria-label="Google Calendar options"
+                                class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E]
+                                       text-gray-400 hover:bg-[#1A2630]">
+                                <i class="ri-more-2-fill"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="flex items-center gap-2 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md bg-white
+                                        flex items-center justify-center">
+                                <i class="ri-github-fill text-3xl text-[#171717]"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-[11px] font-medium text-gray-200">
+                                    GitHub
+                                </h3>
+                
+                                <div class="flex flex-wrap items-center gap-1 mt-1">
+                                    <span class="text-[9px] text-gray-400">
+                                        mohd.tanzeel
+                                    </span>
+
+                                    <span class="flex items-center gap-1 text-[9px] text-emerald-400">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        Connected
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="shrink-0 h-8 px-3 rounded-md border border-[#2A2A2E]
+                                       text-[10px] text-gray-200 hover:bg-[#1A2630]">
+                                Configure
+                            </button>
+
+                            <button type="button" aria-label="GitHub options"
+                                class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E]
+                                       text-gray-400 hover:bg-[#1A2630]">
+                                <i class="ri-more-2-fill"></i>
+                            </button>
+                
+                        </div>
+
+                        <div class="flex items-center gap-2 py-1.5">
+
+                            <div class="w-9 h-9 shrink-0 rounded-md bg-[#F97316]
+                                        flex items-center justify-center">
+                                <i class="ri-git-branch-line text-2xl text-white"></i>
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-[11px] font-medium text-gray-200">
+                                    HubSpot
+                                </h3>
+
+                                <div class="flex flex-wrap items-center gap-1 mt-1">
+                                    <span class="text-[9px] text-gray-400 break-all">
+                                        tanzeel@agency.com
+                                    </span>
+
+                                    <span class="flex items-center gap-1 text-[9px] text-emerald-400">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                        Connected
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="shrink-0 h-8 px-3 rounded-md border border-[#2A2A2E]
+                                       text-[10px] text-gray-200 hover:bg-[#1A2630]">
+                                Configure
+                            </button>
+
+                            <button type="button" aria-label="HubSpot options"
+                                class="w-8 h-8 shrink-0 rounded-md border border-[#2A2A2E]
+                                       text-gray-400 hover:bg-[#1A2630]">
+                                <i class="ri-more-2-fill"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="flex items-start justify-between gap-3 mb-3">
+
+                        <div class="min-w-0">
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Integration Webhooks
+                           </h2>
+
+                            <p class="text-[10px] text-gray-400 mt-1 leading-4">
+                                Use webhooks to receive real-time data from integrated apps.
+                            </p>
+                        </div>
+
+                        <button type="button" id="createWebhookBtn"
+                           class="shrink-0 flex items-center gap-1.5
+                                  px-3 h-8 rounded-md bg-[#4F00E8]
+                                  hover:bg-[#6D28D9] text-white text-[10px]
+                                  transition-colors">
+                           <i class="ri-add-line text-sm"></i>
+                           Create Webhook
+                       </button>
+
+                   </div>
+
+                   <div class="overflow-x-auto rounded-lg border border-[#2A2A2E]">
+
+                        <table class="w-full min-w-[340px] text-left">
+               
+                            <thead class="bg-[#101A20] border-b border-[#2A2A2E]">
+                                <tr>
+                                   <th class="px-2 py-2 text-[10px] font-medium text-gray-300">
+                                       Name
+                                   </th>
+
+                                    <th class="px-2 py-2 text-[10px] font-medium text-gray-300">
+                                        Events
+                                    </th>
+               
+                                    <th class="px-2 py-2 text-[10px] font-medium text-gray-300">
+                                        Status
+                                    </th>
+
+                                    <th class="w-7 px-1 py-2"></th>
+                                </tr>
+                           </thead>
+
+                           <tbody class="divide-y divide-[#202A32]">
+
+                                <tr class="hover:bg-[#101A20] transition-colors">
+                                    <td class="px-2 py-3 text-[10px] text-gray-200 whitespace-nowrap">
+                                        GitHub Webhook
+                                    </td>
+
+                                   <td class="px-2 py-3 text-[10px] text-gray-300 whitespace-nowrap">
+                                       Push, PR
+                                    </td>
+
+                                    <td class="px-2 py-3">
+                                        <span class="inline-flex items-center gap-1
+                                                     rounded-md bg-emerald-900/40
+                                                    text-emerald-400 px-1.5 py-1
+                                                     text-[9px] whitespace-nowrap">
+                                           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                           Active
+                                        </span>
+                                   </td>
+
+                                    <td class="px-1 py-3 text-center">
+                                        <button type="button"
+                                            aria-label="GitHub webhook options"
+                                            class="text-gray-400 hover:text-white">
+                                            <i class="ri-more-2-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+               
+                               <tr class="hover:bg-[#101A20] transition-colors">
+                                   <td class="px-2 py-3 text-[10px] text-gray-200 whitespace-nowrap">
+                                       Stripe Webhook
+                                    </td>
+
+                                    <td class="px-2 py-3 text-[10px] text-gray-300 whitespace-nowrap">
+                                        Payment
+                                    </td>
+               
+                                   <td class="px-2 py-3">
+                                        <span class="inline-flex items-center gap-1
+                                                     rounded-md bg-emerald-900/40
+                                                    text-emerald-400 px-1.5 py-1
+                                                    text-[9px] whitespace-nowrap">
+                                           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                           Active
+                                        </span>
+                                   </td>
+               
+                                   <td class="px-1 py-3 text-center">
+                                        <button type="button"
+                                           aria-label="Stripe webhook options"
+                                            class="text-gray-400 hover:text-white">
+                                           <i class="ri-more-2-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr class="hover:bg-[#101A20] transition-colors">
+                                   <td class="px-2 py-3 text-[10px] text-gray-200 whitespace-nowrap">
+                                        Form Webhook
+                                   </td>
+               
+                                    <td class="px-2 py-3 text-[10px] text-gray-300 whitespace-nowrap">
+                                        Submission
+                                    </td>
+
+                                    <td class="px-2 py-3">
+                                        <span class="inline-flex items-center gap-1
+                                                     rounded-md bg-slate-700/80
+                                                    text-gray-300 px-1.5 py-1
+                                                    text-[9px] whitespace-nowrap">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                                            Inactive
+                                        </span>
+                                   </td>
+
+                                   <td class="px-1 py-3 text-center">
+                                       <button type="button"
+                                            aria-label="Form webhook options"
+                                            class="text-gray-400 hover:text-white">
+                                           <i class="ri-more-2-fill"></i>
+                                        </button>
+                                   </td>
+                               </tr>
+
+                           </tbody>
+
+                        </table>
+
+                   </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:min-h-[30vh] md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <div class="flex items-center justify-between gap-2 mb-3">
+
+                        <h2 class="text-xs font-semibold text-gray-200">
+                            Recent Integration Activity
+                        </h2>
+
+                        <button type="button"
+                            class="shrink-0 flex items-center gap-1 px-2.5 h-7
+                                   rounded-md border border-[#2A2A2E]
+                                   text-[9px] text-gray-300 hover:bg-[#1A2630]">
+                            View All
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="space-y-1.5">
+                
+                        <div class="flex items-center gap-2.5 py-0.5">
+                
+                            <div class="w-8 h-8 shrink-0 rounded-md
+                                        flex items-center justify-center">
+                                <i class="ri-github-fill text-white text-2xl"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] font-medium text-gray-200">
+                                    GitHub connected
+                                </p>
+                                <p class="text-[9px] text-gray-400 mt-0.5">
+                                    Repository linked successfully
+                                </p>
+                            </div>
+                
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                2 hours ago
+                            </span>
+                
+                        </div>
+
+                        <div class="flex items-center gap-2.5 py-0.5">
+
+                            <div class="w-8 h-8 shrink-0 rounded-md bg-white
+                                        flex items-center justify-center">
+                                <i class="ri-calendar-fill text-[#4285F4] text-xl"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] font-medium text-gray-200">
+                                    Google Calendar synced
+                                </p>
+                                <p class="text-[9px] text-gray-400 mt-0.5">
+                                    12 events imported
+                                </p>
+                            </div>
+
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                5 hours ago
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-2.5 py-0.5">
+                
+                            <div class="w-8 h-8 shrink-0 rounded-md
+                                        flex items-center justify-center">
+                                <i class="ri-slack-fill text-[#36C5F0] text-2xl"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] font-medium text-gray-200">
+                                    Slack reconnected
+                                </p>
+                                <p class="text-[9px] text-gray-400 mt-0.5">
+                                    Workspace reconnected
+                                </p>
+                            </div>
+
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                1 day ago
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-2.5 py-0.5">
+                
+                            <div class="w-8 h-8 shrink-0 rounded-md bg-[#DC3545]
+                                        flex items-center justify-center">
+                                <i class="ri-bank-card-fill text-white text-xl"></i>
+                            </div>
+                
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] font-medium text-red-400">
+                                    Stripe integration failed
+                                </p>
+                                <p class="text-[9px] text-gray-400 mt-0.5">
+                                    Invalid API key
+                                </p>
+                            </div>
+
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                2 days ago
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-2.5 py-0.5">
+
+                            <div class="w-8 h-8 shrink-0 rounded-md bg-white
+                                        flex items-center justify-center">
+                                <i class="ri-google-fill text-[#EA4335] text-xl"></i>
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                                <p class="text-[10px] font-medium text-gray-200">
+                                    Gmail synced
+                                </p>
+                                <p class="text-[9px] text-gray-400 mt-0.5">
+                                    32 emails processed
+                                </p>
+                            </div>
+
+                            <span class="text-[9px] text-gray-400 whitespace-nowrap">
+                                3 days ago
+                            </span>
+                
+                        </div>
+
+                    </div>
+
+                </div>
+  
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+   <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
+         </li>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
+        </li>
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="settingIntegrations.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>
