@@ -44,6 +44,7 @@
     --color-violet-600: oklch(54.1% 0.281 293.009);
     --color-purple-100: oklch(94.6% 0.033 307.174);
     --color-purple-200: oklch(90.2% 0.063 306.703);
+    --color-purple-300: oklch(82.7% 0.119 306.383);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-purple-600: oklch(55.8% 0.288 302.321);
@@ -3045,6 +3046,9 @@
   .min-h-\[40px\] {
     min-height: 40px;
   }
+  .min-h-\[44px\] {
+    min-height: 44px;
+  }
   .min-h-\[50vh\] {
     min-height: 50vh;
   }
@@ -3481,6 +3485,9 @@
   .resize-none {
     resize: none;
   }
+  .resize-y {
+    resize: vertical;
+  }
   .appearance-none {
     appearance: none;
   }
@@ -3832,6 +3839,9 @@
   .border-\[\#3B82F6\] {
     border-color: #3B82F6;
   }
+  .border-\[\#4F00E8\] {
+    border-color: #4F00E8;
+  }
   .border-\[\#6D28D9\] {
     border-color: #6D28D9;
   }
@@ -3959,6 +3969,9 @@
   }
   .bg-\[\#0B0B0B\] {
     background-color: #0B0B0B;
+  }
+  .bg-\[\#0B1B24\] {
+    background-color: #0B1B24;
   }
   .bg-\[\#0B3A7A\] {
     background-color: #0B3A7A;
@@ -4301,6 +4314,9 @@
   }
   .bg-\[\#27205B\] {
     background-color: #27205B;
+  }
+  .bg-\[\#28106A\] {
+    background-color: #28106A;
   }
   .bg-\[\#29204F\] {
     background-color: #29204F;
@@ -5055,6 +5071,9 @@
   .text-\[\#2A2A2E\] {
     color: #2A2A2E;
   }
+  .text-\[\#2D8CFF\] {
+    color: #2D8CFF;
+  }
   .text-\[\#2F1B6F\] {
     color: #2F1B6F;
   }
@@ -5217,6 +5236,9 @@
   .text-\[\#1683FF\] {
     color: #1683FF;
   }
+  .text-\[\#1685D8\] {
+    color: #1685D8;
+  }
   .text-\[\#1685F8\] {
     color: #1685F8;
   }
@@ -5234,6 +5256,9 @@
   }
   .text-\[\#5865F2\] {
     color: #5865F2;
+  }
+  .text-\[\#6264A7\] {
+    color: #6264A7;
   }
   .text-\[\#7139E9\] {
     color: #7139E9;
@@ -5435,6 +5460,9 @@
   }
   .text-emerald-500 {
     color: var(--color-emerald-500);
+  }
+  .text-gray-100 {
+    color: var(--color-gray-100);
   }
   .text-gray-200 {
     color: var(--color-gray-200);
@@ -5970,6 +5998,13 @@
       }
     }
   }
+  .hover\:bg-\[\#172832\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #172832;
+      }
+    }
+  }
   .hover\:bg-\[\#182333\] {
     &:hover {
       @media (hover: hover) {
@@ -6050,6 +6085,13 @@
       }
     }
   }
+  .hover\:text-purple-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-purple-300);
+      }
+    }
+  }
   .hover\:text-purple-400 {
     &:hover {
       @media (hover: hover) {
@@ -6103,6 +6145,11 @@
   .focus\:border-\[\#7C3AED\] {
     &:focus {
       border-color: #7C3AED;
+    }
+  }
+  .focus\:border-purple-600 {
+    &:focus {
+      border-color: var(--color-purple-600);
     }
   }
   .sm\:col-auto {
