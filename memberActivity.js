@@ -129,7 +129,8 @@ const settingSidebar = {
     settingTeamMembers: "members.html",
     Preferences: "settingPreference.html",
      Notifications: "settingNotification.html",
-     Security: "settingSecurity.html"
+     Security: "settingSecurity.html",
+     Integrations: "settingIntegrations.html",
 
 };
 

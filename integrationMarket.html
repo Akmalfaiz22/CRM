@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="drawer lg:drawer-open min-h-screen w-full">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle"/>
+  <div class="drawer-content min-h-screen w-full bg-[#0F0F11] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="navbar w-full bg-[#131416] border-b border-[#2A2A2E] text-[#F5F5F5] flex items-center justify-between"> 
+     <div class="flex items-center justify-start">
+     <!-- Sidebar toggle icon -->
+         <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost text-white">
+           <i class="ri-layout-left-fill text-white" id="showSidebar"></i>
+         </label>
+      <div class="md:pl-2 pl-1">
+        <h1 class="md:text-xl text-lg pl-1 font-bold">Settings</h1>
+         <p class="hidden xl:block text-[#A1A1AA] text-sm md:text-lg">Manage your account, preferences and system settings.</p>
+      </div>
+      </div>
+      <div class="">
+       <label class="input bg-[#131416] border-[#2A2A2E] border md:w-56 w-28  h-8 md:h-10">
+           <svg class="h-[1em] opacity-100 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+           <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="white"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" class="md:w-56 w-28 text-white " required placeholder="Search" />
+          </label>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="pr-4">
+            <div class="tooltip tooltip-bottom" data-tip="Calendar">
+             <i class="ri-calendar-2-line md:text-xl text-lg cursor-pointer" id="calendarNav"></i>
+            </div>
+         </h2>
+        <h2 class="pr-4">
+         <div class="tooltip tooltip-bottom" data-tip="Notification">
+            <i class="ri-notification-2-line md:text-xl text-lg cursor-pointer" id="notificationNav"></i>
+        </div>
+        </h2>
+         
+      </div>
+    </nav>
+    <!-- Page content here -->
+    <div class="min-h-screen w-full p-4">
+       <!--top content -->
+            
+        <div class="xl:grid xl:grid-cols-[minmax(0,1.4fr)_minmax(0,1.4fr)_minmax(0,400px)] md:gap-2">   
+         <!--user message -->
+
+          <div class="xl:w-full w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[84vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl md:px-4 xl:px-0">
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-3 rounded-md hover:bg-[#191B20] cursor-pointer" id="Profile">
+               <i class="ri-user-line text-[20px] text-[#F5F3FF]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#F5F3FF]">
+                   Profile & Account
+                 </h3>
+                 <p class="text-[12px] text-[#A7A1B5] mt-0.5">
+                   Manage your personal information
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 mt-1 rounded-md hover:bg-[#191B20] cursor-pointer" id="Organization">
+               <i class="ri-building-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Organization
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your organization details
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Members">
+               <i class="ri-group-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Members & Permissions
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage team members and roles
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Preferences">
+               <i class="ri-equalizer-2-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div >
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Preferences
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Customize your experience
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Notifications">
+               <i class="ri-notification-3-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Notifications
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Configure notifications
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Security">
+               <i class="ri-shield-check-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Security
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Password and security settings
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Integrations">
+               <i class="ri-plug-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Integrations
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage connected apps
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Billing">
+               <i class="ri-bank-card-line text-[20px] text-[#A7AFBD]"></i>
+           
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Billing & Subscription
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your plan and billing
+                 </p>
+               </div>
+             </div>
+
+
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="Privacy">
+               <i class="ri-lock-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   Data & Privacy
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   Manage your data and privacy
+                 </p>
+               </div>
+             </div>
+
+  
+             <div class="flex items-center gap-3 px-3 py-2.5 rounded-md hover:bg-[#191B20] cursor-pointer" id="System">
+               <i class="ri-settings-3-line text-[20px] text-[#A7AFBD]"></i>
+
+               <div>
+                 <h3 class="text-[15px] font-medium text-[#E5E7EB]">
+                   System
+                 </h3>
+                 <p class="text-[12px] text-[#8E96A3] mt-0.5">
+                   System settings and preferences
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          <!-- informaion area -->
+           <div class="w-full bg-[#131416] border-[#2A2A2E] border xl:min-h-[140vh] md:h-auto min-h-[80vh] h-auto pl-4 md:pl-0 mt-4 rounded-2xl">
+               <!-- Main Heading -->
+               <div class="px-4 pt-5 pb-3">
+                 
+                   <h2 class="text-[#F3F4F6] text-[16px] font-semibold">
+                     Integrations
+                   </h2>
+
+                   <p class="text-[#8E96A3] text-[11px] mt-1">
+                     Connect with your favorite tools and services to streamline your workflow.
+                   </p>
+                
+               </div>
+
+               <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                 <div class="flex items-center justify-between gap-4 overflow-x-auto scrollbar-hide flex-nowrap">
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="Integrations">
+                      <i class="ri-apps-line">   All Integrations</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB]  text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="Connected">
+                      <i class="ri-shield-check-line">   Connected</i>
+                    </h3>
+
+                     <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="Communication">
+                      <i class="ri-chat-voice-line">   Communication</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="Development">
+                      <i class="ri-code-box-line">   Development</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="Marketing">
+                      <i class="ri-team-line">   Marketing</i>
+                    </h3>
+
+                    <h3 class="text-[#E5E7EB] text-[14px] font-medium whitespace-nowrap shrink-0 hover:text-violet-500 hover:underline" id="Payments">
+                      <i class="ri-secure-payment-line">   Payments</i>
+                    </h3>
+                 </div>
+               </div>
+
+                <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3 ">
+                  <div class="md:flex md:items-center md:gap-2">
+                    <label class="input md:w-full bg-[#131416] border-[#2A2A2E] border">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                          >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                          </g>
+                        </svg>
+                        <input type="search" required placeholder="Search" />
+                    </label>
+                    <button class=" mt-2 md:mt-0 p-4 btn btn-xs md:btn-md bg-[#131416] border border-[#2A2A2E] md:w-32 w-full"> All Categories</button>
+                  </div>
+                </div>
+
+                <div class="md:mx-3 mr-3 mb-2 border bg-[#131416] border-[#2A2A2E] rounded-lg px-4 py-3">
+
+                        <div class="mb-3">
+                            <h2 class="text-sm font-semibold text-gray-200">
+                                Marketing Tools
+                            </h2>
+                            <p class="text-[11px] text-gray-400 mt-1">
+                                Connect your marketing tools to manage campaigns, leads, and customer engagement.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-2">
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-yellow-400 flex items-center justify-center shrink-0">
+                                        <i class="ri-mail-line text-2xl text-black"></i>
+                                    </div>
+
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">Mailchimp</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-emerald-300 bg-emerald-500/20 px-2 py-0.5 rounded-md">
+                                            Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Email marketing and automation for your business.
+                                </p>
+                    
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync contacts</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track campaign performance</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Automate email sequences</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Manage subscribers</p>
+                                </div>
+
+                                <div class="flex items-center justify-between mt-3 gap-1">
+                                    <div class="min-w-0">
+                                        <p class="text-[9px] text-gray-300 truncate">tanzeel@burhanlabs.in</p>
+                                        <p class="text-[9px] text-gray-500">Connected 15 Jan 2025</p>
+                                    </div>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400 shrink-0">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+                    
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-[#F15A24] flex items-center justify-center shrink-0">
+                                        <i class="ri-customer-service-2-line text-2xl text-white"></i>
+                                    </div>
+
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">HubSpot</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-gray-300 bg-slate-600/50 px-2 py-0.5 rounded-md">
+                                            Not Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    All-in-one marketing, CRM and sales platform.
+                                </p>
+
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync contacts and deals</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track marketing campaigns</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Lead capture forms</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Marketing automation</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 bg-[#5200F5] hover:bg-[#6500FF] text-white text-xs rounded-lg py-2">
+                                        Connect
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-white flex items-center justify-center shrink-0">
+                                        <i class="ri-bar-chart-fill text-2xl text-orange-500"></i>
+                                    </div>
+                    
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">Google Analytics</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-emerald-300 bg-emerald-500/20 px-2 py-0.5 rounded-md">
+                                            Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Track website traffic and user behavior.
+                                </p>
+
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> View traffic reports</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track conversions</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Monitor user behavior</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Set up goals and events</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 border border-[#2A2A2E] text-gray-200 text-xs rounded-lg py-2 hover:bg-[#1B2028]">
+                                        Configure
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
+                                        <i class="ri-meta-line text-2xl text-white"></i>
+                                    </div>
+                    
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">Meta Ads</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-gray-300 bg-slate-600/50 px-2 py-0.5 rounded-md">
+                                            Not Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Manage and track Facebook & Instagram advertising.
+                                </p>
+                    
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync ad campaigns</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track ad performance</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Manage audiences</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Import leads to CRM</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 bg-[#5200F5] text-white text-xs rounded-lg py-2 hover:bg-[#6500FF]">
+                                        Connect
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+                    
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-white flex items-center justify-center shrink-0">
+                                        <i class="ri-google-line text-2xl text-blue-500"></i>
+                                    </div>
+
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">Google Ads</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-emerald-300 bg-emerald-500/20 px-2 py-0.5 rounded-md">
+                                            Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Create and manage Google advertising campaigns.
+                                </p>
+                    
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync ad campaigns</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track conversions</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Manage keywords</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Import leads to CRM</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 border border-[#2A2A2E] text-gray-200 text-xs rounded-lg py-2 hover:bg-[#1B2028]">
+                                        Configure
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
+                                        <i class="ri-linkedin-fill text-2xl text-white"></i>
+                                    </div>
+
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">LinkedIn Ads</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-gray-300 bg-slate-600/50 px-2 py-0.5 rounded-md">
+                                            Not Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Run B2B advertising campaigns on LinkedIn.
+                                </p>
+
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync ad accounts</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track campaign performance</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Manage lead forms</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Import leads to CRM</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 bg-[#5200F5] text-white text-xs rounded-lg py-2 hover:bg-[#6500FF]">
+                                        Connect
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-white flex items-center justify-center shrink-0">
+                                        <i class="ri-loop-right-line text-2xl text-red-500"></i>
+                                    </div>
+                    
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">ConvertKit</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-gray-300 bg-slate-600/50 px-2 py-0.5 rounded-md">
+                                            Not Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Email marketing for creators and businesses.
+                                </p>
+
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync subscribers</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Automate email sequences</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track campaign performance</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Manage landing pages</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 bg-[#5200F5] text-white text-xs rounded-lg py-2 hover:bg-[#6500FF]">
+                                        Connect
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center shrink-0">
+                                        <i class="ri-send-plane-fill text-2xl text-white"></i>
+                                    </div>
+                    
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">ActiveCampaign</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-gray-300 bg-slate-600/50 px-2 py-0.5 rounded-md">
+                                            Not Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Marketing automation and customer experience platform.
+                                </p>
+                    
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync contacts</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Advanced automation</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track customer journey</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Segment your audience</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 bg-[#5200F5] text-white text-xs rounded-lg py-2 hover:bg-[#6500FF]">
+                                        Connect
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-[#2A2A2E] rounded-xl p-3 bg-[#131416]">
+                    
+                                <div class="flex items-start gap-2">
+                                    <div class="w-9 h-9 rounded-lg bg-white flex items-center justify-center shrink-0">
+                                        <i class="ri-text text-2xl text-black"></i>
+                                    </div>
+
+                                    <div class="min-w-0 flex-1">
+                                        <h3 class="text-xs font-semibold text-gray-200">Typeform</h3>
+                                        <span class="inline-block mt-1 text-[10px] text-gray-300 bg-slate-600/50 px-2 py-0.5 rounded-md">
+                                            Not Connected
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <p class="text-[11px] text-gray-400 mt-2">
+                                    Create beautiful forms and surveys.
+                                </p>
+
+                                <div class="space-y-1 mt-2">
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Sync form submissions</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Capture leads</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Track form performance</p>
+                                    <p class="text-[10px] text-gray-300"><i class="ri-checkbox-circle-fill text-emerald-400 mr-1"></i> Integrate with workflows</p>
+                                </div>
+
+                                <div class="flex items-center gap-2 mt-3">
+                                    <button class="flex-1 bg-[#5200F5] text-white text-xs rounded-lg py-2 hover:bg-[#6500FF]">
+                                        Connect
+                                    </button>
+                                    <button class="w-8 h-8 border border-[#2A2A2E] rounded-lg text-gray-400">
+                                        <i class="ri-more-2-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                     </div>
+                </div>
+
+           </div>
+
+           <!-- detail -->
+            <div class="mt-4 xl:min-h-[140vh]">
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                     <div class="flex items-start gap-3">
+
+                         <div class="w-16 h-16 shrink-0 rounded-xl bg-yellow-400
+                                     flex items-center justify-center">
+                             <i class="ri-mail-line text-5xl text-black"></i>
+                         </div>
+
+                         <div class="flex-1 min-w-0">
+                             <div class="flex items-center justify-between gap-2">
+                                 <h2 class="text-base font-semibold text-gray-100">
+                                    Mailchimp
+                                 </h2>
+
+                                 <span class="text-xs font-medium text-emerald-300
+                                              bg-emerald-500/30 rounded-lg px-3 py-1">
+                                     Connected
+                                 </span>
+                             </div>
+                 
+                             <p class="text-sm text-gray-400 mt-2 leading-5">
+                                 Email marketing and automation for your business.
+                             </p>
+                         </div>
+                 
+                     </div>
+
+                     <div class="flex items-center gap-3 mt-4">
+                 
+                         <a href="#" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex-1 h-11 flex items-center justify-center gap-2
+                                   border border-[#2A2A2E] rounded-lg
+                                   text-sm text-gray-200 hover:bg-[#1B2028]
+                                   transition-colors">
+                             Open Mailchimp
+                             <i class="ri-arrow-up-right-line text-lg"></i>
+                         </a>
+                 
+                         <button type="button" id="githubMenuBtn"
+                             class="w-11 h-11 shrink-0 flex items-center justify-center
+                                    border border-[#2A2A2E] rounded-lg
+                                    text-gray-300 hover:bg-[#1B2028]"
+                             aria-label="GitHub options">
+                             <i class="ri-more-2-fill text-xl"></i>
+                         </button>
+
+                     </div>
+
+                     <div class="grid grid-cols-3 gap-1 mt-4 border-t border-[#2A2A2E] pt-2">
+                 
+                         <button type="button" data-tab="overview"
+                             class="github-tab flex flex-col items-center justify-center
+                                    gap-1 py-3 rounded-lg border border-[#6D28D9]
+                                    bg-[#3B0764] text-purple-200
+                                    shadow-[inset_0_0_12px_rgba(109,40,217,0.2)]">
+                             <i class="ri-dashboard-3-line text-xl"></i>
+                             <span class="text-xs">Overview</span>
+                         </button>
+
+                         <button type="button" data-tab="settings"
+                             class="github-tab flex flex-col items-center justify-center
+                                    gap-1 py-3 rounded-lg border border-transparent
+                                    text-gray-300 hover:bg-[#1B2028]">
+                             <i class="ri-settings-3-line text-xl"></i>
+                             <span class="text-xs">Settings</span>
+                         </button>
+                 
+                         <button type="button" data-tab="activity"
+                             class="github-tab flex flex-col items-center justify-center
+                                    gap-1 py-3 rounded-lg border border-transparent
+                                    text-gray-300 hover:bg-[#1B2028]">
+                             <i class="ri-pulse-line text-xl"></i>
+                             <span class="text-xs">Activity</span>
+                         </button>
+
+                     </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                    <h2 class="text-sm font-semibold text-gray-200 mb-3">
+                        Connection Details
+                    </h2>
+
+                    <div class="space-y-4">
+ 
+                        <div class="flex items-center gap-3">
+                            <i class="ri-checkbox-circle-line text-xl text-gray-300 shrink-0"></i>
+                
+                            <span class="text-xs text-gray-300 flex-1">
+                                Status
+                            </span>
+
+                            <span class="inline-flex items-center gap-1.5
+                                         rounded-md bg-emerald-500/20
+                                         px-2 py-1 text-[10px] text-emerald-300">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Connected
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="ri-user-line text-xl text-gray-300 shrink-0"></i>
+                
+                            <span class="text-xs text-gray-300 flex-1">
+                                Connected Account
+                            </span>
+
+                            <span class="text-xs text-gray-300">
+                                akmal@anylabs.in
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="ri-calendar-line text-xl text-gray-300 shrink-0"></i>
+                
+                            <span class="text-xs text-gray-300 flex-1">
+                                Connected on
+                            </span>
+
+                            <span class="text-xs text-gray-300 text-right">
+                                12 Jan 2025, 10:30 AM
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="ri-price-tag-3-line text-xl text-gray-300 shrink-0"></i>
+
+                            <span class="text-xs text-gray-300 flex-1">
+                                Audience
+                            </span>
+
+                            <span class="text-xs text-gray-300">
+                                2,541 subscribers
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="ri-key-2-line text-xl text-gray-300 shrink-0"></i>
+
+                            <span class="text-xs text-gray-300 flex-1">
+                                Sync Frequency
+                            </span>
+                
+                            <span class="text-xs text-gray-300">
+                                Every 2 hours
+                            </span>
+                        </div>
+                
+                        <div class="flex items-center gap-3">
+                            <i class="ri-refresh-line text-xl text-gray-300 shrink-0"></i>
+                
+                            <span class="text-xs text-gray-300 flex-1">
+                                Last Sync
+                            </span>
+
+                            <span class="text-xs text-gray-300 text-right">
+                                20 Oct 2026, 06:15 AM
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                     <div class="flex items-center justify-between gap-2">
+                         <h2 class="text-sm font-semibold text-gray-200">
+                             Sync Settings
+                         </h2>
+                 
+                         <button type="button"
+                             class="flex items-center gap-2 px-3 py-2
+                                    border border-[#2A2A2E] rounded-lg
+                                    text-xs text-gray-200 hover:bg-[#1B2028]">
+                             <i class="ri-arrow-right-up-line"></i>
+                             Edit
+                         </button>
+                     </div>
+                 
+                     <div class="space-y-3 mt-4">
+
+                         <div class="flex items-center gap-3">
+                             <div class="w-7 h-7 bg-white rounded-md flex items-center
+                                         justify-center shrink-0">
+                                 <i class="ri-settings-3-fill text-xl text-black"></i>
+                             </div>
+                 
+                             <span class="text-xs text-gray-200 flex-1 min-w-0 truncate">
+                                 Sync new subscribers
+                             </span>
+                 
+                             <label class="relative inline-flex items-center cursor-pointer
+                                           shrink-0 ml-1">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                             </label>
+                         </div>
+
+                         <div class="flex items-center gap-3">
+                             <div class="w-7 h-7 bg-white rounded-md flex items-center
+                                         justify-center shrink-0">
+                                 <i class="ri-settings-3-fill text-xl text-black"></i>
+                             </div>
+
+                             <span class="text-xs text-gray-200 flex-1 min-w-0 truncate">
+                                Sync campaign activity
+                             </span>
+           
+                             <label class="relative inline-flex items-center cursor-pointer shrink-0 ml-1">
+                                 <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                             </label>
+                         </div>
+
+                         <div class="flex items-center gap-3">
+                             <div class="w-7 h-7 bg-white rounded-md flex items-center
+                                         justify-center shrink-0">
+                                 <i class="ri-settings-3-fill text-xl text-black"></i>
+                             </div>
+
+                             <span class="text-xs text-gray-200 flex-1 min-w-0 truncate">
+                                Sync contact tags
+                             </span>
+                 
+                             <label class="relative inline-flex items-center cursor-pointer shrink-0 ml-1">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                             </label>
+                         </div>
+
+                         <div class="flex items-center gap-3">
+                             <div class="w-7 h-7 bg-white rounded-md flex items-center
+                                         justify-center shrink-0">
+                                 <i class="ri-settings-3-fill text-xl text-black"></i>
+                             </div>
+                 
+                             <span class="text-xs text-gray-200 flex-1 min-w-0 truncate">
+                                Sync unsubscribes
+                             </span>
+                 
+                             <label class="relative inline-flex items-center cursor-pointer shrink-0 ml-1">
+                                <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+                             </label>
+                         </div>
+
+                     </div>
+
+                 </div>
+
+                 <div class="bg-[#131416] border-[#2A2A2E] border rounded-2xl md:h-auto xl:w-[400px] md:w-full w-full mt-1 p-4">
+
+                     <div class="flex items-center justify-between mb-3">
+                         <h2 class="text-sm font-semibold text-gray-200">
+                             Recent Activity
+                         </h2>
+
+                         <button type="button"
+                             class="flex items-center gap-1 px-3 py-1.5
+                                    border border-[#2A2A2E] rounded-lg
+                                    text-[10px] text-gray-300
+                                    hover:bg-[#1B2028] transition">
+                             View All
+                             <i class="ri-arrow-right-line"></i>
+                         </button>
+                     </div>
+
+                     <div class="space-y-3">
+                 
+                         <div class="flex items-start gap-3">
+                 
+                             <div class="w-7 h-7 shrink-0 rounded-md
+                                         bg-[#2563EB] flex items-center justify-center">
+                                 <i class="ri-user-follow-line
+                                           text-lg text-white"></i>
+                             </div>
+
+                             <div class="flex-1 min-w-0">
+                                 <h3 class="text-xs font-medium text-gray-200">
+                                    New subscriber synced
+                                 </h3>
+
+                                 <p class="text-[11px] text-gray-400 mt-0.5">
+                                    ahmad.khan@example.com
+                                 </p>
+                             </div>
+                 
+                             <span class="text-[10px] text-gray-400 whitespace-nowrap">
+                                 2h ago
+                             </span>
+                         </div>
+
+                         <div class="flex items-start gap-3">
+
+                             <div class="w-7 h-7 shrink-0 rounded-md
+                                         bg-[#10B981] flex items-center justify-center">
+                                 <i class="ri-heart-pulse-line
+                                           text-lg text-white"></i>
+                             </div>
+
+                             <div class="flex-1 min-w-0">
+                                 <h3 class="text-xs font-medium text-gray-200">
+                                    Compaign activity updated
+                                 </h3>
+                 
+                                 <p class="text-[11px] text-gray-400 mt-0.5">
+                                    October Newsietter
+                                 </p>
+                             </div>
+
+                             <span class="text-[10px] text-gray-400 whitespace-nowrap">
+                                 5h ago
+                             </span>
+                         </div>
+
+                         <div class="flex items-start gap-3">
+
+                             <div class="w-7 h-7 shrink-0 rounded-md
+                                         bg-[#EF4444] flex items-center justify-center">
+                                 <i class="ri-shopping-bag-3-line
+                                           text-lg text-white"></i>
+                             </div>
+
+                             <div class="flex-1 min-w-0">
+                                 <h3 class="text-xs font-medium text-gray-200">
+                                     Contact tag added
+                                 </h3>
+
+                                 <p class="text-[11px] text-gray-400 mt-0.5">
+                                    Webinar Lead
+                                 </p>
+                             </div>
+                 
+                             <span class="text-[10px] text-gray-400 whitespace-nowrap">
+                                 1d ago
+                             </span>
+                         </div>
+
+                         <div class="flex items-start gap-3">
+
+                             <div class="w-7 h-7 shrink-0 rounded-md
+                                         bg-[#10B981] flex items-center justify-center">
+                                 <i class="ri-vip-diamond-line
+                                           text-lg text-white"></i>
+                             </div>
+
+                             <div class="flex-1 min-w-0">
+                                 <h3 class="text-xs font-medium text-gray-200">
+                                     Sync completed
+                                 </h3>
+
+                                 <p class="text-[11px] text-gray-400 mt-0.5">
+                                    245 contacts synced
+                                 </p>
+                             </div>
+                 
+                             <span class="text-[10px] text-gray-400 whitespace-nowrap">
+                                 2d ago
+                             </span>
+                         </div>
+
+                     </div>
+
+                 </div>
+  
+            </div>
+        </div>   
+      </div>
+  </div>
+      
+  <!-- sidebar -->
+   <div class="drawer-side is-drawer-close:overflow-visible" id="sidebar">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <div class="flex min-h-full flex-col items-start bg-[#0B0B0B] border-r border-[#2A2A2E] text-[#F5F5F5] is-drawer-close:hidden is-drawer-open:w-auto">
+      <!-- Sidebar content here -->
+      <ul class="menu w-full grow">
+        <!-- List item -->
+          <h2 class="md:font-bold md:text-xl md:pt-0" ><i class="ri-drag-move-fill text-pink-300 pb-1 text-lg"><span class="md:font-bold md:text-xl text-white pl-1 text-lg font-inter">Efficient App</span></i></h2>
+         </li>
+
+         <li id="indexSide">
+           <i class="ri-home-4-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">Dashboard</span></i>
+         </li>
+        <li id="inboxSide">
+           <i class="ri-inbox-2-line md:text-lg text-[#A1A1AA]"><span class=" md:text-lg pl-1 text-[#A1A1AA] font-inter">inbox</span></i>
+         </li>
+         <li id="clientSide">
+           <i class="ri-group-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Clients</span></i>
+         </li>
+         <li id="projectSide">
+           <i class="ri-bnb-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg text-[#A1A1AA] font-inter">Projects</span></i>
+         </li>
+         <li id="taskSide">
+           <i class="ri-task-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Task</span></i>
+         </li>
+         <li id="kanbanSide">
+           <i class="ri-kanban-view-2 md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Kanban board</span></i>
+         </li>
+         <li id="teamSide">
+           <i class="ri-parent-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Team</span></i>
+         </li>
+         <li id="calenderSide">
+           <i class="ri-calendar-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Calendar</span></i>
+         </li>
+         <hr>
+         
+         <!-- finance -->
+        <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('workplace').classList.toggle('hidden')">
+            FINANCE 
+          </div>
+          <ul class="hidden" id="workplace">
+            <li class="md:text-lg text-[#A1A1AA]" id="paymentSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Payments</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="invoiceSide">
+              <i class="ri-receipt-line"><span class="md:text-lg font-inter">Invoices</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="expensesSide">
+              <i class="ri-wallet-line"><span class="md:text-lg font-inter">Expenses</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- reports -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('reports').classList.toggle('hidden')">
+            REPORTS 
+          </div>
+          <ul class="hidden" id="reports">
+            <li class="md:text-lg text-[#A1A1AA]"  id="analyticsSide">
+              <i class="ri-bar-chart-fill"><span class="md:text-lg font-inter">Analytics</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="revenueSide">
+              <i class="ri-line-chart-fill"><span class="md:text-lg font-inter">Revenue</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="performanceSide">
+              <i class="ri-pie-chart-line"><span class="md:text-lg font-inter">Performance</span></i>
+            </li>
+          </ul>
+        </li>  
+
+        <!-- assets -->
+         <li>
+          <div class="md:text-lg text-[#A1A1AA] font-inter" onclick="document.getElementById('assets').classList.toggle('hidden')">
+            ASSETS 
+          </div>
+          <ul class="hidden" id="assets">
+            <li class="md:text-lg text-[#A1A1AA]" id="documentSide">
+              <i class="ri-file-text-line"><span class="md:text-lg font-inter">Documents</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="mediaSide">
+              <i class="ri-image-line"><span class="md:text-lg font-inter">Media</span></i>
+            </li>
+            <li class="md:text-lg text-[#A1A1AA]" id="filesSide">
+              <i class="ri-folder-open-line"><span class="md:text-lg font-inter">Files</span></i>
+            </li>
+          </ul>
+        </li>  
+        <hr class="text-[#A1A1AA]">
+        <li class="text-[#A1A1AA] pl-2 pt-2 md:text-[16px] font-inter" id="">COMMUNICATION</li>
+        <li id="messageSide">
+           <i class="ri-message-2-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Messages</span></i>
+         </li>
+         <li id="helpSide">
+           <i class="ri-questionnaire-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Help & Support</span></i>
+         </li>
+        <hr class="text-[#A1A1AA]">
+        <li class="mt-1 mb-1" id="settingSide">
+           <i class="ri-settings-5-line md:text-lg text-[#A1A1AA]"><span class="md:text-lg pl-1 text-[#A1A1AA] font-inter">Settings</span></i>
+        </li>
+        
+        <li class="pt-1 mt-auto font-inter">
+          <hr class="text-[#A1A1AA]">
+          <div class="flex justify-center items-center gap-2">
+             <div class="avatar avatar-online">              
+                 <div class="w-15 rounded-full">
+                   <img src="https://img.daisyui.com/images/profile/demo/gordon@192.webp" />
+                 </div>
+              </div>
+              <div>
+              <h3>Akmal</h3>
+              <p>agency owner</p>
+              <p class="text-[#22C55E]">online</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+ </div>
+ <script src="integrationMarket.js"></script>
+ <script src="integrationNavbar.js"></script>
+ <script src="sidebar.js"></script>
+ </body>
+</html>

@@ -3,7 +3,8 @@ const brandBtn = {
     Members: "members.html",
     Profile: "setting.html",
     Preferences: "settingPreference.html",
-    Notifications: "settingNotification.html"
+    Notifications: "settingNotification.html",
+    Integrations: "settingIntegrations.html",
 
 };
 Object.entries(brandBtn).forEach(([id, page]) => {

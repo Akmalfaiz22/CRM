@@ -8,7 +8,8 @@ const settingSidebar = {
     preferenceWorkspace: "preferenceWorkspace.html",
     preferenceEmail: "preferenceEmail.html",
     Notifications: "settingNotification.html",
-    Security: "settingSecurity.html"
+    Security: "settingSecurity.html",
+    Integrations: "settingIntegrations.html",
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {

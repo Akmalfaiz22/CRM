@@ -6,7 +6,8 @@ const organizationBtn = {
     Profile: "setting.html",
     Preferences: "settingPreference.html",
     Notifications: "settingNotification.html",
-    Security: "settingSecurity.html"
+    Security: "settingSecurity.html",
+    Integrations: "settingIntegrations.html",
 };
 
 Object.entries(organizationBtn).forEach(([id, page]) => {
