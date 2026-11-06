@@ -38,6 +38,7 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-indigo-700: oklch(45.7% 0.24 277.023);
     --color-indigo-900: oklch(35.9% 0.144 278.697);
     --color-indigo-950: oklch(25.7% 0.09 281.288);
@@ -50,7 +51,9 @@
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-purple-600: oklch(55.8% 0.288 302.321);
+    --color-purple-700: oklch(49.6% 0.265 301.924);
     --color-purple-900: oklch(38.1% 0.176 304.987);
+    --color-purple-950: oklch(29.1% 0.149 302.717);
     --color-pink-300: oklch(82.3% 0.12 346.018);
     --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-slate-600: oklch(44.6% 0.043 257.281);
@@ -87,6 +90,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-light: 300;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -2073,6 +2077,9 @@
       }
     }
   }
+  .-top-2 {
+    top: calc(var(--spacing) * -2);
+  }
   .top-0 {
     top: 0;
   }
@@ -2742,6 +2749,9 @@
   .min-h-36 {
     min-height: calc(var(--spacing) * 36);
   }
+  .min-h-\[0vh\] {
+    min-height: 0vh;
+  }
   .min-h-\[30vh\] {
     min-height: 30vh;
   }
@@ -2816,6 +2826,9 @@
   }
   .min-h-\[500px\] {
     min-height: 500px;
+  }
+  .min-h-\[vh\] {
+    min-height: vh;
   }
   .min-h-auto {
     min-height: auto;
@@ -3001,6 +3014,15 @@
   .w-\[12\.8\%\] {
     width: 12.8%;
   }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[48\%\] {
+    width: 48%;
+  }
   .w-\[90px\] {
     width: 90px;
   }
@@ -3100,6 +3122,9 @@
   .min-w-\[340px\] {
     min-width: 340px;
   }
+  .min-w-\[550px\] {
+    min-width: 550px;
+  }
   .min-w-\[860px\] {
     min-width: 860px;
   }
@@ -3111,6 +3136,9 @@
   }
   .grow {
     flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .border-separate {
     border-collapse: separate;
@@ -3439,6 +3467,10 @@
     border-style: var(--tw-border-style);
     border-width: 3px;
   }
+  .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -3529,9 +3561,6 @@
   .border-\[\#4858A7\] {
     border-color: #4858A7;
   }
-  .border-\[\#5900FF\] {
-    border-color: #5900FF;
-  }
   .border-\[\#29292D\] {
     border-color: #29292D;
   }
@@ -3580,6 +3609,9 @@
   .border-\[\#EFB633\] {
     border-color: #EFB633;
   }
+  .border-blue-600 {
+    border-color: var(--color-blue-600);
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
@@ -3593,6 +3625,12 @@
     border-color: color-mix(in srgb, oklch(72.3% 0.219 149.579) 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-green-500) 40%, transparent);
+    }
+  }
+  .border-purple-500\/30 {
+    border-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-purple-500) 30%, transparent);
     }
   }
   .border-purple-600 {
@@ -3614,6 +3652,9 @@
     background-image: linear-gradient( 135deg, oklch(100% 0 0 / var(--glass-opacity, 30%)) 0%, oklch(0% 0 0 / 0%) 100% ), linear-gradient( var(--glass-reflect-degree, 100deg), oklch(100% 0 0 / var(--glass-reflect-opacity, 5%)) 25%, oklch(0% 0 0 / 0%) 25% );
     box-shadow: 0 0 0 1px oklch(100% 0 0 / var(--glass-border-opacity, 20%)) inset, 0 0 0 2px oklch(0% 0 0 / 5%);
     text-shadow: 0 1px oklch(0% 0 0 / var(--glass-text-shadow-opacity, 5%));
+  }
+  .bg-\[\#\#0000FF50\] {
+    background-color: ##0000FF50;
   }
   .bg-\[\#0A66C2\] {
     background-color: #0A66C2;
@@ -3645,6 +3686,15 @@
   .bg-\[\#0f1011\] {
     background-color: #0f1011;
   }
+  .bg-\[\#0000FF20\] {
+    background-color: #0000FF20;
+  }
+  .bg-\[\#0000FF50\] {
+    background-color: #0000FF50;
+  }
+  .bg-\[\#0000FF80\] {
+    background-color: #0000FF80;
+  }
   .bg-\[\#1A1B1C\] {
     background-color: #1A1B1C;
   }
@@ -3659,6 +3709,9 @@
   }
   .bg-\[\#1B2938\]\/70 {
     background-color: color-mix(in oklab, #1B2938 70%, transparent);
+  }
+  .bg-\[\#1C303D\] {
+    background-color: #1C303D;
   }
   .bg-\[\#1C2938\] {
     background-color: #1C2938;
@@ -3846,6 +3899,9 @@
   .bg-\[\#101B25\] {
     background-color: #101B25;
   }
+  .bg-\[\#101D27\] {
+    background-color: #101D27;
+  }
   .bg-\[\#102A40\] {
     background-color: #102A40;
   }
@@ -3942,9 +3998,6 @@
   .bg-\[\#3882F6\] {
     background-color: #3882F6;
   }
-  .bg-\[\#3900C9\] {
-    background-color: #3900C9;
-  }
   .bg-\[\#4900F5\] {
     background-color: #4900F5;
   }
@@ -3953,9 +4006,6 @@
   }
   .bg-\[\#6535D5\] {
     background-color: #6535D5;
-  }
-  .bg-\[\#10171D\] {
-    background-color: #10171D;
   }
   .bg-\[\#10182D\] {
     background-color: #10182D;
@@ -3980,6 +4030,9 @@
   }
   .bg-\[\#21174B\] {
     background-color: #21174B;
+  }
+  .bg-\[\#24104F\] {
+    background-color: #24104F;
   }
   .bg-\[\#24313D\] {
     background-color: #24313D;
@@ -4050,6 +4103,9 @@
   .bg-\[\#172235\] {
     background-color: #172235;
   }
+  .bg-\[\#172936\] {
+    background-color: #172936;
+  }
   .bg-\[\#202124\] {
     background-color: #202124;
   }
@@ -4062,11 +4118,17 @@
   .bg-\[\#263746\] {
     background-color: #263746;
   }
+  .bg-\[\#293743\] {
+    background-color: #293743;
+  }
   .bg-\[\#332922\] {
     background-color: #332922;
   }
   .bg-\[\#334155\] {
     background-color: #334155;
+  }
+  .bg-\[\#351078\] {
+    background-color: #351078;
   }
   .bg-\[\#372123\] {
     background-color: #372123;
@@ -4182,6 +4244,12 @@
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
+  .bg-blue-950\/40 {
+    background-color: color-mix(in srgb, oklch(28.2% 0.091 267.935) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-blue-950) 40%, transparent);
+    }
+  }
   .bg-emerald-400 {
     background-color: var(--color-emerald-400);
   }
@@ -4290,6 +4358,9 @@
   .bg-orange-400 {
     background-color: var(--color-orange-400);
   }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
@@ -4302,10 +4373,19 @@
       background-color: color-mix(in oklab, var(--color-purple-600) 30%, transparent);
     }
   }
+  .bg-purple-700 {
+    background-color: var(--color-purple-700);
+  }
   .bg-purple-900\/40 {
     background-color: color-mix(in srgb, oklch(38.1% 0.176 304.987) 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-purple-900) 40%, transparent);
+    }
+  }
+  .bg-purple-950\/40 {
+    background-color: color-mix(in srgb, oklch(29.1% 0.149 302.717) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-purple-950) 40%, transparent);
     }
   }
   .bg-red-500 {
@@ -4347,6 +4427,12 @@
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
   }
+  .bg-yellow-500\/20 {
+    background-color: color-mix(in srgb, oklch(79.5% 0.184 86.047) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-yellow-500) 20%, transparent);
+    }
+  }
   .bg-gradient-to-br {
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -4380,6 +4466,10 @@
     --tw-gradient-from: var(--color-purple-500);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .from-purple-600 {
+    --tw-gradient-from: var(--color-purple-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-purple-900 {
     --tw-gradient-from: var(--color-purple-900);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -4400,6 +4490,10 @@
   }
   .to-orange-400 {
     --tw-gradient-to: var(--color-orange-400);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-purple-400 {
+    --tw-gradient-to: var(--color-purple-400);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-white {
@@ -4739,6 +4833,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -5316,6 +5414,9 @@
   .opacity-50 {
     opacity: 50%;
   }
+  .opacity-90 {
+    opacity: 90%;
+  }
   .opacity-100 {
     opacity: 100%;
   }
@@ -5674,10 +5775,24 @@
       }
     }
   }
+  .hover\:bg-\[\#102632\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #102632;
+      }
+    }
+  }
   .hover\:bg-\[\#172832\] {
     &:hover {
       @media (hover: hover) {
         background-color: #172832;
+      }
+    }
+  }
+  .hover\:bg-\[\#172936\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #172936;
       }
     }
   }
@@ -5713,6 +5828,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-base-300);
+      }
+    }
+  }
+  .hover\:bg-blue-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-600);
+      }
+    }
+  }
+  .hover\:bg-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-600);
       }
     }
   }
@@ -7162,6 +7291,11 @@
       min-height: 5vh;
     }
   }
+  .xl\:min-h-\[10vh\] {
+    @media (width >= 80rem) {
+      min-height: 10vh;
+    }
+  }
   .xl\:min-h-\[20vh\] {
     @media (width >= 80rem) {
       min-height: 20vh;
@@ -7407,6 +7541,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .xl\:grid-cols-4 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .xl\:grid-cols-5 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -7437,6 +7576,21 @@
       grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);
     }
   }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,2\.4fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,2.4fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,2\.fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,2.fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,2fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,2fr);
+    }
+  }
   .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,390px\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1.4fr) minmax(0,390px);
@@ -7462,9 +7616,19 @@
       grid-template-columns: minmax(0,1.4fr) minmax(0,450px);
     }
   }
+  .xl\:grid-cols-\[minmax\(0\,1\.4fr\)_minmax\(0\,fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1.4fr) minmax(0,fr);
+    }
+  }
   .xl\:grid-cols-\[minmax\(0\,1fr\)_minmax\(0\,1fr\)_minmax\(0\,1fr\)\] {
     @media (width >= 80rem) {
       grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+    }
+  }
+  .xl\:grid-cols-\[minmax\(0\,1fr\)_minmax\(0\,2fr\)\] {
+    @media (width >= 80rem) {
+      grid-template-columns: minmax(0,1fr) minmax(0,2fr);
     }
   }
   .xl\:grid-cols-\[minmax\(0\,450px\)_minmax\(0\,1\.4fr\)\] {
