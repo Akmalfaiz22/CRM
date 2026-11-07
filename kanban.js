@@ -7,30 +7,48 @@ const blockBtn = document.getElementById('blockBtn');
 const sections = ["todo", "progress", "review", "done", "block"];
 
 function showSection(id) {
-  sections.forEach(section => {
-    document.getElementById(section).classList.add("hidden");
+  if (!id) return;
+
+  sections.forEach((section) => {
+    const sectionElement = document.getElementById(section);
+    if (sectionElement) {
+      sectionElement.classList.add("hidden");
+    }
   });
 
-  document.getElementById(id).classList.remove("hidden");
+  const selectedSection = document.getElementById(id);
+  if (selectedSection) {
+    selectedSection.classList.remove("hidden");
+  }
 }
 
-todoBtn.addEventListener("click", () => {
-    showSection("todo")
-});
+if (todoBtn) {
+  todoBtn.addEventListener("click", () => {
+    showSection("todo");
+  });
+}
 
-progressBtn.addEventListener("click", () =>{
-     showSection("progress")
-});
+if (progressBtn) {
+  progressBtn.addEventListener("click", () => {
+    showSection("progress");
+  });
+}
 
-reviewBtn.addEventListener("click", () => {
-     showSection("review")
-});
+if (reviewBtn) {
+  reviewBtn.addEventListener("click", () => {
+    showSection("review");
+  });
+}
 
-doneBtn.addEventListener("click", () => {
-    showSection("done")
-});
+if (doneBtn) {
+  doneBtn.addEventListener("click", () => {
+    showSection("done");
+  });
+}
 
-blockBtn.addEventListener("click", () => {
-    showSection("block")
-});
+if (blockBtn) {
+  blockBtn.addEventListener("click", () => {
+    showSection("block");
+  });
+}
 

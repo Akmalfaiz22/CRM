@@ -15,11 +15,9 @@ const settingSidebar = {
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {
-    const element = document.getElementById(id);
-
-    if (element) {
+    document.querySelectorAll(`[id="${id}"]`).forEach((element) => {
         element.addEventListener("click", () => {
             window.location.href = page;
         });
-    }
+    });
 });

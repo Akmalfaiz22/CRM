@@ -1,11 +1,12 @@
 const deviceTabs = document.querySelectorAll(".device-tab");
 
-    const devicePreviews = {
-        browser: document.getElementById("browserPreview"),
-        android: document.getElementById("androidPreview"),
-        ios: document.getElementById("iosPreview")
-    };
+const devicePreviews = {
+    browser: document.getElementById("browserPreview"),
+    android: document.getElementById("androidPreview"),
+    ios: document.getElementById("iosPreview")
+};
 
+if (deviceTabs.length) {
     deviceTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
             const selectedDevice = tab.dataset.device;
@@ -19,7 +20,10 @@ const deviceTabs = document.querySelectorAll(".device-tab");
             tab.classList.add("bg-[#4F00E8]", "text-white");
 
             Object.entries(devicePreviews).forEach(([device, preview]) => {
-                preview.classList.toggle("hidden", device !== selectedDevice);
+                if (preview) {
+                    preview.classList.toggle("hidden", device !== selectedDevice);
+                }
             });
         });
     });
+}

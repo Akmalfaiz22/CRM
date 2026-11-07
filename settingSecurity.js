@@ -17,13 +17,18 @@ Object.entries(brandBtn).forEach(([id, page]) => {
     }
 });
 
-const currentpasswordIcon = document.getElementById("currentPasswordIcon")
-const newPasswordIcon = document.getElementById("newPasswordIcon")
-const confirmPasswordIcon = document.getElementById("confirmPasswordIcon")
+const currentpasswordIcon = document.getElementById("currentPasswordIcon");
+const newPasswordIcon = document.getElementById("newPasswordIcon");
+const confirmPasswordIcon = document.getElementById("confirmPasswordIcon");
 
 function togglePassword(inputId, button) {
     const input = document.getElementById(inputId);
-    const icon = button.querySelector("i");
+    const icon = button && button.querySelector("i");
+
+    if (!input || !button || !icon) {
+        return;
+    }
+
     if (input.type === "password") {
          input.type = "text";
          icon.classList.remove("ri-eye-off-line");
@@ -37,14 +42,20 @@ function togglePassword(inputId, button) {
     }
 }
 
-currentpasswordIcon.addEventListener("click", (e) => {
-     togglePassword("currentPassword", e.currentTarget);
-})
+if (currentpasswordIcon) {
+    currentpasswordIcon.addEventListener("click", (e) => {
+        togglePassword("currentPassword", e.currentTarget);
+    });
+}
 
-newPasswordIcon.addEventListener("click", (e) => {
-     togglePassword('newPassword', e.currentTarget)
-})
+if (newPasswordIcon) {
+    newPasswordIcon.addEventListener("click", (e) => {
+        togglePassword('newPassword', e.currentTarget);
+    });
+}
 
-confirmPasswordIcon.addEventListener("click", (e) => {
-     togglePassword('confirmPassword', e.currentTarget)
-})
+if (confirmPasswordIcon) {
+    confirmPasswordIcon.addEventListener("click", (e) => {
+        togglePassword('confirmPassword', e.currentTarget);
+    });
+}
