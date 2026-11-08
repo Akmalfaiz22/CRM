@@ -8,6 +8,7 @@ const organizationBtn = {
     Notifications: "settingNotification.html",
     Security: "settingSecurity.html",
     Integrations: "settingIntegrations.html",
+    Billing: "settingBilling.html"
 };
 
 Object.entries(organizationBtn).forEach(([id, page]) => {

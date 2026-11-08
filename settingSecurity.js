@@ -5,6 +5,7 @@ const brandBtn = {
     Preferences: "settingPreference.html",
     Notifications: "settingNotification.html",
     Integrations: "settingIntegrations.html",
+    Billing: "settingBilling.html"
 
 };
 Object.entries(brandBtn).forEach(([id, page]) => {

@@ -11,7 +11,7 @@ const settingSidebar = {
     Marketing: "integrationMarket.html",
     Payments: "integrationpayment.html",
     Notifications: "settingNotification.html",
-
+    Billing: "settingBilling.html"
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {

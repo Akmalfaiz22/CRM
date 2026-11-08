@@ -9,6 +9,7 @@ const settingSidebar = {
     notificationPush: "notificationPush.html",
     Security: "settingSecurity.html",
     Integrations: "settingIntegrations.html",
+    Billing: "settingBilling.html"
 };
 
 Object.entries(settingSidebar).forEach(([id, page]) => {
